@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-05T20:35:45.821410+00:00",
+"generated": "2026-11-05T21:32:08.287078+00:00",
 "status": {
 "r/3Dprintmything": {
 "ok": true,
@@ -7,9 +7,9 @@
 "n": 50
 },
 "r/3Drequests": {
-"ok": true,
-"via": "rss",
-"n": 50
+"ok": false,
+"via": "failed",
+"n": 0
 },
 "r/PrintMyThing": {
 "ok": false,
@@ -42,8 +42,8 @@
 "n": 0
 },
 "r/germany (Suche)": {
-"ok": false,
-"via": "failed",
+"ok": true,
+"via": "rss",
 "n": 0
 },
 "Lemmy !printmything": {
