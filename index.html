@@ -1,0 +1,719 @@
+<!doctype html><html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>3D-Druck Lead-Radar</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700&family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+/* Layout: sticky glass header + toolbar, single column of lead cards (max 900px), panels slide in as sheets (phone) / popovers (desktop). Dark-only by design. */
+:root{
+  color-scheme:dark;
+  --bg:#0b0f17; --bg2:#111828;
+  --glass:rgba(22,30,46,.58); --glass-strong:rgba(18,25,40,.86); --line:rgba(170,195,255,.13); --line-strong:rgba(170,195,255,.26);
+  --fg:#e8edf7; --muted:#93a0b8; --faint:#647089;
+  --accent:#ffb547; --accent-ink:#1a1204; --accent-soft:rgba(255,181,71,.16);
+  --cyan:#5fd4e6; --cyan-soft:rgba(95,212,230,.14);
+  --good:#5fdc97; --good-soft:rgba(95,220,151,.14); --warn:#ffcf5c; --bad:#ff7a7a; --bad-soft:rgba(255,122,122,.14);
+  --f-display:"Unbounded","Figtree",system-ui,sans-serif; --f-body:"Figtree",system-ui,-apple-system,"Segoe UI",sans-serif; --f-mono:"JetBrains Mono",ui-monospace,"SFMono-Regular",Menlo,monospace;
+  --r:16px; --r-sm:10px;
+  --spring:cubic-bezier(.2,.95,.25,1.18); --out:cubic-bezier(.55,0,.75,.2);
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html,body{background:var(--bg);color:var(--fg)}
+body{font-family:var(--f-body);font-size:15px;line-height:1.5;min-height:100%;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:0 48px;
+  background:radial-gradient(900px 600px at 85% -10%,rgba(255,150,60,.16),transparent 60%),radial-gradient(800px 600px at -10% 20%,rgba(70,140,255,.14),transparent 60%),radial-gradient(700px 500px at 50% 110%,rgba(95,212,230,.10),transparent 60%),var(--bg);background-attachment:fixed}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:30;background:var(--bg)}
+.wrap{max-width:920px;margin:0 auto}
+button,input,select{font:inherit;color:inherit}
+button{cursor:pointer}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.glass{background:var(--glass);backdrop-filter:blur(18px) saturate(140%);-webkit-backdrop-filter:blur(18px) saturate(140%);border:1px solid var(--line)}
+
+/* header */
+header.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;margin:0 calc(-1 * max(16px,env(safe-area-inset-left,0px)));padding:12px max(16px,env(safe-area-inset-right,0px)) 10px max(16px,env(safe-area-inset-left,0px));
+  background:linear-gradient(to bottom,rgba(11,15,23,.92),rgba(11,15,23,.72));backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+.top-row{max-width:920px;margin:0 auto;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:10px;min-width:0;flex:1}
+.brand h1{font-family:var(--f-display);font-weight:700;font-size:clamp(16px,3.6vw,21px);letter-spacing:-.01em;margin:0;white-space:nowrap}
+.brand h1 span{color:var(--accent)}
+.radar{width:30px;height:30px;flex:none;border-radius:50%;border:1px solid var(--line-strong);position:relative;overflow:hidden;background:radial-gradient(circle,rgba(255,181,71,.12),transparent 70%)}
+.radar::before{content:"";position:absolute;inset:0;background:conic-gradient(from 0deg,rgba(255,181,71,.55),transparent 28%);animation:sweep 3.2s linear infinite}
+.radar::after{content:"";position:absolute;inset:9px;border-radius:50%;border:1px solid var(--line-strong)}
+@keyframes sweep{to{transform:rotate(360deg)}}
+.newpill{font-family:var(--f-mono);font-size:12px;font-weight:600;padding:3px 9px;border-radius:99px;background:var(--accent);color:var(--accent-ink);white-space:nowrap;transition:transform .4s var(--spring)}
+.newpill.zero{background:var(--glass);color:var(--muted);border:1px solid var(--line)}
+.newpill.bump{animation:bump .6s var(--spring)}
+@keyframes bump{40%{transform:scale(1.25)}}
+.hdr-actions{display:flex;gap:8px;align-items:center}
+.btn{display:inline-flex;align-items:center;gap:7px;border-radius:12px;border:1px solid var(--line-strong);background:rgba(255,255,255,.04);padding:8px 12px;font-weight:600;font-size:14px;transition:background .2s,border-color .2s,transform .15s}
+.btn:hover{background:rgba(255,255,255,.09)}
+.btn:active{transform:scale(.96)}
+.btn.primary{background:var(--accent);color:var(--accent-ink);border-color:transparent}
+.btn.primary:hover{background:#ffc366}
+.btn.icon{padding:8px 10px}
+.btn svg{width:17px;height:17px;flex:none}
+.btn .count{font-family:var(--f-mono);font-size:11px;background:var(--accent);color:var(--accent-ink);border-radius:99px;padding:0 6px;min-width:18px;text-align:center}
+.btn .count:empty{display:none}
+.spin svg{animation:spin 1s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.meta-line{max-width:920px;margin:6px auto 0;font-size:12.5px;color:var(--muted);display:flex;gap:6px 14px;flex-wrap:wrap;font-family:var(--f-mono)}
+.meta-line b{color:var(--fg);font-weight:600}
+.dot{display:inline-block;width:7px;height:7px;border-radius:50%;margin-right:5px;vertical-align:1px;background:var(--faint)}
+.dot.ok{background:var(--good);box-shadow:0 0 8px var(--good)} .dot.err{background:var(--bad)} .dot.part{background:var(--warn)}
+
+/* toolbar */
+.toolbar{display:flex;gap:8px;margin:16px 0 10px;flex-wrap:wrap}
+.search{flex:1 1 240px;min-width:0;position:relative}
+.search input{width:100%;border-radius:12px;border:1px solid var(--line-strong);background:rgba(255,255,255,.04);padding:9px 12px 9px 36px;outline:none;transition:border-color .2s,background .2s}
+.search input:focus{border-color:var(--accent);background:rgba(255,255,255,.07)}
+.search svg{position:absolute;left:11px;top:50%;transform:translateY(-50%);width:16px;height:16px;color:var(--muted)}
+.seg{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px}
+.chip{border-radius:99px;border:1px solid var(--line-strong);background:rgba(255,255,255,.03);padding:5px 11px;font-size:13px;font-weight:500;color:var(--muted);transition:all .25s var(--spring)}
+.chip:hover{color:var(--fg)}
+.chip[aria-pressed="true"]{background:var(--accent-soft);border-color:rgba(255,181,71,.55);color:var(--accent)}
+.chip .n{font-family:var(--f-mono);font-size:11px;opacity:.7;margin-left:4px}
+
+/* banners */
+.banner{border-radius:var(--r);padding:14px 16px;margin:10px 0 14px;display:flex;gap:12px;align-items:flex-start}
+.banner p{margin:0;color:var(--muted);font-size:14px;max-width:70ch}
+.banner strong{color:var(--fg)}
+.banner .btn{flex:none}
+.banner.info{border-color:rgba(95,212,230,.35)}
+
+/* lead list */
+.list{display:grid;gap:12px}
+.lead{border-radius:var(--r);padding:14px 16px 12px;position:relative;transition:opacity .35s,transform .35s var(--spring),border-color .3s;animation:rise .5s var(--spring) both}
+@keyframes rise{from{opacity:0;transform:translateY(10px)}}
+.lead.is-new{border-color:rgba(255,181,71,.55);box-shadow:0 0 0 1px rgba(255,181,71,.25),0 10px 40px -18px rgba(255,181,71,.6)}
+.lead.is-seen{opacity:.62}
+.lead.is-star{border-color:rgba(95,212,230,.5)}
+.lead.leaving{opacity:0;transform:translateX(30px) scale(.97)}
+.lead-head{display:flex;gap:8px;align-items:center;flex-wrap:wrap;font-size:12.5px;color:var(--muted);margin-bottom:6px}
+.src{font-family:var(--f-mono);font-size:11.5px;padding:2px 8px;border-radius:6px;background:rgba(255,255,255,.06);color:var(--fg)}
+.age{font-family:var(--f-mono);font-variant-numeric:tabular-nums}
+.tag-new{font-family:var(--f-mono);font-size:10.5px;font-weight:600;letter-spacing:.08em;background:var(--accent);color:var(--accent-ink);padding:2px 6px;border-radius:5px}
+.tag-demo{font-family:var(--f-mono);font-size:10.5px;font-weight:600;letter-spacing:.08em;border:1px dashed var(--muted);color:var(--muted);padding:1px 6px;border-radius:5px}
+.region{font-weight:600;color:var(--fg)}
+.region.dach{color:var(--good)}
+.lead h3{margin:0 0 6px;font-size:16.5px;line-height:1.35;font-weight:600;text-wrap:balance;overflow-wrap:anywhere}
+.lead h3 a{color:inherit;text-decoration:none}
+.lead h3 a:hover{color:var(--accent)}
+.excerpt{color:var(--muted);font-size:14px;margin:0;overflow-wrap:anywhere;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.more{display:grid;grid-template-rows:0fr;transition:grid-template-rows .45s var(--spring),opacity .3s;opacity:0}
+.more>div{overflow:hidden;min-width:0}
+.lead.open .more{grid-template-rows:1fr;opacity:1}
+.lead.open .excerpt{-webkit-line-clamp:unset;display:block}
+.est{display:flex;gap:6px;flex-wrap:wrap;margin:10px 0 2px}
+.e{font-size:12px;border-radius:7px;padding:2px 8px;border:1px solid var(--line-strong);background:rgba(255,255,255,.03);white-space:nowrap}
+.e i{font-style:normal;color:var(--faint);margin-right:3px}
+.e.fit{border-color:rgba(95,220,151,.45);color:var(--good);background:var(--good-soft)}
+.e.nofit{border-color:rgba(255,122,122,.45);color:var(--bad);background:var(--bad-soft)}
+.e.mat{border-color:rgba(95,212,230,.4);color:var(--cyan);background:var(--cyan-soft)}
+.e.pay{border-color:rgba(255,181,71,.45);color:var(--accent);background:var(--accent-soft)}
+.est-note{font-size:11px;color:var(--faint);font-family:var(--f-mono)}
+.lead-actions{display:flex;gap:6px;margin-top:10px;flex-wrap:wrap;align-items:center}
+.act{text-decoration:none;border-radius:9px;border:1px solid var(--line);background:transparent;padding:5px 10px;font-size:13px;color:var(--muted);display:inline-flex;gap:5px;align-items:center;transition:all .2s}
+.act:hover{color:var(--fg);border-color:var(--line-strong)}
+.act[aria-pressed="true"]{color:var(--accent);border-color:rgba(255,181,71,.5);background:var(--accent-soft)}
+.act.star[aria-pressed="true"]{color:var(--cyan);border-color:rgba(95,212,230,.5);background:var(--cyan-soft)}
+.act svg{width:14px;height:14px}
+.act.open-link{margin-left:auto;color:var(--fg);border-color:var(--line-strong)}
+.empty{border-radius:var(--r);padding:28px 20px;text-align:center;color:var(--muted)}
+.empty h2{font-family:var(--f-display);font-size:17px;color:var(--fg);margin:0 0 6px;font-weight:500}
+.foot{margin-top:28px;font-size:12.5px;color:var(--faint);text-align:center}
+.foot a{color:var(--muted)}
+
+/* panels with open/close animation */
+.scrim{position:fixed;inset:0;z-index:40;background:rgba(4,7,12,.55);backdrop-filter:blur(3px);-webkit-backdrop-filter:blur(3px);opacity:0;transition:opacity .35s ease}
+.scrim[data-state="open"]{opacity:1}
+.panel{position:fixed;z-index:50;background:var(--glass-strong);backdrop-filter:blur(24px) saturate(150%);-webkit-backdrop-filter:blur(24px) saturate(150%);border:1px solid var(--line-strong);border-radius:20px;box-shadow:0 30px 80px -20px rgba(0,0,0,.7);
+  display:flex;flex-direction:column;max-height:min(86vh,780px);
+  opacity:0;transform:translateY(18px) scale(.94);filter:blur(6px);transform-origin:top right;
+  transition:opacity .22s var(--out),transform .26s var(--out),filter .22s var(--out)}
+.panel[data-state="open"]{opacity:1;transform:none;filter:none;transition:opacity .3s ease,transform .5s var(--spring),filter .3s ease}
+.panel.side{top:calc(env(safe-area-inset-top,0px) + 70px);right:max(16px,env(safe-area-inset-right,0px));width:min(440px,calc(100vw - 32px))}
+.panel.pop{width:min(320px,calc(100vw - 32px))}
+.panel-head{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:14px 16px 10px;border-bottom:1px solid var(--line)}
+.panel-head h2{font-family:var(--f-display);font-size:15px;font-weight:500;margin:0;letter-spacing:.01em}
+.panel-body{padding:12px 16px 16px;overflow:auto;min-height:0}
+.panel-foot{padding:10px 16px 14px;border-top:1px solid var(--line);display:flex;gap:8px;justify-content:space-between;align-items:center}
+.panel-body > section + section{margin-top:16px}
+.lbl{font-size:11px;text-transform:uppercase;letter-spacing:.12em;color:var(--faint);font-weight:600;margin:0 0 8px}
+.panel-body .seg{margin-bottom:0}
+.panel-body p{color:var(--muted);font-size:13.5px;margin:6px 0}
+.row{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:6px 0}
+.toggle{position:relative;width:42px;height:24px;flex:none;border-radius:99px;background:rgba(255,255,255,.1);border:1px solid var(--line-strong);transition:background .25s}
+.toggle::after{content:"";position:absolute;top:2px;left:2px;width:18px;height:18px;border-radius:50%;background:var(--fg);transition:transform .4s var(--spring)}
+.toggle[aria-checked="true"]{background:var(--accent)}
+.toggle[aria-checked="true"]::after{transform:translateX(18px);background:var(--accent-ink)}
+select.sel{border-radius:10px;border:1px solid var(--line-strong);background:var(--bg2);padding:7px 10px}
+.srcrow{display:grid;grid-template-columns:auto 1fr auto;gap:4px 10px;align-items:baseline;padding:7px 0;border-bottom:1px solid var(--line);font-size:13.5px}
+.srcrow:last-child{border-bottom:0}
+.srcrow .st{font-family:var(--f-mono);font-size:11.5px;color:var(--muted);text-align:right}
+.srcrow .why{grid-column:2 / 4;font-size:12px;color:var(--faint)}
+.manual a{display:flex;justify-content:space-between;gap:10px;align-items:center;padding:9px 12px;margin-bottom:6px;border-radius:12px;border:1px solid var(--line);background:rgba(255,255,255,.03);color:var(--fg);text-decoration:none;font-size:14px;transition:all .2s}
+.manual a:hover{border-color:rgba(255,181,71,.5);background:var(--accent-soft)}
+.manual a small{color:var(--faint);font-family:var(--f-mono);font-size:11px}
+.howto{counter-reset:s;list-style:none;padding:0;margin:6px 0 0}
+.howto li{counter-increment:s;position:relative;padding-left:28px;margin:6px 0;color:var(--muted);font-size:13.5px}
+.howto li::before{content:counter(s);position:absolute;left:0;top:1px;width:19px;height:19px;border-radius:50%;background:var(--accent-soft);color:var(--accent);font-family:var(--f-mono);font-size:11px;display:grid;place-items:center}
+code{font-family:var(--f-mono);font-size:12.5px;background:rgba(255,255,255,.07);padding:1px 5px;border-radius:5px;overflow-wrap:anywhere}
+.toast{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));z-index:60;transform:translate(-50%,30px) scale(.9);opacity:0;padding:10px 16px;border-radius:14px;font-size:14px;transition:all .45s var(--spring);pointer-events:none;max-width:calc(100vw - 32px)}
+.toast.show{transform:translate(-50%,0);opacity:1}
+
+@media (max-width:640px){
+  .panel.side,.panel.pop{top:auto!important;left:0!important;right:0!important;bottom:0;width:100%;border-radius:22px 22px 0 0;max-height:88vh;transform:translateY(100%);filter:none;padding-bottom:env(safe-area-inset-bottom,0px)}
+  .panel.side[data-state="open"],.panel.pop[data-state="open"]{transform:none}
+  .panel-head::before{content:"";position:absolute;left:50%;top:6px;width:38px;height:4px;border-radius:4px;background:var(--line-strong);transform:translateX(-50%)}
+  .panel-head{position:relative;padding-top:18px}
+  .hdr-actions .lbl-txt{display:none}
+  .act .lbl-txt{display:none}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+}
+</style></head><body>
+
+<header class="top">
+  <div class="top-row">
+    <div class="brand">
+      <div class="radar" aria-hidden="true"></div>
+      <h1>Lead-<span>Radar</span></h1>
+      <span id="newPill" class="newpill zero" title="Neu seit deinem letzten Besuch">0 neu</span>
+    </div>
+    <div class="hdr-actions">
+      <button class="btn primary" id="refreshBtn" type="button" aria-label="Jetzt aktualisieren">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M20 11a8 8 0 1 0-2.3 5.7"/><path d="M20 4v7h-7"/></svg>
+        <span class="lbl-txt">Jetzt aktualisieren</span>
+      </button>
+      <button class="btn icon" id="sourcesBtn" type="button" aria-haspopup="dialog" aria-label="Quellen">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="6" cy="18" r="2"/><path d="M4 11a9 9 0 0 1 9 9"/><path d="M4 4a16 16 0 0 1 16 16"/></svg>
+        <span class="lbl-txt">Quellen</span>
+      </button>
+      <button class="btn icon" id="settingsBtn" type="button" aria-haspopup="dialog" aria-label="Einstellungen">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h10M18 6h2M4 12h4M12 12h8M4 18h12M20 18h0"/><circle cx="16" cy="6" r="2"/><circle cx="10" cy="12" r="2"/><circle cx="18" cy="18" r="2"/></svg>
+      </button>
+    </div>
+  </div>
+  <div class="meta-line" id="metaLine">
+    <span><span class="dot" id="statusDot"></span><span id="statusTxt">Starte …</span></span>
+    <span>Nächster Abruf <b id="countdown">–</b></span>
+    <span><b id="visibleCount">0</b> sichtbar</span>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="toolbar">
+    <label class="search">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input id="q" type="search" placeholder="Suchen: Titel, Text, Ort …" autocomplete="off" aria-label="Freitextsuche">
+    </label>
+    <select id="sort" class="sel" aria-label="Sortierung">
+      <option value="new">Neueste zuerst</option>
+      <option value="old">Älteste zuerst</option>
+      <option value="small">Größe: klein → groß</option>
+      <option value="big">Größe: groß → klein</option>
+      <option value="source">Nach Quelle</option>
+    </select>
+    <button class="btn" id="filterBtn" type="button" aria-haspopup="dialog">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M3 5h18l-7 8v6l-4-2v-4z"/></svg>
+      Filter <span class="count" id="filterCount"></span>
+    </button>
+  </div>
+  <div class="seg" id="quick" role="group" aria-label="Schnellfilter">
+    <button class="chip" type="button" data-quick="dach" aria-pressed="false">DACH zuerst</button>
+    <button class="chip" type="button" data-quick="fit" aria-pressed="false">Passt in P1S</button>
+    <button class="chip" type="button" data-quick="star" aria-pressed="false">★ Interessant</button>
+    <button class="chip" type="button" data-quick="unseen" aria-pressed="false">Nur ungesehen</button>
+  </div>
+  <div id="banners"></div>
+  <div class="list" id="list" aria-live="polite"></div>
+  <p class="foot">Alle Merkmale mit <span style="font-family:var(--f-mono)">≈</span> sind aus dem Text geschätzt. Leads stammen aus öffentlichen Feeds; antworte immer direkt auf der Originalplattform.<br>
+    Projektplan (älterer Umfang): <a href="https://claude.ai/artifact/LTVKbK8Ch3N2w1q2xYvV6E" target="_blank" rel="noopener">Doc öffnen</a></p>
+</main>
+
+<div class="scrim" id="scrim" hidden></div>
+
+<!-- Filter panel -->
+<div class="panel side" id="filterPanel" role="dialog" aria-modal="true" aria-labelledby="fpTitle" hidden>
+  <div class="panel-head"><h2 id="fpTitle">Filter</h2><button class="btn icon" type="button" data-close aria-label="Schließen">✕</button></div>
+  <div class="panel-body" id="filterBody"></div>
+  <div class="panel-foot"><button class="btn" type="button" id="resetFilters">Zurücksetzen</button><button class="btn primary" type="button" data-close><span id="applyLbl">Anzeigen</span></button></div>
+</div>
+
+<!-- Sources panel -->
+<div class="panel side" id="sourcesPanel" role="dialog" aria-modal="true" aria-labelledby="spTitle" hidden>
+  <div class="panel-head"><h2 id="spTitle">Quellen</h2><button class="btn icon" type="button" data-close aria-label="Schließen">✕</button></div>
+  <div class="panel-body">
+    <section><p class="lbl">Automatisch</p><div id="srcList"></div></section>
+    <section class="manual"><p class="lbl">Manuelle Quellen (keine erlaubte Schnittstelle)</p>
+      <div id="manualList"></div>
+      <p><strong style="color:var(--fg)">Gespeicherte Suche bei Kleinanzeigen:</strong></p>
+      <ol class="howto">
+        <li>Einen Link oben öffnen und bei Kleinanzeigen einloggen.</li>
+        <li>Optional Umkreis um deinen Ort setzen (z. B. 50 km).</li>
+        <li>Auf „Suche speichern“ tippen.</li>
+        <li>Unter „Meine Suchen“ die E-Mail- bzw. Push-Benachrichtigung für diese Suche einschalten.</li>
+      </ol>
+      <p>Bei Facebook-Gruppen: Gruppe beitreten, dann über die Glocke „Alle Beiträge“ als Benachrichtigung wählen.</p>
+    </section>
+    <section><p class="lbl">Rund um die Uhr sammeln</p>
+      <p>Im claude.ai-Artifact blockiert die Sicherheitsrichtlinie Abrufe zu fremden Seiten. Für ein Radar, das ohne deinen PC weiterläuft, gibt es das GitHub-Paket: eine GitHub Action sammelt alle 30 Minuten in <code>leads.json</code>, und GitHub Pages zeigt genau diese App mit Live-Abruf.</p>
+      <div id="liveLink"></div>
+    </section>
+  </div>
+</div>
+
+<!-- Settings popover -->
+<div class="panel pop" id="settingsPanel" role="dialog" aria-modal="true" aria-labelledby="stTitle" hidden>
+  <div class="panel-head"><h2 id="stTitle">Einstellungen</h2><button class="btn icon" type="button" data-close aria-label="Schließen">✕</button></div>
+  <div class="panel-body">
+    <div class="row"><label for="interval">Automatisch aktualisieren</label>
+      <select id="interval" class="sel"><option value="5">alle 5 Min</option><option value="15">alle 15 Min</option><option value="30">alle 30 Min</option><option value="60">alle 60 Min</option><option value="0">aus</option></select></div>
+    <div class="row"><span id="demoLbl">Beispiel-Leads zeigen, solange keine echten da sind</span><button class="toggle" id="demoToggle" role="switch" aria-checked="true" aria-labelledby="demoLbl" type="button"></button></div>
+    <div class="row"><span id="offLbl">Angebote („ich drucke für …“) zeigen</span><button class="toggle" id="offerToggle" role="switch" aria-checked="false" aria-labelledby="offLbl" type="button"></button></div>
+    <div class="row"><span>Alle als gesehen markieren</span><button class="btn" id="markAllSeen" type="button">Markieren</button></div>
+    <div class="row"><span>Ausgeblendete zurückholen</span><button class="btn" id="unhideAll" type="button">Zurückholen</button></div>
+    <p id="liveUrlLbl" class="lbl" style="margin-top:12px">Adresse deines Live-Radars (GitHub Pages)</p>
+    <input id="liveUrl" type="url" placeholder="https://name.github.io/lead-radar/" style="width:100%;border-radius:10px;border:1px solid var(--line-strong);background:var(--bg2);padding:8px 10px" aria-labelledby="liveUrlLbl">
+  </div>
+</div>
+
+<div class="toast glass" id="toast" role="status"></div>
+
+<script>
+(()=>{
+"use strict";
+/* ---------- storage (always guarded) ---------- */
+const LS={get(k,d){try{const v=localStorage.getItem("lr:"+k);return v==null?d:JSON.parse(v)}catch(e){return d}},set(k,v){try{localStorage.setItem("lr:"+k,JSON.stringify(v))}catch(e){}}};
+
+/* ---------- sources ---------- */
+const UA_Q="raw_json=1";
+const SUBS_ALL=["3Dprintmything","3Drequests","PrintMyThing","3Dprintingrequests"];
+const SUBS_SEARCH=[
+  ["3Dprinting",'"print for me" OR "someone to print" OR "can someone print" OR "looking for someone to print"'],
+  ["BambuLab",'"print for me" OR "someone to print" OR "can someone print"'],
+  ["3Ddruck",'gesucht OR "drucken lassen" OR "wer kann" OR "suche jemanden"'],
+  ["de",'"3D Druck" OR "3D-Druck" OR 3D-Drucker'],
+  ["germany",'"3D print" OR "3D printer" OR "3D printing"'],
+];
+const SOURCES=[
+  ...SUBS_ALL.map(s=>({id:"r-"+s,label:"r/"+s,kind:"reddit",all:true,url:`https://www.reddit.com/r/${s}/new.json?limit=50&${UA_Q}`})),
+  ...SUBS_SEARCH.map(([s,q])=>({id:"rs-"+s,label:"r/"+s+" (Suche)",kind:"reddit",all:false,dachHint:(s==="de"||s==="3Ddruck"||s==="germany"),
+     url:`https://www.reddit.com/r/${s}/search.json?q=${encodeURIComponent(q)}&restrict_sr=1&sort=new&t=month&limit=25&${UA_Q}`})),
+  {id:"l-printmything",label:"Lemmy !printmything",kind:"lemmy",all:true,url:"https://lemmy.world/api/v3/post/list?community_name=printmything@lemmy.world&sort=New&limit=30"},
+  {id:"l-3dprinting",label:"Lemmy !3DPrinting",kind:"lemmy",all:false,url:"https://lemmy.world/api/v3/post/list?community_name=3DPrinting@lemmy.world&sort=New&limit=40"},
+  {id:"m-3ddruck",label:"Mastodon #3DDruck",kind:"mastodon",all:false,dachHint:true,url:"https://mastodon.social/api/v1/timelines/tag/3ddruck?limit=40"},
+  {id:"m-troet",label:"troet.cafe #3DDruck",kind:"mastodon",all:false,dachHint:true,url:"https://troet.cafe/api/v1/timelines/tag/3ddruck?limit=40"},
+  {id:"m-norden",label:"norden.social #3DDruck",kind:"mastodon",all:false,dachHint:true,url:"https://norden.social/api/v1/timelines/tag/3ddruck?limit=40"},
+  {id:"m-3dprinting",label:"Mastodon #3DPrinting",kind:"mastodon",all:false,url:"https://mastodon.social/api/v1/timelines/tag/3dprinting?limit=40"},
+  {id:"m-request",label:"Mastodon #3DPrintRequest",kind:"mastodon",all:true,url:"https://mastodon.social/api/v1/timelines/tag/3dprintrequest?limit=40"},
+];
+const MANUAL=[
+  ["Reddit r/3Dprintmything (neueste)","https://www.reddit.com/r/3Dprintmything/new/","Reddit"],
+  ["Reddit r/3Drequests (neueste)","https://www.reddit.com/r/3Drequests/new/","Reddit"],
+  ["Kleinanzeigen: Gesuche „3D Druck“","https://www.kleinanzeigen.de/s-anzeige:gesuche/3d-druck/k0","Gesuche"],
+  ["Kleinanzeigen: Gesuche „3D drucken“","https://www.kleinanzeigen.de/s-anzeige:gesuche/3d-drucken/k0","Gesuche"],
+  ["Kleinanzeigen: Gesuche „STL drucken“","https://www.kleinanzeigen.de/s-anzeige:gesuche/stl-drucken/k0","Gesuche"],
+  ["Facebook: Gruppen „3D Druck“ suchen","https://www.facebook.com/search/groups/?q=3D%20Druck","Gruppen"],
+  ["Facebook: Beiträge „3D Druck gesucht“","https://www.facebook.com/search/posts/?q=3D%20Druck%20gesucht","Beiträge"],
+  ["Reddit-Suche „3D Druck gesucht“","https://www.reddit.com/search/?q=%223D%20Druck%22%20gesucht&sort=new","Web"],
+  ["mikrocontroller.net Markt (Suche-Anzeigen)","https://www.mikrocontroller.net/forum/markt","Forum"],
+];
+const DIRECT_REQ=/\b(print for me|someone to print|anyone (?:print|able to print|with a (?:3d )?printer)|can (?:someone|somebody|anyone) print|looking for (?:someone|somebody|a printer|a print service|printing)|need (?:something|this|a part|it) (?:3d )?printed|need someone|wants? (?:it|this) printed|request|commission|wer kann (?:mir )?(?:was|etwas|das|ein\w*)?\s*(?:3d.?)?drucken|drucken lassen|suche (?:jemanden|wen|einen drucker)|3d.?druck(?:er)? gesucht|gesucht|jemand mit (?:einem )?3d.?drucker|könnte mir jemand)\b/i;
+const OFFER=/(\[offer\]|\boffer(?:ing)?\b|\bi (?:can|could|will|'ll) print\b|\bwill print\b|\bprinting for\b|\bbiete\b|\bich drucke\b|\bverkaufe\b|\bfor sale\b|\bselling\b)/i;
+
+/* ---------- normalisation ---------- */
+const strip=h=>{if(!h)return"";const d=document.createElement("div");d.innerHTML=String(h).replace(/<br\s*\/?>|<\/p>/gi,"\n");return(d.textContent||"").replace(/\n{3,}/g,"\n\n").trim()};
+function fromReddit(json,src){
+  const ch=(json&&json.data&&json.data.children)||[];
+  return ch.map(c=>c.data).filter(Boolean).map(p=>({id:"reddit:"+p.id,source:src.label,kind:"reddit",title:p.title||"",text:(p.selftext||"").slice(0,4000),url:"https://www.reddit.com"+p.permalink,
+    created:(p.created_utc||0)*1000,author:p.author||"",flair:p.link_flair_text||"",all:src.all,dachHint:!!src.dachHint}));
+}
+function fromLemmy(json,src){
+  return ((json&&json.posts)||[]).map(v=>{const p=v.post||{};return{id:"lemmy:"+(p.ap_id||p.id),source:src.label,kind:"lemmy",title:p.name||"",text:(p.body||"").slice(0,4000),url:p.ap_id||("https://lemmy.world/post/"+p.id),
+    created:Date.parse(p.published)||0,author:(v.creator&&v.creator.name)||"",flair:"",all:src.all,dachHint:!!src.dachHint}});
+}
+function fromMastodon(json,src){
+  return (Array.isArray(json)?json:[]).map(s=>{const t=strip(s.content);return{id:"masto:"+(s.uri||s.id),source:src.label,kind:"mastodon",title:t.split("\n")[0].slice(0,140),text:t.slice(0,4000),url:s.url||s.uri,
+    created:Date.parse(s.created_at)||0,author:(s.account&&s.account.acct)||"",flair:"",all:src.all,dachHint:!!src.dachHint,lang:s.language||""}});
+}
+
+/* ---------- heuristics (all estimated) ---------- */
+const COUNTRY=[
+ [/^(de|ger|germany|deutschland|dtl)$/i,"DE","DACH"],[/^(at|aut|austria|österreich|oesterreich)$/i,"AT","DACH"],[/^(ch|che|switzerland|schweiz|suisse)$/i,"CH","DACH"],
+ [/^(uk|gb|united kingdom|england|scotland|wales|great britain)$/i,"UK","UK"],[/^(us|usa|u\.s\.|united states|america)$/i,"USA","US"],
+ [/^(ca|can|canada)$/i,"Kanada","Andere"],[/^(au|aus|australia)$/i,"Australien","Andere"],[/^(nz|new zealand)$/i,"Neuseeland","Andere"],
+ [/^(eu|europe|europa)$/i,"EU","EU"],[/^(fr|france|frankreich)$/i,"FR","EU"],[/^(nl|netherlands|niederlande|holland)$/i,"NL","EU"],[/^(be|belgium|belgien)$/i,"BE","EU"],
+ [/^(it|italy|italien)$/i,"IT","EU"],[/^(es|spain|spanien)$/i,"ES","EU"],[/^(pl|poland|polen)$/i,"PL","EU"],[/^(ie|ireland|irland)$/i,"IE","EU"],[/^(dk|denmark|dänemark)$/i,"DK","EU"],
+ [/^(se|sweden|schweden)$/i,"SE","EU"],[/^(fi|finland)$/i,"FI","EU"],[/^(cz|czechia)$/i,"CZ","EU"],[/^(pt|portugal)$/i,"PT","EU"],[/^(lu|luxembourg)$/i,"LU","EU"],
+ [/^(no|norway|norwegen)$/i,"NO","Andere"],[/^(worldwide|anywhere|global|international|online|any)$/i,"Weltweit","Weltweit"]];
+const US_ST=new Set("AL AK AZ AR CA CO CT DE FL GA HI ID IL IN IA KS KY LA ME MD MA MI MN MS MO MT NE NV NH NJ NM NY NC ND OH OK OR PA RI SC SD TN TX UT VT VA WA WV WI WY DC".split(" "));
+const STATUS_TAG=/^(request(ed)?|req|paid|unpaid|free|offer|resolved|solved|closed|complete[d]?|fulfilled|stl|help|urgent|wtb|lf|looking|commission|design|gesucht|suche|erledigt)$/i;
+const DACH_CITY=/\b(berlin|hamburg|münchen|muenchen|munich|köln|koeln|cologne|frankfurt|stuttgart|düsseldorf|duesseldorf|dortmund|essen|leipzig|bremen|dresden|hannover|nürnberg|nuernberg|bonn|münster|karlsruhe|mannheim|augsburg|wiesbaden|ruhrgebiet|wien|vienna|graz|linz|salzburg|zürich|zurich|bern|basel|genf|innsbruck|in germany|in deutschland|aus deutschland|in austria|in österreich|in switzerland|in der schweiz)\b/i;
+function parseRegion(l){
+  const tags=[...l.title.matchAll(/[\[\(]([^\]\)]{1,48})[\]\)]/g)].map(m=>m[1].trim());
+  for(const t of tags){
+    const parts=t.split(/\s*[,/|;–-]\s*|\s{2,}/).map(s=>s.trim()).filter(Boolean);
+    if(!parts.length||parts.every(p=>STATUS_TAG.test(p)))continue;
+    for(let i=0;i<parts.length;i++){
+      const p=parts[i];
+      for(const [re,code,grp] of COUNTRY){ if(re.test(p)){
+        if(code==="Kanada"&&i>0&&/^(us|usa)$/i.test(parts[i-1]))continue;
+        const rest=parts.filter((_,j)=>j!==i&&!STATUS_TAG.test(parts[j]));
+        return{label:[code,...rest].join(", "),group:grp,est:false};
+      }}
+      if(US_ST.has(p.toUpperCase())&&p.length===2&&p===p.toUpperCase()&&i===0&&parts.length===1){return{label:"USA, "+p,group:"US",est:true}}
+    }
+  }
+  const body=l.title+" "+l.text;
+  const m=body.match(DACH_CITY); if(m)return{label:"DACH ("+m[1].replace(/^(in|aus) (der )?/i,"")+")",group:"DACH",est:true};
+  if(/\b(ich|nicht|bitte|jemand|drucken|gesucht|kann|wer|danke)\b/i.test(body)&&/[äöüß]|\b(und|ich|der|die|das)\b/i.test(body))return{label:"deutschsprachig",group:"DACH",est:true};
+  if(l.dachHint)return{label:"DACH?",group:"DACH",est:true};
+  return{label:"",group:"Unbekannt",est:true};
+}
+const toMM=(v,u)=>{v=parseFloat(String(v).replace(",","."));u=(u||"").toLowerCase();if(u==="cm")return v*10;if(u==="m"&&v<5)return v*1000;if(/^(in|inch|inches|"|”|zoll)$/.test(u))return v*25.4;return v};
+function parseSize(text){
+  const t=text.replace(/×/g,"x");
+  let max=0,found=false;
+  const re=/(\d+(?:[.,]\d+)?)\s*(mm|cm|m|in|inch|inches|"|zoll)?\s*[x*]\s*(\d+(?:[.,]\d+)?)\s*(mm|cm|m|in|inch|inches|"|zoll)?(?:\s*[x*]\s*(\d+(?:[.,]\d+)?)\s*(mm|cm|m|in|inch|inches|"|zoll)?)?/gi;
+  let m;while((m=re.exec(t))){const u=m[6]||m[4]||m[2]||"mm";const vals=[m[1],m[3],m[5]].filter(Boolean).map(v=>toMM(v,u));const mx=Math.max(...vals);if(mx>2&&mx<5000){max=Math.max(max,mx);found=true}}
+  const re2=/(\d+(?:[.,]\d+)?)\s*(mm|cm|in|inch|inches|zoll|"|”)\s*(?:tall|high|long|wide|across|diameter|lang|hoch|breit|groß|gross|durchmesser)?/gi;
+  if(!found){while((m=re2.exec(t))){const mm=toMM(m[1],m[2]);if(mm>2&&mm<5000){max=Math.max(max,mm);found=true}}}
+  if(found){const cls=max>256?"zu groß":max>150?"groß":max>60?"mittel":"klein";return{cls,mm:Math.round(max),fit:max<=256,est:true,rank:max}}
+  const lower=t.toLowerCase();
+  if(/\b(life.?size|lebensgro|full.?size helmet|helmet|helm|armou?r|rüstung|cosplay suit|chest plate|sword|schwert|mask\b|maske)\b/.test(lower))return{cls:"groß",mm:0,fit:null,est:true,rank:240};
+  if(/\b(mini(ature)?s?|miniatur|keychain|schlüsselanhänger|clip|knob|knopf|button|cap\b|kappe|gear|zahnrad|bracket|halter(ung)?|hook|haken|spacer|abstandshalter|token|dice|würfel|ring)\b/.test(lower))return{cls:"klein",mm:0,fit:true,est:true,rank:40};
+  if(/\b(bust|statue|vase|lamp|lampe|box|gehäuse|case|enclosure|stand|ständer)\b/.test(lower))return{cls:"mittel",mm:0,fit:true,est:true,rank:120};
+  return{cls:"unbekannt",mm:0,fit:null,est:true,rank:999};
+}
+function parseMaterial(text){
+  const t=text.toLowerCase(),out=[];
+  const add=(n,e)=>{if(!out.find(o=>o.n===n))out.push({n,e})};
+  if(/\bpla\+?\b/.test(t))add("PLA",false);
+  if(/\bpetg\b/.test(t))add("PETG",false);
+  if(/\btpu\b|\btpe\b/.test(t))add("TPU",false);
+  if(/\babs\b/.test(t))add("ABS",false);
+  if(/\basa\b/.test(t))add("ASA",false);
+  if(/\b(nylon|pa6|pa12|pa-cf|carbon fib|cf-?filled|\bcf\b)/.test(t))add("Nylon/CF",false);
+  if(/\b(resin|sla|msla|dlp|harz)\b/.test(t))add("Resin (nicht FDM)",false);
+  if(!out.length){
+    if(/\b(flexible|flex|rubber|gummi|gasket|dichtung|seal|weich|soft)\b/.test(t))add("TPU",true);
+    if(/\b(outdoor|uv|sun|sonne|car|auto|kfz|dashboard|armaturen|heat|hitze|engine|motor)\b/.test(t))add("ASA/ABS",true);
+    if(/\b(mini(ature)?s?|miniatur|figur(e|ine)?|statue|bust|warhammer|d&d|dnd)\b/.test(t))add("PLA (Resin ideal)",true);
+    if(/\b(food|lebensmittel|water|wasser|dishwasher|spülmaschine)\b/.test(t))add("PETG",true);
+  }
+  return out;
+}
+function parseKind(text,isOffer){
+  if(isOffer)return"Angebot";
+  const t=text.toLowerCase();
+  if(/\b(no (stl|file|model)|don'?t have (a|the) (file|model|stl)|need (it )?design|design(ed)? (it|for me|from scratch)|model (it|this) for me|cad|measure|keine datei|konstruieren|entwerfen|nachbauen|modellieren)\b/.test(t))return"Design gewünscht";
+  if(/\b(cosplay|helmet|helm|armou?r|prop|requisite|mask|maske|costume|kostüm|sword|lightsaber)\b/.test(t))return"Cosplay";
+  if(/\b\d{2,}\s*(pcs|pieces|stück|stk|copies|units|exemplare)\b|\b\d{2,}\s*x\b(?!\s*\d)|\bbatch\b|\bin bulk\b|\bkleinserie\b|\bserie\b|\bmultiple copies\b/.test(t))return"Kleinserie";
+  if(/\b(mini(ature)?s?|miniatur|figur(e|ine)?|statue|bust|warhammer|d&d|dnd|toy|spielfigur)\b/.test(t))return"Figur/Miniatur";
+  if(/\b(replacement|broken|broke|ersatz|ersatzteil|kaputt|part|teil|clip|knob|bracket|halter|mount|hinge|scharnier|gear|zahnrad|cap|kappe|repair|reparatur|abgebrochen|gasket|dichtung|seal|halterung|adapter)\b/.test(t))return"Ersatzteil";
+  return"Sonstiges";
+}
+function parseStatus(l){
+  const s=(l.title+" "+l.flair).toLowerCase();
+  if(/\b(resolved|solved|completed?|fulfilled|done|erledigt|gefunden|found someone|taken)\b/.test(s))return"RESOLVED";
+  if(/\b(closed|cancel+ed|no longer|abgesagt|geschlossen)\b/.test(s))return"CLOSED";
+  return"SEEKING";
+}
+function parsePay(text){
+  const t=text.toLowerCase();
+  if(/\[paid\]|\bwill pay\b|\bwilling to pay\b|\bpay (you|for)\b|\bbudget\b|\bbezahl|\bzahle\b|€|\beur\b|\$\s?\d|\bpaypal\b|\bvergütung\b|\bgegen bezahlung\b/.test(t))return"bezahlt";
+  if(/\[free\]|\bfor free\b|\bunpaid\b|\bkostenlos\b|\bumsonst\b|\bgratis\b/.test(t))return"gratis erwartet";
+  return"";
+}
+function enrich(l){
+  const text=l.title+"\n"+l.text;
+  const isOffer=OFFER.test(l.title)||(/^\s*\[?offer/i.test(l.title));
+  const relevant=l.all||l.demo||DIRECT_REQ.test(text);
+  return Object.assign(l,{region:parseRegion(l),size:parseSize(text),mats:parseMaterial(text),kind:parseKind(text,isOffer),status:parseStatus(l),pay:parsePay(text),
+    hasFile:/\.(stl|3mf|step|stp|obj)\b|thingiverse|printables|makerworld|cults3d|thangs/i.test(text),relevant});
+}
+
+/* ---------- demo leads (clearly marked) ---------- */
+const now=Date.now(),H=36e5;
+const DEMO=[
+ {title:"[DE, Leipzig] Ersatzteil für Rollladen-Kurbel gesucht – STL vorhanden",text:"Mir ist die Halterung abgebrochen. STL von Printables, ca. 45 x 30 x 12 mm. Gern PETG. Bezahle natürlich.",created:now-0.4*H,source:"r/3Dprintmything"},
+ {title:"[UK, London] Need a cosplay helmet printed (Mandalorian-style), have files",text:"Helmet files ready, roughly 300mm tall. PLA fine. Paid.",created:now-3*H,source:"r/3Drequests"},
+ {title:"[USA, NC] Looking for someone to print 25 cable clips in TPU",text:"Small batch: 25 pcs, each about 20mm. Flexible is a must.",created:now-6*H,source:"r/3Dprintmything"},
+ {title:"Wer kann mir eine Figur für D&D drucken? Keine Datei, nur Skizze",text:"Ich brauche jemanden, der eine Miniatur entwirft und druckt, ca. 32 mm. Raum Wien.",created:now-9*H,source:"Mastodon #3DDruck"},
+ {title:"[CH] Outdoor-Gehäuse für Sensor, 140 x 90 x 60 mm",text:"Soll in der Sonne hängen, also UV-fest. Datei als 3MF da.",created:now-20*H,source:"r/3Ddruck (Suche)"},
+ {title:"[RESOLVED][US] Replacement knob for oven",text:"Found someone, thanks!",created:now-30*H,source:"r/3Dprintmything"},
+].map((d,i)=>enrich(Object.assign({id:"demo:"+i,url:"#",author:"beispiel",flair:"",kind:"demo",demo:true,all:true},d)));
+
+/* ---------- state ---------- */
+const S={
+  leads:new Map(), srcStatus:{}, directBlocked:false,
+  marks:LS.get("marks",{}), firstSeen:LS.get("firstSeen",{}),
+  prevVisit:LS.get("lastVisit",0), sessionStart:Date.now(), freshIds:new Set(),
+  f:Object.assign({size:[],mat:[],kind:[],region:[],source:[],showDone:false,showHidden:false},LS.get("filters",{})),
+  quick:LS.get("quick",{dach:true,fit:false,star:false,unseen:false}),
+  sort:LS.get("sort","new"), interval:LS.get("interval",15), demo:LS.get("demo",true), offers:LS.get("offers",false), q:"",
+  liveUrl:LS.get("liveUrl",""), nextAt:0, loading:false, dbOn:false,
+};
+LS.set("lastVisit",Date.now());
+const $=s=>document.querySelector(s);
+
+function upsert(list){
+  let added=0;
+  for(const raw of list){
+    if(!raw||!raw.id||!raw.title)continue;
+    if(!S.leads.has(raw.id)){
+      const l=enrich(Object.assign({},raw));
+      S.leads.set(raw.id,l);added++;
+      if(!S.firstSeen[raw.id])S.firstSeen[raw.id]=Date.now();
+      if(S.initialDone)S.freshIds.add(raw.id);
+    }
+  }
+  // prune firstSeen to 3000 entries
+  const ks=Object.keys(S.firstSeen);if(ks.length>3000){ks.sort((a,b)=>S.firstSeen[a]-S.firstSeen[b]).slice(0,ks.length-3000).forEach(k=>delete S.firstSeen[k])}
+  LS.set("firstSeen",S.firstSeen);
+  return added;
+}
+
+/* ---------- fetching ---------- */
+async function getJSON(url){
+  const ctl=new AbortController();const t=setTimeout(()=>ctl.abort(),15000);
+  try{const r=await fetch(url,{signal:ctl.signal,cache:"no-store",headers:{Accept:"application/json"}});if(!r.ok)throw new Error("HTTP "+r.status);return await r.json()}finally{clearTimeout(t)}
+}
+async function loadLeadsJson(){
+  try{
+    const j=await getJSON("leads.json?t="+Date.now());
+    const arr=Array.isArray(j)?j:(j.leads||[]);
+    S.srcStatus["file"]={label:"leads.json (Sammel-Dienst)",ok:true,n:arr.length,at:Date.now(),why:j.generated?("erzeugt "+fmtAge(Date.parse(j.generated))):""};
+    return upsert(arr);
+  }catch(e){S.srcStatus["file"]={label:"leads.json (Sammel-Dienst)",ok:false,n:0,at:Date.now(),why:"nicht vorhanden (nur im GitHub-Pages-Modus)"};return 0}
+}
+async function loadDirect(force){
+  if(S.directBlocked&&!force){return 0}
+  let added=0,okCount=0;
+  await Promise.all(SOURCES.map(async src=>{
+    try{
+      const j=await getJSON(src.url);
+      const list=src.kind==="reddit"?fromReddit(j,src):src.kind==="lemmy"?fromLemmy(j,src):fromMastodon(j,src);
+      added+=upsert(list);okCount++;
+      S.srcStatus[src.id]={label:src.label,ok:true,n:list.length,at:Date.now(),why:""};
+    }catch(e){
+      S.srcStatus[src.id]={label:src.label,ok:false,n:0,at:Date.now(),why:src.kind==="reddit"?"Reddit sperrt freie Abrufe (API nur noch mit Freigabe, RSS endet 13.11.2026) – Reddit-Links unter „Manuelle Quellen“":e.name==="AbortError"?"Zeitüberschreitung":(e instanceof TypeError?"Abruf blockiert (CSP/CORS) – läuft über den Sammel-Dienst":String(e.message||e))};
+    }
+  }));
+  S.directBlocked=okCount===0;
+  return added;
+}
+let dbUnsub=null;
+async function connectDb(){
+  try{
+    if(!window.claude||typeof window.claude.use!=="function")return;
+    const db=await window.claude.use("db");
+    if(!db){S.srcStatus["db"]={label:"Radar-Datenbank (claude.ai)",ok:false,n:0,at:Date.now(),why:"nicht verfügbar (nicht angemeldet?)"};render();return}
+    S.dbOn=true;
+    const timer=setTimeout(()=>{S.srcStatus["db"]={label:"Radar-Datenbank (claude.ai)",ok:false,n:0,at:Date.now(),why:"antwortet nicht"};render()},10000);
+    dbUnsub=db.collection("leads").orderBy("created","desc").limit(600).onSnapshot(snap=>{
+      clearTimeout(timer);
+      const arr=snap.docs.map(d=>Object.assign({id:d.id},d.data()||{}));
+      const added=upsert(arr);
+      S.srcStatus["db"]={label:"Radar-Datenbank (claude.ai)",ok:true,n:arr.length,at:Date.now(),why:arr.length?"":"noch leer – wird vom Sammel-Dienst befüllt"};
+      if(added&&S.initialDone)toast(added+" neue Leads");
+      render();
+    },err=>{clearTimeout(timer);S.srcStatus["db"]={label:"Radar-Datenbank (claude.ai)",ok:false,n:0,at:Date.now(),why:(err&&err.code)||"Fehler"};render()});
+  }catch(e){}
+}
+async function refresh(manual){
+  if(S.loading)return;S.loading=true;
+  const b=$("#refreshBtn");b.classList.add("spin");b.disabled=true;setStatus("part","Rufe Quellen ab …");
+  const before=S.leads.size;
+  await Promise.all([loadLeadsJson(),loadDirect(manual)]);
+  const added=S.leads.size-before;
+  S.initialDone=true;S.loading=false;b.classList.remove("spin");b.disabled=false;
+  schedule();render();
+  if(manual)toast(added?added+" neue Leads gefunden":"Keine neuen Leads");
+  else if(added&&S.freshIds.size)toast(added+" neue Leads");
+}
+function schedule(){
+  clearTimeout(S.tm);
+  if(S.interval>0){S.nextAt=Date.now()+S.interval*60000;S.tm=setTimeout(()=>refresh(false),S.interval*60000)}else S.nextAt=0;
+}
+setInterval(()=>{const el=$("#countdown");if(!S.nextAt){el.textContent="aus";return}const s=Math.max(0,Math.round((S.nextAt-Date.now())/1000));el.textContent=Math.floor(s/60)+":"+String(s%60).padStart(2,"0")},1000);
+document.addEventListener("visibilitychange",()=>{if(!document.hidden&&S.nextAt&&Date.now()>S.nextAt)refresh(false)});
+
+/* ---------- filtering ---------- */
+function regionRank(g){return{DACH:0,EU:1,Weltweit:2,UK:3,US:4,Andere:5,Unbekannt:6}[g]??7}
+function baseLeads(){
+  const real=[...S.leads.values()].filter(l=>l.relevant);
+  const useDemo=!real.length&&S.demo;
+  return{arr:useDemo?DEMO:real,demo:useDemo};
+}
+function passes(l,skip){
+  const f=S.f,m=S.marks[l.id];
+  if(!S.offers&&l.kind==="Angebot")return false;
+  if(!f.showDone&&l.status!=="SEEKING")return false;
+  if(!f.showHidden&&m==="hide")return false;
+  if(S.quick.fit&&l.size.fit===false)return false;
+  if(S.quick.star&&m!=="star")return false;
+  if(S.quick.unseen&&(m==="seen"||m==="hide"))return false;
+  if(skip!=="size"&&f.size.length&&!f.size.includes(l.size.cls))return false;
+  if(skip!=="mat"&&f.mat.length&&!l.mats.some(x=>f.mat.includes(x.n))&&!(f.mat.includes("offen")&&!l.mats.length))return false;
+  if(skip!=="kind"&&f.kind.length&&!f.kind.includes(l.kind))return false;
+  if(skip!=="region"&&f.region.length&&!f.region.includes(l.region.group))return false;
+  if(skip!=="source"&&f.source.length&&!f.source.includes(l.source))return false;
+  if(S.q){const q=S.q.toLowerCase();if(!(l.title+" "+l.text+" "+l.region.label+" "+l.source+" "+l.author).toLowerCase().includes(q))return false}
+  return true;
+}
+function sorted(arr){
+  const by={new:(a,b)=>b.created-a.created,old:(a,b)=>a.created-b.created,small:(a,b)=>a.size.rank-b.size.rank||b.created-a.created,big:(a,b)=>(b.size.rank===999?-1:b.size.rank)-(a.size.rank===999?-1:a.size.rank)||b.created-a.created,source:(a,b)=>a.source.localeCompare(b.source)||b.created-a.created}[S.sort];
+  return arr.slice().sort((a,b)=>S.quick.dach?(regionRank(a.region.group)===0?0:1)-(regionRank(b.region.group)===0?0:1)||by(a,b):by(a,b));
+}
+
+/* ---------- rendering ---------- */
+const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+function fmtAge(t){if(!t)return"–";const m=Math.round((Date.now()-t)/60000);if(m<1)return"gerade eben";if(m<60)return"vor "+m+" Min";const h=Math.round(m/60);if(h<48)return"vor "+h+" Std";const d=Math.round(h/24);return"vor "+d+" Tagen"}
+function fmtDate(t){try{return new Date(t).toLocaleString("de-DE",{day:"2-digit",month:"2-digit",year:"numeric",hour:"2-digit",minute:"2-digit"})}catch(e){return""}}
+const ICON={eye:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg>',
+ star:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="m12 3 2.8 5.7 6.2.9-4.5 4.4 1 6.2L12 17.3 6.5 20.2l1-6.2L3 9.6l6.2-.9z"/></svg>',
+ hide:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 3l18 18M10.6 5.1A10 10 0 0 1 12 5c6.5 0 10 7 10 7a17 17 0 0 1-3.2 4.2M6.6 6.6A17 17 0 0 0 2 12s3.5 7 10 7a10 10 0 0 0 5.4-1.6"/></svg>',
+ ext:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14 4h6v6M20 4l-9 9M19 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h5"/></svg>'};
+function isNew(l){return !l.demo&&(S.freshIds.has(l.id)||((l.created>S.prevVisit)&&S.prevVisit>0&&S.marks[l.id]!=="seen"))}
+function card(l){
+  const m=S.marks[l.id]||"";
+  const sz=l.size;
+  const sizeChip=sz.cls==="unbekannt"?'<span class="e"><i>≈</i>Größe unklar</span>':`<span class="e ${sz.fit===false?"nofit":sz.fit?"fit":""}"><i>≈</i>${esc(sz.cls)}${sz.mm?" · "+sz.mm+" mm":""}${sz.fit===false?" · passt nicht in P1S":sz.fit?" · passt in P1S":""}</span>`;
+  const mats=l.mats.length?l.mats.map(x=>`<span class="e mat"><i>${x.e?"≈":"≈"}</i>${esc(x.n)}${x.e?" (abgeleitet)":""}</span>`).join(""):'<span class="e"><i>≈</i>Material offen</span>';
+  const reg=l.region.label?`<span class="region ${l.region.group==="DACH"?"dach":""}">${esc(l.region.label)}${l.region.est?" ≈":""}</span>`:"";
+  const status=l.status!=="SEEKING"?`<span class="e nofit">${l.status}</span>`:"";
+  return `<article class="lead glass ${isNew(l)?"is-new":""} ${m==="seen"?"is-seen":""} ${m==="star"?"is-star":""}" data-id="${esc(l.id)}">
+    <div class="lead-head">${isNew(l)?'<span class="tag-new">NEU</span>':""}${l.demo?'<span class="tag-demo">BEISPIEL</span>':""}<span class="src">${esc(l.source)}</span>${reg}<span class="age" title="${esc(fmtDate(l.created))}">${fmtAge(l.created)}</span>${status}</div>
+    <h3><a href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.title)}</a></h3>
+    ${l.text&&l.text!==l.title?`<p class="excerpt">${esc(l.text.slice(0,1400))}</p>`:""}
+    <div class="more"><div><p class="est-note">${esc(fmtDate(l.created))}${l.author?" · "+esc(l.author):""}${l.flair?" · Flair: "+esc(l.flair):""}</p></div></div>
+    <div class="est"><span class="e"><i>≈</i>${esc(l.kind)}</span>${sizeChip}${mats}${l.pay?`<span class="e pay"><i>≈</i>${esc(l.pay)}</span>`:""}${l.hasFile?'<span class="e"><i>≈</i>Datei vorhanden</span>':""}</div>
+    <div class="lead-actions">
+      <button class="act" type="button" data-act="seen" aria-pressed="${m==="seen"}">${ICON.eye}<span class="lbl-txt">Gesehen</span></button>
+      <button class="act star" type="button" data-act="star" aria-pressed="${m==="star"}">${ICON.star}<span class="lbl-txt">Interessant</span></button>
+      <button class="act" type="button" data-act="hide" aria-pressed="${m==="hide"}">${ICON.hide}<span class="lbl-txt">${m==="hide"?"Einblenden":"Ausblenden"}</span></button>
+      <button class="act" type="button" data-act="more" aria-expanded="false">Mehr</button>
+      ${l.demo?"":`<a class="act open-link" href="${esc(l.url)}" target="_blank" rel="noopener">${ICON.ext}Original</a>`}
+    </div></article>`;
+}
+function setStatus(kind,txt){$("#statusDot").className="dot "+kind;$("#statusTxt").textContent=txt}
+let lastNewCount=-1;
+function render(){
+  const {arr,demo}=baseLeads();
+  const vis=sorted(arr.filter(l=>passes(l)));
+  const open=new Set([...document.querySelectorAll(".lead.open")].map(e=>e.dataset.id));
+  const list=$("#list");
+  list.innerHTML=vis.length?vis.map(card).join(""):`<div class="empty glass"><h2>Keine Leads für diese Auswahl</h2><p>${arr.length?"Lockere die Filter oder schalte „Erledigte zeigen“ ein.":"Sobald der Sammel-Dienst läuft, erscheinen hier neue Anfragen. Bis dahin helfen die manuellen Quellen."}</p></div>`;
+  open.forEach(id=>{const el=list.querySelector(`.lead[data-id="${CSS.escape(id)}"]`);if(el){el.classList.add("open");el.style.animation="none"}});
+  $("#visibleCount").textContent=vis.length;
+  const newCount=demo?0:arr.filter(l=>isNew(l)&&l.status==="SEEKING"&&S.marks[l.id]!=="hide").length;
+  const pill=$("#newPill");pill.textContent=newCount+" neu";pill.classList.toggle("zero",!newCount);
+  if(lastNewCount>=0&&newCount>lastNewCount){pill.classList.remove("bump");void pill.offsetWidth;pill.classList.add("bump")}
+  lastNewCount=newCount;
+  // status
+  const st=Object.values(S.srcStatus),ok=st.filter(s=>s.ok).length;
+  if(st.length)setStatus(ok===st.length?"ok":ok?"part":"err",ok?`${ok}/${st.length} Quellen live`:"Keine Quelle erreichbar");
+  // banners
+  const bn=[];
+  if(demo)bn.push(`<div class="banner glass info"><p><strong>Noch keine echten Leads geladen.</strong> Die Karten unten sind Beispiele, damit du Filter und Sortierung ausprobieren kannst. ${S.directBlocked?"In claude.ai blockiert der Browser direkte Abrufe von Reddit, Lemmy und Mastodon. Echte Leads kommen über den Sammel-Dienst (siehe Quellen).":""}</p><button class="btn" type="button" data-open="sourcesPanel">Quellen</button></div>`);
+  $("#banners").innerHTML=bn.join("");
+  const fc=["size","mat","kind","region","source"].reduce((n,k)=>n+S.f[k].length,0)+(S.f.showDone?1:0)+(S.f.showHidden?1:0);
+  $("#filterCount").textContent=fc||"";
+  document.querySelectorAll("#quick .chip").forEach(c=>c.setAttribute("aria-pressed",!!S.quick[c.dataset.quick]));
+  if(!$("#filterPanel").hidden)renderFilters();
+  if(!$("#sourcesPanel").hidden)renderSources();
+}
+const FACETS=[["size","Größe (≈)",l=>[l.size.cls],["klein","mittel","groß","zu groß","unbekannt"]],["mat","Filament (≈)",l=>l.mats.length?l.mats.map(x=>x.n):["offen"],null],["kind","Art (≈)",l=>[l.kind],null],["region","Region",l=>[l.region.group],["DACH","EU","UK","US","Weltweit","Andere","Unbekannt"]],["source","Quelle",l=>[l.source],null]];
+function renderFilters(){
+  const {arr}=baseLeads();
+  const html=FACETS.map(([key,label,get,order])=>{
+    const counts={};arr.filter(l=>passes(l,key)).forEach(l=>get(l).forEach(v=>counts[v]=(counts[v]||0)+1));
+    let vals=order?order.filter(v=>counts[v]||S.f[key].includes(v)):Object.keys(counts).concat(S.f[key].filter(v=>!counts[v])).sort((a,b)=>(counts[b]||0)-(counts[a]||0));
+    if(!vals.length)return"";
+    return `<section><p class="lbl">${label}</p><div class="seg">${vals.map(v=>`<button class="chip" type="button" data-facet="${key}" data-val="${esc(v)}" aria-pressed="${S.f[key].includes(v)}">${esc(v)}<span class="n">${counts[v]||0}</span></button>`).join("")}</div></section>`;
+  }).join("")+`<section><p class="lbl">Status &amp; Markierungen</p>
+    <div class="row"><span id="dLbl">Erledigte/geschlossene zeigen</span><button class="toggle" type="button" role="switch" data-flag="showDone" aria-checked="${S.f.showDone}" aria-labelledby="dLbl"></button></div>
+    <div class="row"><span id="hLbl">Ausgeblendete zeigen</span><button class="toggle" type="button" role="switch" data-flag="showHidden" aria-checked="${S.f.showHidden}" aria-labelledby="hLbl"></button></div></section>`;
+  $("#filterBody").innerHTML=html;
+  $("#applyLbl").textContent=`${arr.filter(l=>passes(l)).length} anzeigen`;
+}
+function renderSources(){
+  const rows=[];
+  const all=[["db","Radar-Datenbank (claude.ai)"],["file","leads.json (Sammel-Dienst)"],...SOURCES.map(s=>[s.id,s.label])];
+  for(const [id,label] of all){const s=S.srcStatus[id];if(!s&&(id==="db"))continue;
+    rows.push(`<div class="srcrow"><span class="dot ${s?(s.ok?"ok":"err"):""}"></span><span>${esc(label)}</span><span class="st">${s?(s.ok?s.n+" Beiträge":"aus"):"–"}</span>${s&&s.why?`<span class="why">${esc(s.why)}</span>`:""}</div>`)}
+  $("#srcList").innerHTML=rows.join("");
+  $("#manualList").innerHTML=MANUAL.map(([t,u,k])=>`<a href="${esc(u)}" target="_blank" rel="noopener"><span>${esc(t)}</span><small>${esc(k)} ↗</small></a>`).join("");
+  $("#liveLink").innerHTML=S.liveUrl?`<div class="manual"><a href="${esc(S.liveUrl)}" target="_blank" rel="noopener"><span>Live-Radar öffnen</span><small>GitHub Pages ↗</small></a></div>`:`<p>Trag die Adresse deines Live-Radars unter Einstellungen ein, dann erscheint hier ein Direktlink.</p>`;
+}
+
+/* ---------- panels with animation ---------- */
+let openPanel=null,lastFocus=null;
+function showPanel(id,anchor){
+  if(openPanel&&openPanel.id===id){hidePanel();return}
+  if(openPanel)hidePanel(true);
+  const p=document.getElementById(id),scrim=$("#scrim");
+  lastFocus=document.activeElement;
+  if(id==="filterPanel")renderFilters();if(id==="sourcesPanel")renderSources();
+  p.hidden=false;scrim.hidden=false;
+  if(p.classList.contains("pop")&&anchor&&innerWidth>640){const r=anchor.getBoundingClientRect();p.style.top=(r.bottom+10)+"px";p.style.right=Math.max(16,innerWidth-r.right)+"px";p.style.left="auto"}
+  requestAnimationFrame(()=>requestAnimationFrame(()=>{p.dataset.state="open";scrim.dataset.state="open"}));
+  openPanel=p;setTimeout(()=>{const f=p.querySelector("[data-close]");f&&f.focus({preventScroll:true})},60);
+}
+function hidePanel(instant){
+  const p=openPanel;if(!p)return;openPanel=null;
+  const scrim=$("#scrim");p.dataset.state="closed";scrim.dataset.state="closed";
+  const done=()=>{if(p.dataset.state==="closed")p.hidden=true;if(!openPanel)scrim.hidden=true};
+  if(instant)done();else setTimeout(done,280);
+  if(lastFocus&&!instant)try{lastFocus.focus({preventScroll:true})}catch(e){}
+}
+$("#scrim").addEventListener("click",()=>hidePanel());
+document.addEventListener("keydown",e=>{if(e.key==="Escape")hidePanel()});
+document.addEventListener("click",e=>{
+  const c=e.target.closest("[data-close]");if(c){hidePanel();return}
+  const o=e.target.closest("[data-open]");if(o){showPanel(o.dataset.open,o);return}
+});
+$("#filterBtn").addEventListener("click",e=>showPanel("filterPanel",e.currentTarget));
+$("#sourcesBtn").addEventListener("click",e=>showPanel("sourcesPanel",e.currentTarget));
+$("#settingsBtn").addEventListener("click",e=>showPanel("settingsPanel",e.currentTarget));
+
+/* ---------- interactions ---------- */
+$("#filterBody").addEventListener("click",e=>{
+  const ch=e.target.closest("[data-facet]");
+  if(ch){const k=ch.dataset.facet,v=ch.dataset.val,a=S.f[k];const i=a.indexOf(v);i>=0?a.splice(i,1):a.push(v);LS.set("filters",S.f);render();return}
+  const t=e.target.closest("[data-flag]");if(t){S.f[t.dataset.flag]=!S.f[t.dataset.flag];LS.set("filters",S.f);render()}
+});
+$("#resetFilters").addEventListener("click",()=>{S.f={size:[],mat:[],kind:[],region:[],source:[],showDone:false,showHidden:false};LS.set("filters",S.f);render()});
+$("#quick").addEventListener("click",e=>{const c=e.target.closest("[data-quick]");if(!c)return;S.quick[c.dataset.quick]=!S.quick[c.dataset.quick];LS.set("quick",S.quick);render()});
+let qt;$("#q").addEventListener("input",e=>{clearTimeout(qt);qt=setTimeout(()=>{S.q=e.target.value.trim();render()},120)});
+$("#sort").value=S.sort;$("#sort").addEventListener("change",e=>{S.sort=e.target.value;LS.set("sort",S.sort);render()});
+$("#refreshBtn").addEventListener("click",()=>refresh(true));
+$("#interval").value=String(S.interval);$("#interval").addEventListener("change",e=>{S.interval=+e.target.value;LS.set("interval",S.interval);schedule();toast(S.interval?"Aktualisiert alle "+S.interval+" Min":"Automatik aus")});
+const bindToggle=(id,key)=>{const t=$(id);t.setAttribute("aria-checked",S[key]);t.addEventListener("click",()=>{S[key]=!S[key];LS.set(key,S[key]);t.setAttribute("aria-checked",S[key]);render()})};
+bindToggle("#demoToggle","demo");bindToggle("#offerToggle","offers");
+$("#liveUrl").value=S.liveUrl;$("#liveUrl").addEventListener("change",e=>{const v=e.target.value.trim();S.liveUrl=/^https:\/\//.test(v)?v:"";LS.set("liveUrl",S.liveUrl)});
+$("#markAllSeen").addEventListener("click",()=>{const {arr}=baseLeads();arr.forEach(l=>{if(!S.marks[l.id])S.marks[l.id]="seen"});S.freshIds.clear();LS.set("marks",S.marks);render();toast("Alles als gesehen markiert")});
+$("#unhideAll").addEventListener("click",()=>{for(const k in S.marks)if(S.marks[k]==="hide")delete S.marks[k];LS.set("marks",S.marks);render();toast("Ausgeblendete sind wieder da")});
+$("#list").addEventListener("click",e=>{
+  const b=e.target.closest("[data-act]");const art=e.target.closest(".lead");if(!art)return;const id=art.dataset.id;
+  if(!b){if(e.target.closest("a"))markSeenSoft(id);return}
+  const a=b.dataset.act;
+  if(a==="more"){art.classList.toggle("open");b.setAttribute("aria-expanded",art.classList.contains("open"));b.textContent=art.classList.contains("open")?"Weniger":"Mehr";return}
+  const cur=S.marks[id];
+  if(cur===a)delete S.marks[id];else S.marks[id]=a;
+  S.freshIds.delete(id);LS.set("marks",S.marks);
+  if(a==="hide"&&S.marks[id]==="hide"&&!S.f.showHidden){art.classList.add("leaving");setTimeout(render,330);toast("Ausgeblendet")}else render();
+});
+function markSeenSoft(id){if(!S.marks[id]){S.marks[id]="seen";S.freshIds.delete(id);LS.set("marks",S.marks);setTimeout(render,400)}}
+let tt;function toast(m){const t=$("#toast");t.textContent=m;t.classList.add("show");clearTimeout(tt);tt=setTimeout(()=>t.classList.remove("show"),2600)}
+
+/* ---------- boot ---------- */
+render();
+refresh(false);
+connectDb();
+})();
+</script>
+</body></html>
