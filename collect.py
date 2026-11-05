@@ -108,7 +108,7 @@ def parse_reddit_rss(raw, label, all_posts, dach):
             ts = 0
         cat = e.find("a:category", ns)
         out.append({"id": "reddit:" + eid, "source": label, "kind": "reddit", "title": e.findtext("a:title", "", ns),
-                    "text": strip_html(e.findtext("a:content", "", ns))[:4000].replace("submitted by", "").strip(),
+                    "text": re.sub(r"\s*(submitted by)?\s*/u/\S+\s*\[link\]\s*\[comments\]\s*$", "", strip_html(e.findtext("a:content", "", ns))).strip()[:4000],
                     "url": link.get("href") if link is not None else "", "created": ts,
                     "author": (e.findtext("a:author/a:name", "", ns) or "").replace("/u/", ""), "flair": "",
                     "all": all_posts, "dachHint": dach})
