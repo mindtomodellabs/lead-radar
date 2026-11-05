@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-05T22:35:41.198815+00:00",
+"generated": "2026-11-05T23:32:45.771393+00:00",
 "status": {
 "r/3Dprintmything": {
 "ok": true,
@@ -76,6 +76,19 @@
 }
 },
 "leads": [
+{
+"id": "reddit:1xoxfp7",
+"source": "r/3Dprintmything",
+"kind": "reddit",
+"title": "[US-PA] Nikon F3 Exposure Memory Lock - 40FB-744-1",
+"text": "Looking for quote on a part for my camera. Would love Black Resin (SLA) or Black Nylon if possible to preserve original look. Anything tough and color-matching that would make sense.\n https://www.printables.com/model/336369-nikon-f3-exposure-memory-lock-button/comments\n Saw this Printables schema for it, now sure if that helps. \n Thanks!",
+"url": "https://www.reddit.com/r/3Dprintmything/comments/1xoxfp7/uspa_nikon_f3_exposure_memory_lock_40fb7441/",
+"created": 1793920701000,
+"author": "LakeHarkWatchCo",
+"flair": "",
+"all": true,
+"dachHint": false
+},
 {
 "id": "reddit:1xow42u",
 "source": "r/3Dprintmything",
