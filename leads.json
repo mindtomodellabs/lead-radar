@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-05T21:32:08.287078+00:00",
+"generated": "2026-11-05T22:35:41.198815+00:00",
 "status": {
 "r/3Dprintmything": {
 "ok": true,
@@ -12,9 +12,9 @@
 "n": 0
 },
 "r/PrintMyThing": {
-"ok": false,
-"via": "failed",
-"n": 0
+"ok": true,
+"via": "rss",
+"n": 1
 },
 "r/3Dprintingrequests": {
 "ok": false,
@@ -42,8 +42,8 @@
 "n": 0
 },
 "r/germany (Suche)": {
-"ok": true,
-"via": "rss",
+"ok": false,
+"via": "failed",
 "n": 0
 },
 "Lemmy !printmything": {
@@ -76,6 +76,32 @@
 }
 },
 "leads": [
+{
+"id": "reddit:1xow42u",
+"source": "r/3Dprintmything",
+"kind": "reddit",
+"title": "[CO, USA] Car part print",
+"text": "Need the following 2 pieces printed for my vehicle. I’m hoping to get it printed in a material that can be ok outside in hot/cold environments. https://cults3d.com/en/3d-model/various/toyota-fj-cruiser-bumper-wing-delete/makes",
+"url": "https://www.reddit.com/r/3Dprintmything/comments/1xow42u/co_usa_car_part_print/",
+"created": 1793917185000,
+"author": "Candid-Barnacle-6048",
+"flair": "",
+"all": true,
+"dachHint": false
+},
+{
+"id": "reddit:1xovwjz",
+"source": "r/3Dprintmything",
+"kind": "reddit",
+"title": "[UK - London]",
+"text": "Zack Fair: https://makerworld.com/en/models/2606732-final-fantasy-vii-zack-multipart-ff7?from=search#profileId-2876865\n Cloud Strife: https://makerworld.com/en/models/2768838-final-fantasy-vii-cloud-dress-multipart-ff7?from=search#profileId-3075281\n Hello,\n I am looking to complete my Final Fantasy 7 Polygon collection but I am missing the 2 chases. \n Is anyone able to print these out for me? I am happy with white, but if you can print them in colour, please also send me a quote for them.\n Thank you.",
+"url": "https://www.reddit.com/r/3Dprintmything/comments/1xovwjz/uk_london/",
+"created": 1793916667000,
+"author": "lexxielexlex",
+"flair": "",
+"all": true,
+"dachHint": false
+},
 {
 "id": "reddit:1xokl63",
 "source": "r/3Dprintmything",
