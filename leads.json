@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-05T19:42:08.713184+00:00",
+"generated": "2026-11-05T20:35:45.821410+00:00",
 "status": {
 "r/3Dprintmything": {
 "ok": true,
@@ -7,9 +7,9 @@
 "n": 50
 },
 "r/3Drequests": {
-"ok": false,
-"via": "failed",
-"n": 0
+"ok": true,
+"via": "rss",
+"n": 50
 },
 "r/PrintMyThing": {
 "ok": false,
@@ -90,6 +90,58 @@
 "dachHint": false
 },
 {
+"id": "reddit:1xoiqyn",
+"source": "r/3Drequests",
+"kind": "reddit",
+"title": "[Hiring] ZBrush Digital Sculptor for 100mm High-Relief (Alto-Rilievo) Medallion – No AI. Budget: TBD",
+"text": "I am looking to hire an experienced, professional 3D digital sculptor to design a commemorative medallion optimized for 3D printing.\n CRITICAL NOTE – NO AI CLAPTRAP: Please do not reply if you use AI image-to-3D generators, automated depth-mapping filters, or generic face basemashes. I have already wasted money on freelance platforms with \"artists\" trying to pass off generic, smooth AI faces. I am seeking a true digital sculptor who can sculpt authentic, recognizable human likenesses. To filter out automated spam, please include the phrase \"REAL SCULPT\" at the very beginning of your message, or it will be ignored.\n Project Specifications:\n  The Asset: A solid, circular medallion base disk (100mm diameter). The Artwork: A tightly clustered, overlapping composition of 10 distinct portrait busts nested on the front face. The Sculpting Style: Authentic high-relief (alto-rilievo / haut-relief). I want substantial 3D dimensionality, deep undercut shadows, and prominent facial contours projecting directly out from the base plane, not a slightly elevated, flat bas-relief margin. Subject Matter: 10 specific members of a historic rock band. I will supply the reference photographs for each individual. Deliverable: A perfectly clean, watertight, manifold .STL or .3MF file ready to load straight into a 3D printer slicer.  How to Apply:\n To be considered, you must provide a link to your portfolio showing clear evidence of your process. I want to see grey ZBrush clay renders, wireframes (topology), or multi-angle turnarounds of human faces you have personally sculpted. If your portfolio only features flat 2D images or un-fleshed-out meshes, I will pass.\n Please send over your portfolio link along with your estimated flat-rate project pricing and turnaround time for a custom 10-likeness high-relief project. Looking forward to working with a real professional!",
+"url": "https://www.reddit.com/r/3Drequests/comments/1xoiqyn/hiring_zbrush_digital_sculptor_for_100mm/",
+"created": 1793885598000,
+"author": "denclimber",
+"flair": "",
+"all": true,
+"dachHint": false
+},
+{
+"id": "reddit:1xoha6e",
+"source": "r/3Drequests",
+"kind": "reddit",
+"title": "Looking for a stl to start the project, any ideas? :)",
+"text": "I understand that what I’m looking for requires too much time to do for free, although looking to keep the cost down as much as I can (aren’t we all!). Been scammed online for a 3d print design so apologies in advance for my caution.",
+"url": "https://www.reddit.com/r/3Drequests/comments/1xoha6e/looking_for_a_stl_to_start_the_project_any_ideas/",
+"created": 1793881313000,
+"author": "TSRacing_RC",
+"flair": "",
+"all": true,
+"dachHint": false
+},
+{
+"id": "reddit:1xoh6o6",
+"source": "r/3Drequests",
+"kind": "reddit",
+"title": "UK [London] Willing to pay someone to make this 40k necron monolith pieces",
+"text": "i am hoping someone would be able to make me these items 🤏 Small Necron Obelisks・Free STL File for 3D printing・Cults and modify them so end up like the second picture this here is a better link to see how they are hollow inside and the carvings on them are hollowed out to let the green light shine LED Necron Obelisk by CottonsCreations | Download free STL model | Printables.com if this is possible i am willing to pay for the service and the postage i am based in the UK but i am willing to pay for them as they are a gift for my brother who is into 40k i am happy to buy £20-30 if this can be achieved and i would need them to be able to fit a 0.42in led light these lights to be exact Mini LED Lights for Action Figures & Model Kits – 10PCS Colorful High Brightness Display Lighting for Gundam, Anime Figurines, Art & Craft Kits : Amazon.co.uk: Toys & Games i would 4 of theses\n Update: I have two people working on these right now",
+"url": "https://www.reddit.com/r/3Drequests/comments/1xoh6o6/uk_london_willing_to_pay_someone_to_make_this_40k/",
+"created": 1793881009000,
+"author": "Tight-Department9012",
+"flair": "",
+"all": true,
+"dachHint": false
+},
+{
+"id": "reddit:1xofkcn",
+"source": "r/3Drequests",
+"kind": "reddit",
+"title": "First time request.. I need an STL file design of a dust resistant box housing shell for my vivor jld 10-5 2x72 belt grinder (details in body)",
+"text": "Sorry if I'm all over the place.. I've never done this before.. I have no idea what this would cost so I'd say my budget is like 20 to 40 bucks\n so the vfd itself is 5.9\" × 3.2\" × 4.84\".. the housing shell I would like to be roughly 13.5\" long x 7.4\" wide x 8.5\" tall externally and 11\" long x 5.8\" wide x 7.2\" tall internally (the same size as a polymer 50 caliber ammo can).. look to sealed Electronics boxes or Electronics shells for inspiration, I basically want something like that but with the screen recessed and accessible, no ventilation holes will be necessary as I will drill these myself once I decide where I would like them located.. I would like the screen and knobs to be accessible from the top (screen facing up mounted on its back on a table top) but be a quarter inch or half inch recessed into the box with a lip that that keeps that seals the gap between the top of the box and the vfd front face (i will seal this myself).. where the two shells meet on the side below the screen I need there to be 2 holes for (2) 14/4 gauge wires about 3/4\" apart.. I would like the shell to come together using using a small bolt and nut on each corner.. also if you can design a method of mounting the Box on its back",
+"url": "https://www.reddit.com/r/3Drequests/comments/1xofkcn/first_time_request_i_need_an_stl_file_design_of_a/",
+"created": 1793875519000,
+"author": "Stugots_Steel",
+"flair": "",
+"all": true,
+"dachHint": false
+},
+{
 "id": "reddit:1xo301b",
 "source": "r/3Dprintmything",
 "kind": "reddit",
@@ -98,6 +150,32 @@
 "url": "https://www.reddit.com/r/3Dprintmything/comments/1xo301b/usanj_nnj_i_need_a_few_parts_for_a_printer/",
 "created": 1793833946000,
 "author": "covah901",
+"flair": "",
+"all": true,
+"dachHint": false
+},
+{
+"id": "reddit:1xo2ya2",
+"source": "r/3Drequests",
+"kind": "reddit",
+"title": "Looking for a 3D modeler for ongoing paid work — designs and STL edits",
+"text": "Hi! I’m looking for someone to work with long term to help create 3D-printable files.\n Most projects would be designs based on pictures, ideas, and measurements I provide. Sometimes I’ll also have existing STL files that just need a few tweaks or adjustments.\n This would be paid work, and I’d love to find someone who’s interested in an ongoing collaboration. Since the pieces are for products I sell, I’d need permission to sell the physical prints made from the files.\n If you’re interested, please message me with examples of your work and your rates. Thank you!\n Just to give you a better idea of what I need, I generate things like the ladder and swing through MakerWorld. Those would mostly need to be repositioned so they sit flat on the print bed instead of floating.\n The flower ledges and hides would also need to sit flat and have magnet recesses added. Backgrounds would need to be modeled from my reference pictures because I don’t know how to make those myself.\n I’m still new to this, so I’m not sure what people normally charge. I was thinking around $5–$25 per fix, depending on the work involved. If something requires more work, especially creating a background from scratch, I’m open to a higher quote. Please feel free to let me know your usual rates and what you think would be fair!\n These are just a few examples. I’m looking to have several more designs made, depending on pricing, and ideally find someone I can work with regularly.\n Here are some examples of things I would need fixed.",
+"url": "https://www.reddit.com/r/3Drequests/comments/1xo2ya2/looking_for_a_3d_modeler_for_ongoing_paid_work/",
+"created": 1793833824000,
+"author": "Chunkycatmeow",
+"flair": "",
+"all": true,
+"dachHint": false
+},
+{
+"id": "reddit:1xo0t92",
+"source": "r/3Drequests",
+"kind": "reddit",
+"title": "3D aircraft part job",
+"text": "Looking at possibly 5-10$ per part plus paying for shipping if necessary",
+"url": "https://www.reddit.com/r/3Drequests/comments/1xo0t92/3d_aircraft_part_job/",
+"created": 1793828493000,
+"author": "Dan_Dan0333",
 "flair": "",
 "all": true,
 "dachHint": false
@@ -129,6 +207,19 @@
 "dachHint": false
 },
 {
+"id": "reddit:1xni43y",
+"source": "r/3Drequests",
+"kind": "reddit",
+"title": "[Request] Reinforced two-piece 19-inch rack mount for EQ13 + Omada switch - $20",
+"text": "",
+"url": "https://www.reddit.com/r/3Drequests/comments/1xni43y/request_reinforced_twopiece_19inch_rack_mount_for/",
+"created": 1793777501000,
+"author": "Alfa147x",
+"flair": "",
+"all": true,
+"dachHint": false
+},
+{
 "id": "reddit:1xndm32",
 "source": "r/3Dprintmything",
 "kind": "reddit",
@@ -137,6 +228,32 @@
 "url": "https://www.reddit.com/r/3Dprintmything/comments/1xndm32/seattle_4_parts_for_larger_project_abs_asa/",
 "created": 1793762488000,
 "author": "ComradeDre",
+"flair": "",
+"all": true,
+"dachHint": false
+},
+{
+"id": "reddit:1xndkg0",
+"source": "r/3Drequests",
+"kind": "reddit",
+"title": "[Open budget] Looking to have this bomber made (mild spoilers for Ace Combat 8)",
+"text": "Mainly want a model that's proportionally accurate to the originals. Have a drive folder of reference material on-hand and ready.\n Looking to not exceed $100 but willing to negotiate. Will pay upon completion and reception of work",
+"url": "https://www.reddit.com/r/3Drequests/comments/1xndkg0/open_budget_looking_to_have_this_bomber_made_mild/",
+"created": 1793762352000,
+"author": "GanacheCapital1456",
+"flair": "",
+"all": true,
+"dachHint": false
+},
+{
+"id": "reddit:1xnca3t",
+"source": "r/3Drequests",
+"kind": "reddit",
+"title": "Looking for a 3D modeler to help fix existing cosplay file / make new file",
+"text": "Hi everyone! I recently requested someone to make a 3D model for cosplay armor, and the results looked absolutely terrible. As a result, I am desperately looking for someone to help me remake the models. As a result, I am back on this subreddit requesting the same 3D models.\n  You must have experience making cosplay armor and be comfortable creating intricate details. Please provide a portfolio showing that. I will only accept PayPal Goods and Services as the payment method. Any other payment method will be rejected. If you are fast at making models, that would be appreciated since I already wasted so much time on something so disappointing and I have a deadline. Will reach out on dimensions via DM since I will need to do accurate measurements! Needs to be a STL file.  Budget: I am currently a student with a limited budget, but I am hoping $50-$100 will suffice. Open to discussing budget. I will even provide the horrible STL files I received if you want to use them as a skeleton base, but please do not rely solely on them since the shapes aren't even correct. 😭\n Please DM me if interested in helping.",
+"url": "https://www.reddit.com/r/3Drequests/comments/1xnca3t/looking_for_a_3d_modeler_to_help_fix_existing/",
+"created": 1793758528000,
+"author": "mkim_",
 "flair": "",
 "all": true,
 "dachHint": false
@@ -168,6 +285,19 @@
 "dachHint": false
 },
 {
+"id": "reddit:1xn977t",
+"source": "r/3Drequests",
+"kind": "reddit",
+"title": "Create a Igloo Brick with Engraved Text",
+"text": "Hello. I would like an igloo type looking brick about 8 inches by 4 inches. With text engraved into it. Willing to pay $25 bucks if you can get it how I like. Thank you. I have a photo of the text I need put into it. Thank you.",
+"url": "https://www.reddit.com/r/3Drequests/comments/1xn977t/create_a_igloo_brick_with_engraved_text/",
+"created": 1793749906000,
+"author": "No-Replacement1928",
+"flair": "",
+"all": true,
+"dachHint": false
+},
+{
 "id": "reddit:1xn6ntc",
 "source": "r/3Dprintmything",
 "kind": "reddit",
@@ -194,6 +324,19 @@
 "dachHint": false
 },
 {
+"id": "reddit:1xn6gx6",
+"source": "r/3Drequests",
+"kind": "reddit",
+"title": "[PAID] Merging two STL files",
+"text": "Budget: 5 bucks\n I downloaded a 3D model of a figurine to 3D print and it was broken up into several STL files. I wouldn't mind that ordinarily, but one of the objects is a cape that was cut in half. \n If I print as is there will be an obvious seam. One half has a peg and the other half has a hole.\n I tried aligning using point to point, but there's always a misalignment that I can't allow. I'm pretty useless with 3D modeling.\n I'll toss someone five bucks if they can merge these two STL files seamlessly!",
+"url": "https://www.reddit.com/r/3Drequests/comments/1xn6gx6/paid_merging_two_stl_files/",
+"created": 1793743000000,
+"author": "RetroOcelot",
+"flair": "",
+"all": true,
+"dachHint": false
+},
+{
 "id": "reddit:1xmxl38",
 "source": "r/3Dprintmything",
 "kind": "reddit",
@@ -202,6 +345,19 @@
 "url": "https://www.reddit.com/r/3Dprintmything/comments/1xmxl38/uk_looking_for_someone_to_resin_print_small_model/",
 "created": 1793723321000,
 "author": "jan0009683",
+"flair": "",
+"all": true,
+"dachHint": false
+},
+{
+"id": "reddit:1xmgawb",
+"source": "r/3Drequests",
+"kind": "reddit",
+"title": "[Hiring] (Online) a 3d modeler to fix the finish of an STL for 3d printing",
+"text": "Hello!\n I am looking for someone to improve the finish of a 3d model I use for 3d printing. There is a catch - the model is of a giant penis (not mine)!\n I'd like the surface smoothed for a clean shiny 3d printed finish, but I also want it to still be veiny.\n I have no clue how to add photos, which are important so that one can see the finish issues I'd like fixed. I guess shoot me a DM and I'll send them. I PROMISE THIS IS NOT A JOKE. I was permanently banned from Fivrr 10 minutes after signing up.\n I have the file as an STL and would like an STL back. Looking to pay $20-$30.",
+"url": "https://www.reddit.com/r/3Drequests/comments/1xmgawb/hiring_online_a_3d_modeler_to_fix_the_finish_of/",
+"created": 1793670892000,
+"author": "Healthy_Warthog69420",
 "flair": "",
 "all": true,
 "dachHint": false
@@ -259,6 +415,45 @@
 "dachHint": false
 },
 {
+"id": "reddit:1xlza0g",
+"source": "r/3Drequests",
+"kind": "reddit",
+"title": "Plushie Model",
+"text": "UPDATE!!: No longer looking. Thank you.\n Need a model that can be used in Plushify, looking for offers. DM if interested in taking on! Can provide more info if needed.\n Dimensions - ~15\"-~10\"\n Budget - 10-40$\n ￼​",
+"url": "https://www.reddit.com/r/3Drequests/comments/1xlza0g/plushie_model/",
+"created": 1793631177000,
+"author": "Snoo-7195",
+"flair": "",
+"all": true,
+"dachHint": false
+},
+{
+"id": "reddit:1xly7lg",
+"source": "r/3Drequests",
+"kind": "reddit",
+"title": "Design clicker oreo heartshape",
+"text": "Can anybody help me design this clicker share stl with me? Name your price 🙏🏻",
+"url": "https://www.reddit.com/r/3Drequests/comments/1xly7lg/design_clicker_oreo_heartshape/",
+"created": 1793628655000,
+"author": "dhirah23",
+"flair": "",
+"all": true,
+"dachHint": false
+},
+{
+"id": "reddit:1xlvvxh",
+"source": "r/3Drequests",
+"kind": "reddit",
+"title": "[Free] Looking for a 2D floor plan layout for a community aquaculture project in Madagascar",
+"text": "Hi everyone, \n I am reaching out to this wonderful community for some help. I am launching a community-based aquaculture project called \"AQUA SUD INNOVATION\" in Madagascar. Our goal is to create a sustainable hatchery that will support the local community, and we are currently seeking funding and grants to make this project a reality. \n Because we are in the early fundraising stage and based in a developing country, I do not have the financial means to pay for a professional blueprint. This is why I am asking for the solidarity of a volunteer, student, or hobbyist to help us draw a 2D floor plan layout. We need this document to present our strategic concept on LinkedIn and to potential investors in the coming days. \n The facility consists of 2 distinct blocks designed as tunnel structures (Quonset-style): \n - Block 1: Production & Biology Zone (Wet area) Includes an incubation/hatching room, larval rearing tanks, and a live feed production unit (microalgae/zooplankton). \n - Block 2: Technical & Logistics Zone (Dry area) Includes water filtration/treatment systems, a feed and equipment storage room, a mini lab, and staff changing rooms (biosecurity airlock). \n We need assistance in arranging these two blocks logically (either in an L-shape or parallel configuration) and mapping out the room and tank placements. \n I deeply respect your time and expertise. By participating in the construction of this plan, you will genuinely help an entire community move forward. In exchange, we will officially list your name as the Lead Layout Designer and Author of this strategic document, and we will credit and tag your profile in our upcoming LinkedIn launch post. \n Thank you so much from the bottom of my heart to anyone who can lend their skills to our cause. Please PM me if you are interested.\n ADDITIONAL TECHNICAL DETAILS FOR THE DESIGNER: \n - Total capacity goal: 60,000 fry/month (conservative pilot stage). \n - Block 1 (Production): Suggested building size is 15m x 8m. Inside, please include 4 large circular tanks (6m diameter) for the broodstock, 6 smaller rearing tanks (2m x 2m), and a small room for hatching/incubation jars. \n - Block 2 (Technical): Suggested building size is 10m x 8m. Inside, please sketch 2 filtration blocks (3m x 1.5m), a secure feed storage room, and a biosecurity entrance airlock (sas sanitaire) connecting to Block 1.",
+"url": "https://www.reddit.com/r/3Drequests/comments/1xlvvxh/free_looking_for_a_2d_floor_plan_layout_for_a/",
+"created": 1793622603000,
+"author": "Fickle-Training7167",
+"flair": "",
+"all": true,
+"dachHint": false
+},
+{
 "id": "reddit:1xlt5p1",
 "source": "r/3Dprintmything",
 "kind": "reddit",
@@ -298,6 +493,32 @@
 "dachHint": false
 },
 {
+"id": "reddit:1xlll8j",
+"source": "r/3Drequests",
+"kind": "reddit",
+"title": "Edit on a Raspberry Pi 5 board.",
+"text": "Hello and thanks in advance!\n I have a Raspberry Pi 5 and a power board that turns USB-C power into the correct power input for the Raspberry Pi. The power board is designed to be stacked on top of the Raspberry PI 5, but it perfectly usable on it's own externally without having to be mechanically connected to the board inside the same case, as you just run a USB-C cord to the input and another from the output to the input on the Raspberry PI 5.\n What I'm looking for is someone to make a box that just holds the power board in its own enclosure. I have another case I want to use, and I can't jam this power board in that case. The power board itself has four mounting holes in it, and I think they could be used to keep the board stable in it's own box.\n Someone has already made a box that can hold both the Raspberry Pi 5 and the power board mounted together in the same case. It even has the right dimensions and the holes on the sides to access all the ports. I think you could just chop the top off of the design and fabricate a bottom for it. I just need the board in a stable case I can close.\n Here's the design to chop the top of: https://www.printables.com/model/1672821-raspberry-pi-5-case-suits-52pi-pd-power-expansion\n The dimensions of the internal board are here: https://wiki.52pi.com/index.php?title=EP-0225\n Budget is $10-20. It's mostly and edit off another design, but need the standoffs added to keep the board stable.\n EDIT: Had a few reach out and not taking any more offers at this time. You guys respond so fast!",
+"url": "https://www.reddit.com/r/3Drequests/comments/1xlll8j/edit_on_a_raspberry_pi_5_board/",
+"created": 1793586769000,
+"author": "RoadWarriorB",
+"flair": "",
+"all": true,
+"dachHint": false
+},
+{
+"id": "reddit:1xlglhd",
+"source": "r/3Drequests",
+"kind": "reddit",
+"title": "Need minor change (make one part 1cm shorter), $5-$10",
+"text": "Hi,\n Model: https://makerworld.com/en/models/3498660-nvidia-tesla-v100-blower-adapter#profileId-3996560\n I need upper part (where fan goes) to be shorter 1cm. Don't just cut it as fan still needs to fit - note there are 4 outside / inside grooves (on picture 2 I pointed at 1 outside corner and 1 inside corner but they are in all 4 corners) that also must be moved 1cm back when you make it shorter.",
+"url": "https://www.reddit.com/r/3Drequests/comments/1xlglhd/need_minor_change_make_one_part_1cm_shorter_510/",
+"created": 1793572607000,
+"author": "mark_ww",
+"flair": "",
+"all": true,
+"dachHint": false
+},
+{
 "id": "reddit:1xlbqk4",
 "source": "r/3Ddruck (Suche)",
 "kind": "reddit",
@@ -309,6 +530,45 @@
 "flair": "",
 "all": false,
 "dachHint": true
+},
+{
+"id": "reddit:1xla97i",
+"source": "r/3Drequests",
+"kind": "reddit",
+"title": "A new cap for this lamp",
+"text": "I want to print a bigger cap for this lamp to cover the hole in my ceiling. The topside needs to have a diameter of 16 centimeters and the hole on the downside needs to have a diameter of 3 cm and the edge needs to be 2 milimeters deeper than the rest so the click attachments can fit in. The edge also needs to have a 2 millimeter width. Budget: €30,-, but negotiable.",
+"url": "https://www.reddit.com/r/3Drequests/comments/1xla97i/a_new_cap_for_this_lamp/",
+"created": 1793557166000,
+"author": "aqua_shell",
+"flair": "",
+"all": true,
+"dachHint": false
+},
+{
+"id": "reddit:1xkqtyk",
+"source": "r/3Drequests",
+"kind": "reddit",
+"title": "Need a model for a special plant pot with drain",
+"text": "I have a big potted plant in my chameleon enclosure and the water from it is leaking onto the bottom of the enclosure. So I need 8 inch diameter cylindrical plant pot (only need like 4-5 inches tall) but on one side of the plant pot i need like a drain tube near the bottom of the side of the plant pot. Willing to cashapp $5 for it.",
+"url": "https://www.reddit.com/r/3Drequests/comments/1xkqtyk/need_a_model_for_a_special_plant_pot_with_drain/",
+"created": 1793496582000,
+"author": "Wonderful-Bet8651",
+"flair": "",
+"all": true,
+"dachHint": false
+},
+{
+"id": "reddit:1xkhfqd",
+"source": "r/3Drequests",
+"kind": "reddit",
+"title": "Demande de modélisation YCF",
+"text": "Bonjour tout le monde,\n Je travaille sur un projet, j’aurais besoin de faire modéliser une YCF 88 (sans la décoration.)\n C’est pour un jeu, donc avec la licence exploitable .\n J’ai un budget de 100€.\n Merci beaucoup !",
+"url": "https://www.reddit.com/r/3Drequests/comments/1xkhfqd/demande_de_modélisation_ycf/",
+"created": 1793470869000,
+"author": "Gazowa",
+"flair": "",
+"all": true,
+"dachHint": false
 },
 {
 "id": "reddit:1xkerpg",
@@ -334,6 +594,19 @@
 "author": "KaterMurks",
 "flair": "",
 "all": false,
+"dachHint": false
+},
+{
+"id": "reddit:1xk88y4",
+"source": "r/3Drequests",
+"kind": "reddit",
+"title": "(re)rigging request.Budget $10-$25",
+"text": "Me, total noob in Blender, looking for you, someone more experienced with Blender. To rig an ant model. This model is the base for a game on Godot.\n I tryed it myself, but somehow it does not work as expected even with the help of AI.\n Do you wanna help me?\n Many thanks in advance",
+"url": "https://www.reddit.com/r/3Drequests/comments/1xk88y4/rerigging_requestbudget_1025/",
+"created": 1793447606000,
+"author": "Dangerman70",
+"flair": "",
+"all": true,
 "dachHint": false
 },
 {
@@ -389,6 +662,19 @@
 "dachHint": false
 },
 {
+"id": "reddit:1xjvonn",
+"source": "r/3Drequests",
+"kind": "reddit",
+"title": "Stamp Help - 2-5 dollar OBO",
+"text": "Good evening all,\n I got about this far with this design for a makers mark but when I printed a prototype it would not transfer to clay. I think the depth needs to be better or perhaps the design needs to be simpler and I think the design needs to be convex not concave. that provides difficulty for the lady bugs though. This requires more practiced hands than me.\n Thanks in advance",
+"url": "https://www.reddit.com/r/3Drequests/comments/1xjvonn/stamp_help_25_dollar_obo/",
+"created": 1793405321000,
+"author": "ErraticSnooky",
+"flair": "",
+"all": true,
+"dachHint": false
+},
+{
 "id": "reddit:1xjltct",
 "source": "r/3Dprintmything",
 "kind": "reddit",
@@ -397,6 +683,32 @@
 "url": "https://www.reddit.com/r/3Dprintmything/comments/1xjltct/us_md_need_to_print_one_small_part_for_my_vacuum/",
 "created": 1793381544000,
 "author": "Happy_Factor",
+"flair": "",
+"all": true,
+"dachHint": false
+},
+{
+"id": "reddit:1xjj9gv",
+"source": "r/3Drequests",
+"kind": "reddit",
+"title": "[Request] Coffee grinder stand with chaff tray, filter storage, and scale slot — two layouts",
+"text": "",
+"url": "https://www.reddit.com/r/3Drequests/comments/1xjj9gv/request_coffee_grinder_stand_with_chaff_tray/",
+"created": 1793375979000,
+"author": "Alfa147x",
+"flair": "",
+"all": true,
+"dachHint": false
+},
+{
+"id": "reddit:1xjhejb",
+"source": "r/3Drequests",
+"kind": "reddit",
+"title": "Modification of BC-250 case - widen",
+"text": "Budget: $10-30\n Source models: https://www.thingiverse.com/thing:7245584/files\n The pieces I'll need modified are:\n -------------------\n Shell_Front.stl\n Shell_Back_Reference_v2_Larger_PSU_42mm_x_83mm.stl\n Front_Panel_USB_with_16mm_Power.stl\n -------------\n What I need:\n I'm trying to modify this case to take an off-the-shelf AM4 cooler, and it fits, but I need room for the fan.\n  I need to widen the whole case by 1\", on the \"open\" side. This means shell_front and shell_back pieces, plus I'll need to widen the front panel to fit.  This case is designed to use a middle air deflector plate which I *won't* be using, so we don't need to worry about the grooves for that.\n The back shell will be the most complicated. The \"grill\" section in front of the board will need to be expanded to fit the extra inch.\n The hole for the PSU needs to stay the same, so we'll have to fill in in front of it, either solid or expand that hexagonal grill \"around\" the front of it.\n Bonus objectives: \n  120mm_fan_grill.stl - make the outer \"ring\" section taller by 1/4\" while keeping the inner area the same height. Large_Side_Panel.stl - I want to add this logo down in the Lower Left corner of this - maybe 1\" tall.  Just in black and white.\n https://github.com/Forbidden-Darkness/AMD-BC-250-UEFI-v2.2-Firmware-Menu-Script/blob/main/Images/Steam-BC250-AMD_RL-Embossed.jpg\n Please let me know if I can provide more help.\n Edit: Closed - I have several offers.",
+"url": "https://www.reddit.com/r/3Drequests/comments/1xjhejb/modification_of_bc250_case_widen/",
+"created": 1793371745000,
+"author": "robbiethe1st",
 "flair": "",
 "all": true,
 "dachHint": false
@@ -415,6 +727,19 @@
 "dachHint": false
 },
 {
+"id": "reddit:1xjcg1z",
+"source": "r/3Drequests",
+"kind": "reddit",
+"title": "Chiappa rhino 60ds airsoft handle",
+"text": "I tried to model the handle myself but it's quite hard and I have 0 experience in 3d modeling. If anyone could at least confirm it's possible I'd appreciate it. As you can see, i included the inside as well as I would like to use it on an actual airsoft field, not for cosplay. Price I'd say 50-100 $, i don't even know it's ok. Thank you in advance and sorry for format as I am on a phone.",
+"url": "https://www.reddit.com/r/3Drequests/comments/1xjcg1z/chiappa_rhino_60ds_airsoft_handle/",
+"created": 1793358605000,
+"author": "MiggerRambo",
+"flair": "",
+"all": true,
+"dachHint": false
+},
+{
 "id": "reddit:1xj4rk4",
 "source": "r/3Dprintmything",
 "kind": "reddit",
@@ -428,6 +753,19 @@
 "dachHint": false
 },
 {
+"id": "reddit:1xj35kw",
+"source": "r/3Drequests",
+"kind": "reddit",
+"title": "[Paid Request] Experienced creature/character sculptor to refine dog figurine (fur texture/likeness) + pre-print check ​",
+"text": "​ Hi all, ​I have a prepared 3D model of an English Springer Spaniel that I need refined for high-resolution resin 3D printing. ​The base geometry is already modeled, watertight, hollowed (2.5 mm shell with drain holes), and scaled (approx. 150 mm / 170 mm). ​Scope of work (Digital): ​Enhancing organic coat texture, fur flow, and ear feathering to match reference photos. ​Refining eye, eyelid, and muzzle anatomy. ​Performing a pre-print safety check (verifying the thin ear tip meets a 1.5 mm threshold without puncturing the hollowed shell). ​Delivering a clean, manifold, watertight STL ready for slicing\n Complete brief, reference photos, and current STL files are ready in a Google Drive folder and will be shared via DM with shortlisted artists\n Budget is $40-$75 per pose",
+"url": "https://www.reddit.com/r/3Drequests/comments/1xj35kw/paid_request_experienced_creaturecharacter/",
+"created": 1793326033000,
+"author": "jayk1efg1972",
+"flair": "",
+"all": true,
+"dachHint": false
+},
+{
 "id": "reddit:1xj2znf",
 "source": "r/3Dprintmything",
 "kind": "reddit",
@@ -436,6 +774,32 @@
 "url": "https://www.reddit.com/r/3Dprintmything/comments/1xj2znf/uklondon_looking_for_someone_with_a_resin_printer/",
 "created": 1793325574000,
 "author": "Mammoth-Ad4159",
+"flair": "",
+"all": true,
+"dachHint": false
+},
+{
+"id": "reddit:1xiwjnw",
+"source": "r/3Drequests",
+"kind": "reddit",
+"title": "[PAID] Hiring 3D artist to prepare files for physical 3D printing",
+"text": "Hey! Looking to hire someone to prepare files for physical 3D-printed objects. Existing models and references provided. Everything needs to match the references exactly and meet manufacturer specs.\n Files needed:\n  Print-ready STL OBJ + MTL Editable model source files UV layouts High-res PNG texture maps Matching editable vector artwork in Illustrator (.AI) for the skins/decals  Please DO NOT APPLY IF YOU CANNOT PROVIDE ALL OF THE ABOVE FILES AND SPECS.\n If the initial model goes well, there’s a larger series of models to work on.\n Please DM relevant work and availability. Experience preparing files for physical production is a must. \n Thank you.",
+"url": "https://www.reddit.com/r/3Drequests/comments/1xiwjnw/paid_hiring_3d_artist_to_prepare_files_for/",
+"created": 1793308711000,
+"author": "No-Background1252",
+"flair": "",
+"all": true,
+"dachHint": false
+},
+{
+"id": "reddit:1xiuvaf",
+"source": "r/3Drequests",
+"kind": "reddit",
+"title": "Is this possible?",
+"text": "Hi! I was wondering if this or something similar could be 3D printed as a Christmas tree topper. Like the size of what a normal star on top of a tree would be? I only have this picture as reference. I’m open to similar options as well! \n I completely understand if not! Thanks in advance for any help!",
+"url": "https://www.reddit.com/r/3Drequests/comments/1xiuvaf/is_this_possible/",
+"created": 1793304863000,
+"author": "missingxrealityx",
 "flair": "",
 "all": true,
 "dachHint": false
@@ -480,6 +844,32 @@
 "dachHint": false
 },
 {
+"id": "reddit:1xi9rs5",
+"source": "r/3Drequests",
+"kind": "reddit",
+"title": "Needing someone to print and paint a 9.4 cm figure of Goku in his Ultra Instinct form from Dragon Ball Super. Budget: ~$200 USD",
+"text": "Edit: Since multiple people are messaging me without reading....THIS IS NOT FOR AN ART PIECE. THIS IS NOT FOR A DIGITAL DRAWING. THIS IS FOR A 3D PRINTED AND PAINTED MODEL. DO NOT MESSAGE ME IF YOU ARE NOT A 3D PRINTER AND PAINTER\n Hi everyone. Trying to find the right place to post this. Not sure if this is it.\n Long story short, I have the model already. The pieces are separated. I am looking for someone to print my model and paint it at 9.4 cm tall.\n I want the eyes and the hair color to be as accurate as possible to the reference photos I would provide. I don't need complex shading or shadows on the skin or clothes, I really really really only want the look of the eyes and hair color to be nailed.\n If you think you're up to the task, please DM me and show me your portfolio so I can get a feel on if your style is right for my project. Thank you!!",
+"url": "https://www.reddit.com/r/3Drequests/comments/1xi9rs5/needing_someone_to_print_and_paint_a_94_cm_figure/",
+"created": 1793246164000,
+"author": "NicCageISReal",
+"flair": "",
+"all": true,
+"dachHint": false
+},
+{
+"id": "reddit:1xi4xp8",
+"source": "r/3Drequests",
+"kind": "reddit",
+"title": "[Paid Request] Teen Titan communicator case for e-badge. [Budget Negotiable] ~$30",
+"text": "I have an A1mini. I have found 2 sorta functional cases for my e-badge. I’d want one that has working buttons, a gap for the charging port, the ridges and antenna like the Teen Titans communicator. It would be cool if there was an added iris closing to completely seal the communicator, but idk how difficult that would be. I have been trying to learn, but this project is a bit above my level. I would just really appreciate having someone help me with this. (Edit: many people have offered to help. I thank everyone very much. If possible, could y’all also send examples of your previous original works. Thank you again!!)",
+"url": "https://www.reddit.com/r/3Drequests/comments/1xi4xp8/paid_request_teen_titan_communicator_case_for/",
+"created": 1793232280000,
+"author": "Queeeeeeeeer",
+"flair": "",
+"all": true,
+"dachHint": false
+},
+{
 "id": "reddit:1xi4s34",
 "source": "r/3Dprintmything",
 "kind": "reddit",
@@ -488,6 +878,32 @@
 "url": "https://www.reddit.com/r/3Dprintmything/comments/1xi4s34/usca_looking_for_someone_to_help_make_a_tt/",
 "created": 1793231944000,
 "author": "Queeeeeeeeer",
+"flair": "",
+"all": true,
+"dachHint": false
+},
+{
+"id": "reddit:1xi375k",
+"source": "r/3Drequests",
+"kind": "reddit",
+"title": "[hiring] 3D Modeler for Roblox-Style Hair (Multiple Jobs) (price negotiable) (25-75)",
+"text": "",
+"url": "https://www.reddit.com/r/3Drequests/comments/1xi375k/hiring_3d_modeler_for_robloxstyle_hair_multiple/",
+"created": 1793227909000,
+"author": "Leading-Software-296",
+"flair": "",
+"all": true,
+"dachHint": false
+},
+{
+"id": "reddit:1xhzpup",
+"source": "r/3Drequests",
+"kind": "reddit",
+"title": "Urgently Need Paid Help with Fusion 360 ASAP",
+"text": "Hi everyone! I need urgent help with a Fusion 360 modeling task, particularly surface modeling and combining it with solid features.\n I’m looking for someone experienced who can guide me step by step over a Discord call or screen share. I’m willing to pay for your time and need help as soon as possible, ideally within the next few hours.\n I can share the reference drawing and screenshots of my current progress.\n Please DM me if you can help immediately.Thanks!",
+"url": "https://www.reddit.com/r/3Drequests/comments/1xhzpup/urgently_need_paid_help_with_fusion_360_asap/",
+"created": 1793219633000,
+"author": "Eastern-Disaster-787",
 "flair": "",
 "all": true,
 "dachHint": false
@@ -545,6 +961,32 @@
 "dachHint": false
 },
 {
+"id": "reddit:1xh4c7x",
+"source": "r/3Drequests",
+"kind": "reddit",
+"title": "ISO: Custom token trays for a board game",
+"text": "UPDATE: I've narrowed it down to a few folks - thank you to everyone who reached out! Please consider this job filled. I'm looking for a moon-themed token tray for a board game that I made - currently funded on Kickstarter! Yay!\n I'm presently work with a modeler, but unfortunately, after several iterations... Well. I'm starting to worry. I'm not here to bash her, and she's still going to be compensated for her time, and I need a model that prints well. I'm hoping someone with more experience will be able to help me.\n Budget: $25/hr, max of $125\n Dims: 100mm diameter when together x 18mm high. I'm flexible on the crescent/gibbous shape.\n Moon pieces will be separate, and nesting/stackable.\n I'm hoping to have final files within a week.\n I'll need STL files. I'm printing them myself, Sovol 6 ACE, Bambu Silk+ filament\n EDIT: NO AI\n Let me know if I left anything out?",
+"url": "https://www.reddit.com/r/3Drequests/comments/1xh4c7x/iso_custom_token_trays_for_a_board_game/",
+"created": 1793134097000,
+"author": "Magic-SamWitch",
+"flair": "",
+"all": true,
+"dachHint": false
+},
+{
+"id": "reddit:1xh0ggn",
+"source": "r/3Drequests",
+"kind": "reddit",
+"title": "Paid 3D Print Request",
+"text": "Looking for a 3d print in 3mf of the following picture. I tried making one on meshy.ai but they didn't come out quite right. The first one had bevels on the back (needs to be flat as these will be emblems for a car). then the second one got really close the but the bevels and lines weren't quite straight enough. I have attached pictures of the origional image and the meshy renderings. Let me know what else you need. \n As far as budget I am not sure, it seems like a quick task, but I don't know what it would really go for. Happy to discuss cost and options for payment. \n Dimensions would be such that a single letter or number is about 3.5\" tall. Maybe make it a bit taller and I can scale it down if needed.",
+"url": "https://www.reddit.com/r/3Drequests/comments/1xh0ggn/paid_3d_print_request/",
+"created": 1793125484000,
+"author": "Indred-Cold89",
+"flair": "",
+"all": true,
+"dachHint": false
+},
+{
 "id": "reddit:1xgs9rn",
 "source": "r/3Dprintmything",
 "kind": "reddit",
@@ -553,6 +995,19 @@
 "url": "https://www.reddit.com/r/3Dprintmything/comments/1xgs9rn/uk_case_for_my_tab_5_screen/",
 "created": 1793107041000,
 "author": "slinger55",
+"flair": "",
+"all": true,
+"dachHint": false
+},
+{
+"id": "reddit:1xgqq1g",
+"source": "r/3Drequests",
+"kind": "reddit",
+"title": "Cosplay Functional Helmet [Paid Request]",
+"text": "Hi all!\n I’m looking for someone to help design and engineer a functional, wearable helmet for an original character cosplay.\n The mask has already been modelled in 3D (pictured), and I can provide the existing file. I need help designing the helmet structure and a working mechanism that allows the two halves of the faceplate to open outward from the center, like double doors, and close again.\n Key requirements:\n  Wearable: The mechanism needs to fit inside the helmet wherever possible, without compromising wearability. If any components need to sit externally, I’d prefer them positioned at the back of the helmet. Remote operation: I’d like to control the opening and closing using a camera lens motor. These use 0.8-pitch gears and can mount to either 15mm or 19mm rods. Existing components: I have metal hinges that can be incorporated into the design, and I can provide their dimensions. 3D printing: I own a Bambu Lab P1S and can print the designed components myself. Additional bits: I’m happy to source and purchase any necessary actuators, gears, linkages or other hardware.  I’m looking for someone who can help develop a practical mechanical solution, model the required components, and ensure the mechanism can operate reliably within the available space.\n I can provide the existing mask model and further reference images to help explain the design.\n If this sounds like something you could help with, please get in touch with your experience and an estimated price\n Thank you for reading!",
+"url": "https://www.reddit.com/r/3Drequests/comments/1xgqq1g/cosplay_functional_helmet_paid_request/",
+"created": 1793102772000,
+"author": "swimblurb",
 "flair": "",
 "all": true,
 "dachHint": false
@@ -636,6 +1091,19 @@
 "dachHint": false
 },
 {
+"id": "reddit:1xgaywj",
+"source": "r/3Drequests",
+"kind": "reddit",
+"title": "Looking for a designer for a fun project",
+"text": "I am making a fun project and have a fantasy style weapon that i am trying to design as of now but need help taking it from a art concept to a 3d print file. It is sci-fi style star wars type of project so if you have that kind of experience or have done mandolorian style things before pls pm me",
+"url": "https://www.reddit.com/r/3Drequests/comments/1xgaywj/looking_for_a_designer_for_a_fun_project/",
+"created": 1793052944000,
+"author": "Ok-Garlic6148",
+"flair": "",
+"all": true,
+"dachHint": false
+},
+{
 "id": "reddit:1xg9ynd",
 "source": "r/3Dprintmything",
 "kind": "reddit",
@@ -657,6 +1125,45 @@
 "url": "https://www.reddit.com/r/3Dprintmything/comments/1xg6q3n/usva_3d_print_services_for_pc_fan_shroud/",
 "created": 1793043129000,
 "author": "ltsnotluck",
+"flair": "",
+"all": true,
+"dachHint": false
+},
+{
+"id": "reddit:1xg15cu",
+"source": "r/3Drequests",
+"kind": "reddit",
+"title": "Top Hat Flat Token Modeling Request",
+"text": "I am looking to get a small top hat, keychain charm designed. Reference photo attached (sew-on buttons we found); it's for style only, not a copy request.\n It should be flat back (unlike the reference image of similar sew on buttons we found) and have a little bit of dimension to it, maybe around a 4mm. This needs to be able to print support free. It needs an added keyring hook at the top center or top corner of the hat as well. Overall size should be around 25mm (but would love to be able to just resize in my slicer)\n Summary of requirements: \n  Side-profile top hat silhouette like the reference, with the hat band and brim edge raised Flat back, about 4 mm total thickness, with the details raised roughly 1 mm Prints without supports on an FDM printer (flat on the bed) Keyring loop at the top center or a top corner, hole about 3-4 mm About 1 inch (25 mm) wide; I'll scale it in the slicer as needed  Deliverables: STL, plus STEP or the source file if possible.\n Budget: $15 (paid via PayPal on delivery of a usable file). We tried Fiverr first and didn't get anything usable, so I'm hoping someone here gets it.",
+"url": "https://www.reddit.com/r/3Drequests/comments/1xg15cu/top_hat_flat_token_modeling_request/",
+"created": 1793030953000,
+"author": "lamarus",
+"flair": "",
+"all": true,
+"dachHint": false
+},
+{
+"id": "reddit:1xg0p8i",
+"source": "r/3Drequests",
+"kind": "reddit",
+"title": "3D model for a screen clip. Need equivalent function, not design",
+"text": "These screen clips seem to be discontinued and I need some to replace broken ones. Can provide exact measurements with caliper. Budget: $15-25.\n I am really just looking for functional equivalence so some design changes can be taken to ease design complexity and ease of printing. Dimensions: 50mm x 9mm with details on the order of 2mm",
+"url": "https://www.reddit.com/r/3Drequests/comments/1xg0p8i/3d_model_for_a_screen_clip_need_equivalent/",
+"created": 1793030021000,
+"author": "Timmx123",
+"flair": "",
+"all": true,
+"dachHint": false
+},
+{
+"id": "reddit:1xfz2zi",
+"source": "r/3Drequests",
+"kind": "reddit",
+"title": "Blast furnace",
+"text": "Hello,\n I’m looking for someone who could create a 3D model of a very specific blast furnace that I can 3D print. It doesn’t need to include every detail, but a few specific details would be nice.\n My budget is up to €200.",
+"url": "https://www.reddit.com/r/3Drequests/comments/1xfz2zi/blast_furnace/",
+"created": 1793026531000,
+"author": "Psychological_Egg521",
 "flair": "",
 "all": true,
 "dachHint": false
@@ -688,6 +1195,19 @@
 "dachHint": false
 },
 {
+"id": "reddit:1xft7o9",
+"source": "r/3Drequests",
+"kind": "reddit",
+"title": "[Paid Request] Looking for a 3D sculptor for a Percy Jackson-inspired project! 🔱",
+"text": "Hey everyone! 😊\n I'm currently working on a little passion project and was hoping to find someone who might be interested in helping bring it to life!\n I'm looking to commission an original 3D sculpture of Percy Jackson and Annabeth Chase sharing their iconic underwater kiss, which will eventually sit inside a custom illuminated underwater lamp.\n I've got some reference artwork and a rough concept of what I'm hoping to achieve, but unfortunately my own 3D modelling skills are practically nonexistent! 😂\n Ideally, I'm looking for:\n - A single combined sculpture of the two characters, approximately 110mm tall × 60mm wide × 35mm deep (provisional measurements).\n - A detailed STL suitable for high-resolution resin 3D printing (SLA/MSLA).\n - Someone comfortable working from reference artwork and adapting the design to fit within a cylindrical container.\n - The possibility of receiving the original Blender/source file too.\n Bonus points if you're also able to resin print and paint the finished sculpture! This isn't essential, as I'm happy to arrange that separately, but it would be lovely to have everything done by one person if possible. 😊\n This would be an original paid commission rather than a request to copy an existing 3D model.\n The project is initially a personal prototype, although I'd ideally like an agreement transferring exclusive rights to the artist's original sculpting work, including potential future commercial use where legally permitted. Happy to discuss those details beforehand!\n I'm relatively new to commissioning 3D artwork, so I'm still learning what something like this would typically cost.\n I'm working with a modest budget but completely appreciate the time, skill and effort that goes into creating something like this, so I'd love to hear some quotations!\n If you're interested, please feel free to comment or message me with examples of your previous work and approximate pricing.\n If you offer printing and painting too, I'd love a separate quotation for those services, including shipping to the UK. I'm happy to consider artists from anywhere in the world!\n Thanks so much for reading! 😊🔱",
+"url": "https://www.reddit.com/r/3Drequests/comments/1xft7o9/paid_request_looking_for_a_3d_sculptor_for_a/",
+"created": 1793010901000,
+"author": "Hyperion1221",
+"flair": "",
+"all": true,
+"dachHint": false
+},
+{
 "id": "reddit:1xfn4j2",
 "source": "r/3Dprintmything",
 "kind": "reddit",
@@ -709,6 +1229,19 @@
 "url": "https://www.reddit.com/r/3Dprintmything/comments/1xfi9uz/mi_usa_help_me_print_my_first_design_please/",
 "created": 1792974061000,
 "author": "DoubleYoo",
+"flair": "",
+"all": true,
+"dachHint": false
+},
+{
+"id": "reddit:1xfc0cp",
+"source": "r/3Drequests",
+"kind": "reddit",
+"title": "Looking for a 3D nodes artist",
+"text": "Help!\n I’m looking to commission someone to create a model for me, a figure 1/6 scale. They need to both create it and print it if possible. \n Please let me know of any artists that are legit and are good since I’m looking for someone to create models for me for a while. So if anyone has worked with any legit and trustworthy artists, please leave their names in this post or message me with their names. I did try this before and I ended up almost getting scammed so please only legit and trustworthy artists. Thank you",
+"url": "https://www.reddit.com/r/3Drequests/comments/1xfc0cp/looking_for_a_3d_nodes_artist/",
+"created": 1792958007000,
+"author": "lenbarbatos",
 "flair": "",
 "all": true,
 "dachHint": false
@@ -753,6 +1286,32 @@
 "dachHint": false
 },
 {
+"id": "reddit:1xf3dee",
+"source": "r/3Drequests",
+"kind": "reddit",
+"title": "Looking for an Affordable 3D Designer to Recreate a Bracket from Photos",
+"text": "I'm looking for someone who can recreate a bracket from reference photos and turn it into a 3D-printable file for my Bambu printer.\n What I need:\n  Approximately 10 inches wide × 10 inches tall A 14.04° angle (3/12 roof pitch) Bracket shape matching my reference photos Two mounting holes Modeled screws and nuts as separate parts or can be made on the item.  A Bambu Studio-compatible 3MF file, plus STL files if possible  I already have photos of the original bracket and can provide additional measurements if needed. I'm looking for clean, accurate geometry that can be opened in the slicer and checked before printing.\n My budget is limited, so I'm hoping to find someone who can do this affordably. Please message me with your price, relevant experience, and examples of 3D-printable models you've designed.\n Please provide a quote",
+"url": "https://www.reddit.com/r/3Drequests/comments/1xf3dee/looking_for_an_affordable_3d_designer_to_recreate/",
+"created": 1792937451000,
+"author": "Real_Secretary841",
+"flair": "",
+"all": true,
+"dachHint": false
+},
+{
+"id": "reddit:1xevney",
+"source": "r/3Drequests",
+"kind": "reddit",
+"title": "Looking for some assistance combining 2 files.",
+"text": "Budget $5-10\n I have a steam frame but want to use a specific quest 3 headstrap that attaches to the arms. I want to try to combine these 2 prints. The part that attaches to the frame and the quest speaker arms. Is this even possible for what im paying?\n Dimensions will be the exact measurements in the files.\n https://www.printables.com/model/1139437-quest-3-speakerless-arms\n https://www.printables.com/model/1882909-steam-frame-adapter-for-meta-quest-3-halo-straps-t/files",
+"url": "https://www.reddit.com/r/3Drequests/comments/1xevney/looking_for_some_assistance_combining_2_files/",
+"created": 1792912173000,
+"author": "thosemegamutts",
+"flair": "",
+"all": true,
+"dachHint": false
+},
+{
 "id": "reddit:1xeusqj",
 "source": "r/3Dprintmything",
 "kind": "reddit",
@@ -792,6 +1351,71 @@
 "dachHint": false
 },
 {
+"id": "reddit:1xehyg2",
+"source": "r/3Drequests",
+"kind": "reddit",
+"title": "HELP! Editing .stl Files",
+"text": "",
+"url": "https://www.reddit.com/r/3Drequests/comments/1xehyg2/help_editing_stl_files/",
+"created": 1792871136000,
+"author": "Aware_Bid_3834",
+"flair": "",
+"all": true,
+"dachHint": false
+},
+{
+"id": "reddit:1xehgb2",
+"source": "r/3Drequests",
+"kind": "reddit",
+"title": "Samwise carrying frodo wedding cake topper",
+"text": "How much would it cost someone to design a model of samwise carrying frodo? Movie accurate or bridal carry, we're doing a wedding and everything we can find is either ugly as sin or a 475 dollar statue.",
+"url": "https://www.reddit.com/r/3Drequests/comments/1xehgb2/samwise_carrying_frodo_wedding_cake_topper/",
+"created": 1792869904000,
+"author": "Ok_Adhesiveness_1960",
+"flair": "",
+"all": true,
+"dachHint": false
+},
+{
+"id": "reddit:1xegspl",
+"source": "r/3Drequests",
+"kind": "reddit",
+"title": "Articulated Christmas Figure with Magnetic Hands Budget approx £5",
+"text": "I’m not looking to sell these at all, just looking to make them for my students and colleagues at the special school I work at - willing to pay around £5-£10 for someone if they can make me a few articulated Christmas figures with magnetic hands!",
+"url": "https://www.reddit.com/r/3Drequests/comments/1xegspl/articulated_christmas_figure_with_magnetic_hands/",
+"created": 1792868319000,
+"author": "Nikim09",
+"flair": "",
+"all": true,
+"dachHint": false
+},
+{
+"id": "reddit:1xefogm",
+"source": "r/3Drequests",
+"kind": "reddit",
+"title": "Request Shinoa Hiragi",
+"text": "Hey guys, since there are no official scale figures of Shinoa Hīragi from Owari no Seraph, I really want to commission a custom one. This is my very first time doing a custom project, so I honestly don't know much about how the process works or who to trust.\n I want her in the dynamic scythe pose from picture 2, but wearing the JIDA military uniform from picture 1. My budget is around 300–400 dollars for a fully painted, high-quality figure. Do you have any recommendations for trusted 3D sculptors or garage kit painters? Also, any tips on how to not get scammed as a beginner would be highly appreciated! Thanks!",
+"url": "https://www.reddit.com/r/3Drequests/comments/1xefogm/request_shinoa_hiragi/",
+"created": 1792865652000,
+"author": "lenbarbatos",
+"flair": "",
+"all": true,
+"dachHint": false
+},
+{
+"id": "reddit:1xebbxh",
+"source": "r/3Drequests",
+"kind": "reddit",
+"title": "Help with 3D Mesh",
+"text": "I need help with modifying a 3D solid into something vaguely workable into a 3D print. The modifications should not need to be too extensive, but I am personally struggling working with a solid converted from a mesh.\n My budget for this is around $60-$80, it shouldn't take too much time, maybe 2-3 hours? If you are interested please DM me on Reddit.",
+"url": "https://www.reddit.com/r/3Drequests/comments/1xebbxh/help_with_3d_mesh/",
+"created": 1792855168000,
+"author": "Kaiserkrautheim",
+"flair": "",
+"all": true,
+"dachHint": false
+},
+{
 "id": "reddit:1xe3lpn",
 "source": "r/3Ddruck (Suche)",
 "kind": "reddit",
@@ -803,6 +1427,32 @@
 "flair": "",
 "all": false,
 "dachHint": true
+},
+{
+"id": "reddit:1xdyw2g",
+"source": "r/3Drequests",
+"kind": "reddit",
+"title": "[PAID Request] Looking for USA-Based 3D Artist | Custom LED Mask STL modification",
+"text": "** UPDATE, WORKING WITH A NEW ARTIST **\n Hey everyone!\n I'm looking for a USA-based 3D artist to help finish a custom LED mask I'm working on.\n I'm starting with an existing face shell STL and want to modify it into something sleek, minimal, and futuristic. I already have detailed concept images and reference files, so the design direction is established.\n What I need:\n Modify the existing faceshell STL.\n Create removable magnetic eyes and a slim magnetic mouthpiece.\n Design two-piece eye frames to sandwich see-through black mesh. \n Add magnet pockets, alignment pins, and channels for LED filament.\n Account for a thin fabric covering the faceshell.\n I will need 360° turntable preview, wall-thickness analysis, and dimensioned screenshots before final payment.\n Provide print-ready STL files and editable source files.\n Budget: $40-$80 depending on the artist's experience and quality of work. Original CAD work only. No AI-generated models or portfolios. \n Ideally, I'm looking for someone with experience in functional 3D printing, STL modifications, and/or cosplay masks.\n USA-based artists only, please. Good communication and progress updates are important to me. If we can get this done in a few days that would be great. \n If you're interested, COMMENT HERE FIRST, THEN send me a DM with some examples of your work! If you don't comment here first I won't respond. USA ONLY\n I pay with PayPal goods and services.\n Thanks! 🙌",
+"url": "https://www.reddit.com/r/3Drequests/comments/1xdyw2g/paid_request_looking_for_usabased_3d_artist/",
+"created": 1792815021000,
+"author": "Cloudkicked",
+"flair": "",
+"all": true,
+"dachHint": false
+},
+{
+"id": "reddit:1xdfgcw",
+"source": "r/3Drequests",
+"kind": "reddit",
+"title": "Need 3d Modeler: 150 budget",
+"text": "i need someone to take my sketch and turn it into a 3d model that i can print, i need the helmet to be wearable, the mask to be a separate object along with the bottom piece in the back to make wearing easier, i plan to put lots of electronics in it the eyes should just be holes and not a solid object. thank you.",
+"url": "https://www.reddit.com/r/3Drequests/comments/1xdfgcw/need_3d_modeler_150_budget/",
+"created": 1792765376000,
+"author": "Short-Pangolin-7535",
+"flair": "",
+"all": true,
+"dachHint": false
 },
 {
 "id": "reddit:1xc4xdz",
