@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-05T16:53:41.811865+00:00",
+"generated": "2026-11-05T17:46:32.772990+00:00",
 "status": {
 "r/3Dprintmything": {
 "ok": true,
@@ -12,9 +12,9 @@
 "n": 0
 },
 "r/PrintMyThing": {
-"ok": true,
-"via": "rss",
-"n": 1
+"ok": false,
+"via": "failed",
+"n": 0
 },
 "r/3Dprintingrequests": {
 "ok": false,
@@ -22,9 +22,9 @@
 "n": 0
 },
 "r/3Dprinting (Suche)": {
-"ok": false,
-"via": "failed",
-"n": 0
+"ok": true,
+"via": "rss",
+"n": 8
 },
 "r/BambuLab (Suche)": {
 "ok": false,
@@ -285,6 +285,19 @@
 "dachHint": false
 },
 {
+"id": "reddit:1xln17j",
+"source": "r/3Dprinting (Suche)",
+"kind": "reddit",
+"title": "Looking for someone to print something for me",
+"text": "Hello everyone! I’m looking to make a custom music box for my little brother and I’d really like it to play the lava chicken song. I’ve already figured out what to do but I just need someone to print the cylinder for the song. I’ve never 3d modeled anything before and I don’t have access to a printer but this was a lot cheaper than getting one custom made lol. Apparently resin printing will be stronger and hold up better but I’ve never done this before and know even less about resin printing than 3d printing.\n I’m basically looking for someone I can partner up with to make this happen for my brother in time for Christmas (hopefully lol). Thanks!",
+"url": "https://www.reddit.com/r/3Dprinting/comments/1xln17j/looking_for_someone_to_print_something_for_me/",
+"created": 1793591233000,
+"author": "Country_Is_Farm_Emo",
+"flair": "",
+"all": false,
+"dachHint": false
+},
+{
 "id": "reddit:1xlbqk4",
 "source": "r/3Ddruck (Suche)",
 "kind": "reddit",
@@ -308,6 +321,19 @@
 "author": "__PuppyMonkeyBaby__",
 "flair": "",
 "all": true,
+"dachHint": false
+},
+{
+"id": "reddit:1xkb7cw",
+"source": "r/3Dprinting (Suche)",
+"kind": "reddit",
+"title": "I wanted to start a small project but I have NO CLUE HOW TO START…",
+"text": "(EXCLAIMER)\n I DO NOT SUPPORT AND ENDORSE ANYTHING RELATED TO 18+ LIKE TOBACCO AND ELSE THIS IS JUST A PROJECT WITHOUT THE PURPOSE OF ACTUALLY USING SAYED “IDEAS” AND I AGAIN DO NOT ENDORSE THINGS LIKEWISE\n Sooo my stepdad has a 3D-Printer… and he asked me if I had any ideas what he could print for me… Last week I had the Brilliant Idea of modelling myself some sort of (doob tube ,Cigarette Case) in the style of the MegaMan franchise… sooo thing is.. I always have ideas but no fricking clue how to do them… I have a clear vision but I just don’t.. know how to start… Im not looking for Any offer regarding Modeling for Cash or Anything else Resulting in somebody making something for me for payment… I just want some advice \n (If I’m in the wrong subreddit for questions like this pls tell me were I should post it I have no clue fricking clue)\n (Also I like to share that I don’t Plan on doing anything with probably finished Product that Would result in Hurting Various Copyright laws Regarding The MegaMan Franchise and Else.. this is a private project by a fan for private use and even IF I were to be allowed to share it id make it none profit)\n For reasons of Copyright I won’t post any Pictures or Videos regarding Ideas.. but I will list them here..\n I thought of various props from the franchise like E-Tanks, Weapons, and things that would be suited to Make the idea worth…\n Thank you very much…\n Dear Regards, Bibi",
+"url": "https://www.reddit.com/r/3Dprinting/comments/1xkb7cw/i_wanted_to_start_a_small_project_but_i_have_no/",
+"created": 1793455779000,
+"author": "KaterMurks",
+"flair": "",
+"all": false,
 "dachHint": false
 },
 {
@@ -779,6 +805,19 @@
 "dachHint": true
 },
 {
+"id": "reddit:1xc4xdz",
+"source": "r/3Dprinting (Suche)",
+"kind": "reddit",
+"title": "Anywhere that will 3d print FOR me?",
+"text": "So I was watching this video of this guy making 3d dolls and basically he would send the files off the be printed but I can't find the video anymore :< and basically I'm asking if anyone knows any sites because I want to 3d print some things but I don't want to invest in a 3d printer at least for now\n edit: thank you everyone 🖤 I'm looking into everything as we speak and I may slowly respond",
+"url": "https://www.reddit.com/r/3Dprinting/comments/1xc4xdz/anywhere_that_will_3d_print_for_me/",
+"created": 1792631206000,
+"author": "Affectionate_Gap6550",
+"flair": "",
+"all": false,
+"dachHint": false
+},
+{
 "id": "reddit:1xa0gp0",
 "source": "r/3Ddruck (Suche)",
 "kind": "reddit",
@@ -790,6 +829,19 @@
 "flair": "",
 "all": false,
 "dachHint": true
+},
+{
+"id": "reddit:1x9wklx",
+"source": "r/3Dprinting (Suche)",
+"kind": "reddit",
+"title": "Delaminating print",
+"text": "Hi, I have this door opener remote, I have no knowledge of 3D printing, I paid someone to print this for me too.\n Can you please help me recommend what material, what printer settings and what orientation should this be printed in next time? Last time it was printed laying down on its back as you see from the lines of delamination. Also it was sitting in a hot car for months on end.\n It consists of two halves that snap together with 8 small teeths that are only suitable to 2-3 taking apart for battery replacement as well.\n I have no idea what settings and material it was before. The insides are hollow to accommodate a circuit board, buttons and a battery, the material itself isn't too thick either, only a few mm-s, probably 100% infill\n I wouldn't mind it being bigger either if that meant more structural strength and resistance to delamination.\n I'll try to find the stl-s and update it here, but I don't have it now.",
+"url": "https://www.reddit.com/r/3Dprinting/comments/1x9wklx/delaminating_print/",
+"created": 1792415654000,
+"author": "hegyimutymuty",
+"flair": "",
+"all": false,
+"dachHint": false
 },
 {
 "id": "reddit:1x98pdt",
