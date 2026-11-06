@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-06T00:34:13.663655+00:00",
+"generated": "2026-11-06T01:56:44.194953+00:00",
 "status": {
 "r/3Dprintmything": {
 "ok": true,
@@ -12,9 +12,9 @@
 "n": 0
 },
 "r/PrintMyThing": {
-"ok": false,
-"via": "failed",
-"n": 0
+"ok": true,
+"via": "rss",
+"n": 1
 },
 "r/3Dprintingrequests": {
 "ok": false,
@@ -37,8 +37,8 @@
 "n": 0
 },
 "r/de (Suche)": {
-"ok": true,
-"via": "rss",
+"ok": false,
+"via": "failed",
 "n": 0
 },
 "r/germany (Suche)": {
@@ -76,6 +76,32 @@
 }
 },
 "leads": [
+{
+"id": "reddit:1xp0omp",
+"source": "r/3Dprintmything",
+"kind": "reddit",
+"title": "[Nederland] Looking for someone in Amsterdam",
+"text": "I have the stls, or bambu labs slicer files but am looking for someone to help me print some chess pieces over the weekend as a gift for my brother, I am visiting from Australia.\n https://drive.google.com/drive/folders/1HKFk6Ri7lXEdywh7cpq0nifi-xJheuXd?usp=drive_link",
+"url": "https://www.reddit.com/r/3Dprintmything/comments/1xp0omp/nederland_looking_for_someone_in_amsterdam/",
+"created": 1793929806000,
+"author": "Alexander_bike",
+"flair": "",
+"all": true,
+"dachHint": false
+},
+{
+"id": "reddit:1xozogd",
+"source": "r/3Dprintmything",
+"kind": "reddit",
+"title": "[UK] Can someone help me design a Nescafé pouch holder, pictures and mockups included",
+"text": "",
+"url": "https://www.reddit.com/r/3Dprintmything/comments/1xozogd/uk_can_someone_help_me_design_a_nescafé_pouch/",
+"created": 1793926859000,
+"author": "GenericUser104",
+"flair": "",
+"all": true,
+"dachHint": false
+},
 {
 "id": "reddit:1xoyyhs",
 "source": "r/3Dprintmything",
