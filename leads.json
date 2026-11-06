@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-06T16:46:19.077164+00:00",
+"generated": "2026-11-06T17:19:39.028308+00:00",
 "status": {
 "r/3Dprintmything": {
 "ok": true,
@@ -7,9 +7,9 @@
 "n": 50
 },
 "r/PrintMyThing": {
-"ok": true,
-"via": "rss",
-"n": 1
+"ok": false,
+"via": "failed",
+"n": 0
 },
 "r/3Dprinting (Suche)": {
 "ok": false,
@@ -73,8 +73,21 @@
 "n": 0
 }
 },
-"last24h": 16,
+"last24h": 17,
 "leads": [
+{
+"id": "reddit:1xphvnx",
+"source": "r/3Dprintmything",
+"kind": "reddit",
+"title": "[Seattle] 6mm lowercase gothic font lettering/numbers for pottery!!",
+"text": "",
+"url": "https://www.reddit.com/r/3Dprintmything/comments/1xphvnx/seattle_6mm_lowercase_gothic_font/",
+"created": 1793984266000,
+"author": "Flaky-Ad-8124",
+"flair": "",
+"all": true,
+"dachHint": false
+},
 {
 "id": "reddit:1xpenxa",
 "source": "r/3Drequests",
