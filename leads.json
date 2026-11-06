@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-06T22:08:54.631978+00:00",
+"generated": "2026-11-06T22:51:21.959403+00:00",
 "status": {
 "r/3Dprintmything": {
 "ok": true,
@@ -12,9 +12,9 @@
 "n": 0
 },
 "r/3Dprinting (Suche)": {
-"ok": false,
-"via": "failed",
-"n": 0
+"ok": true,
+"via": "rss",
+"n": 8
 },
 "Lemmy !printmything": {
 "ok": true,
@@ -73,14 +73,27 @@
 "n": 0
 }
 },
-"last24h": 11,
+"last24h": 10,
 "filtered": {
 "Design/Modellieren gewünscht": 9,
-"hat Drucker / sucht Drucker / Angebot": 3,
+"hat Drucker / sucht Drucker / Angebot": 4,
 "Urheberrecht/Marke": 3,
-"kein 3D-Druck-Bezug": 19
+"kein 3D-Druck-Bezug": 20
 },
 "leads": [
+{
+"id": "reddit:1xpptqp",
+"source": "r/3Dprintmything",
+"kind": "reddit",
+"title": "[US Las Vegas/Henderson] Requesting a Resin or VERY Smooth Print",
+"text": "Hello folks! I am a Resin Printer myself but I have had multiple failures to get this print to work. \n Every time I try it sticks to the pool at some point during the beginning of the print and I'm at my wits end. I really need this for a friend's birthday, she loves how smooth my prints come out and I'm wanting to get it soon so I can take my time painting it before I give it to her.\n I dont care what color it is printed in, all that I care about is that as stated she loves how smooth my resin prints are, so I'm not sure if this could be done on a Filament printer or not. \n I've included a link to the STL. Hopefully I can get this done for a reasonable price. At this point I've wasted about a half a bottle of resin on failures.\n https://cults3d.com/en/3d-model/game/sukuna_trono",
+"url": "https://www.reddit.com/r/3Dprintmything/comments/1xpptqp/us_las_vegashenderson_requesting_a_resin_or_very/",
+"created": 1794003319000,
+"author": "LordServek",
+"flair": "",
+"all": true,
+"dachHint": false
+},
 {
 "id": "reddit:1xpng6b",
 "source": "r/3Dprintmything",
