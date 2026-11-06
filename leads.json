@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-06T04:45:27.292046+00:00",
+"generated": "2026-11-06T05:46:52.711702+00:00",
 "status": {
 "r/3Dprintmything": {
 "ok": true,
@@ -7,9 +7,9 @@
 "n": 50
 },
 "r/3Drequests": {
-"ok": false,
-"via": "failed",
-"n": 0
+"ok": true,
+"via": "rss",
+"n": 50
 },
 "r/PrintMyThing": {
 "ok": false,
@@ -27,9 +27,9 @@
 "n": 0
 },
 "r/BambuLab (Suche)": {
-"ok": true,
-"via": "rss",
-"n": 1
+"ok": false,
+"via": "failed",
+"n": 0
 },
 "r/3Ddruck (Suche)": {
 "ok": false,
@@ -76,6 +76,32 @@
 }
 },
 "leads": [
+{
+"id": "reddit:1xp4af6",
+"source": "r/3Dprintmything",
+"kind": "reddit",
+"title": "[USA-CA SF Bay Area] PPA-CF or PA6-CF Print of custom GoPro Adapter",
+"text": "I need a small (overall dimensions are 47 x 22 x 22mm) GoPro adapter 3d printed in high quality, smooth UV and heat resistant black material with a 'barrel' adapter that needs to withstand some compression (around circumference / clamping quasi all around.. and everything be fine in direct CA sun for hours all year round without deforming.\n I have a .stl and ideally it would be someone local-ish in case I need to adjust / re-do a few times.\n Does anybody feel comfortable doing that?\n Thanks!",
+"url": "https://www.reddit.com/r/3Dprintmything/comments/1xp4af6/usaca_sf_bay_area_ppacf_or_pa6cf_print_of_custom/",
+"created": 1793941058000,
+"author": "AcceptablePun",
+"flair": "",
+"all": true,
+"dachHint": false
+},
+{
+"id": "reddit:1xp15v8",
+"source": "r/3Drequests",
+"kind": "reddit",
+"title": "Sorry if not allowed, I'm trying to find out if anyone does commissions?",
+"text": "",
+"url": "https://www.reddit.com/r/3Drequests/comments/1xp15v8/sorry_if_not_allowed_im_trying_to_find_out_if/",
+"created": 1793931236000,
+"author": "Lexario",
+"flair": "",
+"all": true,
+"dachHint": false
+},
 {
 "id": "reddit:1xp0omp",
 "source": "r/3Dprintmything",
@@ -163,6 +189,19 @@
 "url": "https://www.reddit.com/r/3Dprintmything/comments/1xovwjz/uk_london/",
 "created": 1793916667000,
 "author": "lexxielexlex",
+"flair": "",
+"all": true,
+"dachHint": false
+},
+{
+"id": "reddit:1xotlrw",
+"source": "r/3Drequests",
+"kind": "reddit",
+"title": "Alien / Alien isolation STLs",
+"text": "Hey all, I’m currently working on a ln alien stop motion fan film project. It’s all out of pocket and being shot entirely in miniatures of 1/12 and 1/10 scale.\n I need multiple set pieces that look straight out of the film. For the most part it’s the doors and ceiling pieces. I figured you could create a few door variations and then tweak from there to save time? I have my own 3d printer and use tinkercad for basic set pieces.\n One of the more challenging things is I want to do a practical forced perspective effect. So hallways that will be able to be 3d printed but give the illusion they extend off onto the distance. \n I think it would be easier to have the STLs be split up so I can assemble later or make certain hallways look different.\n you’re interested please let me know or dm me! It’s a pretty big project so there will be multiple pieces. \n I am doing this all out of passion and my own pocket so I can’t break the bank on this but would probably be able to do anywhere from 10-20 bucks an hour or hopefully we can work something out based on the amount of set pieces cause there will be quite a few so both parties can make it work",
+"url": "https://www.reddit.com/r/3Drequests/comments/1xotlrw/alien_alien_isolation_stls/",
+"created": 1793911113000,
+"author": "solacestudios97",
 "flair": "",
 "all": true,
 "dachHint": false
