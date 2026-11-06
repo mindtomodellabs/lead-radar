@@ -1,47 +1,17 @@
 {
-"generated": "2026-11-06T16:43:09.210982+00:00",
+"generated": "2026-11-06T16:46:19.077164+00:00",
 "status": {
 "r/3Dprintmything": {
 "ok": true,
 "via": "rss",
 "n": 50
 },
-"r/3Drequests": {
-"ok": false,
-"via": "failed",
-"n": 0
-},
 "r/PrintMyThing": {
-"ok": false,
-"via": "failed",
-"n": 0
-},
-"r/3Dprintingrequests": {
-"ok": false,
-"via": "failed",
-"n": 0
+"ok": true,
+"via": "rss",
+"n": 1
 },
 "r/3Dprinting (Suche)": {
-"ok": false,
-"via": "failed",
-"n": 0
-},
-"r/BambuLab (Suche)": {
-"ok": false,
-"via": "failed",
-"n": 0
-},
-"r/3Ddruck (Suche)": {
-"ok": false,
-"via": "failed",
-"n": 0
-},
-"r/de (Suche)": {
-"ok": false,
-"via": "failed",
-"n": 0
-},
-"r/germany (Suche)": {
 "ok": false,
 "via": "failed",
 "n": 0
