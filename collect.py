@@ -226,6 +226,13 @@ def bluesky(handle, app_pw):
     return out
 
 
+def alert_urls(raw):
+    urls = re.findall(r"https://www\.google\.[a-z.]+/alerts/feeds/\d+/\d+", raw or "")
+    if not urls:
+        raise ValueError("keine gültige Feed-Adresse – sie muss mit https://www.google.com/alerts/feeds/ beginnen (nicht die tag:-ID aus dem Feed)")
+    return list(dict.fromkeys(urls))
+
+
 def google_alerts(feeds):
     ns = {"a": "http://www.w3.org/2005/Atom"}
     out = []
@@ -327,7 +334,7 @@ def main():
     optional = [
         ("Bluesky", ("BSKY_HANDLE", "BSKY_APP_PASSWORD"), lambda e: bluesky(e[0], e[1]), True),
         ("Mastodon-Suche", ("MASTODON_TOKEN",), lambda e: mastodon_search(e[0]), True),
-        ("Google Alerts", ("GOOGLE_ALERTS_FEEDS",), lambda e: google_alerts([f.strip() for f in re.split(r"[\n,\s]+", e[0]) if f.strip()]), False),
+        ("Google Alerts", ("GOOGLE_ALERTS_FEEDS",), lambda e: google_alerts(alert_urls(e[0])), False),
         ("E-Mail-Alarme", ("IMAP_HOST", "IMAP_USER", "IMAP_PASS"), lambda e: mail_alerts(e[0], e[1], e[2], os.environ.get("IMAP_FOLDER") or "Lead-Radar"), False),
     ]
     for label, keys, fn, need_req in optional:
