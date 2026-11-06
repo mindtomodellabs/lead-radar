@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-06T16:20:43.022325+00:00",
+"generated": "2026-11-06T16:31:42.169323+00:00",
 "status": {
 "r/3Dprintmything": {
 "ok": true,
@@ -7,14 +7,14 @@
 "n": 50
 },
 "r/3Drequests": {
-"ok": true,
-"via": "rss",
-"n": 50
-},
-"r/PrintMyThing": {
 "ok": false,
 "via": "failed",
 "n": 0
+},
+"r/PrintMyThing": {
+"ok": true,
+"via": "rss",
+"n": 1
 },
 "r/3Dprintingrequests": {
 "ok": false,
@@ -63,20 +63,20 @@
 "n": 77
 },
 "Bluesky": {
-"ok": false,
-"err": "Zugang fehlt: BSKY_HANDLE, BSKY_APP_PASSWORD"
+"ok": true,
+"n": 107
 },
 "Mastodon-Suche": {
-"ok": false,
-"err": "Zugang fehlt: MASTODON_TOKEN"
+"ok": true,
+"n": 0
 },
 "Google Alerts": {
 "ok": false,
-"err": "Zugang fehlt: GOOGLE_ALERTS_FEEDS"
+"err": "<urlopen error unknown url type: tag>"
 },
 "E-Mail-Alarme": {
 "ok": false,
-"err": "Zugang fehlt: IMAP_HOST, IMAP_USER, IMAP_PASS"
+"err": "b'[AUTHENTICATIONFAILED] Invalid credentials (Failure)'"
 },
 "Mastodon #3DDruck": {
 "ok": true,
@@ -472,6 +472,20 @@
 "dachHint": false
 },
 {
+"id": "bsky:at://did:plc:3ra4dxf4rwet2urznakt2sm4/app.bsky.feed.post/3mzhmuftmkk22",
+"source": "Bluesky",
+"kind": "bluesky",
+"title": "My wife framed @rey-notnecessarily.bsky.social's beautiful print for me (I'm still looking for a _nice_ frame, but she pointed out I can jus",
+"text": "My wife framed @rey-notnecessarily.bsky.social's beautiful print for me (I'm still looking for a _nice_ frame, but she pointed out I can just use a simple one for now).\n\nThis completes tonight as the best night I've had in years. Enjoying looking at this and reflecting on the world right now.",
+"url": "https://bsky.app/profile/co60.bsky.social/post/3mzhmuftmkk22",
+"created": 1793770353643,
+"author": "co60.bsky.social",
+"flair": "",
+"all": false,
+"dachHint": false,
+"comments": 2
+},
+{
 "id": "reddit:1xndm32",
 "source": "r/3Dprintmything",
 "kind": "reddit",
@@ -669,6 +683,20 @@
 "dachHint": false
 },
 {
+"id": "bsky:at://did:plc:bsy3zm6neqqplz5xejrxfzba/app.bsky.feed.post/3mzdzoo2b722v",
+"source": "Bluesky",
+"kind": "bluesky",
+"title": "I love my new vinyls I had my sister print for me.",
+"text": "I love my new vinyls I had my sister print for me.",
+"url": "https://bsky.app/profile/candisgameshrine.bsky.social/post/3mzdzoo2b722v",
+"created": 1793646680609,
+"author": "candisgameshrine.bsky.social",
+"flair": "",
+"all": false,
+"dachHint": false,
+"comments": 0
+},
+{
 "id": "reddit:1xm4gjo",
 "source": "r/3Dprintmything",
 "kind": "reddit",
@@ -837,6 +865,20 @@
 "flair": "",
 "all": true,
 "dachHint": false
+},
+{
+"id": "bsky:at://did:plc:fre2nncnoozxvishhqenjjxy/app.bsky.feed.post/3mza3x6fbv22h",
+"source": "Bluesky",
+"kind": "bluesky",
+"title": "SQUEEE my bestie printed out her ryuken print for me 🥹",
+"text": "SQUEEE my bestie printed out her ryuken print for me 🥹",
+"url": "https://bsky.app/profile/burritosalad.bsky.social/post/3mza3x6fbv22h",
+"created": 1793511674710,
+"author": "burritosalad.bsky.social",
+"flair": "",
+"all": false,
+"dachHint": false,
+"comments": 0
 },
 {
 "id": "reddit:1xkqtyk",
@@ -1242,6 +1284,34 @@
 "flair": "",
 "all": false,
 "dachHint": true
+},
+{
+"id": "bsky:at://did:plc:wqhtoglvradbgknynamqwqtj/app.bsky.feed.post/3mywroao4fc2e",
+"source": "Bluesky",
+"kind": "bluesky",
+"title": "tbh i already put in an order w the shop that did the 3D print for me last time who am i kidding i have 0 impulse control... i had also just",
+"text": "tbh i already put in an order w the shop that did the 3D print for me last time who am i kidding i have 0 impulse control... i had also just bought the tove jansson illust ver of the hobbit last night too h a h a whoops",
+"url": "https://bsky.app/profile/kotaka-kun.bsky.social/post/3mywroao4fc2e",
+"created": 1793191400050,
+"author": "kotaka-kun.bsky.social",
+"flair": "",
+"all": false,
+"dachHint": false,
+"comments": 0
+},
+{
+"id": "bsky:at://did:plc:76hmwxq5hxknfapaqxej3s7n/app.bsky.feed.post/3myvvxiebjk2p",
+"source": "Bluesky",
+"kind": "bluesky",
+"title": "Would you choose this leopard print for me? 😘",
+"text": "Would you choose this leopard print for me? 😘\n\n#amateur #longhair #nsfw",
+"url": "https://bsky.app/profile/z-ara1.bsky.social/post/3myvvxiebjk2p",
+"created": 1793161645332,
+"author": "z-ara1.bsky.social",
+"flair": "",
+"all": false,
+"dachHint": false,
+"comments": 0
 },
 {
 "id": "reddit:1xhaci1",
@@ -1765,6 +1835,20 @@
 "dachHint": true
 },
 {
+"id": "bsky:at://did:plc:5eyoqwdgx6vaazf3crscxjuw/app.bsky.feed.post/3mym3ksd6x22a",
+"source": "Bluesky",
+"kind": "bluesky",
+"title": "Finished up my hunter of the left-hand path, which means I am now OUT of trench crusade models to paint! (at least until they make plastic c",
+"text": "Finished up my hunter of the left-hand path, which means I am now OUT of trench crusade models to paint! (at least until they make plastic court models, or I can bother someone to print some bigass models in a high quality resin for me lol)",
+"url": "https://bsky.app/profile/skeev.bsky.social/post/3mym3ksd6x22a",
+"created": 1792824064638,
+"author": "skeev.bsky.social",
+"flair": "",
+"all": false,
+"dachHint": false,
+"comments": 1
+},
+{
 "id": "reddit:1xdyw2g",
 "source": "r/3Drequests",
 "kind": "reddit",
@@ -1776,6 +1860,20 @@
 "flair": "",
 "all": true,
 "dachHint": false
+},
+{
+"id": "bsky:at://did:plc:ies5f4f42kti2hicyw7oypid/app.bsky.feed.post/3myl6rw537k2b",
+"source": "Bluesky",
+"kind": "bluesky",
+"title": "Been lusting over several John Kacere paintings and would be incredibly honored if anyone could procure a print for me 💓",
+"text": "Been lusting over several John Kacere paintings and would be incredibly honored if anyone could procure a print for me 💓",
+"url": "https://bsky.app/profile/celestebelle.bsky.social/post/3myl6rw537k2b",
+"created": 1792793165003,
+"author": "celestebelle.bsky.social",
+"flair": "",
+"all": false,
+"dachHint": false,
+"comments": 0
 },
 {
 "id": "lemmy:https://news.abolish.capital/post/88264",
@@ -1844,6 +1942,48 @@
 "flair": "",
 "all": false,
 "dachHint": false
+},
+{
+"id": "bsky:at://did:plc:3hoe5vcz7ez3nnkq4ftkuqqe/app.bsky.feed.post/3myfmehqqzk26",
+"source": "Bluesky",
+"kind": "bluesky",
+"title": "Furpocalypse was the convention experience that inspired me to make this zine initially. So because I am not going, I'm begging someone to p",
+"text": "Furpocalypse was the convention experience that inspired me to make this zine initially. So because I am not going, I'm begging someone to print these out and leave them around. Please. I'll pay you the cost to print them. Avenge my ass.",
+"url": "https://bsky.app/profile/pupydogeyes.bsky.social/post/3myfmehqqzk26",
+"created": 1792601587669,
+"author": "pupydogeyes.bsky.social",
+"flair": "",
+"all": false,
+"dachHint": false,
+"comments": 0
+},
+{
+"id": "bsky:at://did:plc:qrrksmjviqmuak62gycm7cx5/app.bsky.feed.post/3myei2jdlxk2x",
+"source": "Bluesky",
+"kind": "bluesky",
+"title": "Hope that everybody shares spread reposts and exsposes me world wide. SISSY PIG FAGGOT DARREN SULLIVAN is still hoping and waiting for someo",
+"text": "Hope that everybody shares spread reposts and exsposes me world wide. SISSY PIG FAGGOT DARREN SULLIVAN is still hoping and waiting for someone to print my photos out and stick them up in public places for all to see and then take a photo of where they stuck it up then repost it back on blue-sky",
+"url": "https://bsky.app/profile/darren-sullivan.bsky.social/post/3myei2jdlxk2x",
+"created": 1792562599086,
+"author": "darren-sullivan.bsky.social",
+"flair": "",
+"all": false,
+"dachHint": false,
+"comments": 0
+},
+{
+"id": "bsky:at://did:plc:selsekqxn4n6hgtgn2mo4gqy/app.bsky.feed.post/3mycpdhw6w222",
+"source": "Bluesky",
+"kind": "bluesky",
+"title": "Oh go ON. I finally bought the préachán dubh/rook print for me and my corvid-loving wife.",
+"text": "Oh go ON. I finally bought the préachán dubh/rook print for me and my corvid-loving wife.",
+"url": "https://bsky.app/profile/sandraduffy.bsky.social/post/3mycpdhw6w222",
+"created": 1792501696305,
+"author": "sandraduffy.bsky.social",
+"flair": "",
+"all": false,
+"dachHint": false,
+"comments": 2
 },
 {
 "id": "reddit:1xa0gp0",
