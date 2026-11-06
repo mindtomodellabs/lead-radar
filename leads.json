@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-05T23:32:45.771393+00:00",
+"generated": "2026-11-06T00:34:13.663655+00:00",
 "status": {
 "r/3Dprintmything": {
 "ok": true,
@@ -12,9 +12,9 @@
 "n": 0
 },
 "r/PrintMyThing": {
-"ok": true,
-"via": "rss",
-"n": 1
+"ok": false,
+"via": "failed",
+"n": 0
 },
 "r/3Dprintingrequests": {
 "ok": false,
@@ -37,8 +37,8 @@
 "n": 0
 },
 "r/de (Suche)": {
-"ok": false,
-"via": "failed",
+"ok": true,
+"via": "rss",
 "n": 0
 },
 "r/germany (Suche)": {
@@ -76,6 +76,32 @@
 }
 },
 "leads": [
+{
+"id": "reddit:1xoyyhs",
+"source": "r/3Dprintmything",
+"kind": "reddit",
+"title": "[FL, USA] Custom iPhone 18 Pro Max Case",
+"text": "Hey everyone! \n I’m looking to commission a custom iPhone 18 Pro Max case that looks like the Omega Analyzer from Kakusei Hunter Omegahorn. I'm looking for something faithful to the show prop yet durable. \n I made a few mockups on Meshy as a proof of concept for what I’m looking for. If you’re down, comment below and let’s start DMing.",
+"url": "https://www.reddit.com/r/3Dprintmything/comments/1xoyyhs/fl_usa_custom_iphone_18_pro_max_case/",
+"created": 1793924814000,
+"author": "Radiant-Software-996",
+"flair": "",
+"all": true,
+"dachHint": false
+},
+{
+"id": "reddit:1xoyx4p",
+"source": "r/3Dprintmything",
+"kind": "reddit",
+"title": "[US-San Diego, CA] In need of a simple jig for a drill press",
+"text": "I'm looking for help printing a jig I designed to hold some parts in place on a drill press as part of a craft I'm working on. \n I've never done any 3D printing before so I'm open to recommendations on material, etc. It doesn't need to be fancy or a specific color, just hold an object fairly snugly.\n Screenshots attached and I can share a link privately to a downloadable STL file. Total dimensions are 104 mm x 104 mm x 18 mm",
+"url": "https://www.reddit.com/r/3Dprintmything/comments/1xoyx4p/ussan_diego_ca_in_need_of_a_simple_jig_for_a/",
+"created": 1793924709000,
+"author": "MasterThalpian",
+"flair": "",
+"all": true,
+"dachHint": false
+},
 {
 "id": "reddit:1xoxfp7",
 "source": "r/3Dprintmything",
