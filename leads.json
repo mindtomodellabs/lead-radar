@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-06T15:28:56.612470+00:00",
+"generated": "2026-11-06T16:20:43.022325+00:00",
 "status": {
 "r/3Dprintmything": {
 "ok": true,
@@ -7,9 +7,9 @@
 "n": 50
 },
 "r/3Drequests": {
-"ok": false,
-"via": "failed",
-"n": 0
+"ok": true,
+"via": "rss",
+"n": 50
 },
 "r/PrintMyThing": {
 "ok": false,
@@ -103,8 +103,21 @@
 "n": 0
 }
 },
-"last24h": 13,
+"last24h": 16,
 "leads": [
+{
+"id": "reddit:1xpenxa",
+"source": "r/3Drequests",
+"kind": "reddit",
+"title": "Looking for people to join my production team (unpaid for now)",
+"text": "Hello guys. I’m a musician and producer and I’m working on releasing music. The thing that’s been stopping me is trying to find a way from myself without showing my face. The 3-D animation and graphics would be the best option. I want to build a team with 2 to 3 who can model and create backgrounds. I’m doing my best with learning blender and how to do all these cool things but honestly, I’m struggling a bit so I having people to help me out would be amazing.\n I’m currently working on funding for this for now it’s unpaid. Once I do get funding, will do my best to fairly compensate the people on my team.\n If you want to know more or are interested, shoot me a DM or leave a comment here!\n (to be clear I’m not looking for people with 10+ years of experience. I’m looking for beginner intermediate people who are interested in building a portfolio and having a good time!)",
+"url": "https://www.reddit.com/r/3Drequests/comments/1xpenxa/looking_for_people_to_join_my_production_team/",
+"created": 1793976612000,
+"author": "Any_Personality_8509",
+"flair": "",
+"all": true,
+"dachHint": false
+},
 {
 "id": "reddit:1xpatkp",
 "source": "r/3Dprintmything",
@@ -119,6 +132,19 @@
 "dachHint": false
 },
 {
+"id": "reddit:1xpahjq",
+"source": "r/3Drequests",
+"kind": "reddit",
+"title": "Add a Negative Part for a LED Puck to my File",
+"text": "Hello, all. I have a \"Cube.\" The top and the bottom of the cube have the company name. On the front face of the cube, I want to add a hole which is around 4 inches by 2 inches deep. The goal is to put an LED puck inside so that it illuminates the cube. I previously took it from the existing STL I have and Bambu added supports. I need to add manual supports so that I do not affect the bottom of the print. There are only small overhangs in the bottom of the cube so it prints fine without supports. I will need supports on the cut out but they must be done manually. I am willing to pay $10. Thank you.",
+"url": "https://www.reddit.com/r/3Drequests/comments/1xpahjq/add_a_negative_part_for_a_led_puck_to_my_file/",
+"created": 1793964408000,
+"author": "No-Replacement1928",
+"flair": "",
+"all": true,
+"dachHint": false
+},
+{
 "id": "reddit:1xp8ni9",
 "source": "r/3Dprintmything",
 "kind": "reddit",
@@ -126,6 +152,19 @@
 "text": "",
 "url": "https://www.reddit.com/r/3Dprintmything/comments/1xp8ni9/uswa_penguin_figurine_design_color_print/",
 "created": 1793957462000,
+"author": "KheldarRocket",
+"flair": "",
+"all": true,
+"dachHint": false
+},
+{
+"id": "reddit:1xp8meq",
+"source": "r/3Drequests",
+"kind": "reddit",
+"title": "Penguin figurine: design + color print",
+"text": "Hello,\n I have a render of what I want (and a very crude model of it in Blender but might as well ignore it) but I need design work to make that a reality. Size wise, probably 2-3 inches tall, depends on the price. Then I would like to print 20 of them. I’m hoping for $60 of design work and around $10 per figurine. This is my first time doing something like that but hopefully I’m not way off base. Thanks in advance !\n Budget: $60 design + $10 x 20 prints",
+"url": "https://www.reddit.com/r/3Drequests/comments/1xp8meq/penguin_figurine_design_color_print/",
+"created": 1793957340000,
 "author": "KheldarRocket",
 "flair": "",
 "all": true,
