@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-06T13:36:16.313229+00:00",
+"generated": "2026-11-06T14:38:31.485163+00:00",
 "status": {
 "r/3Dprintmything": {
 "ok": true,
@@ -22,9 +22,9 @@
 "n": 0
 },
 "r/3Dprinting (Suche)": {
-"ok": false,
-"via": "failed",
-"n": 0
+"ok": true,
+"via": "rss",
+"n": 8
 },
 "r/BambuLab (Suche)": {
 "ok": false,
@@ -37,8 +37,8 @@
 "n": 0
 },
 "r/de (Suche)": {
-"ok": true,
-"via": "rss",
+"ok": false,
+"via": "failed",
 "n": 0
 },
 "r/germany (Suche)": {
@@ -54,19 +54,55 @@
 "ok": true,
 "n": 40
 },
+"Lemmy-Suche": {
+"ok": true,
+"n": 95
+},
+"Bambu-Lab-Forum": {
+"ok": true,
+"n": 77
+},
+"MakerForums": {
+"ok": false,
+"err": "HTTP Error 404: Not Found"
+},
+"Bluesky": {
+"ok": false,
+"err": "Zugang fehlt: BSKY_HANDLE, BSKY_APP_PASSWORD"
+},
+"Mastodon-Suche": {
+"ok": false,
+"err": "Zugang fehlt: MASTODON_TOKEN"
+},
+"Google Alerts": {
+"ok": false,
+"err": "Zugang fehlt: GOOGLE_ALERTS_FEEDS"
+},
+"E-Mail-Alarme": {
+"ok": false,
+"err": "Zugang fehlt: IMAP_HOST, IMAP_USER, IMAP_PASS"
+},
 "Mastodon #3DDruck": {
 "ok": true,
 "n": 40
-},
-"troet.cafe #3DDruck": {
-"ok": false,
-"err": "HTTP Error 422: Unprocessable Content"
 },
 "norden.social #3DDruck": {
 "ok": true,
 "n": 40
 },
+"chaos.social #3DDruck": {
+"ok": false,
+"err": "HTTP Error 422: Unprocessable Content"
+},
+"Mastodon #3DDrucker": {
+"ok": true,
+"n": 40
+},
 "Mastodon #3DPrinting": {
+"ok": true,
+"n": 40
+},
+"Mastodon #3DPrint": {
 "ok": true,
 "n": 40
 },
@@ -75,6 +111,7 @@
 "n": 0
 }
 },
+"last24h": 14,
 "leads": [
 {
 "id": "reddit:1xpatkp",
@@ -233,6 +270,20 @@
 "dachHint": false
 },
 {
+"id": "lemmy:https://news.abolish.capital/post/91077",
+"source": "Lemmy-Suche",
+"kind": "lemmy",
+"title": "Mexico in the Work of a Modest Revolutionary",
+"text": "*This article by [Jaime Ortega](https://www.jornada.com.mx/autores/Jaime%20Ortega) originally appeared in the [November 5, 2026 edition of La Jornada](https://www.jornada.com.mx/noticia/2026/11/05/opinion/mexico-en-la-obra-de-un-modesto-revolucionario), Mexico’s premier left wing daily newspaper.*\n\nThe most besieged figure in these days of anti-Cuban offensive is Raúl Castro, whose middle name seems to be performative of his attitude toward the island’s revolutionary process: Modesto. This mark of identity was recognized by his biographer and friend, the Russian-Soviet Nikolai Leónov. In left-wing political circles his discursive practice is less referenced, and only in recent times, with the appearance of the **nine volumes of his *Selected Works*** (in collaboration with the People’s Republic of China), can we delve into a more complete panorama of his political vision. Important antecedents were the two volumes titled *Selection of Speeches and Articles*, which collect public appearances between 1976 and 1986, and the two volumes titled *Revolution: The Most Beautiful Work*, with addresses between 2006 and 2018. In Mexico some of his speeches were published in the *Revista de la Universidad* in 1959, and in the 1970s in *Cuadernos Políticos* and *Historia y Sociedad*.\n\nAs historians from the Office of Historical Affairs, José Luis Aneiros and Dayli Sánchez, pointed out during the Havana International Book Fair last August, these volumes allow the discovery of a figure whose linguistic richness goes hand in hand with political passion. It is true that, unlike his brother Fidel, Raúl is a man much more devoted to the Cuban world. Although his interventions on Latin America or global issues were not lacking, the truth is that his political and intellectual craft is found, above all, in the construction of Cuban institutions, especially the Defense apparatus.\n\nThe more than 5,000 pages give us access to documents that enrich the documentary sources on the revolutionary process. The most emblematic case is the first volume, which includes his diaries from the insurrectionary struggle. A fascinating fragment of his diary is when he writes about how books on the history of Cuba reached the Rebel Army, to be used for ideological training, but also an algebra book requested by the “multifaceted” Che Guevara, whom he acknowledges as the one who ordered all the bibliographic material that arrived at the front.\n\nBesides this, which will surely enrich the historiographic account of the armed struggle, we can find some interesting facts regarding Mexico. For example, it includes the interview conducted by Gerardo Unzueta, the veteran and self-taught Mexican communist journalist. In 1959 Unzueta—at the time, director of the PCM’s organ *La Voz de México*—interviewed Che Guevara (*Revista Memoria* number 299) and also Raúl, whom he asked, in August of that same year, for his characterization of the revolution. The general, surprised, responds: “Honestly, since the war ended, no journalist had yet asked me such a complex and extensive question in so few words.”\n\nAnother interesting fact that can be recognized in these pages is the presence of General Cárdenas, whom Raúl refers to on numerous occasions as an “illustrious son of Mexico,” and whom he credits with the “so selfless gesture that brought him to our shores to fight as one more soldier of the revolution.” At another moment he had called him “that glory, not of Mexico, but of America.” Many years later, in September 1975, Raúl evokes in a speech, in the presence of engineer Cuauhtémoc Cárdenas, the brave acts and gestures of his father, and gives the general’s grandson, “who has the honor and the glory of bearing his name,” an “imperialist M-3 submachine gun,” telling him: **“We could not give it to your grandfather, we give it to another Lázaro Cárdenas.”** These pieces bring together elements for reflecting on the dialogue, fragmentary but not interrupted, between the two deepest a",
+"url": "https://news.abolish.capital/post/91077",
+"created": 1793899821990,
+"author": "rss",
+"flair": "",
+"all": false,
+"dachHint": false,
+"comments": 0
+},
+{
 "id": "reddit:1xokl63",
 "source": "r/3Dprintmything",
 "kind": "reddit",
@@ -361,6 +412,20 @@
 "flair": "",
 "all": true,
 "dachHint": false
+},
+{
+"id": "masto:https://eicker.news/ap/users/117512277400581652/statuses/117558612139738281",
+"source": "Mastodon #3DPrint",
+"kind": "mastodon",
+"title": "Beehive Industries has completed testing of its 100 lbf Frenzy 6 engine, a 3D printed powerplant for UAVs and extended-range munitions. The ",
+"text": "Beehive Industries has completed testing of its 100 lbf Frenzy 6 engine, a 3D printed powerplant for UAVs and extended-range munitions. The 450 N engine went from commission to test in four months under a 29.7M USD US Air Force programme, with a first flight planned for 2027. https://3dprint.com/335859/beehive-industries-tests-frenzy-6-engine/ #3Dprint #3Dprinting #Aerospace",
+"url": "https://eicker.news/@3Dprint/117558612139738281",
+"created": 1793802065000,
+"author": "3Dprint@eicker.news",
+"flair": "",
+"all": false,
+"dachHint": false,
+"comments": 0
 },
 {
 "id": "reddit:1xni43y",
@@ -506,6 +571,34 @@
 "dachHint": false
 },
 {
+"id": "lemmy:https://suppo.fi/post/15239748",
+"source": "Lemmy-Suche",
+"kind": "lemmy",
+"title": "Study Claims Vizio Simply Ignores ‘Smart’ TV Spying Opt Out Requests",
+"text": "> Recently, reports emerged that LG TVs are sniffing around your local network, and even listening to your local environment, even when the TV is purportedly “off.” Some of those voice commands were then stored in plain text and uploaded to the internet. LG’s response? To deny everything.\n> \n> For decades now we’ve documented how while “smart” TV makers are obsessed with making money off of in-home surveillance (which is now more profitable than the actual TV), they do an abysmal job protecting the data they collect. They also routinely don’t respect consumer choice when users say they don’t want to participate in the full scope of hyper-commercialized mass surveillance.\n> \n> That latter point is central to a new study out of Northeastern that conducted 5,943 experiments across twelve commercial “smart” TV devices. The researchers found that most smart TVs utilize automatic content recognition (ACR), a technology that captures audio or video snapshots of viewed content and then monetizes that data to help build personalized profiles of viewers.\n> \n> TV makers insist that users are supposed to be able to opt out, but the choice simply doesn’t work across a large segment of TVs. Companies like Vizio simply ignored the consumer requests entirely more often than not:\n> \n>     “We find that the advertised ACR opt-out fully suppresses ACR-attributable traffic on only four operating systems; on Samsung Tizen traffic consistent with ACR activity persists in more\n>     than 60% of evaluated scenarios, and on Vizio SmartCast a content correlated endpoint hosted on Amazon Kinesis continues to receive traffic in 100% of opted-out scenarios.”\n> \n> These companies have been awful for a long while now, and U.S. regulation of the sector has varied between soggy and inconsistent. Many smart TV manufacturers fail to encrypt sensitive data, or remove features if you refuse to have your daily viewing habits measured and monetized (by say, disconnecting your TV from the internet).\n> \n> Vizio was fined $2.2 million by the FTC back in 2017 for failing to tell customers that their televisions were spying on them. The company also wound up facing a $17 million lawsuit that wound up giving consumers somewhere between $13 and $31 (lawyers in the case saw $5.6 million in fees).\n> \n> The researchers say since they can’t see the precise scope of what’s being collected due to encryption, they’re unsure whether Vizio is technically violating its FTC agreement (not that we have a current FTC that would care if they were):\n> \n>     “The opt-out setting has no observable effect on traffic sent to this endpoint; however, we cannot inspect the payload due to encryption so we cannot confirm whether this violates the FTC settlement.”\n> \n> Results of whether opting out of ACR tracking actually stopped ACR tracking were all over the map. Roku, for example, ignores opt-out requests when users are watching Roku’s own channels. None of the smart TV vendors track Netflix viewing for fear of violating agreements with the streaming giant. Samsung’s opt out function was more likely to actually work when a user was watching antenna broadcasts.\n> \n> On two Smart TV platforms, personal viewing data collected by ACR remains unencrypted, despite years of bad press and scandal on the subject. Many appear to be violating the law, but because U.S. regulatory oversight has been gutted, they see no meaningful accountability. That includes smart TV OS’ like VIDAA, which is most prominently found on Hisense and Toshiba smart TVs:\n> \n>     “VIDAA OS sends ACR data to servers run by Unruly over MQTT without encryption, so anyone on the network path between the TV and those servers can read it. Each message carries a Client ID, a permanent identifier for the TV that can’t be reset, along with the time zone, the app name, the input (antenna, HDMI), the antenna channel and an audio fingerprint.\n> \n>     The app name alone can be revealing. We saw ACR on apps such as VIDAA Kids, which raises",
+"url": "https://suppo.fi/post/15239748",
+"created": 1793716904184,
+"author": "cm0002",
+"flair": "",
+"all": false,
+"dachHint": false,
+"comments": 2
+},
+{
+"id": "lemmy:https://lemmy.ml/post/54857986",
+"source": "Lemmy-Suche",
+"kind": "lemmy",
+"title": "Study Claims Vizio Simply Ignores ‘Smart’ TV Spying Opt Out Requests",
+"text": "Recently, reports emerged that LG TVs are sniffing around your local network, and even listening to your local environment, even when the TV is purportedly “off.” Some of those voice commands were then stored in plain text and uploaded to the internet. LG’s response? To deny everything.\n\nFor decades now we’ve documented how while “smart” TV makers are obsessed with making money off of in-home surveillance (which is now more profitable than the actual TV), they do an abysmal job protecting the data they collect. They also routinely don’t respect consumer choice when users say they don’t want to participate in the full scope of hyper-commercialized mass surveillance.\n\nThat latter point is central to a new study out of Northeastern that conducted 5,943 experiments across twelve commercial “smart” TV devices. The researchers found that most smart TVs utilize automatic content recognition (ACR), a technology that captures audio or video snapshots of viewed content and then monetizes that data to help build personalized profiles of viewers.\n\nTV makers insist that users are supposed to be able to opt out, but the choice simply doesn’t work across a large segment of TVs. Companies like Vizio simply ignored the consumer requests entirely more often than not:\n\n    “We find that the advertised ACR opt-out fully suppresses ACR-attributable traffic on only four operating systems; on Samsung Tizen traffic consistent with ACR activity persists in more\n    than 60% of evaluated scenarios, and on Vizio SmartCast a content correlated endpoint hosted on Amazon Kinesis continues to receive traffic in 100% of opted-out scenarios.”\n\nThese companies have been awful for a long while now, and U.S. regulation of the sector has varied between soggy and inconsistent. Many smart TV manufacturers fail to encrypt sensitive data, or remove features if you refuse to have your daily viewing habits measured and monetized (by say, disconnecting your TV from the internet).\n\nVizio was fined $2.2 million by the FTC back in 2017 for failing to tell customers that their televisions were spying on them. The company also wound up facing a $17 million lawsuit that wound up giving consumers somewhere between $13 and $31 (lawyers in the case saw $5.6 million in fees).\n\nThe researchers say since they can’t see the precise scope of what’s being collected due to encryption, they’re unsure whether Vizio is technically violating its FTC agreement (not that we have a current FTC that would care if they were):\n\n    “The opt-out setting has no observable effect on traffic sent to this endpoint; however, we cannot inspect the payload due to encryption so we cannot confirm whether this violates the FTC settlement.”\n\nResults of whether opting out of ACR tracking actually stopped ACR tracking were all over the map. Roku, for example, ignores opt-out requests when users are watching Roku’s own channels. None of the smart TV vendors track Netflix viewing for fear of violating agreements with the streaming giant. Samsung’s opt out function was more likely to actually work when a user was watching antenna broadcasts.\n\nOn two Smart TV platforms, personal viewing data collected by ACR remains unencrypted, despite years of bad press and scandal on the subject. Many appear to be violating the law, but because U.S. regulatory oversight has been gutted, they see no meaningful accountability. That includes smart TV OS’ like VIDAA, which is most prominently found on Hisense and Toshiba smart TVs:\n\n    “VIDAA OS sends ACR data to servers run by Unruly over MQTT without encryption, so anyone on the network path between the TV and those servers can read it. Each message carries a Client ID, a permanent identifier for the TV that can’t be reset, along with the time zone, the app name, the input (antenna, HDMI), the antenna channel and an audio fingerprint.\n\n    The app name alone can be revealing. We saw ACR on apps such as VIDAA Kids, which raises concerns under the U.S. children’s privacy law (COP",
+"url": "https://lemmy.ml/post/54857986",
+"created": 1793715517135,
+"author": "SocialistVibes01",
+"flair": "",
+"all": false,
+"dachHint": false,
+"comments": 20
+},
+{
 "id": "reddit:1xmgawb",
 "source": "r/3Drequests",
 "kind": "reddit",
@@ -556,6 +649,20 @@
 "flair": "",
 "all": true,
 "dachHint": false
+},
+{
+"id": "lemmy:https://lemmy.durstig.online/post/70097",
+"source": "Lemmy-Suche",
+"kind": "lemmy",
+"title": "TFA Drops potentially nerfed/bugged since Wednesday's update? (Cope/Discussion)",
+"text": "[Original Reddit post](https://www.reddit.com/r/2007scape/comments/1xm2mqc/tfa_drops_potentially_nerfedbugged_since/)\n\nAfter grinding 100+ TFA raids through various group sizes including premade groups, 404 pickups and clan 8 mans. I am under the impression (and the general consensus) is that since the update that went live on Wednesday every single player I have interacted with has gone dry.\nThat means 1 or fewer purples SEEN in at least 40 raids. Obviously this is anecdotal and may be coping for being unlucky, but general consensus is that the rates have materially changed since the last weeks update/fixes.\nInterested in hearing from other players: Am I crazy? Is anyone printing at this raid? Have you noticed a shift in the drop rate since wednesday's update?\nLooking forward to seeing the details on drop rates come this wednesday. Good luck out there and to those who are actually getting drops - congrats.\nsubmitted by\n/u/NoFluffLoL\n\nOriginally posted by u/NoFluffLoL on r/2007scape",
+"url": "https://lemmy.durstig.online/post/70097",
+"created": 1793639606949,
+"author": "eifachposte",
+"flair": "",
+"all": false,
+"dachHint": false,
+"comments": 0
 },
 {
 "id": "reddit:1xm03n6",
@@ -764,6 +871,20 @@
 "flair": "",
 "all": true,
 "dachHint": false
+},
+{
+"id": "lemmy:https://news.abolish.capital/post/89909",
+"source": "Lemmy-Suche",
+"kind": "lemmy",
+"title": "Utilizing beadwork, an artist encounters her mother’s history in the child ‘welfare’ record",
+"text": "![](https://media.indiginews.com/2026/10/AT26_Verge_UnitedContemporary_195599612_fe103f8150474196ab592b987743076c__silverfox_apprehension_2-1.jpg)\n\nA closeup of Krystle Silverfox’s beadwork over her mother’s Sixties Scoop files, as shown in the display ‘Apprehension.’ Submitted image (cropped)\n\nKrystle Silverfox uses straight lines of colourful beads to cover names, places and events recorded in her mother’s Sixties Scoop files. On the art pieces, printed headlines and handwritten notes remain with information relevant to the family’s journey in the child welfare system.\n\n*Apprehension,* a body of work by Silverfox of Selkirk First Nation (Wolf Clan), is a multimedia display of her family’s archival documents and records.\n\nWith colourful beads redacting personal information on the documents, Silverfox’s artwork represents a reclamation of traditions severed by countless Indigenous families during the Sixties Scoop.\n\n*Apprehension* is on display at the 27th edition of Art Toronto from Oct. 29 to Nov. 1 at the Metro Toronto Convention Centre in downtown Tkarón:to. Pieces from *Apprehension,* along with other artwork by Silverfox, are also set to be on view from Oct. 30 until Jan. 17, 2027 at the Two Rivers Gallery in “Prince George.”\n\n**A protection of family history**\n==================================\n\nThe Sixties Scoop term refers to the widespread removal of Indigenous children from their families and communities by child “welfare” authorities, who forced them into foster care or for adoption, often with non-Indigenous families. The Sixties Scoop Indigenous Society of Alberta describes removals – that separated children from their languages, cultures and communities – beginning in the mid-1950s and continuing through the 1980s.\n\n“Canada’s” national Sixties Scoop class litigation, reached in 2017 and approved by the courts in 2018, aimed to provide eligible survivors with compensation to “support healing, wellness, education, language, culture and commemoration.”\n\nTo apply for compensation under the settlement, Silverfox’s mother, a Sixties Scoop Survivor, submitted a freedom of information request to receive her records.\n\nHer mother then gifted Silverfox about 280 pages of documents including health records, court documents and apprehension and social worker records.\n\n![](https://media.indiginews.com/2026/10/AT26_Verge_UnitedContemporary_195599614_c2de713f7aa748d38bbcb654048ea764__silverfox_apprehension_3-786x1024.jpeg)\n\nA piece by Krystle Silverfox that’s part of an exhibition ‘Apprehension,’ now on display in Toronto. Submitted image\n\nSilverfox worked for more than a year with the documents and tells IndigiNews that the redacted information includes people’s names, places and events recorded in her family’s files. What she covers varies from page to page.\n\nWhile she was working on the exhibition, she recalls taking time for herself and going for walks or discussing the findings with family members if they wanted to, but has “been giving this project a lot of space,” as the physical redaction has been very impactful.\n\nShe said the documents are difficult to go through because the material is “reflecting this difficult family history.”\n\n“That’s why it’s called *Apprehension* because I have this apprehension towards working with this as a material,” Silverfox said.\n\nShe added that the documents she worked with included “actual apprehension records,” creating a layered creation journey.\n\nFor Silverfox, the beadwork acted as protection for her family’s history.\n\n“But then I also think about the beadwork as a symbol of care. So taking care of these really difficult moments and protecting my family through the beadwork.”\n\n**Beading on paper**\n====================\n\nSilverfox has been beading since she was a child and now uses her beadwork to create these three-dimensional pieces in *Apprehension* and previous artworks which also utilize other materials such as blankets, pennies and more.\n\nSilverfox says the works in *Apprehension*",
+"url": "https://news.abolish.capital/post/89909",
+"created": 1793421636420,
+"author": "rss",
+"flair": "",
+"all": false,
+"dachHint": false,
+"comments": 0
 },
 {
 "id": "reddit:1xjyvsg",
@@ -1052,6 +1173,20 @@
 "dachHint": false
 },
 {
+"id": "lemmy:https://lemmy.durstig.online/post/69100",
+"source": "Lemmy-Suche",
+"kind": "lemmy",
+"title": "Asked Claude Code to find every secret on my laptop and it found 63",
+"text": "[Original Reddit post](https://www.reddit.com/r/ClaudeCode/comments/1xi0cma/asked_claude_code_to_find_every_secret_on_my/)\n\nafter the litellm thing last week (the key behind it was just sitting in an opencode.json someone committed) i got curious what my own agent can actually see, so i opened claude code in my home folder with some rules:\nfind anything that looks like a key, token or password\nfile paths and variable names only, never print a value\ndon't touch anything, just report\ntook about 4 minutes. 63.\n31 in .env files across old side projects, some i haven't opened in years\naws credentials in ~/.aws that still work. the key is from 2022\nan openai key and a github token in plain text in the env block of my mcp config\nnpm and docker tokens in ~/.npmrc and ~/.docker/config.json\n4 api keys in my shell history from testing stuff with curl\nand then a long tail of random stuff i didn't bother sorting\nit followed the rules btw, no values printed. then i scrolled back through the transcript and yeah. to decide whether something was a secret it had to READ it so a good chunk of them went through the context window anyway and there was no permission prompt either, because reading files in the folder you opened it in is just a normal thing for it to do\n(ok opening it in ~ was kind of asking for it. but i dont think im the only one who does that)\nwhich is why the \"never read .env\" line in CLAUDE.md doesn't really do much for me. it's a request, not a lock.\nanyway spent the evening cleaning up. rotated the ones that matter, deleted the dead projects' .env files and moved everything still alive into infisical. no .env on disk now, apps get their secrets at runtime with\ninfisical run -- npm run dev\n, and there's a deny rule so claude can't just call the infisical cli and ask. for the keys claude itself needs (github, openai) i'm trying their agent vault thing. it proxies the agent's requests and attaches the key on the way out, so claude never holds the token at all. still early on that one\nnot saying panic. just open it in your home folder, ask the same thing and post your number, i genuinely cant tell if 63 is bad or normal\nsubmitted by\n/u/notomarsol\n\nOriginally posted by u/notomarsol on r/ClaudeCode",
+"url": "https://lemmy.durstig.online/post/69100",
+"created": 1793223199733,
+"author": "eifachposte",
+"flair": "",
+"all": false,
+"dachHint": false,
+"comments": 0
+},
+{
 "id": "reddit:1xhzpup",
 "source": "r/3Drequests",
 "kind": "reddit",
@@ -1115,6 +1250,20 @@
 "flair": "",
 "all": true,
 "dachHint": false
+},
+{
+"id": "lemmy:https://news.abolish.capital/post/89065",
+"source": "Lemmy-Suche",
+"kind": "lemmy",
+"title": "The Elon Musk Funder Trying to Sway the Race for LA’s Top Lawyer",
+"text": "A DSA-backed California prosecutor who helped force Meta to pay a historic $17 billion settlement this year is on a glide path to become the top lawyer for Los Angeles — unless a tech investor cozy with Elon Musk can spend enough to stop her.\n\nSan Francisco resident John Hering has sunk more than $1.25 million into an effort to defeat Marissa Roy, a deputy attorney general at the California Department of Justice endorsed by the LA chapter of the Democratic Socialists of America, and to support John McKinney, a county prosecutor running an uphill general election campaign. It’s a heavy injection of cash from a single individual in a local race for a little-known office, but it pales in comparison to Hering’s private-sector spending: In 2022, [his investment firm](https://www.wsj.com/business/entrepreneurship/musk-investors-spacex-ai-tesla-2711aca1?eafs_enabled=false) Vy Capital [pumped](https://archive.ph/SF2qR#selection-2173.36-2173.39) $700 million into Musk’s takeover of the company then known as Twitter and $300 million into his tunnel-construction Boring Company.\n\nA co-founder of the cybersecurity company Lookout, Hering is spending in line with the tech industry in which he’s long been invested. While the city attorney’s office is commonly used as the city’s defense against litigious residents, the office also carries the power to mold legislation, enforce state law, such as labor protections, and take on corporations and the federal government in court. Roy has vowed to wield the office’s regulatory muscle against corporations — including Big Tech.\n\n“Monopolies and Big Tech are things that [Roy] sees as an opportunity to wage battle against,” said former LA City Councilmember Mike Bonin, who has not endorsed either candidate. “If I were Big Tech, I would certainly think, ‘OK, well, this is someone who is a potential threat.’”\n\nHering, who did not respond to The Intercept’s request for comment, is part of a group of tech titans backing McKinney. Others include the founders of Ring, Tinder, and Boingo, and investors in [Anthropic](https://theintercept.com/2026/09/08/military-ai-weapons-contracts-openai-anthropic-google/), [Anduril](https://theintercept.com/2025/07/09/trump-big-beautiful-bill-anduril/), and [SpaceX](https://theintercept.com/2026/01/12/data-centers-space-ai/), who have collectively put more than $1.9 million into pro-McKinney committees. A group called “Committee to Expand the Middle Class Candidate” — backed by the property rental tech giant Airbnb — donated an additional $4.2 million to a committee supporting McKinney.\n\nTo help get McKinney through the June primary election, Hering and fellow tech investor Diego Berdakin poured more than $1 million into another committee. Over the past month, Hering’s general-election spending group, Neighbors for John McKinney, has been paying for TV and online ads and mailers that play up McKinney as “a lifelong Democrat” and “100% anti-MAGA.”\n\nThe same can hardly be said for the group’s top funder.\n\nAfter giving to Hillary Clinton’s failed 2016 presidential bid and Democratic candidates like Beto O’Rourke, Hering donated $41,300 to the Republican National Committee and $500,000 to Musk’s America PAC in 2024 to support Donald Trump’s run for president. He has publicly praised Musk’s chaotic purge of the federal government through his so-called Department of Government Efficiency program and called the world’s richest man an “[American hero](https://x.com/johnhering/status/2035377910723609029)” for offering to pay TSA salaries during the spring government shutdown. In 2025, Hering and Ring founder Jamie Siminoff, who has also donated to Neighbors for John McKinney, attended a White House dinner where Trump [hosted](https://web.archive.org/web/20260925111450/https://fortune.com/2025/09/05/trump-tech-dinner-full-attendee-list/) dozens of high-profile Silicon Valley figures. The pro-McKinney group is also funded by billionaires Rick Caruso, a failed LA mayoral candidate, and",
+"url": "https://news.abolish.capital/post/89065",
+"created": 1793138489683,
+"author": "rss",
+"flair": "",
+"all": false,
+"dachHint": false,
+"comments": 0
 },
 {
 "id": "reddit:1xh4c7x",
@@ -1598,6 +1747,20 @@
 "dachHint": false
 },
 {
+"id": "lemmy:https://news.abolish.capital/post/88264",
+"source": "Lemmy-Suche",
+"kind": "lemmy",
+"title": "Bodycam: Cop Was Not in Danger When He Fired Shots That Killed 1-Year-Old Kohen Wiley",
+"text": "After the Mississippi attorney general cleared a white cop for firing into a car and killing a Black toddler in a Walmart parking lot, video footage released by the Mississippi Department of Public Safety has revealed the fullest picture to date of what happened.\n\nThe videos, provided to The Intercept in response to a public records request, come on the heels of leaked footage that exposed how a needlessly aggressive and reckless police confrontation of two suspected shoplifters led to 1-year-old Kohen Wiley’s violent death in his mother’s arms.\n\nWhile the newly released videos include redacted versions of the previously leaked footage — including body camera footage for some of the officers, as well as Walmart surveillance video — the new footage reveals for the first time the body camera video belonging to the Senatobia police officer who fired the shots that killed Kohen Wiley: Sgt. Hunter Foster.\n\nWhile the state concluded that the shooting was “[justified](https://theintercept.com/2026/10/20/kohen-wiley-police-shooting-mississippi/)” based on a probe by the Mississippi Bureau of Investigation, the videos show how police escalated a non-life-threatening situation — one that could have ended with a mere shoplifting charge — by pursuing Kohen’s mother, Vel’lesiya Wiley, and the driver, Latoya Ferrell, after they ran from the store and tried to drive away.\n\nFoster’s body camera footage makes clear that he positioned himself in front of the vehicle, aimed his gun at the car, and fired the fatal shot into the passenger side window after the car was moving past him and posed no threat.\n\nThis is consistent with the conclusions of Dr. Roger Mitchell, a forensic pathologist hired by Wiley’s family, who [determined](https://www.documentcloud.org/documents/28531701-dc-medical-examiner-roger-mitchell-report-on-kohen-wiley/) in June that the fatal bullet was most likely fired into the side window, entering his small body on his right side and exiting his left.\n\nThe release also includes a 10-page, heavily redacted investigative [report by the Mississippi Bureau of Investigation](https://www.documentcloud.org/documents/28831201-senatobia-pd-ois-2026-redacted-public-records-request/), which the state attorney general relied upon in [concluding that the shooting was justified](https://theintercept.com/2026/10/20/kohen-wiley-police-shooting-mississippi/).\n\nThe report’s narrative is misleading: Its only description of the shooting is that one officer “discharged his firearm” after the car “sped toward the officers.” The report does not discuss the fact that the firing officer was beside the car when he first fired, which is clear in Foster’s body camera footage. The report also redacts Kohen Wiley’s cause of death.\n\n![](https://theintercept.com/wp-content/uploads/2026/10/wiley-report-clip-bordered.jpg?fit=1289%2C516)\n\n\nAn excerpt of the report on the police shooting of Kohen Wiley from the Mississippi Bureau of Investigation released on Oct. 22, 2026, through a public records request. Screenshot: The Intercept\n\nFoster [resigned](https://www.taterecord.com/officer-resigns-senatobia-police-after-being-cleared-ag-shooting-charges) from the Senatobia police department on Wednesday. Afterward, Foster’s lawyer told [CNN](https://www.cnn.com/2026/10/23/us/mississippi-kohen-wiley-fatal-shooting), “The driver of the vehicle was attempting to kill those 5 officers, and Hunter Foster had no choice but to discharge his weapon.” (Neither Foster nor his lawyer responded to The Intercept’s requests for comment.)\n\n[![](https://theintercept.com/wp-content/uploads/2026/10/IMG_1856-e1792524909658.jpg?w=440&h=440&crop=1) \n\nRelated\n-------\n\n### Kohen Wiley’s Family Says Investigators Didn’t Contact Them Before Concluding Cops Did No Wrong](https://theintercept.com/2026/10/20/kohen-wiley-police-shooting-mississippi/)\n\nResidents of Senatobia had [called for months](https://theintercept.com/2026/08/06/kohen-wiley-senatobia-mississippi-police-shooting/) for the bod",
+"url": "https://news.abolish.capital/post/88264",
+"created": 1792792128221,
+"author": "rss",
+"flair": "",
+"all": false,
+"dachHint": false,
+"comments": 0
+},
+{
 "id": "reddit:1xdfgcw",
 "source": "r/3Drequests",
 "kind": "reddit",
@@ -1609,6 +1772,34 @@
 "flair": "",
 "all": true,
 "dachHint": false
+},
+{
+"id": "lemmy:https://r1b.it/post/12943",
+"source": "Lemmy-Suche",
+"kind": "lemmy",
+"title": "Does this work for my micro-instance?",
+"text": "cross-posted from:  https://r1b.it/post/12935\n\n> As I have browsed the Fediverse through r1b.it, I've noticed lots of missing content from remote communities. Some of that has to do with actual federation problems (which I have been in talks with other instance owners to fix), but most of it is a result of completely intentional behavior. Regardless of that, though, I feel as if missing content detracts from the r1b.it user experience. So, I decided to flex my programming muscles a bit and devised a solution.\n> \n> For the more technically inclined bunch, you can keep reading to see how it works. For everyone else, you can just be happy to hear that you should now be getting *all* new content from your subscribed communities! If you have any further federation issues, please let me know. You can always @ me in [!croak](https://r1b.it/c/croak) :)\n> \n> ::: spoiler **The nerd stuff**\n> Lemmy relies on an event-driven feed, meaning it doesn't always automatically pull posts from remote servers unless someone is actively browsing or querying them. So, if a r1b.it user doesn't actively interact with a community, the content won't get pulled. If no new content is getting pulled, no one will interact with the community. To break this cycle, I've set up a lightweight Python script to automatically sync every subscribed community in the background. This script is set up as a [cron job](https://www.man7.org/linux/man-pages/man8/cron.8.html) that runs every 6 hours.\n> \n> This script first queries r1b.it's local PostgreSQL database to gather a unique list of every remote community local users are subscribed to. For each community it finds, the script targets Lemmy's `resolve_object` API endpoint using the community's full actor URL to refresh its metadata and maintain connection health.\n> \n> To keep this script from turning into a DDOS as r1b.it grows, it shuffles the community list to spread instances out and has a polite randomized pause between each request. Additionally, I plan to remove this script entirely if r1b.it ever gets big enough to federate itself naturally.\n> \n> ```py\n> #!/usr/bin/env python3\n> import subprocess\n> import urllib.parse\n> import urllib.request\n> import time\n> import random\n> \n> LOCAL_DOMAIN = \"https://r1b.it/\"\n> DB_CONTAINER = \"REDACTED\"\n> DB_USER = \"REDACTED\"\n> DB_NAME = \"REDACTED\"\n> \n> SQL_QUERY = \"\"\"\n> SELECT DISTINCT c.actor_id \n> FROM community_follower cf\n> JOIN person p ON cf.person_id = p.id\n> JOIN community c ON cf.community_id = c.id\n> WHERE p.local = true \n>   AND c.local = false;\n> \"\"\"\n> \n> def get_subscriptions():\n>     cmd = [\n>         \"docker\", \"exec\", \"-i\", DB_CONTAINER,\n>         \"psql\", \"-U\", DB_USER, \"-d\", DB_NAME, \"-t\", \"-A\", \"-c\", SQL_QUERY\n>     ]\n>     try:\n>         res = subprocess.run(cmd, capture_output=True, text=True, check=True)\n>         return [line.strip() for line in res.stdout.splitlines() if line.strip()]\n>     except Exception:\n>         return []\n> \n> def resolve_community(actor_id):\n>     encoded = urllib.parse.quote(actor_id, safe=\"\")\n>     api_url = f\"{LOCAL_DOMAIN}/api/v3/resolve_object?q={encoded}\"\n>     req = urllib.request.Request(\n>         api_url, \n>         headers={\"Accept\": \"application/json\", \"User-Agent\": \"LemmyAutoSync/1.0\"}\n>     )\n>     try:\n>         with urllib.request.urlopen(req, timeout=10) as resp:\n>             return resp.status\n>     except urllib.error.HTTPError as e:\n>         return e.code\n>     except Exception:\n>         return 500\n> \n> def main():\n>     communities = get_subscriptions()\n>     if not communities:\n>         return\n> \n>     print(f\"Found {len(communities)} unique remote subscriptions\")\n>     \n>     random.shuffle(communities)\n> \n>     for actor_id in communities:\n>         status = resolve_community(actor_id)\n>         if status == 200:\n>             print(f\"{actor_id} FEDERATED\")\n>         elif status == 400:\n>             print(f\"{actor_id} ALREADY FEDERATED\")\n>         else:\n>             print(f\"{actor_id} FAILED ({status)\"",
+"url": "https://r1b.it/post/12943",
+"created": 1792650159743,
+"author": "sam",
+"flair": "",
+"all": false,
+"dachHint": false,
+"comments": 4
+},
+{
+"id": "lemmy:https://r1b.it/post/12935",
+"source": "Lemmy-Suche",
+"kind": "lemmy",
+"title": "Federation issues (not) fixed",
+"text": "As I have browsed the Fediverse through r1b.it, I've noticed lots of missing content from remote communities. Some of that has to do with actual federation problems (which I have been in talks with other instance owners to fix), but most of it is a result of completely intentional behavior. Regardless of that, though, I feel as if missing content detracts from the r1b.it user experience. So, I decided to flex my programming muscles a bit and devised a solution.\n\nFor the more technically inclined bunch, you can keep reading to see how it works. For everyone else, you can just be happy to hear that you should now be getting *all* new content from your subscribed communities! If you have any further federation issues, please let me know. You can always @ me in [!croak](https://r1b.it/c/croak) :)\n\n::: spoiler **The nerd stuff**\nLemmy relies on an event-driven feed, meaning it doesn't always automatically pull posts from remote servers unless someone is actively browsing or querying them. So, if a r1b.it user doesn't actively interact with a community, the content won't get pulled. If no new content is getting pulled, no one will interact with the community. To break this cycle, I've set up a lightweight Python script to automatically sync every subscribed community in the background. This script is set up as a [cron job](https://www.man7.org/linux/man-pages/man8/cron.8.html) that runs every 6 hours.\n\nThis script first queries r1b.it's local PostgreSQL database to gather a unique list of every remote community local users are subscribed to. For each community it finds, the script targets Lemmy's `resolve_object` API endpoint using the community's full actor URL to refresh its metadata and maintain connection health.\n\nTo keep this script from turning into a DDOS as r1b.it grows, it shuffles the community list to spread instances out and has a polite randomized pause between each request. Additionally, I plan to remove this script entirely if r1b.it ever gets big enough to federate itself naturally.\n\n```py\n#!/usr/bin/env python3\nimport subprocess\nimport urllib.parse\nimport urllib.request\nimport time\nimport random\n\nLOCAL_DOMAIN = \"https://r1b.it/\"\nDB_CONTAINER = \"REDACTED\"\nDB_USER = \"REDACTED\"\nDB_NAME = \"REDACTED\"\n\nSQL_QUERY = \"\"\"\nSELECT DISTINCT c.actor_id \nFROM community_follower cf\nJOIN person p ON cf.person_id = p.id\nJOIN community c ON cf.community_id = c.id\nWHERE p.local = true \n  AND c.local = false;\n\"\"\"\n\ndef get_subscriptions():\n    cmd = [\n        \"docker\", \"exec\", \"-i\", DB_CONTAINER,\n        \"psql\", \"-U\", DB_USER, \"-d\", DB_NAME, \"-t\", \"-A\", \"-c\", SQL_QUERY\n    ]\n    try:\n        res = subprocess.run(cmd, capture_output=True, text=True, check=True)\n        return [line.strip() for line in res.stdout.splitlines() if line.strip()]\n    except Exception:\n        return []\n\ndef resolve_community(actor_id):\n    encoded = urllib.parse.quote(actor_id, safe=\"\")\n    api_url = f\"{LOCAL_DOMAIN}/api/v3/resolve_object?q={encoded}\"\n    req = urllib.request.Request(\n        api_url, \n        headers={\"Accept\": \"application/json\", \"User-Agent\": \"LemmyAutoSync/1.0\"}\n    )\n    try:\n        with urllib.request.urlopen(req, timeout=10) as resp:\n            return resp.status\n    except urllib.error.HTTPError as e:\n        return e.code\n    except Exception:\n        return 500\n\ndef main():\n    communities = get_subscriptions()\n    if not communities:\n        return\n\n    print(f\"Found {len(communities)} unique remote subscriptions\")\n    \n    random.shuffle(communities)\n\n    for actor_id in communities:\n        status = resolve_community(actor_id)\n        if status == 200:\n            print(f\"{actor_id} FEDERATED\")\n        elif status == 400:\n            print(f\"{actor_id} ALREADY FEDERATED\")\n        else:\n            print(f\"{actor_id} FAILED ({status)\")\n        \n        # Polite randomized pause\n        time.sleep(random.uniform(1, 5))\n\n    print(\"Sync complete.\")\n\nif __name__ == \"__main__\":\n    main()\n```\n:::",
+"url": "https://r1b.it/post/12935",
+"created": 1792649163979,
+"author": "sam",
+"flair": "",
+"all": false,
+"dachHint": false,
+"comments": 0
 },
 {
 "id": "reddit:1xc4xdz",
