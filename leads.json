@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-06T10:26:12.196563+00:00",
+"generated": "2026-11-06T11:21:24.154308+00:00",
 "status": {
 "r/3Dprintmything": {
 "ok": true,
@@ -27,9 +27,9 @@
 "n": 0
 },
 "r/BambuLab (Suche)": {
-"ok": false,
-"via": "failed",
-"n": 0
+"ok": true,
+"via": "rss",
+"n": 1
 },
 "r/3Ddruck (Suche)": {
 "ok": false,
@@ -42,8 +42,8 @@
 "n": 0
 },
 "r/germany (Suche)": {
-"ok": true,
-"via": "rss",
+"ok": false,
+"via": "failed",
 "n": 0
 },
 "Lemmy !printmything": {
