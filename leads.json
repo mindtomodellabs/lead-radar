@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-06T14:38:31.485163+00:00",
+"generated": "2026-11-06T15:28:56.612470+00:00",
 "status": {
 "r/3Dprintmything": {
 "ok": true,
@@ -22,9 +22,9 @@
 "n": 0
 },
 "r/3Dprinting (Suche)": {
-"ok": true,
-"via": "rss",
-"n": 8
+"ok": false,
+"via": "failed",
+"n": 0
 },
 "r/BambuLab (Suche)": {
 "ok": false,
@@ -62,10 +62,6 @@
 "ok": true,
 "n": 77
 },
-"MakerForums": {
-"ok": false,
-"err": "HTTP Error 404: Not Found"
-},
 "Bluesky": {
 "ok": false,
 "err": "Zugang fehlt: BSKY_HANDLE, BSKY_APP_PASSWORD"
@@ -90,10 +86,6 @@
 "ok": true,
 "n": 40
 },
-"chaos.social #3DDruck": {
-"ok": false,
-"err": "HTTP Error 422: Unprocessable Content"
-},
 "Mastodon #3DDrucker": {
 "ok": true,
 "n": 40
@@ -111,7 +103,7 @@
 "n": 0
 }
 },
-"last24h": 14,
+"last24h": 13,
 "leads": [
 {
 "id": "reddit:1xpatkp",
