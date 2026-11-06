@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-06T09:20:19.485682+00:00",
+"generated": "2026-11-06T10:26:12.196563+00:00",
 "status": {
 "r/3Dprintmything": {
 "ok": true,
@@ -32,9 +32,9 @@
 "n": 0
 },
 "r/3Ddruck (Suche)": {
-"ok": true,
-"via": "rss",
-"n": 6
+"ok": false,
+"via": "failed",
+"n": 0
 },
 "r/de (Suche)": {
 "ok": false,
@@ -42,8 +42,8 @@
 "n": 0
 },
 "r/germany (Suche)": {
-"ok": false,
-"via": "failed",
+"ok": true,
+"via": "rss",
 "n": 0
 },
 "Lemmy !printmything": {
@@ -76,6 +76,19 @@
 }
 },
 "leads": [
+{
+"id": "reddit:1xp8ni9",
+"source": "r/3Dprintmything",
+"kind": "reddit",
+"title": "[US-WA] Penguin figurine: design + color print",
+"text": "",
+"url": "https://www.reddit.com/r/3Dprintmything/comments/1xp8ni9/uswa_penguin_figurine_design_color_print/",
+"created": 1793957462000,
+"author": "KheldarRocket",
+"flair": "",
+"all": true,
+"dachHint": false
+},
 {
 "id": "reddit:1xp4af6",
 "source": "r/3Dprintmything",
