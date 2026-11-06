@@ -2,7 +2,7 @@ name: Lead-Radar sammeln
 
 on:
   schedule:
-    - cron: "*/30 * * * *"   # alle 30 Minuten (GitHub startet manchmal etwas verspätet)
+    - cron: "*/15 * * * *"   # alle 15 Minuten (GitHub startet manchmal etwas verspätet)
   workflow_dispatch: {}       # "Run workflow"-Knopf zum manuellen Starten
 
 permissions:
@@ -15,7 +15,7 @@ concurrency:
 jobs:
   collect:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 12
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -25,6 +25,14 @@ jobs:
         env:
           REDDIT_CLIENT_ID: ${{ secrets.REDDIT_CLIENT_ID }}
           REDDIT_CLIENT_SECRET: ${{ secrets.REDDIT_CLIENT_SECRET }}
+          BSKY_HANDLE: ${{ secrets.BSKY_HANDLE }}
+          BSKY_APP_PASSWORD: ${{ secrets.BSKY_APP_PASSWORD }}
+          MASTODON_TOKEN: ${{ secrets.MASTODON_TOKEN }}
+          GOOGLE_ALERTS_FEEDS: ${{ secrets.GOOGLE_ALERTS_FEEDS }}
+          IMAP_HOST: ${{ secrets.IMAP_HOST }}
+          IMAP_USER: ${{ secrets.IMAP_USER }}
+          IMAP_PASS: ${{ secrets.IMAP_PASS }}
+          IMAP_FOLDER: ${{ secrets.IMAP_FOLDER }}
         run: python collect.py
       - name: leads.json speichern
         run: |

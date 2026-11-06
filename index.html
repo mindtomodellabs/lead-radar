@@ -109,6 +109,7 @@ header.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;margin:0 
 .e.fit{border-color:rgba(95,220,151,.45);color:var(--good);background:var(--good-soft)}
 .e.nofit{border-color:rgba(255,122,122,.45);color:var(--bad);background:var(--bad-soft)}
 .e.mat{border-color:rgba(95,212,230,.4);color:var(--cyan);background:var(--cyan-soft)}
+.e.chance{margin-left:auto;font-weight:600}.e.chance.hoch{border-color:rgba(95,220,151,.55);color:var(--good);background:var(--good-soft)}.e.chance.mittel{border-color:rgba(255,207,92,.5);color:var(--warn)}.e.chance.niedrig{color:var(--faint)}
 .e.pay{border-color:rgba(255,181,71,.45);color:var(--accent);background:var(--accent-soft)}
 .est-note{font-size:11px;color:var(--faint);font-family:var(--f-mono)}
 .lead-actions{display:flex;gap:6px;margin-top:10px;flex-wrap:wrap;align-items:center}
@@ -209,6 +210,7 @@ code{font-family:var(--f-mono);font-size:12.5px;background:rgba(255,255,255,.07)
       <input id="q" type="search" placeholder="Suchen: Titel, Text, Ort …" autocomplete="off" aria-label="Freitextsuche">
     </label>
     <select id="sort" class="sel" aria-label="Sortierung">
+      <option value="chance">Beste Chance zuerst</option>
       <option value="new">Neueste zuerst</option>
       <option value="old">Älteste zuerst</option>
       <option value="small">Größe: klein → groß</option>
@@ -221,6 +223,7 @@ code{font-family:var(--f-mono);font-size:12.5px;background:rgba(255,255,255,.07)
     </button>
   </div>
   <div class="seg" id="quick" role="group" aria-label="Schnellfilter">
+    <button class="chip" type="button" data-quick="open" aria-pressed="false">Noch unbeantwortet</button>
     <button class="chip" type="button" data-quick="dach" aria-pressed="false">DACH zuerst</button>
     <button class="chip" type="button" data-quick="fit" aria-pressed="false">Passt in P1S</button>
     <button class="chip" type="button" data-quick="star" aria-pressed="false">★ Interessant</button>
@@ -328,15 +331,15 @@ const strip=h=>{if(!h)return"";const d=document.createElement("div");d.innerHTML
 function fromReddit(json,src){
   const ch=(json&&json.data&&json.data.children)||[];
   return ch.map(c=>c.data).filter(Boolean).map(p=>({id:"reddit:"+p.id,source:src.label,kind:"reddit",title:p.title||"",text:(p.selftext||"").slice(0,4000),url:"https://www.reddit.com"+p.permalink,
-    created:(p.created_utc||0)*1000,author:p.author||"",flair:p.link_flair_text||"",all:src.all,dachHint:!!src.dachHint}));
+    created:(p.created_utc||0)*1000,author:p.author||"",flair:p.link_flair_text||"",all:src.all,dachHint:!!src.dachHint,comments:p.num_comments??null}));
 }
 function fromLemmy(json,src){
   return ((json&&json.posts)||[]).map(v=>{const p=v.post||{};return{id:"lemmy:"+(p.ap_id||p.id),source:src.label,kind:"lemmy",title:p.name||"",text:(p.body||"").slice(0,4000),url:p.ap_id||("https://lemmy.world/post/"+p.id),
-    created:Date.parse(p.published)||0,author:(v.creator&&v.creator.name)||"",flair:"",all:src.all,dachHint:!!src.dachHint}});
+    created:Date.parse(p.published)||0,author:(v.creator&&v.creator.name)||"",flair:"",all:src.all,dachHint:!!src.dachHint,comments:(v.counts&&v.counts.comments)??null}});
 }
 function fromMastodon(json,src){
   return (Array.isArray(json)?json:[]).map(s=>{const t=strip(s.content);return{id:"masto:"+(s.uri||s.id),source:src.label,kind:"mastodon",title:t.split("\n")[0].slice(0,140),text:t.slice(0,4000),url:s.url||s.uri,
-    created:Date.parse(s.created_at)||0,author:(s.account&&s.account.acct)||"",flair:"",all:src.all,dachHint:!!src.dachHint,lang:s.language||""}});
+    created:Date.parse(s.created_at)||0,author:(s.account&&s.account.acct)||"",flair:"",all:src.all,dachHint:!!src.dachHint,lang:s.language||"",comments:s.replies_count??null}});
 }
 
 /* ---------- heuristics (all estimated) ---------- */
@@ -453,7 +456,7 @@ const S={
   prevVisit:LS.get("lastVisit",0), sessionStart:Date.now(), freshIds:new Set(),
   f:Object.assign({size:[],mat:[],kind:[],region:[],source:[],showDone:false,showHidden:false},LS.get("filters",{})),
   quick:LS.get("quick",{dach:true,fit:false,star:false,unseen:false}),
-  sort:LS.get("sort","new"), interval:LS.get("interval",15), demo:LS.get("demo",true), offers:LS.get("offers",false), q:"",
+  sort:LS.get("sort2","chance"), interval:LS.get("interval",15), demo:LS.get("demo",true), offers:LS.get("offers",false), q:"",
   liveUrl:LS.get("liveUrl",""), nextAt:0, loading:false, dbOn:false,
 };
 LS.set("lastVisit",Date.now());
@@ -468,7 +471,7 @@ function upsert(list){
       S.leads.set(raw.id,l);added++;
       if(!S.firstSeen[raw.id])S.firstSeen[raw.id]=Date.now();
       if(S.initialDone)S.freshIds.add(raw.id);
-    }
+    }else if(raw.comments!=null){S.leads.get(raw.id).comments=raw.comments}
   }
   // prune firstSeen to 3000 entries
   const ks=Object.keys(S.firstSeen);if(ks.length>3000){ks.sort((a,b)=>S.firstSeen[a]-S.firstSeen[b]).slice(0,ks.length-3000).forEach(k=>delete S.firstSeen[k])}
@@ -486,6 +489,7 @@ async function loadLeadsJson(){
     const j=await getJSON("leads.json?t="+Date.now());
     const arr=Array.isArray(j)?j:(j.leads||[]);
     S.srcStatus["file"]={label:"leads.json (Sammel-Dienst)",ok:true,n:arr.length,at:Date.now(),why:j.generated?("erzeugt "+fmtAge(Date.parse(j.generated))):""};
+    S.botStatus=j.status||{};
     return upsert(arr);
   }catch(e){S.srcStatus["file"]={label:"leads.json (Sammel-Dienst)",ok:false,n:0,at:Date.now(),why:"nicht vorhanden (nur im GitHub-Pages-Modus)"};return 0}
 }
@@ -542,6 +546,20 @@ setInterval(()=>{const el=$("#countdown");if(!S.nextAt){el.textContent="aus";ret
 document.addEventListener("visibilitychange",()=>{if(!document.hidden&&S.nextAt&&Date.now()>S.nextAt)refresh(false)});
 
 /* ---------- filtering ---------- */
+/* Chance: frisch + unbeantwortet + nah + bezahlt + passt in P1S. Werte 0–100. */
+function chance(l){
+  const ageH=Math.max(0,(Date.now()-(l.created||0))/36e5);
+  let s=45*Math.exp(-ageH/18);                       // Frische: nach ~1 Tag halbiert sich der Vorteil grob
+  const c=l.comments;
+  if(c===0)s+=30;else if(c==null)s+=12;else if(c<=2)s+=14-3*c;else s-=Math.min(20,3*c);
+  s+={DACH:18,EU:8,Weltweit:6}[l.region.group]||0;
+  if(l.pay==="bezahlt")s+=8;else if(l.pay==="gratis erwartet")s-=10;
+  if(l.size.fit===true)s+=5;else if(l.size.fit===false)s-=15;
+  if(l.hasFile)s+=4;
+  if(l.mats.some(m=>/Resin/.test(m.n)))s-=15;
+  if(l.kind==="Angebot")s-=40;
+  return Math.max(0,Math.min(100,Math.round(s)));
+}
 function regionRank(g){return{DACH:0,EU:1,Weltweit:2,UK:3,US:4,Andere:5,Unbekannt:6}[g]??7}
 function baseLeads(){
   const real=[...S.leads.values()].filter(l=>l.relevant);
@@ -554,6 +572,7 @@ function passes(l,skip){
   if(!f.showDone&&l.status!=="SEEKING")return false;
   if(!f.showHidden&&m==="hide")return false;
   if(S.quick.fit&&l.size.fit===false)return false;
+  if(S.quick.open&&l.comments!==0)return false;
   if(S.quick.star&&m!=="star")return false;
   if(S.quick.unseen&&(m==="seen"||m==="hide"))return false;
   if(skip!=="size"&&f.size.length&&!f.size.includes(l.size.cls))return false;
@@ -565,7 +584,8 @@ function passes(l,skip){
   return true;
 }
 function sorted(arr){
-  const by={new:(a,b)=>b.created-a.created,old:(a,b)=>a.created-b.created,small:(a,b)=>a.size.rank-b.size.rank||b.created-a.created,big:(a,b)=>(b.size.rank===999?-1:b.size.rank)-(a.size.rank===999?-1:a.size.rank)||b.created-a.created,source:(a,b)=>a.source.localeCompare(b.source)||b.created-a.created}[S.sort];
+  const by={chance:(a,b)=>chance(b)-chance(a)||b.created-a.created,new:(a,b)=>b.created-a.created,old:(a,b)=>a.created-b.created,small:(a,b)=>a.size.rank-b.size.rank||b.created-a.created,big:(a,b)=>(b.size.rank===999?-1:b.size.rank)-(a.size.rank===999?-1:a.size.rank)||b.created-a.created,source:(a,b)=>a.source.localeCompare(b.source)||b.created-a.created}[S.sort];
+  if(S.sort==="chance"){const sc=l=>chance(l)+(S.quick.dach&&l.region.group==="DACH"?20:0);return arr.slice().sort((a,b)=>sc(b)-sc(a)||b.created-a.created)}
   return arr.slice().sort((a,b)=>S.quick.dach?(regionRank(a.region.group)===0?0:1)-(regionRank(b.region.group)===0?0:1)||by(a,b):by(a,b));
 }
 
@@ -578,6 +598,11 @@ const ICON={eye:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stro
  hide:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 3l18 18M10.6 5.1A10 10 0 0 1 12 5c6.5 0 10 7 10 7a17 17 0 0 1-3.2 4.2M6.6 6.6A17 17 0 0 0 2 12s3.5 7 10 7a10 10 0 0 0 5.4-1.6"/></svg>',
  ext:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14 4h6v6M20 4l-9 9M19 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h5"/></svg>'};
 function isNew(l){return !l.demo&&(S.freshIds.has(l.id)||((l.created>S.prevVisit)&&S.prevVisit>0&&S.marks[l.id]!=="seen"))}
+function chanceChip(l){
+  const c=l.comments,sc=chance(l),lvl=sc>=65?"hoch":sc>=40?"mittel":"niedrig";
+  const ans=c===0?'<span class="e fit">0 Antworten – sei der Erste</span>':c==null?'<span class="e">Antworten unbekannt</span>':`<span class="e ${c>3?"nofit":""}">${c} Antwort${c===1?"":"en"}</span>`;
+  return `${ans}<span class="e chance ${lvl}" title="Chancen-Wert ${sc}/100: frisch, unbeantwortet, Nähe, Bezahlung, passt in P1S">Chance ${lvl}</span>`;
+}
 function card(l){
   const m=S.marks[l.id]||"";
   const sz=l.size;
@@ -586,7 +611,7 @@ function card(l){
   const reg=l.region.label?`<span class="region ${l.region.group==="DACH"?"dach":""}">${esc(l.region.label)}${l.region.est?" ≈":""}</span>`:"";
   const status=l.status!=="SEEKING"?`<span class="e nofit">${l.status}</span>`:"";
   return `<article class="lead glass ${isNew(l)?"is-new":""} ${m==="seen"?"is-seen":""} ${m==="star"?"is-star":""}" data-id="${esc(l.id)}">
-    <div class="lead-head">${isNew(l)?'<span class="tag-new">NEU</span>':""}${l.demo?'<span class="tag-demo">BEISPIEL</span>':""}<span class="src">${esc(l.source)}</span>${reg}<span class="age" title="${esc(fmtDate(l.created))}">${fmtAge(l.created)}</span>${status}</div>
+    <div class="lead-head">${isNew(l)?'<span class="tag-new">NEU</span>':""}${l.demo?'<span class="tag-demo">BEISPIEL</span>':""}<span class="src">${esc(l.source)}</span>${reg}<span class="age" title="${esc(fmtDate(l.created))}">${fmtAge(l.created)}</span>${status}${chanceChip(l)}</div>
     <h3><a href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.title)}</a></h3>
     ${l.text&&l.text!==l.title?`<p class="excerpt">${esc(l.text.slice(0,1400))}</p>`:""}
     <div class="more"><div><p class="est-note">${esc(fmtDate(l.created))}${l.author?" · "+esc(l.author):""}${l.flair?" · Flair: "+esc(l.flair):""}</p></div></div>
@@ -645,6 +670,9 @@ function renderSources(){
   const all=[["db","Radar-Datenbank (claude.ai)"],["file","leads.json (Sammel-Dienst)"],...SOURCES.map(s=>[s.id,s.label])];
   for(const [id,label] of all){const s=S.srcStatus[id];if(!s&&(id==="db"))continue;
     rows.push(`<div class="srcrow"><span class="dot ${s?(s.ok?"ok":"err"):""}"></span><span>${esc(label)}</span><span class="st">${s?(s.ok?s.n+" Beiträge":"aus"):"–"}</span>${s&&s.why?`<span class="why">${esc(s.why)}</span>`:""}</div>`)}
+  const bs=Object.entries(S.botStatus||{});
+  if(bs.length){rows.push(`<p class="lbl" style="margin-top:14px">Sammel-Bot auf GitHub (alle 15 Min)</p>`);
+    for(const [k,v] of bs)rows.push(`<div class="srcrow"><span class="dot ${v.ok?"ok":"err"}"></span><span>${esc(k)}</span><span class="st">${v.ok?(v.n??0)+" geprüft":"aus"}</span>${!v.ok?`<span class="why">${esc(/Zugang fehlt/.test(v.err||"")?v.err+" – siehe ANLEITUNG.md":/^r\//.test(k)?"Reddit sperrt automatische Abrufe (RSS endet 13.11.2026)":(v.err||"nicht erreichbar"))}</span>`:""}</div>`)}
   $("#srcList").innerHTML=rows.join("");
   $("#manualList").innerHTML=MANUAL.map(([t,u,k])=>`<a href="${esc(u)}" target="_blank" rel="noopener"><span>${esc(t)}</span><small>${esc(k)} ↗</small></a>`).join("");
   $("#liveLink").innerHTML=S.liveUrl?`<div class="manual"><a href="${esc(S.liveUrl)}" target="_blank" rel="noopener"><span>Live-Radar öffnen</span><small>GitHub Pages ↗</small></a></div>`:`<p>Trag die Adresse deines Live-Radars unter Einstellungen ein, dann erscheint hier ein Direktlink.</p>`;
@@ -689,7 +717,7 @@ $("#filterBody").addEventListener("click",e=>{
 $("#resetFilters").addEventListener("click",()=>{S.f={size:[],mat:[],kind:[],region:[],source:[],showDone:false,showHidden:false};LS.set("filters",S.f);render()});
 $("#quick").addEventListener("click",e=>{const c=e.target.closest("[data-quick]");if(!c)return;S.quick[c.dataset.quick]=!S.quick[c.dataset.quick];LS.set("quick",S.quick);render()});
 let qt;$("#q").addEventListener("input",e=>{clearTimeout(qt);qt=setTimeout(()=>{S.q=e.target.value.trim();render()},120)});
-$("#sort").value=S.sort;$("#sort").addEventListener("change",e=>{S.sort=e.target.value;LS.set("sort",S.sort);render()});
+$("#sort").value=S.sort;$("#sort").addEventListener("change",e=>{S.sort=e.target.value;LS.set("sort2",S.sort);render()});
 $("#refreshBtn").addEventListener("click",()=>refresh(true));
 $("#interval").value=String(S.interval);$("#interval").addEventListener("change",e=>{S.interval=+e.target.value;LS.set("interval",S.interval);schedule();toast(S.interval?"Aktualisiert alle "+S.interval+" Min":"Automatik aus")});
 const bindToggle=(id,key)=>{const t=$(id);t.setAttribute("aria-checked",S[key]);t.addEventListener("click",()=>{S[key]=!S[key];LS.set(key,S[key]);t.setAttribute("aria-checked",S[key]);render()})};
