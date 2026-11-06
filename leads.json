@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-06T19:28:44.062013+00:00",
+"generated": "2026-11-06T19:58:14.004138+00:00",
 "status": {
 "r/3Dprintmything": {
 "ok": true,
@@ -12,9 +12,9 @@
 "n": 0
 },
 "r/3Dprinting (Suche)": {
-"ok": false,
-"via": "failed",
-"n": 0
+"ok": true,
+"via": "rss",
+"n": 8
 },
 "Lemmy !printmything": {
 "ok": true,
@@ -75,11 +75,10 @@
 },
 "last24h": 8,
 "filtered": {
-"kein Druckauftrag": 26,
-"Design/Modellieren gewünscht": 28,
-"Urheberrecht/Marke": 9,
-"kein 3D-Druck-Bezug": 19,
-"hat Drucker / sucht Drucker / Angebot": 11
+"Design/Modellieren gewünscht": 9,
+"hat Drucker / sucht Drucker / Angebot": 4,
+"Urheberrecht/Marke": 4,
+"kein 3D-Druck-Bezug": 19
 },
 "leads": [
 {
