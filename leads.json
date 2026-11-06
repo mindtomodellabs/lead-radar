@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-06T12:12:20.875889+00:00",
+"generated": "2026-11-06T13:36:16.313229+00:00",
 "status": {
 "r/3Dprintmything": {
 "ok": true,
@@ -32,13 +32,13 @@
 "n": 0
 },
 "r/3Ddruck (Suche)": {
-"ok": true,
-"via": "rss",
-"n": 6
-},
-"r/de (Suche)": {
 "ok": false,
 "via": "failed",
+"n": 0
+},
+"r/de (Suche)": {
+"ok": true,
+"via": "rss",
 "n": 0
 },
 "r/germany (Suche)": {
