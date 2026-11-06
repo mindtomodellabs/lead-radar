@@ -20,13 +20,9 @@ KEEP_DAYS = 21
 MAX_LEADS = 900
 UA = os.environ.get("RADAR_UA", "lead-radar/1.0 (public feed reader; github action)")
 
-SUBS_ALL = ["3Dprintmything", "3Drequests", "PrintMyThing", "3Dprintingrequests"]
+SUBS_ALL = ["3Dprintmything", "PrintMyThing"]  # Reddit: nur Quellen, die zuletzt noch geliefert haben (RSS endet 13.11.2026)
 SUBS_SEARCH = [
     ("3Dprinting", '"print for me" OR "someone to print" OR "can someone print" OR "looking for someone to print"'),
-    ("BambuLab", '"print for me" OR "someone to print" OR "can someone print"'),
-    ("3Ddruck", 'gesucht OR "drucken lassen" OR "wer kann" OR "suche jemanden"'),
-    ("de", '"3D Druck" OR "3D-Druck" OR 3D-Drucker'),
-    ("germany", '"3D print" OR "3D printer" OR "3D printing"'),
 ]
 DACH_HINT = {"de", "3Ddruck", "germany"}
 LEMMY = [("printmything@lemmy.world", "Lemmy !printmything", True), ("3DPrinting@lemmy.world", "Lemmy !3DPrinting", False)]

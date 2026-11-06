@@ -300,15 +300,12 @@ const SUBS_SEARCH=[
   ["de",'"3D Druck" OR "3D-Druck" OR 3D-Drucker'],
   ["germany",'"3D print" OR "3D printer" OR "3D printing"'],
 ];
-const SOURCES=[
-  ...SUBS_ALL.map(s=>({id:"r-"+s,label:"r/"+s,kind:"reddit",all:true,url:`https://www.reddit.com/r/${s}/new.json?limit=50&${UA_Q}`})),
-  ...SUBS_SEARCH.map(([s,q])=>({id:"rs-"+s,label:"r/"+s+" (Suche)",kind:"reddit",all:false,dachHint:(s==="de"||s==="3Ddruck"||s==="germany"),
-     url:`https://www.reddit.com/r/${s}/search.json?q=${encodeURIComponent(q)}&restrict_sr=1&sort=new&t=month&limit=25&${UA_Q}`})),
+const SOURCES=[ /* Direktabruf im Browser (zusätzlich zum Sammel-Bot). Reddit läuft nur noch über den Bot. */
   {id:"l-printmything",label:"Lemmy !printmything",kind:"lemmy",all:true,url:"https://lemmy.world/api/v3/post/list?community_name=printmything@lemmy.world&sort=New&limit=30"},
   {id:"l-3dprinting",label:"Lemmy !3DPrinting",kind:"lemmy",all:false,url:"https://lemmy.world/api/v3/post/list?community_name=3DPrinting@lemmy.world&sort=New&limit=40"},
   {id:"m-3ddruck",label:"Mastodon #3DDruck",kind:"mastodon",all:false,dachHint:true,url:"https://mastodon.social/api/v1/timelines/tag/3ddruck?limit=40"},
-  {id:"m-troet",label:"troet.cafe #3DDruck",kind:"mastodon",all:false,dachHint:true,url:"https://troet.cafe/api/v1/timelines/tag/3ddruck?limit=40"},
   {id:"m-norden",label:"norden.social #3DDruck",kind:"mastodon",all:false,dachHint:true,url:"https://norden.social/api/v1/timelines/tag/3ddruck?limit=40"},
+  {id:"m-3ddrucker",label:"Mastodon #3DDrucker",kind:"mastodon",all:false,dachHint:true,url:"https://mastodon.social/api/v1/timelines/tag/3ddrucker?limit=40"},
   {id:"m-3dprinting",label:"Mastodon #3DPrinting",kind:"mastodon",all:false,url:"https://mastodon.social/api/v1/timelines/tag/3dprinting?limit=40"},
   {id:"m-request",label:"Mastodon #3DPrintRequest",kind:"mastodon",all:true,url:"https://mastodon.social/api/v1/timelines/tag/3dprintrequest?limit=40"},
 ];
@@ -670,9 +667,9 @@ function renderSources(){
   const all=[["db","Radar-Datenbank (claude.ai)"],["file","leads.json (Sammel-Dienst)"],...SOURCES.map(s=>[s.id,s.label])];
   for(const [id,label] of all){const s=S.srcStatus[id];if(!s&&(id==="db"))continue;
     rows.push(`<div class="srcrow"><span class="dot ${s?(s.ok?"ok":"err"):""}"></span><span>${esc(label)}</span><span class="st">${s?(s.ok?s.n+" Beiträge":"aus"):"–"}</span>${s&&s.why?`<span class="why">${esc(s.why)}</span>`:""}</div>`)}
-  const bs=Object.entries(S.botStatus||{});
-  if(bs.length){rows.push(`<p class="lbl" style="margin-top:14px">Sammel-Bot auf GitHub (alle 15 Min)</p>`);
-    for(const [k,v] of bs)rows.push(`<div class="srcrow"><span class="dot ${v.ok?"ok":"err"}"></span><span>${esc(k)}</span><span class="st">${v.ok?(v.n??0)+" geprüft":"aus"}</span>${!v.ok?`<span class="why">${esc(/Zugang fehlt/.test(v.err||"")?v.err+" – siehe ANLEITUNG.md":/^r\//.test(k)?"Reddit sperrt automatische Abrufe (RSS endet 13.11.2026)":(v.err||"nicht erreichbar"))}</span>`:""}</div>`)}
+  const bs=Object.entries(S.botStatus||{}),bot=[];
+  for(const [k,v] of bs)bot.push(`<div class="srcrow"><span class="dot ${v.ok?"ok":"err"}"></span><span>${esc(k)}</span><span class="st">${v.ok?(v.n??0)+" geprüft":"aus"}</span>${!v.ok?`<span class="why">${esc(/Zugang fehlt/.test(v.err||"")?v.err+" – siehe ANLEITUNG.md":/AUTHENTICATIONFAILED/.test(v.err||"")?"Gmail lehnt die Anmeldung ab – in IMAP_PASS muss das App-Passwort stehen":/^r\//.test(k)?"Reddit sperrt automatische Abrufe (RSS endet 13.11.2026)":(v.err||"nicht erreichbar"))}</span>`:""}</div>`);
+  if(bot.length)rows.unshift(`<p class="lbl">Sammel-Bot auf GitHub (alle 15 Min)</p>`,...bot,`<p class="lbl" style="margin-top:14px">Direkt aus dem Browser</p>`);
   $("#srcList").innerHTML=rows.join("");
   $("#manualList").innerHTML=MANUAL.map(([t,u,k])=>`<a href="${esc(u)}" target="_blank" rel="noopener"><span>${esc(t)}</span><small>${esc(k)} ↗</small></a>`).join("");
   $("#liveLink").innerHTML=S.liveUrl?`<div class="manual"><a href="${esc(S.liveUrl)}" target="_blank" rel="noopener"><span>Live-Radar öffnen</span><small>GitHub Pages ↗</small></a></div>`:`<p>Trag die Adresse deines Live-Radars unter Einstellungen ein, dann erscheint hier ein Direktlink.</p>`;
