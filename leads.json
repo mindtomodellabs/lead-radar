@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-06T21:23:52.630721+00:00",
+"generated": "2026-11-06T22:08:54.631978+00:00",
 "status": {
 "r/3Dprintmything": {
 "ok": true,
@@ -33,8 +33,8 @@
 "n": 77
 },
 "Bluesky": {
-"ok": false,
-"err": "HTTP Error 502: Bad Gateway"
+"ok": true,
+"n": 107
 },
 "Mastodon-Suche": {
 "ok": true,
@@ -78,7 +78,7 @@
 "Design/Modellieren gewünscht": 9,
 "hat Drucker / sucht Drucker / Angebot": 3,
 "Urheberrecht/Marke": 3,
-"kein 3D-Druck-Bezug": 10
+"kein 3D-Druck-Bezug": 19
 },
 "leads": [
 {
