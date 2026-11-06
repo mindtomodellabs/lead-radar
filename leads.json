@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-06T19:58:14.004138+00:00",
+"generated": "2026-11-06T20:43:08.054710+00:00",
 "status": {
 "r/3Dprintmything": {
 "ok": true,
@@ -12,9 +12,9 @@
 "n": 0
 },
 "r/3Dprinting (Suche)": {
-"ok": true,
-"via": "rss",
-"n": 8
+"ok": false,
+"via": "failed",
+"n": 0
 },
 "Lemmy !printmything": {
 "ok": true,
@@ -73,14 +73,53 @@
 "n": 0
 }
 },
-"last24h": 8,
+"last24h": 11,
 "filtered": {
 "Design/Modellieren gewünscht": 9,
-"hat Drucker / sucht Drucker / Angebot": 4,
-"Urheberrecht/Marke": 4,
+"hat Drucker / sucht Drucker / Angebot": 3,
+"Urheberrecht/Marke": 3,
 "kein 3D-Druck-Bezug": 19
 },
 "leads": [
+{
+"id": "reddit:1xpng6b",
+"source": "r/3Dprintmything",
+"kind": "reddit",
+"title": "[United States] Army figurines without weapons",
+"text": "Hello! My son really wants \"Army men\" for Christmas. Could anyone print us some that don't have weapons?",
+"url": "https://www.reddit.com/r/3Dprintmything/comments/1xpng6b/united_states_army_figurines_without_weapons/",
+"created": 1793997371000,
+"author": "chalmarm15",
+"flair": "",
+"all": true,
+"dachHint": false
+},
+{
+"id": "reddit:1xpn6g0",
+"source": "r/3Dprintmything",
+"kind": "reddit",
+"title": "[UK - Swindon] Need a small hinge replacement bracket printed for a Nintendo DS Lite",
+"text": "Hi everyone,\n I'm looking to get a tiny repair bracket printed to fix the broken shell hinge on my Nintendo DS Lite. I don’t own a 3D printer myself.\n  File Link: https://www.printables.com/model/1464716-ds-lite-hinge-fix/files Location: Swindon, UK (Happy to pay for local shipping or arrange a pickup if you are nearby). Material Preference: PLA or PETG is fine. Quantity: 2 pieces (just in case I lose or break one during installation).  Designer's recommended print specs:\n  Layer Height: 0.2 mm Infill: 100% (Needs to be solid to handle the hinge tension) Supports: None needed  Please comment below or send me a DM with your quote including postage/shipping cost. Thank you!",
+"url": "https://www.reddit.com/r/3Dprintmything/comments/1xpn6g0/uk_swindon_need_a_small_hinge_replacement_bracket/",
+"created": 1793996686000,
+"author": "Tractor555",
+"flair": "",
+"all": true,
+"dachHint": false
+},
+{
+"id": "reddit:1xpn1iu",
+"source": "r/3Dprintmything",
+"kind": "reddit",
+"title": "[USA NY] drift trailer",
+"text": "Can someone make this for me?\n https://cults3d.com/en/3d-model/gadget/rc-drift-camera-rig-360-follow-camera-trailer?srsltid=AYCX9vKaXjKJhPF\\_k290JweKgKZbgizrzHT\\_5YsV7Fs0X4Equ7wJedRG",
+"url": "https://www.reddit.com/r/3Dprintmything/comments/1xpn1iu/usa_ny_drift_trailer/",
+"created": 1793996338000,
+"author": "PlateNervous8440",
+"flair": "",
+"all": true,
+"dachHint": false
+},
 {
 "id": "reddit:1xphvnx",
 "source": "r/3Dprintmything",
