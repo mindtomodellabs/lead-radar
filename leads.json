@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-06T11:21:24.154308+00:00",
+"generated": "2026-11-06T12:12:20.875889+00:00",
 "status": {
 "r/3Dprintmything": {
 "ok": true,
@@ -27,14 +27,14 @@
 "n": 0
 },
 "r/BambuLab (Suche)": {
-"ok": true,
-"via": "rss",
-"n": 1
-},
-"r/3Ddruck (Suche)": {
 "ok": false,
 "via": "failed",
 "n": 0
+},
+"r/3Ddruck (Suche)": {
+"ok": true,
+"via": "rss",
+"n": 6
 },
 "r/de (Suche)": {
 "ok": false,
@@ -76,6 +76,19 @@
 }
 },
 "leads": [
+{
+"id": "reddit:1xpatkp",
+"source": "r/3Dprintmything",
+"kind": "reddit",
+"title": "[UK-Cornwall] UltraPod IPOD Style Case for IPhone 17",
+"text": "Hello! first time poster on this sub. I'm looking for help with getting something 3d printed, I have no idea the first thing about 3d printing but I adore the UltraPod case which accompanies the UltraPod app for IPhone. I love the idea of turning my iPhone into a ipod :) I have an Iphone 17 base version. I've attached the link I'm just looking for the default colours it comes in at the makerworld link. Any help would be greatly appreciated! Thanks",
+"url": "https://www.reddit.com/r/3Dprintmything/comments/1xpatkp/ukcornwall_ultrapod_ipod_style_case_for_iphone_17/",
+"created": 1793965621000,
+"author": "spiritual_ninjaz",
+"flair": "",
+"all": true,
+"dachHint": false
+},
 {
 "id": "reddit:1xp8ni9",
 "source": "r/3Dprintmything",
