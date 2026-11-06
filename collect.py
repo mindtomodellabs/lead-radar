@@ -223,9 +223,15 @@ def bluesky(handle, app_pw):
 
 
 def alert_urls(raw):
-    urls = re.findall(r"https://www\.google\.[a-z.]+/alerts/feeds/\d+/\d+", raw or "")
+    raw = (raw or "").strip()
+    found = re.findall(r"(?:https?://)?(?:www\.)?google\.[a-z.]+/alerts/feeds/\d+/\d+", raw)
+    urls = [u if u.startswith("http") else "https://" + u.lstrip("/") for u in found]
+    urls = [u.replace("http://", "https://", 1) for u in urls]
     if not urls:
-        raise ValueError("keine gültige Feed-Adresse – sie muss mit https://www.google.com/alerts/feeds/ beginnen (nicht die tag:-ID aus dem Feed)")
+        # Diagnose ohne den Inhalt zu verraten (leads.json ist öffentlich)
+        low = raw.lower()
+        hint = "beginnt mit 'tag:'" if low.startswith("tag:") else ("enthält 'alerts/feeds'" if "alerts/feeds" in low else ("enthält 'google.com/alerts' ohne /feeds/ – das ist die Verwaltungsseite, nicht der RSS-Feed" if "alerts" in low else "enthält keine Google-Alerts-Adresse"))
+        raise ValueError(f"keine gültige Feed-Adresse gefunden ({len(raw)} Zeichen, {hint}). Erwartet: https://www.google.com/alerts/feeds/<Zahl>/<Zahl>")
     return list(dict.fromkeys(urls))
 
 
@@ -251,8 +257,14 @@ def mail_alerts(host, user, pw, folder):
     import imaplib, email
     from email.utils import parsedate_to_datetime
     out = []
+    host, user = host.strip(), user.strip()
+    pw = re.sub(r"\s+", "", pw)  # App-Passwörter werden mit Leerzeichen angezeigt, gehören aber ohne
     M = imaplib.IMAP4_SSL(host)
-    M.login(user, pw)
+    try:
+        M.login(user, pw)
+    except imaplib.IMAP4.error as e:
+        dom = user.split("@")[-1] if "@" in user else "(kein @ in IMAP_USER)"
+        raise RuntimeError(f"Anmeldung abgelehnt: Server {host}, Konto-Domain {dom}, Passwortlänge {len(pw)} (App-Passwort = 16). {e}")
     M.select('"' + folder + '"', readonly=True)
     since = time.strftime("%d-%b-%Y", time.gmtime(time.time() - 3 * 86400))
     _, ids = M.search(None, "SINCE", since)
@@ -277,6 +289,50 @@ def mail_alerts(host, user, pw, folder):
                                 "all": True, "dachHint": True, "comments": None})
     M.logout()
     return out
+
+
+# Nur echte Druckaufträge von Leuten ohne eigenen Drucker – kein Design, keine geschützten Figuren, keine Kaufberatung.
+IP_RE = re.compile(r"\b(super ?mario|mario kart|mario bros|luigi|bowser|yoshi|zelda|triforce|hyrule|pok[eé]mon|pikachu|pok[eé] ?ball|eevee|charizard|"
+                   r"kirby|metroid|amiibo|disney|pixar|mickey|minnie|elsa|toy story|marvel|avengers|spider.?man|iron ?man|captain america|hulk|dr\.? ?doom|"
+                   r"thanos|deadpool|wolverine|groot|batman|batmobile|superman|dc comics|star ?wars|mandalorian|grogu|baby yoda|darth|vader|stormtrooper|"
+                   r"lightsaber|boba fett|harry potter|hogwarts|percy jackson|warhammer|space marines?|40k|necron|games workshop|minecraft|sonic the hedgehog|"
+                   r"hello kitty|sanrio|transformers|optimus prime|gundam|dragon ?ball|goku|naruto|one piece (anime|figure|figur|luffy)|luffy|demon slayer|jujutsu|"
+                   r"my hero academia|attack on titan|master chief|fortnite|overwatch|genshin|ace combat|shrek|simpsons|spongebob|paw patrol|peppa pig|bluey|minions|"
+                   r"ghostbusters|jurassic park|lord of the rings|lotr|samwise|frodo|gandalf|game of thrones|stranger things|xenomorph|alien isolation|teen titans?|tt communicator|"
+                   r"runescape|world of warcraft|league of legends|elden ring|dark souls|halo infinite|zelda|anime figur\w*|funko)\b", re.I)
+NOPRINTER_RE = re.compile(r"\b((buy|buying|purchase|kaufen|kaufe|anschaffen|upgrade|recommend\w*|empfehl\w*|second|zweite[nmr]?|best|bester?|budget)\s+(3d.?)?(printer|drucker)\b(?!\s*(person|guy|service|dienst))|"
+                          r"(which|what|welche[nmr]?)\s+(3d.?)?(printer|drucker)\s+(should|to|soll|kaufen|buy)|printer (recommendation|advice|to buy)|kaufberatung|drucker.?empfehlung|help me (choose|pick) a|"
+                          r"(i|ich)\s+(have|own|habe|besitze)\s+(a|an|einen?)\s+(3d.?)?(printer|drucker)|using my (3d.?)?(printer|p1s|x1c?|a1( mini)?|ender|prusa|bambu)|mit meinem (3d.?)?drucker|"
+                          r"zweit-?drucker|second printer|\b(ich habe|ich hab|hab|hab's|i)\s+(\w+\s+){0,4}(gedruckt|printed)\b|my prints (are|keep|have)|delaminat\w*|warping|stringing|layer shift|clogg?ed|"
+                          r"browser.?tool|mein neues|our new|we (built|made)|wir haben .* gebaut|offering services|\[offer(ing)?\b|for sale|zu verkaufen|verkaufe|i can print|ich drucke f(ü|ue)r|join my (production )?team|verteile|giveaway)", re.I)
+DESIGN_RE = re.compile(r"(\bdesign (it|this|one|something|me|a|an|and|for me|from scratch)\b|\bhelp (me )?(to )?design\b|\bdesign\s*(\+|&|and|/)\s*(\w+\s+)?print|\bto be designed\b|\bdesigned and printed\b|"
+                       r"\b(looking for|need|hiring|seeking|suche)( a| an| einen?)? (3d )?(designer|modell?er|sculptor|cad (person|designer)|3d artist|nodes artist|artist)\b|\[hiring\]|"
+                       r"\bmodel(l)?(ing|ieren) (request|job|help|for me)|\bmodel (it|this|one|something) for me|\bneed (a|an) (3d |stl )?model (of|for)\b|\bmodelisation|mod[eé]lisation|"
+                       r"\bsculpt (it|this|me)|\bkonstruier\w*|\bentwerfen\b|\bnachbauen\b|\breverse.?engineer\w*|\b(recreate|re-?create|replicate)\b.*\b(from|nach)\b|"
+                       r"\bfrom (a |these |the )?(photos?|pictures?|sketch|drawing)\b|\bnach (einem |einer )?(foto|bild|skizze|zeichnung)\b|\bno (stl|file|model)\b|"
+                       r"\bdon'?t have (a|the|any) (stl|file|model)|\bkeine (datei|stl|vorlage)\b|\bcan'?t find (the|a|any) (file|stl|model)|\bneed (someone|somebody) to (make|create|model|design)|"
+                       r"\b(edit|modify|modification|tweak|merge|merging|change|fix) (of |the |my |this |an |a )?(stl|file|model|design|part)|\bmerging two\b|\b(rigging|re-?rigging)\b|"
+                       r"\bcommission(s|ing)?\b|\b(add|adding)\b.{0,40}\b(to|in|into) (my|the|this) (file|stl|model)|\bminor change|\bmodification\b|\bediting\b|\bcombin(e|ing) (\d|two|2|the)|"
+                       r"\b(3d )?mesh\b|\bfusion ?360|\b3d model (for|of)\b|\blooking for (a|an|the) stl\b|\bstl (file )?(modification|edit)|\bcan (someone|anyone) make me\b|\bcreate (a|an|me)\b)", re.I)
+PRINT_RE = re.compile(r"\b(print|prints|printed|printing|drucken|druck|gedruckt|drucker|ausdrucken)\b", re.I)
+# Soziale Netzwerke: nur Beiträge, die erkennbar um 3D-Druck gehen ("print for me" heißt dort oft Fotodruck)
+CONTEXT_RE = re.compile(r"(\b3d\b|3-d|\bstl\b|\.3mf|\b3mf\b|filament|\bpla\b|petg|\btpu\b|\basa\b|3d.?druck|3d.?print|\bdrucker\b|printables|thingiverse|makerworld|thangs|cults3d)", re.I)
+
+
+def reject_reason(l):
+    t = (l.get("title", "") + "\n" + l.get("text", ""))
+    if l.get("kind") in ("bluesky", "mastodon", "lemmy", "forum", "web") and not CONTEXT_RE.search(t):
+        return "kein 3D-Druck-Bezug"
+    from_request_sub = l.get("all") and l.get("source") != "r/3Drequests"
+    if not from_request_sub and not PRINT_RE.search(t):
+        return "kein Druckauftrag"
+    if IP_RE.search(t):
+        return "Urheberrecht/Marke"
+    if NOPRINTER_RE.search(t):
+        return "hat Drucker / sucht Drucker / Angebot"
+    if DESIGN_RE.search(t):
+        return "Design/Modellieren gewünscht"
+    return None
 
 
 def main():
@@ -355,10 +411,21 @@ def main():
             status[label] = {"ok": False, "err": str(e)}
 
     cutoff = (time.time() - KEEP_DAYS * 86400) * 1000
-    arr = sorted((l for l in leads.values() if l.get("created", 0) >= cutoff), key=lambda l: -l.get("created", 0))[:MAX_LEADS]
+    removed = {}
+    kept = []
+    for l in leads.values():
+        if l.get("created", 0) < cutoff:
+            continue
+        why = reject_reason(l)
+        if why:
+            removed[why] = removed.get(why, 0) + 1
+        else:
+            kept.append(l)
+    arr = sorted(kept, key=lambda l: -l.get("created", 0))[:MAX_LEADS]
+    print("aussortiert:", removed)
     day = (time.time() - 86400) * 1000
     doc = {"generated": datetime.now(timezone.utc).isoformat(), "status": status,
-           "last24h": sum(1 for l in arr if l.get("created", 0) >= day), "leads": arr}
+           "last24h": sum(1 for l in arr if l.get("created", 0) >= day), "filtered": removed, "leads": arr}
     with open(OUT, "w", encoding="utf-8") as f:
         json.dump(doc, f, ensure_ascii=False, indent=0)
     print(json.dumps(status, indent=1))
