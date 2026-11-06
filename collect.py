@@ -3,7 +3,7 @@
 
 Ruft öffentliche Quellen ab und schreibt die Anfragen nach leads.json:
   ohne Zugang:  Reddit (RSS, endet 13.11.2026), Lemmy (Communities + Suche), Mastodon-Hashtags,
-                Discourse-Foren (Bambu-Lab-Forum, MakerForums)
+                Discourse-Forum (Bambu-Lab-Forum)
   mit Zugang (GitHub-Secrets, siehe ANLEITUNG.md):
                 Bluesky-Suche (BSKY_HANDLE, BSKY_APP_PASSWORD)
                 Mastodon-Volltextsuche (MASTODON_TOKEN)
@@ -31,11 +31,11 @@ SUBS_SEARCH = [
 DACH_HINT = {"de", "3Ddruck", "germany"}
 LEMMY = [("printmything@lemmy.world", "Lemmy !printmything", True), ("3DPrinting@lemmy.world", "Lemmy !3DPrinting", False)]
 MASTO = [("mastodon.social", "3ddruck", "Mastodon #3DDruck", True), ("norden.social", "3ddruck", "norden.social #3DDruck", True),
-         ("chaos.social", "3ddruck", "chaos.social #3DDruck", True), ("mastodon.social", "3ddrucker", "Mastodon #3DDrucker", True),
+         ("mastodon.social", "3ddrucker", "Mastodon #3DDrucker", True),
          ("mastodon.social", "3dprinting", "Mastodon #3DPrinting", False), ("mastodon.social", "3dprint", "Mastodon #3DPrint", False),
          ("mastodon.social", "3dprintrequest", "Mastodon #3DPrintRequest", False)]
 LEMMY_SEARCH = ["3d print request", "print this for me", "someone print", "3D Druck gesucht", "3D drucken lassen"]
-DISCOURSE = [("forum.bambulab.com", "Bambu-Lab-Forum"), ("makerforums.info", "MakerForums")]
+DISCOURSE = [("forum.bambulab.com", "Bambu-Lab-Forum")]
 DISCOURSE_Q = ['"print for me"', '"someone to print"', '"print service"', '"drucken lassen"', '"looking for someone"']
 BSKY_Q = ['"print for me"', '"someone to print"', '"3d print this"', '"3D Druck" gesucht', '"wer kann mir" drucken', '"3D drucken lassen"', '"need something 3d printed"']
 MASTO_Q = ["print for me 3d", "3D Druck gesucht", "wer kann mir drucken", "someone 3d print"]

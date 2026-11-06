@@ -25,7 +25,7 @@ Dauer: ca. 10 Minuten. Kosten: 0 € (öffentliches Repo, GitHub Free).
 
 ## Mehr Quellen freischalten (Zugänge als GitHub-Secrets)
 
-Ohne Zugang laufen schon: Lemmy (Communities + Suche), Mastodon-Hashtags, Bambu-Lab-Forum, MakerForums
+Ohne Zugang laufen schon: Lemmy (Communities + Suche), Mastodon-Hashtags, Bambu-Lab-Forum
 und Reddit (nur noch bis 13.11.2026). Mit diesen vier Zugängen kommen deutlich mehr Leads dazu.
 Jeden Wert speicherst du unter **Settings → Secrets and variables → Actions → New repository secret**.
 Secrets sind auch in einem öffentlichen Repo geheim, niemand außer dir sieht sie.
