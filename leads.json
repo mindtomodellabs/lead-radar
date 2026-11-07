@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-07T02:05:14.712441+00:00",
+"generated": "2026-11-07T02:57:50.378100+00:00",
 "status": {
 "r/3Dprintmything": {
 "ok": true,
@@ -7,9 +7,9 @@
 "n": 50
 },
 "r/PrintMyThing": {
-"ok": true,
-"via": "rss",
-"n": 1
+"ok": false,
+"via": "failed",
+"n": 0
 },
 "r/3Dprinting (Suche)": {
 "ok": false,
