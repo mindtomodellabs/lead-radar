@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-07T04:33:24.445675+00:00",
+"generated": "2026-11-07T05:30:09.297687+00:00",
 "status": {
 "r/3Dprintmything": {
 "ok": true,
@@ -7,9 +7,9 @@
 "n": 50
 },
 "r/PrintMyThing": {
-"ok": false,
-"via": "failed",
-"n": 0
+"ok": true,
+"via": "rss",
+"n": 1
 },
 "r/3Dprinting (Suche)": {
 "ok": false,
@@ -73,7 +73,7 @@
 "n": 0
 }
 },
-"last24h": 7,
+"last24h": 6,
 "filtered": {
 "Design/Modellieren gewünscht": 9,
 "hat Drucker / sucht Drucker / Angebot": 3,
