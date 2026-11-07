@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-07T19:35:06.903985+00:00",
+"generated": "2026-11-07T20:16:12.896951+00:00",
 "status": {
 "r/3Dprintmything": {
 "ok": true,
@@ -12,9 +12,9 @@
 "n": 0
 },
 "r/3Dprinting (Suche)": {
-"ok": false,
-"via": "failed",
-"n": 0
+"ok": true,
+"via": "rss",
+"n": 8
 },
 "Lemmy !printmything": {
 "ok": true,
@@ -73,15 +73,29 @@
 "n": 0
 }
 },
-"last24h": 5,
+"last24h": 6,
 "filtered": {
 "Design/Modellieren gewünscht": 7,
-"hat Drucker / sucht Drucker / Angebot": 6,
+"hat Drucker / sucht Drucker / Angebot": 7,
 "Urheberrecht/Marke": 3,
 "keine ausdrückliche Druckanfrage": 14,
 "kein 3D-Druck-Bezug": 7
 },
 "leads": [
+{
+"id": "reddit:1xqfnz6",
+"source": "r/3Dprintmything",
+"kind": "reddit",
+"title": "[United States] I am looking for a resin printer that can print a 12 cm figure I deisgned and ship it :)",
+"text": "",
+"url": "https://www.reddit.com/r/3Dprintmything/comments/1xqfnz6/united_states_i_am_looking_for_a_resin_printer/",
+"created": 1794082192000,
+"author": "AssassinSusie",
+"flair": "",
+"all": true,
+"dachHint": false,
+"why": "Anfrage-Community"
+},
 {
 "id": "reddit:1xq1kpu",
 "source": "r/3Dprintmything",
