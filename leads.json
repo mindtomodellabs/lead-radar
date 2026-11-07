@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-07T08:30:07.104221+00:00",
+"generated": "2026-11-07T09:20:48.942749+00:00",
 "status": {
 "r/3Dprintmything": {
 "ok": true,
@@ -12,9 +12,9 @@
 "n": 0
 },
 "r/3Dprinting (Suche)": {
-"ok": true,
-"via": "rss",
-"n": 8
+"ok": false,
+"via": "failed",
+"n": 0
 },
 "Lemmy !printmything": {
 "ok": true,
@@ -73,14 +73,27 @@
 "n": 0
 }
 },
-"last24h": 6,
+"last24h": 7,
 "filtered": {
 "Design/Modellieren gewünscht": 9,
-"hat Drucker / sucht Drucker / Angebot": 4,
+"hat Drucker / sucht Drucker / Angebot": 3,
 "Urheberrecht/Marke": 3,
 "kein 3D-Druck-Bezug": 20
 },
 "leads": [
+{
+"id": "reddit:1xq1kpu",
+"source": "r/3Dprintmything",
+"kind": "reddit",
+"title": "[US-CA] SGV area - Help Printing Car Interior Trim",
+"text": "Hi! I'm quite the 3D print novice and looking to get some help printing something. Local to SGV and Azusa area if anyone nearby can help.\n This would be an adapter going into a car and the recommended material is ASA in black. There's 2 STL files - ones the mount and 2 little bracket pieces. Here's the details from the stl file creator:\n The print was printed in ASA with a 0.4 mm nozzle, standard 0.2 mm layer height and tree supports - standard Bambu Lab ASA settings. Due to shrinkage of regular ASA the model was scaled to 100.6% from 100%. \n Here's a render of what I'm looking to print. Let me know if anything else is needed. Thanks in advance!\n https://preview.redd.it/wzcmf18gj50i1.png?width=512&format=png&auto=webp&s=323d91926c0e6e2ff14cfd89999fc6951cf31ec8\n https://preview.redd.it/f8uk3usgj50i1.png?width=408&format=png&auto=webp&s=7a94363c71ed06b40530e39ec77f832a4b1f5729",
+"url": "https://www.reddit.com/r/3Dprintmything/comments/1xq1kpu/usca_sgv_area_help_printing_car_interior_trim/",
+"created": 1794040551000,
+"author": "christmaslu",
+"flair": "",
+"all": true,
+"dachHint": false
+},
 {
 "id": "reddit:1xpptqp",
 "source": "r/3Dprintmything",
