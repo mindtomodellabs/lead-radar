@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-07T09:20:48.942749+00:00",
+"generated": "2026-11-07T09:41:17.509144+00:00",
 "status": {
 "r/3Dprintmything": {
 "ok": true,
@@ -7,9 +7,9 @@
 "n": 50
 },
 "r/PrintMyThing": {
-"ok": false,
-"via": "failed",
-"n": 0
+"ok": true,
+"via": "rss",
+"n": 1
 },
 "r/3Dprinting (Suche)": {
 "ok": false,
@@ -75,10 +75,11 @@
 },
 "last24h": 7,
 "filtered": {
-"Design/Modellieren gewünscht": 9,
-"hat Drucker / sucht Drucker / Angebot": 3,
+"hat Drucker / sucht Drucker / Angebot": 6,
+"keine ausdrückliche Druckanfrage": 18,
+"Design/Modellieren gewünscht": 7,
 "Urheberrecht/Marke": 3,
-"kein 3D-Druck-Bezug": 20
+"kein 3D-Druck-Bezug": 7
 },
 "leads": [
 {
@@ -92,7 +93,8 @@
 "author": "christmaslu",
 "flair": "",
 "all": true,
-"dachHint": false
+"dachHint": false,
+"why": "Anfrage-Community"
 },
 {
 "id": "reddit:1xpptqp",
@@ -105,7 +107,8 @@
 "author": "LordServek",
 "flair": "",
 "all": true,
-"dachHint": false
+"dachHint": false,
+"why": "Anfrage-Community"
 },
 {
 "id": "reddit:1xpng6b",
@@ -118,7 +121,8 @@
 "author": "chalmarm15",
 "flair": "",
 "all": true,
-"dachHint": false
+"dachHint": false,
+"why": "Anfrage-Community"
 },
 {
 "id": "reddit:1xpn6g0",
@@ -131,7 +135,8 @@
 "author": "Tractor555",
 "flair": "",
 "all": true,
-"dachHint": false
+"dachHint": false,
+"why": "Anfrage-Community"
 },
 {
 "id": "reddit:1xpn1iu",
@@ -144,7 +149,8 @@
 "author": "PlateNervous8440",
 "flair": "",
 "all": true,
-"dachHint": false
+"dachHint": false,
+"why": "Anfrage-Community"
 },
 {
 "id": "reddit:1xphvnx",
@@ -157,7 +163,8 @@
 "author": "Flaky-Ad-8124",
 "flair": "",
 "all": true,
-"dachHint": false
+"dachHint": false,
+"why": "Anfrage-Community"
 },
 {
 "id": "reddit:1xpatkp",
@@ -170,7 +177,8 @@
 "author": "spiritual_ninjaz",
 "flair": "",
 "all": true,
-"dachHint": false
+"dachHint": false,
+"why": "Anfrage-Community"
 },
 {
 "id": "reddit:1xp4af6",
@@ -183,7 +191,8 @@
 "author": "AcceptablePun",
 "flair": "",
 "all": true,
-"dachHint": false
+"dachHint": false,
+"why": "Anfrage-Community"
 },
 {
 "id": "reddit:1xp0omp",
@@ -196,7 +205,8 @@
 "author": "Alexander_bike",
 "flair": "",
 "all": true,
-"dachHint": false
+"dachHint": false,
+"why": "Anfrage-Community"
 },
 {
 "id": "reddit:1xoyx4p",
@@ -209,7 +219,8 @@
 "author": "MasterThalpian",
 "flair": "",
 "all": true,
-"dachHint": false
+"dachHint": false,
+"why": "Anfrage-Community"
 },
 {
 "id": "reddit:1xoxfp7",
@@ -222,7 +233,8 @@
 "author": "LakeHarkWatchCo",
 "flair": "",
 "all": true,
-"dachHint": false
+"dachHint": false,
+"why": "Anfrage-Community"
 },
 {
 "id": "reddit:1xow42u",
@@ -235,7 +247,8 @@
 "author": "Candid-Barnacle-6048",
 "flair": "",
 "all": true,
-"dachHint": false
+"dachHint": false,
+"why": "Anfrage-Community"
 },
 {
 "id": "reddit:1xovwjz",
@@ -248,7 +261,8 @@
 "author": "lexxielexlex",
 "flair": "",
 "all": true,
-"dachHint": false
+"dachHint": false,
+"why": "Anfrage-Community"
 },
 {
 "id": "reddit:1xo301b",
@@ -261,7 +275,8 @@
 "author": "covah901",
 "flair": "",
 "all": true,
-"dachHint": false
+"dachHint": false,
+"why": "Anfrage-Community"
 },
 {
 "id": "reddit:1xndm32",
@@ -274,7 +289,8 @@
 "author": "ComradeDre",
 "flair": "",
 "all": true,
-"dachHint": false
+"dachHint": false,
+"why": "Anfrage-Community"
 },
 {
 "id": "reddit:1xnai8s",
@@ -287,7 +303,8 @@
 "author": "Roboperson",
 "flair": "",
 "all": true,
-"dachHint": false
+"dachHint": false,
+"why": "Anfrage-Community"
 },
 {
 "id": "reddit:1xn9mdq",
@@ -300,7 +317,8 @@
 "author": "ilovenyc",
 "flair": "",
 "all": true,
-"dachHint": false
+"dachHint": false,
+"why": "Anfrage-Community"
 },
 {
 "id": "reddit:1xn6ntc",
@@ -313,7 +331,8 @@
 "author": "Sleepless-in-Sea",
 "flair": "",
 "all": true,
-"dachHint": false
+"dachHint": false,
+"why": "Anfrage-Community"
 },
 {
 "id": "reddit:1xn6lg4",
@@ -326,7 +345,8 @@
 "author": "bhakjdlmn",
 "flair": "",
 "all": true,
-"dachHint": false
+"dachHint": false,
+"why": "Anfrage-Community"
 },
 {
 "id": "reddit:1xmxl38",
@@ -339,7 +359,8 @@
 "author": "jan0009683",
 "flair": "",
 "all": true,
-"dachHint": false
+"dachHint": false,
+"why": "Anfrage-Community"
 },
 {
 "id": "reddit:1xme9up",
@@ -352,7 +373,8 @@
 "author": "TheLuckiestNumber13",
 "flair": "",
 "all": true,
-"dachHint": false
+"dachHint": false,
+"why": "Anfrage-Community"
 },
 {
 "id": "reddit:1xmctrx",
@@ -365,7 +387,8 @@
 "author": "mkibsbricks",
 "flair": "",
 "all": true,
-"dachHint": false
+"dachHint": false,
+"why": "Anfrage-Community"
 },
 {
 "id": "reddit:1xm4gjo",
@@ -378,20 +401,8 @@
 "author": "Rotten-Globe",
 "flair": "",
 "all": true,
-"dachHint": false
-},
-{
-"id": "reddit:1xm03n6",
-"source": "r/3Dprintmything",
-"kind": "reddit",
-"title": "[SWITZERLAND/Solothurn] 3D-Printed Shoe",
-"text": "Hello, i made a 3d-model of a Shoe, unfortunately i cannot print it right now, because my printer is broken. I don't need the shoe myself, i'm just wondering if it would fit and if it would be comfortable, so whoever prints it, can keep it. I'm basically offering my 3D-File, asking for some Feedback. It should be made out of TPU (Around 85 Sha). Comment if interested in the files. The top part is meant to be glued to the bottom part, around the outside, laces will have to be used from other shoes or bought for this, i don't know the optimal lenght unfortunately.\n Edit: I made it for EU Size 44.5, it can be scaled to the needed Size\n Shoe for 3D-Print",
-"url": "https://www.reddit.com/r/3Dprintmything/comments/1xm03n6/switzerlandsolothurn_3dprinted_shoe/",
-"created": 1793633034000,
-"author": "nokarmaatall69",
-"flair": "",
-"all": true,
-"dachHint": false
+"dachHint": false,
+"why": "Anfrage-Community"
 },
 {
 "id": "reddit:1xln17j",
@@ -404,20 +415,8 @@
 "author": "Country_Is_Farm_Emo",
 "flair": "",
 "all": false,
-"dachHint": false
-},
-{
-"id": "reddit:1xla97i",
-"source": "r/3Drequests",
-"kind": "reddit",
-"title": "A new cap for this lamp",
-"text": "I want to print a bigger cap for this lamp to cover the hole in my ceiling. The topside needs to have a diameter of 16 centimeters and the hole on the downside needs to have a diameter of 3 cm and the edge needs to be 2 milimeters deeper than the rest so the click attachments can fit in. The edge also needs to have a 2 millimeter width. Budget: €30,-, but negotiable.",
-"url": "https://www.reddit.com/r/3Drequests/comments/1xla97i/a_new_cap_for_this_lamp/",
-"created": 1793557166000,
-"author": "aqua_shell",
-"flair": "",
-"all": true,
-"dachHint": false
+"dachHint": false,
+"why": "„Looking for someone to print“"
 },
 {
 "id": "reddit:1xkerpg",
@@ -430,7 +429,8 @@
 "author": "__PuppyMonkeyBaby__",
 "flair": "",
 "all": true,
-"dachHint": false
+"dachHint": false,
+"why": "Anfrage-Community"
 },
 {
 "id": "reddit:1xkb7cw",
@@ -443,7 +443,8 @@
 "author": "KaterMurks",
 "flair": "",
 "all": false,
-"dachHint": false
+"dachHint": false,
+"why": "„print for me“"
 },
 {
 "id": "reddit:1xjyvsg",
@@ -456,7 +457,8 @@
 "author": "x2kjok",
 "flair": "",
 "all": true,
-"dachHint": false
+"dachHint": false,
+"why": "Anfrage-Community"
 },
 {
 "id": "reddit:1xjyjpq",
@@ -469,7 +471,8 @@
 "author": "Corrific19",
 "flair": "",
 "all": true,
-"dachHint": false
+"dachHint": false,
+"why": "Anfrage-Community"
 },
 {
 "id": "reddit:1xjyfx1",
@@ -482,7 +485,8 @@
 "author": "debmadd",
 "flair": "",
 "all": true,
-"dachHint": false
+"dachHint": false,
+"why": "Anfrage-Community"
 },
 {
 "id": "reddit:1xjyar0",
@@ -495,7 +499,8 @@
 "author": "gloomycat09",
 "flair": "",
 "all": true,
-"dachHint": false
+"dachHint": false,
+"why": "Anfrage-Community"
 },
 {
 "id": "reddit:1xjltct",
@@ -508,7 +513,8 @@
 "author": "Happy_Factor",
 "flair": "",
 "all": true,
-"dachHint": false
+"dachHint": false,
+"why": "Anfrage-Community"
 },
 {
 "id": "reddit:1xj4rk4",
@@ -521,20 +527,8 @@
 "author": "Still-Gas-1247",
 "flair": "",
 "all": true,
-"dachHint": false
-},
-{
-"id": "reddit:1xiuvaf",
-"source": "r/3Drequests",
-"kind": "reddit",
-"title": "Is this possible?",
-"text": "Hi! I was wondering if this or something similar could be 3D printed as a Christmas tree topper. Like the size of what a normal star on top of a tree would be? I only have this picture as reference. I’m open to similar options as well! \n I completely understand if not! Thanks in advance for any help!",
-"url": "https://www.reddit.com/r/3Drequests/comments/1xiuvaf/is_this_possible/",
-"created": 1793304863000,
-"author": "missingxrealityx",
-"flair": "",
-"all": true,
-"dachHint": false
+"dachHint": false,
+"why": "Anfrage-Community"
 },
 {
 "id": "reddit:1xiu1gy",
@@ -547,7 +541,8 @@
 "author": "Brief-Explanation110",
 "flair": "",
 "all": true,
-"dachHint": false
+"dachHint": false,
+"why": "Anfrage-Community"
 },
 {
 "id": "reddit:1xikh98",
@@ -560,21 +555,8 @@
 "author": "Craven_mohrhead",
 "flair": "",
 "all": true,
-"dachHint": false
-},
-{
-"id": "bsky:at://did:plc:wqhtoglvradbgknynamqwqtj/app.bsky.feed.post/3mywroao4fc2e",
-"source": "Bluesky",
-"kind": "bluesky",
-"title": "tbh i already put in an order w the shop that did the 3D print for me last time who am i kidding i have 0 impulse control... i had also just",
-"text": "tbh i already put in an order w the shop that did the 3D print for me last time who am i kidding i have 0 impulse control... i had also just bought the tove jansson illust ver of the hobbit last night too h a h a whoops",
-"url": "https://bsky.app/profile/kotaka-kun.bsky.social/post/3mywroao4fc2e",
-"created": 1793191400050,
-"author": "kotaka-kun.bsky.social",
-"flair": "",
-"all": false,
 "dachHint": false,
-"comments": 0
+"why": "Anfrage-Community"
 },
 {
 "id": "reddit:1xh8rpi",
@@ -587,33 +569,8 @@
 "author": "GenericUser104",
 "flair": "",
 "all": true,
-"dachHint": false
-},
-{
-"id": "reddit:1xh4c7x",
-"source": "r/3Drequests",
-"kind": "reddit",
-"title": "ISO: Custom token trays for a board game",
-"text": "UPDATE: I've narrowed it down to a few folks - thank you to everyone who reached out! Please consider this job filled. I'm looking for a moon-themed token tray for a board game that I made - currently funded on Kickstarter! Yay!\n I'm presently work with a modeler, but unfortunately, after several iterations... Well. I'm starting to worry. I'm not here to bash her, and she's still going to be compensated for her time, and I need a model that prints well. I'm hoping someone with more experience will be able to help me.\n Budget: $25/hr, max of $125\n Dims: 100mm diameter when together x 18mm high. I'm flexible on the crescent/gibbous shape.\n Moon pieces will be separate, and nesting/stackable.\n I'm hoping to have final files within a week.\n I'll need STL files. I'm printing them myself, Sovol 6 ACE, Bambu Silk+ filament\n EDIT: NO AI\n Let me know if I left anything out?",
-"url": "https://www.reddit.com/r/3Drequests/comments/1xh4c7x/iso_custom_token_trays_for_a_board_game/",
-"created": 1793134097000,
-"author": "Magic-SamWitch",
-"flair": "",
-"all": true,
-"dachHint": false
-},
-{
-"id": "reddit:1xh0ggn",
-"source": "r/3Drequests",
-"kind": "reddit",
-"title": "Paid 3D Print Request",
-"text": "Looking for a 3d print in 3mf of the following picture. I tried making one on meshy.ai but they didn't come out quite right. The first one had bevels on the back (needs to be flat as these will be emblems for a car). then the second one got really close the but the bevels and lines weren't quite straight enough. I have attached pictures of the origional image and the meshy renderings. Let me know what else you need. \n As far as budget I am not sure, it seems like a quick task, but I don't know what it would really go for. Happy to discuss cost and options for payment. \n Dimensions would be such that a single letter or number is about 3.5\" tall. Maybe make it a bit taller and I can scale it down if needed.",
-"url": "https://www.reddit.com/r/3Drequests/comments/1xh0ggn/paid_3d_print_request/",
-"created": 1793125484000,
-"author": "Indred-Cold89",
-"flair": "",
-"all": true,
-"dachHint": false
+"dachHint": false,
+"why": "Anfrage-Community"
 },
 {
 "id": "reddit:1xgs9rn",
@@ -626,7 +583,8 @@
 "author": "slinger55",
 "flair": "",
 "all": true,
-"dachHint": false
+"dachHint": false,
+"why": "Anfrage-Community"
 },
 {
 "id": "reddit:1xgkzsx",
@@ -639,7 +597,8 @@
 "author": "Omnipotoni",
 "flair": "",
 "all": true,
-"dachHint": false
+"dachHint": false,
+"why": "Anfrage-Community"
 },
 {
 "id": "reddit:1xgjd90",
@@ -652,7 +611,8 @@
 "author": "harbreakfast",
 "flair": "",
 "all": true,
-"dachHint": false
+"dachHint": false,
+"why": "Anfrage-Community"
 },
 {
 "id": "reddit:1xgh396",
@@ -665,7 +625,8 @@
 "author": "Cirative",
 "flair": "",
 "all": true,
-"dachHint": false
+"dachHint": false,
+"why": "Anfrage-Community"
 },
 {
 "id": "reddit:1xgefx3",
@@ -678,7 +639,8 @@
 "author": "threeputtsforpar",
 "flair": "",
 "all": true,
-"dachHint": false
+"dachHint": false,
+"why": "Anfrage-Community"
 },
 {
 "id": "reddit:1xgdt94",
@@ -691,7 +653,8 @@
 "author": "basscross9",
 "flair": "",
 "all": true,
-"dachHint": false
+"dachHint": false,
+"why": "Anfrage-Community"
 },
 {
 "id": "reddit:1xg9ynd",
@@ -704,7 +667,8 @@
 "author": "Neither_Breakfast983",
 "flair": "",
 "all": true,
-"dachHint": false
+"dachHint": false,
+"why": "Anfrage-Community"
 },
 {
 "id": "reddit:1xg6q3n",
@@ -717,7 +681,8 @@
 "author": "ltsnotluck",
 "flair": "",
 "all": true,
-"dachHint": false
+"dachHint": false,
+"why": "Anfrage-Community"
 },
 {
 "id": "reddit:1xfxxds",
@@ -730,7 +695,8 @@
 "author": "Saucey2500",
 "flair": "",
 "all": true,
-"dachHint": false
+"dachHint": false,
+"why": "Anfrage-Community"
 },
 {
 "id": "reddit:1xfv6u7",
@@ -743,7 +709,8 @@
 "author": "Accomplished-Joke913",
 "flair": "",
 "all": true,
-"dachHint": false
+"dachHint": false,
+"why": "Anfrage-Community"
 },
 {
 "id": "reddit:1xfn4j2",
@@ -756,7 +723,8 @@
 "author": "sulibO",
 "flair": "",
 "all": true,
-"dachHint": false
+"dachHint": false,
+"why": "Anfrage-Community"
 },
 {
 "id": "reddit:1xfi9uz",
@@ -769,7 +737,8 @@
 "author": "DoubleYoo",
 "flair": "",
 "all": true,
-"dachHint": false
+"dachHint": false,
+"why": "Anfrage-Community"
 },
 {
 "id": "reddit:1xfaglj",
@@ -782,7 +751,8 @@
 "author": "No-Cupcake4498",
 "flair": "",
 "all": true,
-"dachHint": false
+"dachHint": false,
+"why": "Anfrage-Community"
 },
 {
 "id": "reddit:1xf9xi4",
@@ -795,7 +765,8 @@
 "author": "arachnoholic-",
 "flair": "",
 "all": true,
-"dachHint": false
+"dachHint": false,
+"why": "Anfrage-Community"
 },
 {
 "id": "reddit:1xf8omk",
@@ -808,7 +779,8 @@
 "author": "Chemical-Sea-5880",
 "flair": "",
 "all": true,
-"dachHint": false
+"dachHint": false,
+"why": "Anfrage-Community"
 },
 {
 "id": "reddit:1xeusqj",
@@ -821,7 +793,8 @@
 "author": "Potential_Zone_5435",
 "flair": "",
 "all": true,
-"dachHint": false
+"dachHint": false,
+"why": "Anfrage-Community"
 },
 {
 "id": "reddit:1xeppa8",
@@ -834,7 +807,8 @@
 "author": "You-External-",
 "flair": "",
 "all": true,
-"dachHint": false
+"dachHint": false,
+"why": "Anfrage-Community"
 },
 {
 "id": "reddit:1xc4xdz",
@@ -847,7 +821,8 @@
 "author": "Affectionate_Gap6550",
 "flair": "",
 "all": false,
-"dachHint": false
+"dachHint": false,
+"why": "„3d print FOR me“"
 }
 ]
 }
