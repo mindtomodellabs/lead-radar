@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-07T20:55:39.849770+00:00",
+"generated": "2026-11-07T21:28:06.282070+00:00",
 "status": {
 "r/3Dprintmything": {
 "ok": true,
@@ -12,9 +12,9 @@
 "n": 0
 },
 "r/3Dprinting (Suche)": {
-"ok": false,
-"via": "failed",
-"n": 0
+"ok": true,
+"via": "rss",
+"n": 8
 },
 "Lemmy !printmything": {
 "ok": true,
@@ -73,15 +73,29 @@
 "n": 0
 }
 },
-"last24h": 3,
+"last24h": 4,
 "filtered": {
 "Design/Modellieren gewünscht": 7,
-"hat Drucker / sucht Drucker / Angebot": 6,
+"hat Drucker / sucht Drucker / Angebot": 7,
 "Urheberrecht/Marke": 3,
 "keine ausdrückliche Druckanfrage": 14,
 "kein 3D-Druck-Bezug": 7
 },
 "leads": [
+{
+"id": "reddit:1xqgz55",
+"source": "r/3Dprintmything",
+"kind": "reddit",
+"title": "[CA, USA] can someone turn this into an stl file?",
+"text": "Looking to get this Marie Antoinette half doll made into an stl file. Or if someone can resin print it for me lmk! 🫡",
+"url": "https://www.reddit.com/r/3Dprintmything/comments/1xqgz55/ca_usa_can_someone_turn_this_into_an_stl_file/",
+"created": 1794085691000,
+"author": "SnooChocolates4526",
+"flair": "",
+"all": true,
+"dachHint": false,
+"why": "Anfrage-Community"
+},
 {
 "id": "reddit:1xqfnz6",
 "source": "r/3Dprintmything",
