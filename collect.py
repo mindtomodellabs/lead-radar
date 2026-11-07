@@ -319,16 +319,46 @@ PRINT_RE = re.compile(r"\b(print|prints|printed|printing|drucken|druck|gedruckt|
 CONTEXT_RE = re.compile(r"(\b3d\b|3-d|\bstl\b|\.3mf|\b3mf\b|filament|\bpla\b|petg|\btpu\b|\basa\b|3d.?druck|3d.?print|\bdrucker\b|printables|thingiverse|makerworld|thangs|cults3d)", re.I)
 
 
+# Ausdrückliche Druckanfrage: jemand bittet darum, dass ein anderer etwas für ihn druckt.
+LEAD_RE = re.compile(
+    r"(\bcan (?:some ?one|somebody|any ?one|you) (?:please )?(?:3d[ -]?)?print\b|"
+    r"\b(?:could|would|will) (?:some ?one|somebody|any ?one) (?:be able to |be willing to |please )?(?:3d[ -]?)?print\b|"
+    r"\bany ?one (?:here )?(?:with a (?:3d )?printer|able to (?:3d )?print|willing to (?:3d )?print|who (?:can|could) (?:3d )?print|near me (?:who|that) (?:can|could) print)|"
+    r"\blooking for (?:some ?one|somebody|a person|a maker|a printer|a print(?:ing)? service|a 3d print(?:ing)? service)\b.{0,40}\b(?:to (?:3d )?print|print|who (?:can|could)|with a (?:3d )?printer|near|in\b)|"
+    r"\b(?:need|want|seeking|searching for) (?:some ?one|somebody) (?:to|who can|that can|with a printer) (?:3d )?print|"
+    r"\b(?:3d[ -]?)?print (?:this|these|it|them|something|some(?:thing)? small|a (?:few |couple )?\w+|an? \w+|\d+ \w+) for me\b|\b3d[ -]?print(?:ed)? for me\b|\bprint(?:ed)? for me\b|"
+    r"\b(?:pay|paying) (?:some ?one|somebody|you) to (?:3d[ -]?)?print|\bwilling to pay\b.{0,60}\bprint|"
+    r"\bwhere (?:can|could) i (?:get|have) .{0,40}(?:3d[ -]?)?printed\b|\b(?:get|have) (?:this|these|it|them|something|a part|parts|a \w+|my \w+) (?:3d[ -]?)?printed\b|"
+    r"\bneed (?:this|these|it|them|something|a part|parts|a \w+|\d+ \w+) (?:3d[ -]?)?printed\b|"
+    r"\bwer kann (?:mir |uns )?.{0,50}(?:3d.?)?drucken\b|\bkann (?:mir )?(?:jemand|wer|einer) .{0,50}drucken\b|\bkönnte (?:mir )?(?:jemand|wer|einer) .{0,50}drucken\b|"
+    r"\bsuche (?:jemanden|wen|einen|eine person|einen maker|einen 3d.?drucker|einen druckservice|einen druck.?dienst)\b.{0,60}(?:drucken|drucker|druckt|3d.?druck)|"
+    r"\b(?:3d.?)?druck(?:service|dienst|auftrag|anfrage)\b.{0,20}\b(?:gesucht|suche)|\bdrucken lassen\b|\bjemand mit (?:einem )?(?:3d.?)?drucker\b|\bgegen bezahlung\b.{0,40}drucken|"
+    r"^\s*\[(?:request|requests|seeking|paid|paid request|req|looking)\])", re.I | re.M)
+REQUEST_COMMUNITIES = {"r/3Dprintmything", "r/PrintMyThing", "Lemmy !printmything"}
+DONE_RE = re.compile(r"\b(resolved|solved|completed?|fulfilled|closed|found (?:some|a )?(?:one|printer)|erledigt|gefunden)\b", re.I)
+ORDERED_RE = re.compile(r"\b(my (?:3d )?printer (?:is|was|broke|died|isn'?t|has)|mein (?:3d.?)?drucker (?:ist|war|geht)|whoever prints it can keep|offering my|already (?:put in|placed|ordered)|i ordered|had (?:my|a) \w+ print|bestellt habe|habe .* bestellt)\b", re.I)
+
+
+def lead_reason(l):
+    """Gibt zurück, warum der Beitrag ein Lead ist, oder None."""
+    t = l.get("title", "") + "\n" + l.get("text", "")
+    if l.get("source") in REQUEST_COMMUNITIES:
+        return "Anfrage-Community"
+    m = LEAD_RE.search(t)
+    return ("„" + m.group(0).strip()[:60] + "“") if m else None
+
+
 def reject_reason(l):
     t = (l.get("title", "") + "\n" + l.get("text", ""))
+    if not lead_reason(l):
+        return "keine ausdrückliche Druckanfrage"
     if l.get("kind") in ("bluesky", "mastodon", "lemmy", "forum", "web") and not CONTEXT_RE.search(t):
         return "kein 3D-Druck-Bezug"
-    from_request_sub = l.get("all") and l.get("source") != "r/3Drequests"
-    if not from_request_sub and not PRINT_RE.search(t):
-        return "kein Druckauftrag"
+    if DONE_RE.search(l.get("title", "") + " " + (l.get("flair") or "")):
+        return "erledigt"
     if IP_RE.search(t):
         return "Urheberrecht/Marke"
-    if NOPRINTER_RE.search(t):
+    if NOPRINTER_RE.search(t) or ORDERED_RE.search(t):
         return "hat Drucker / sucht Drucker / Angebot"
     if DESIGN_RE.search(t):
         return "Design/Modellieren gewünscht"
@@ -420,6 +450,7 @@ def main():
         if why:
             removed[why] = removed.get(why, 0) + 1
         else:
+            l["why"] = lead_reason(l)
             kept.append(l)
     arr = sorted(kept, key=lambda l: -l.get("created", 0))[:MAX_LEADS]
     print("aussortiert:", removed)

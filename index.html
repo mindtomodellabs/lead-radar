@@ -111,6 +111,7 @@ header.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;margin:0 
 .e.mat{border-color:rgba(95,212,230,.4);color:var(--cyan);background:var(--cyan-soft)}
 .e.chance{margin-left:auto;font-weight:600}.e.chance.hoch{border-color:rgba(95,220,151,.55);color:var(--good);background:var(--good-soft)}.e.chance.mittel{border-color:rgba(255,207,92,.5);color:var(--warn)}.e.chance.niedrig{color:var(--faint)}
 .e.pay{border-color:rgba(255,181,71,.45);color:var(--accent);background:var(--accent-soft)}
+.why-lead{margin:8px 0 0;font-size:12px;color:var(--good);font-family:var(--f-mono)}
 .est-note{font-size:11px;color:var(--faint);font-family:var(--f-mono)}
 .lead-actions{display:flex;gap:6px;margin-top:10px;flex-wrap:wrap;align-items:center}
 .act{text-decoration:none;border-radius:9px;border:1px solid var(--line);background:transparent;padding:5px 10px;font-size:13px;color:var(--muted);display:inline-flex;gap:5px;align-items:center;transition:all .2s}
@@ -437,7 +438,7 @@ function rejectReason(l){const t=(l.title||"")+"\n"+(l.text||"");const T=k=>FRX[
 function enrich(l){
   const text=l.title+"\n"+l.text;
   const isOffer=OFFER.test(l.title)||(/^\s*\[?offer/i.test(l.title));
-  const relevant=!rejectReason(l);
+  const relevant=l.demo||!!l.why;
   return Object.assign(l,{region:parseRegion(l),size:parseSize(text),mats:parseMaterial(text),kind:parseKind(text,isOffer),status:parseStatus(l),pay:parsePay(text),
     hasFile:/\.(stl|3mf|step|stp|obj)\b|thingiverse|printables|makerworld|cults3d|thangs/i.test(text),relevant});
 }
@@ -535,7 +536,7 @@ async function refresh(manual){
   if(S.loading)return;S.loading=true;
   const b=$("#refreshBtn");b.classList.add("spin");b.disabled=true;setStatus("part","Rufe Quellen ab …");
   const before=S.leads.size;
-  await Promise.all([loadLeadsJson(),loadDirect(manual)]);
+  await loadLeadsJson(); /* nur geprüfte Leads vom Sammel-Bot – kein ungefilterter Direktabruf */
   const added=S.leads.size-before;
   S.initialDone=true;S.loading=false;b.classList.remove("spin");b.disabled=false;
   schedule();render();
@@ -619,7 +620,7 @@ function card(l){
     <h3><a href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.title)}</a></h3>
     ${l.text&&l.text!==l.title?`<p class="excerpt">${esc(l.text.slice(0,1400))}</p>`:""}
     <div class="more"><div><p class="est-note">${esc(fmtDate(l.created))}${l.author?" · "+esc(l.author):""}${l.flair?" · Flair: "+esc(l.flair):""}</p></div></div>
-    <div class="est"><span class="e"><i>≈</i>${esc(l.kind)}</span>${sizeChip}${mats}${l.pay?`<span class="e pay"><i>≈</i>${esc(l.pay)}</span>`:""}${l.hasFile?'<span class="e"><i>≈</i>Datei vorhanden</span>':""}</div>
+    ${l.why?`<p class="why-lead">Erkannt als Druckanfrage: ${esc(l.why)}</p>`:""}<div class="est"><span class="e"><i>≈</i>${esc(l.kind)}</span>${sizeChip}${mats}${l.pay?`<span class="e pay"><i>≈</i>${esc(l.pay)}</span>`:""}${l.hasFile?'<span class="e"><i>≈</i>Datei vorhanden</span>':""}</div>
     <div class="lead-actions">
       <button class="act" type="button" data-act="seen" aria-pressed="${m==="seen"}">${ICON.eye}<span class="lbl-txt">Gesehen</span></button>
       <button class="act star" type="button" data-act="star" aria-pressed="${m==="star"}">${ICON.star}<span class="lbl-txt">Interessant</span></button>
@@ -676,7 +677,7 @@ function renderSources(){
     rows.push(`<div class="srcrow"><span class="dot ${s?(s.ok?"ok":"err"):""}"></span><span>${esc(label)}</span><span class="st">${s?(s.ok?s.n+" Beiträge":"aus"):"–"}</span>${s&&s.why?`<span class="why">${esc(s.why)}</span>`:""}</div>`)}
   const bs=Object.entries(S.botStatus||{}),bot=[];
   for(const [k,v] of bs)bot.push(`<div class="srcrow"><span class="dot ${v.ok?"ok":"err"}"></span><span>${esc(k)}</span><span class="st">${v.ok?(v.n??0)+" geprüft":"aus"}</span>${!v.ok?`<span class="why">${esc(/Zugang fehlt/.test(v.err||"")?v.err+" – siehe ANLEITUNG.md":/AUTHENTICATIONFAILED/.test(v.err||"")?"Gmail lehnt die Anmeldung ab – in IMAP_PASS muss das App-Passwort stehen":/^r\//.test(k)?"Reddit sperrt automatische Abrufe (RSS endet 13.11.2026)":(v.err||"nicht erreichbar"))}</span>`:""}</div>`);
-  if(bot.length)rows.unshift(`<p class="lbl">Sammel-Bot auf GitHub (alle 15 Min)</p>`,...bot,`<p class="lbl" style="margin-top:14px">Direkt aus dem Browser</p>`);
+  if(bot.length)rows.unshift(`<p class="lbl">Sammel-Bot auf GitHub (alle 15 Min)</p>`,...bot);
   $("#srcList").innerHTML=rows.join("");
   $("#manualList").innerHTML=MANUAL.map(([t,u,k])=>`<a href="${esc(u)}" target="_blank" rel="noopener"><span>${esc(t)}</span><small>${esc(k)} ↗</small></a>`).join("");
   $("#liveLink").innerHTML=S.liveUrl?`<div class="manual"><a href="${esc(S.liveUrl)}" target="_blank" rel="noopener"><span>Live-Radar öffnen</span><small>GitHub Pages ↗</small></a></div>`:`<p>Trag die Adresse deines Live-Radars unter Einstellungen ein, dann erscheint hier ein Direktlink.</p>`;
