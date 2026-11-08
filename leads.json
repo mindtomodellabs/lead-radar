@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-08T08:30:52.190046+00:00",
+"generated": "2026-11-08T08:58:27.297413+00:00",
 "status": {
 "r/3Dprintmything": {
 "ok": true,
@@ -41,12 +41,12 @@
 "n": 0
 },
 "Google Alerts": {
-"ok": false,
-"err": "keine gültige Feed-Adresse gefunden (19 Zeichen, enthält keine Google-Alerts-Adresse). Erwartet: https://www.google.com/alerts/feeds/<Zahl>/<Zahl>"
+"ok": true,
+"n": 0
 },
 "E-Mail-Alarme": {
-"ok": false,
-"err": "Anmeldung abgelehnt: Server imap.gmail.com, Konto-Domain gmail.com, Passwortlänge 20 (App-Passwort = 16). b'[AUTHENTICATIONFAILED] Invalid credentials (Failure)'"
+"ok": true,
+"n": 0
 },
 "Mastodon #3DDruck": {
 "ok": true,
@@ -73,7 +73,7 @@
 "n": 0
 }
 },
-"last24h": 5,
+"last24h": 4,
 "filtered": {
 "hat Drucker / sucht Drucker / Angebot": 7,
 "Design/Modellieren gewünscht": 5,
