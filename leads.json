@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-08T14:32:49.194370+00:00",
+"generated": "2026-11-08T15:17:18.759373+00:00",
 "status": {
 "r/3Dprintmything": {
 "ok": true,
@@ -75,15 +75,29 @@
 "n": 0
 }
 },
-"last24h": 4,
+"last24h": 5,
 "filtered": {
 "hat Drucker / sucht Drucker / Angebot": 7,
 "Design/Modellieren gewünscht": 5,
-"Urheberrecht/Marke": 3,
+"Urheberrecht/Marke": 2,
 "keine ausdrückliche Druckanfrage": 14,
 "kein 3D-Druck-Bezug": 7
 },
 "leads": [
+{
+"id": "reddit:1xr0hjc",
+"source": "r/3Dprintmything",
+"kind": "reddit",
+"title": "[US- WV] Seeking toys for kiddos",
+"text": "My kids are only into shows that have ZERO toys. Currently they are obsessed with Centuarworld and my epic fantasy, musical loving mama heart is thrilled. \n I’d like to find someone who can print action figures of the main characters? I see a variety of patterns/files out there but don’t have the fortitude to learn a new hobby. Help me please! \n Ideally, Horse (either body type), Wammawink, Glendale, Derpleton, Comfortable Doug, Zulius, Ched and Rider.",
+"url": "https://www.reddit.com/r/3Dprintmything/comments/1xr0hjc/us_wv_seeking_toys_for_kiddos/",
+"created": 1794150316000,
+"author": "SomeAd721",
+"flair": "",
+"all": true,
+"dachHint": false,
+"why": "Anfrage-Community"
+},
 {
 "id": "reddit:1xqropx",
 "source": "r/3Dprintmything",
