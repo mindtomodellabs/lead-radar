@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-08T21:28:13.382130+00:00",
+"generated": "2026-11-08T22:07:26.249131+00:00",
 "status": {
 "r/3Dprintmything": {
 "ok": true,
@@ -12,9 +12,9 @@
 "n": 0
 },
 "r/3Dprinting (Suche)": {
-"ok": true,
-"via": "rss",
-"n": 8
+"ok": false,
+"via": "failed",
+"n": 0
 },
 "Lemmy !printmything": {
 "ok": true,
@@ -75,15 +75,29 @@
 "n": 0
 }
 },
-"last24h": 3,
+"last24h": 4,
 "filtered": {
-"hat Drucker / sucht Drucker / Angebot": 8,
+"hat Drucker / sucht Drucker / Angebot": 7,
 "Design/Modellieren gewünscht": 5,
 "Urheberrecht/Marke": 2,
 "keine ausdrückliche Druckanfrage": 18,
 "kein 3D-Druck-Bezug": 7
 },
 "leads": [
+{
+"id": "reddit:1xr9nx2",
+"source": "r/3Dprintmything",
+"kind": "reddit",
+"title": "[US-CA] ULTRAKILL COSPLAY(s)",
+"text": "Here’s the Gabriel helmet models! V1 models in other post!\n for files, I can send in dms!\n looking for something affordable but that still looks decent…",
+"url": "https://www.reddit.com/r/3Dprintmything/comments/1xr9nx2/usca_ultrakill_cosplays/",
+"created": 1794173335000,
+"author": "Unfair_Welcome_6621",
+"flair": "",
+"all": true,
+"dachHint": false,
+"why": "Anfrage-Community"
+},
 {
 "id": "reddit:1xr0hjc",
 "source": "r/3Dprintmything",
