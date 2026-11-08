@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-08T05:41:49.560291+00:00",
+"generated": "2026-11-08T06:31:54.279817+00:00",
 "status": {
 "r/3Dprintmything": {
 "ok": true,
@@ -73,15 +73,29 @@
 "n": 0
 }
 },
-"last24h": 4,
+"last24h": 5,
 "filtered": {
 "hat Drucker / sucht Drucker / Angebot": 7,
-"Design/Modellieren gewünscht": 6,
+"Design/Modellieren gewünscht": 5,
 "Urheberrecht/Marke": 3,
 "keine ausdrückliche Druckanfrage": 14,
 "kein 3D-Druck-Bezug": 7
 },
 "leads": [
+{
+"id": "reddit:1xqropx",
+"source": "r/3Dprintmything",
+"kind": "reddit",
+"title": "[USA] Looking",
+"text": "Hey y'all trying to find the .stl of this cat it was on makerworld but then removed.",
+"url": "https://www.reddit.com/r/3Dprintmything/comments/1xqropx/usa_looking/",
+"created": 1794118967000,
+"author": "deljos",
+"flair": "",
+"all": true,
+"dachHint": false,
+"why": "Anfrage-Community"
+},
 {
 "id": "reddit:1xqkrqt",
 "source": "r/3Dprintmything",
