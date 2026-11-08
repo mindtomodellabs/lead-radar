@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-08T18:40:34.222869+00:00",
+"generated": "2026-11-08T19:25:38.906971+00:00",
 "status": {
 "r/3Dprintmything": {
 "ok": true,
@@ -47,8 +47,8 @@
 },
 "E-Mail-Alarme": {
 "ok": true,
-"n": 0,
-"mails": 0
+"n": 4,
+"mails": 4
 },
 "Mastodon #3DDruck": {
 "ok": true,
@@ -80,7 +80,7 @@
 "hat Drucker / sucht Drucker / Angebot": 7,
 "Design/Modellieren gewünscht": 5,
 "Urheberrecht/Marke": 2,
-"keine ausdrückliche Druckanfrage": 14,
+"keine ausdrückliche Druckanfrage": 17,
 "kein 3D-Druck-Bezug": 7
 },
 "leads": [
