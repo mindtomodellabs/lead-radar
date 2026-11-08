@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-08T12:11:24.919027+00:00",
+"generated": "2026-11-08T13:00:32.847634+00:00",
 "status": {
 "r/3Dprintmything": {
 "ok": true,
@@ -29,8 +29,8 @@
 "n": 95
 },
 "Bambu-Lab-Forum": {
-"ok": false,
-"err": "HTTP Error 503: Service Unavailable"
+"ok": true,
+"n": 77
 },
 "Bluesky": {
 "ok": true,
