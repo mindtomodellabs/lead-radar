@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-08T08:58:27.297413+00:00",
+"generated": "2026-11-08T09:01:24.351563+00:00",
 "status": {
 "r/3Dprintmything": {
 "ok": true,
@@ -42,11 +42,13 @@
 },
 "Google Alerts": {
 "ok": true,
-"n": 0
+"n": 0,
+"feeds": 1
 },
 "E-Mail-Alarme": {
 "ok": true,
-"n": 0
+"n": 0,
+"mails": 0
 },
 "Mastodon #3DDruck": {
 "ok": true,
