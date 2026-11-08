@@ -222,6 +222,9 @@ def bluesky(handle, app_pw):
     return out
 
 
+DIAG = {}
+
+
 def alert_urls(raw):
     raw = (raw or "").strip()
     found = re.findall(r"(?:https?://)?(?:www\.)?google\.[a-z.]+/alerts/feeds/\d+/\d+", raw)
@@ -238,6 +241,7 @@ def alert_urls(raw):
 def google_alerts(feeds):
     ns = {"a": "http://www.w3.org/2005/Atom"}
     out = []
+    DIAG["feeds"] = len(feeds)
     for i, feed in enumerate(feeds):
         root = ET.fromstring(get(feed, "application/atom+xml"))
         for e in root.findall("a:entry", ns):
@@ -268,6 +272,7 @@ def mail_alerts(host, user, pw, folder):
     M.select('"' + folder + '"', readonly=True)
     since = time.strftime("%d-%b-%Y", time.gmtime(time.time() - 3 * 86400))
     _, ids = M.search(None, "SINCE", since)
+    DIAG["mails"] = len(ids[0].split())
     for mid in ids[0].split()[-80:]:
         _, data = M.fetch(mid, "(BODY.PEEK[])")
         msg = email.message_from_bytes(data[0][1])
@@ -425,7 +430,8 @@ def main():
             status[label] = {"ok": False, "err": "Zugang fehlt: " + ", ".join(keys)}
             continue
         try:
-            items = fn(vals); status[label] = {"ok": True, "n": len(items)}
+            DIAG.clear()
+            items = fn(vals); status[label] = {"ok": True, "n": len(items), **DIAG}
             for it in items:
                 if not need_req or REQ.search(it["title"] + " " + it["text"]):
                     leads[it["id"]] = {**leads.get(it["id"], {}), **it}
