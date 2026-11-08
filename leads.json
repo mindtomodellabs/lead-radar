@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-08T00:01:46.616466+00:00",
+"generated": "2026-11-08T01:15:07.356024+00:00",
 "status": {
 "r/3Dprintmything": {
 "ok": true,
@@ -12,9 +12,9 @@
 "n": 0
 },
 "r/3Dprinting (Suche)": {
-"ok": false,
-"via": "failed",
-"n": 0
+"ok": true,
+"via": "rss",
+"n": 8
 },
 "Lemmy !printmything": {
 "ok": true,
@@ -73,15 +73,29 @@
 "n": 0
 }
 },
-"last24h": 3,
+"last24h": 4,
 "filtered": {
-"Design/Modellieren gewünscht": 7,
-"hat Drucker / sucht Drucker / Angebot": 6,
+"hat Drucker / sucht Drucker / Angebot": 8,
+"Design/Modellieren gewünscht": 6,
 "Urheberrecht/Marke": 3,
 "keine ausdrückliche Druckanfrage": 14,
 "kein 3D-Druck-Bezug": 7
 },
 "leads": [
+{
+"id": "reddit:1xqkrqt",
+"source": "r/3Dprintmything",
+"kind": "reddit",
+"title": "[US] Mechanism Basecase Parts",
+"text": "Hello, looking to have a couple parts printed for my mechanism basecase. Looking to have them printed in black PLA with 0.2mm layer height\n Joycon Grips: https://www.printables.com/model/1822310-steamy-joycon-grips-mechanism-basecase/files\n Backplate:\n https://www.printables.com/model/1822259-the-double-backplate-mechanism-basecase-switch-2\n Thank you!\n Edit: All set, thank you",
+"url": "https://www.reddit.com/r/3Dprintmything/comments/1xqkrqt/us_mechanism_basecase_parts/",
+"created": 1794096294000,
+"author": "AltairLeoran",
+"flair": "",
+"all": true,
+"dachHint": false,
+"why": "Anfrage-Community"
+},
 {
 "id": "reddit:1xqgz55",
 "source": "r/3Dprintmything",
