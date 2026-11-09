@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-09T22:28:41.727451+00:00",
+"generated": "2026-11-09T23:15:10.262048+00:00",
 "status": {
 "r/3Dprintmything": {
 "ok": true,
@@ -12,9 +12,9 @@
 "n": 0
 },
 "r/3Dprinting (Suche)": {
-"ok": false,
-"via": "failed",
-"n": 0
+"ok": true,
+"via": "rss",
+"n": 9
 },
 "Lemmy !printmything": {
 "ok": true,
@@ -75,15 +75,29 @@
 "n": 0
 }
 },
-"last24h": 4,
+"last24h": 5,
 "filtered": {
 "Design/Modellieren gewünscht": 6,
-"hat Drucker / sucht Drucker / Angebot": 6,
+"hat Drucker / sucht Drucker / Angebot": 7,
 "Urheberrecht/Marke": 1,
 "keine ausdrückliche Druckanfrage": 16,
 "kein 3D-Druck-Bezug": 8
 },
 "leads": [
+{
+"id": "reddit:1xs5y1w",
+"source": "r/3Dprintmything",
+"kind": "reddit",
+"title": "[US-WY] Prototype to final",
+"text": "I have designed a 'snap case' for a small instrument. I have also created a dummy mock of the instrument. My thinking was I could work with someone to print out my current version, see how it fits and then I can make design adjustments. The item is quite small, according to PRUSA slicer it would take less than a half an hour to print. I have .Stl files for both the case and the mock instrument. Is this something, that someone could work with me on?",
+"url": "https://www.reddit.com/r/3Dprintmything/comments/1xs5y1w/uswy_prototype_to_final/",
+"created": 1794263528000,
+"author": "diagonal-rib",
+"flair": "",
+"all": true,
+"dachHint": false,
+"why": "Anfrage-Community"
+},
 {
 "id": "reddit:1xs5ge0",
 "source": "r/3Dprintmything",
