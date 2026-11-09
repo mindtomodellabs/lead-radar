@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-09T21:33:27.096051+00:00",
+"generated": "2026-11-09T22:28:41.727451+00:00",
 "status": {
 "r/3Dprintmything": {
 "ok": true,
@@ -75,7 +75,7 @@
 "n": 0
 }
 },
-"last24h": 3,
+"last24h": 4,
 "filtered": {
 "Design/Modellieren gewünscht": 6,
 "hat Drucker / sucht Drucker / Angebot": 6,
@@ -84,6 +84,20 @@
 "kein 3D-Druck-Bezug": 8
 },
 "leads": [
+{
+"id": "reddit:1xs5ge0",
+"source": "r/3Dprintmything",
+"kind": "reddit",
+"title": "[CA-USA] Offering 3d printing services at affordable rates!",
+"text": "Hi all! I am in Irvine, California, and have a Ankermake M5C. I offer all 3d model printing and fast shipping! DM me and comment!",
+"url": "https://www.reddit.com/r/3Dprintmything/comments/1xs5ge0/causa_offering_3d_printing_services_at_affordable/",
+"created": 1794262344000,
+"author": "Interesting-Dog-5146",
+"flair": "",
+"all": true,
+"dachHint": false,
+"why": "Anfrage-Community"
+},
 {
 "id": "reddit:1xryv0d",
 "source": "r/3Dprintmything",
