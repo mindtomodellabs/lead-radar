@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-09T23:15:10.262048+00:00",
+"generated": "2026-11-09T23:53:27.941573+00:00",
 "status": {
 "r/3Dprintmything": {
 "ok": true,
@@ -12,9 +12,9 @@
 "n": 0
 },
 "r/3Dprinting (Suche)": {
-"ok": true,
-"via": "rss",
-"n": 9
+"ok": false,
+"via": "failed",
+"n": 0
 },
 "Lemmy !printmything": {
 "ok": true,
@@ -75,15 +75,29 @@
 "n": 0
 }
 },
-"last24h": 5,
+"last24h": 6,
 "filtered": {
 "Design/Modellieren gewünscht": 6,
-"hat Drucker / sucht Drucker / Angebot": 7,
+"hat Drucker / sucht Drucker / Angebot": 6,
 "Urheberrecht/Marke": 1,
 "keine ausdrückliche Druckanfrage": 16,
 "kein 3D-Druck-Bezug": 8
 },
 "leads": [
+{
+"id": "reddit:1xs730x",
+"source": "r/3Dprintmything",
+"kind": "reddit",
+"title": "[UK] Resin printer to print a ball jointed doll",
+"text": "https://preview.redd.it/ietgi1085o0i1.png?width=877&format=png&auto=webp&s=b80f56cb95206d09644d824bf8514c908358e445\n Hi! I'm a UK-based printerless sculptor, looking to resin print a balljointed art doll comprised of ~46 parts, specifically in Resione TH-BJD Wear-resistant Tough BJD Resin - Coffee (this one). I know it's really specific, but if anyone has a setup suited to that, please let me know!\n The biggest piece's dimension is approximately 7x6x6cm, most are within the 2-4cm range. Standing assembled, the model is ~32cm tall (each square is 1cm). \n I don't have any print software but I've got all the separate pieces as .objs, can export them to .stl if it's necessary. Like everyone in the country I'm broke, so if there's any further steps I can do to keep costs down please let me know.\n I've been searching for ages but all the big/commercial services feel completely unaffordable on top of not offering the material/colour I need - please help my dream come true!",
+"url": "https://www.reddit.com/r/3Dprintmything/comments/1xs730x/uk_resin_printer_to_print_a_ball_jointed_doll/",
+"created": 1794266249000,
+"author": "rathellhead",
+"flair": "",
+"all": true,
+"dachHint": false,
+"why": "Anfrage-Community"
+},
 {
 "id": "reddit:1xs5y1w",
 "source": "r/3Dprintmything",
