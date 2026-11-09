@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-09T14:48:54.078745+00:00",
+"generated": "2026-11-09T15:51:36.837513+00:00",
 "status": {
 "r/3Dprintmything": {
 "ok": true,
@@ -25,8 +25,8 @@
 "n": 40
 },
 "Lemmy-Suche": {
-"ok": false,
-"err": "The read operation timed out"
+"ok": true,
+"n": 95
 },
 "Bambu-Lab-Forum": {
 "ok": true,
@@ -80,10 +80,24 @@
 "hat Drucker / sucht Drucker / Angebot": 6,
 "Design/Modellieren gewünscht": 5,
 "Urheberrecht/Marke": 2,
-"keine ausdrückliche Druckanfrage": 9,
+"keine ausdrückliche Druckanfrage": 17,
 "kein 3D-Druck-Bezug": 8
 },
 "leads": [
+{
+"id": "reddit:1xrv2px",
+"source": "r/3Dprintmything",
+"kind": "reddit",
+"title": "[UK-London] Lookingto get two divider sets printed for my RPG Dice boxes",
+"text": "These are the files\n Dragon Shield Dice Companion Organizer by themetalfleece | Download free STL model | Printables.com\n Which I wouldn't mind in Blue/Black/Gold, and\n Dragon Shield Player Companion Dice Divider by Ethan G | Download free STL model | Printables.com\n Which I wouldnt mind in Black/Grey\n Many thanks!",
+"url": "https://www.reddit.com/r/3Dprintmything/comments/1xrv2px/uklondon_lookingto_get_two_divider_sets_printed/",
+"created": 1794239197000,
+"author": "lookitskris",
+"flair": "",
+"all": true,
+"dachHint": false,
+"why": "Anfrage-Community"
+},
 {
 "id": "reddit:1xrege0",
 "source": "r/3Dprintmything",
