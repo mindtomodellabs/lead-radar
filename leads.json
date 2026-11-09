@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-09T00:03:54.974485+00:00",
+"generated": "2026-11-09T01:19:01.000309+00:00",
 "status": {
 "r/3Dprintmything": {
 "ok": true,
@@ -77,13 +77,27 @@
 },
 "last24h": 4,
 "filtered": {
-"hat Drucker / sucht Drucker / Angebot": 7,
+"hat Drucker / sucht Drucker / Angebot": 6,
 "Design/Modellieren gewünscht": 5,
 "Urheberrecht/Marke": 2,
 "keine ausdrückliche Druckanfrage": 18,
-"kein 3D-Druck-Bezug": 7
+"kein 3D-Druck-Bezug": 8
 },
 "leads": [
+{
+"id": "reddit:1xrege0",
+"source": "r/3Dprintmything",
+"kind": "reddit",
+"title": "[US-NY] Need 4 pieces of an HDD hard drive stacker printed Brooklyn, can pay",
+"text": "Hi! Looking for someone to print this hard drive stacker for my home server: https://www.printables.com/model/141903-hdd-hard-disk-drive-stacker\n  Quantity: 4 pieces (the model is 2 per drive, I have 2 drives) Material: PETG preferred (it sits next to warm drives), PLA is fine otherwise Color: anything, black preferred Location: Bergen County NJ / Brooklyn. Happy to pick up locally or pay shipping  Please DM me or comment with a price including shipping. Thanks!",
+"url": "https://www.reddit.com/r/3Dprintmything/comments/1xrege0/usny_need_4_pieces_of_an_hdd_hard_drive_stacker/",
+"created": 1794186564000,
+"author": "lolsalot2",
+"flair": "",
+"all": true,
+"dachHint": false,
+"why": "Anfrage-Community"
+},
 {
 "id": "reddit:1xr9nx2",
 "source": "r/3Dprintmything",
