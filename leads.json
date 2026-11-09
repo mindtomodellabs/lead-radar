@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-09T17:51:39.799319+00:00",
+"generated": "2026-11-09T18:45:03.171585+00:00",
 "status": {
 "r/3Dprintmything": {
 "ok": true,
@@ -75,15 +75,29 @@
 "n": 0
 }
 },
-"last24h": 3,
+"last24h": 4,
 "filtered": {
-"hat Drucker / sucht Drucker / Angebot": 6,
+"hat Drucker / sucht Drucker / Angebot": 7,
 "Design/Modellieren gewünscht": 5,
-"Urheberrecht/Marke": 2,
+"Urheberrecht/Marke": 1,
 "keine ausdrückliche Druckanfrage": 17,
 "kein 3D-Druck-Bezug": 8
 },
 "leads": [
+{
+"id": "reddit:1xryv0d",
+"source": "r/3Dprintmything",
+"kind": "reddit",
+"title": "[US-NV] Need one small mechanical part printed via FDM",
+"text": "I have a .3mf file of spare parts and I just need 1 specific part (a saw arbor) printed. I can share the file via Google Drive.\n Material: PETG, ABS, or ASA preferred (needs to be durable and heat-resistant).\n Print Settings (If Possible): High infill (50-100%) and extra wall loops/perimeters, since this is a mechanical part that will take some torque.\n Color: Doesn't matter.\n I will happily pay for print time, material cost, and shipping. If you don't typically use a shipping service, I can easily generate a reverse label via PirateShip and send you the PDF or link to make it hassle-free.\n I just need 1 copy of the part, but if it makes more sense for your time and materials to print a couple of extras as backups, let me know!",
+"url": "https://www.reddit.com/r/3Dprintmything/comments/1xryv0d/usnv_need_one_small_mechanical_part_printed_via/",
+"created": 1794247470000,
+"author": "NotJoshRomney",
+"flair": "",
+"all": true,
+"dachHint": false,
+"why": "Anfrage-Community"
+},
 {
 "id": "reddit:1xrv2px",
 "source": "r/3Dprintmything",
