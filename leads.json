@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-10T05:36:14.517509+00:00",
+"generated": "2026-11-10T06:39:03.638788+00:00",
 "status": {
 "r/3Dprintmything": {
 "ok": true,
@@ -75,15 +75,29 @@
 "n": 0
 }
 },
-"last24h": 6,
+"last24h": 7,
 "filtered": {
 "Urheberrecht/Marke": 2,
 "hat Drucker / sucht Drucker / Angebot": 7,
-"Design/Modellieren gewünscht": 6,
+"Design/Modellieren gewünscht": 5,
 "keine ausdrückliche Druckanfrage": 16,
 "kein 3D-Druck-Bezug": 8
 },
 "leads": [
+{
+"id": "reddit:1xsf9hi",
+"source": "r/3Dprintmything",
+"kind": "reddit",
+"title": "[US-WA-SEA] 4 small IKEA Vidga connectors",
+"text": "Hi there! I’m trying to get some shades in our bedroom, our neighbor has a faulty bulb that flashes all night long. \n I want to try these alt ‘connectors’ for the IKEA Vidga rail system. I only need 4 of them. The internet says it’ll smooth out the rail connections and provide more stability. \n https://www.printables.com/model/1326046-ikea-vidga-curtain-rod-connector-upgrade\n Happy to coordinate pickup, especially if you’re south of downtown. \n TYSM!",
+"url": "https://www.reddit.com/r/3Dprintmything/comments/1xsf9hi/uswasea_4_small_ikea_vidga_connectors/",
+"created": 1794290373000,
+"author": "ded-seri0s",
+"flair": "",
+"all": true,
+"dachHint": false,
+"why": "Anfrage-Community"
+},
 {
 "id": "reddit:1xs9945",
 "source": "r/3Dprintmything",
