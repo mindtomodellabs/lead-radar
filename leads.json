@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-10T20:44:30.692345+00:00",
+"generated": "2026-11-10T21:25:39.332718+00:00",
 "status": {
 "r/3Dprintmything": {
 "ok": true,
@@ -75,15 +75,29 @@
 "n": 0
 }
 },
-"last24h": 6,
+"last24h": 7,
 "filtered": {
 "Urheberrecht/Marke": 2,
-"hat Drucker / sucht Drucker / Angebot": 6,
+"hat Drucker / sucht Drucker / Angebot": 5,
 "Design/Modellieren gewünscht": 5,
 "keine ausdrückliche Druckanfrage": 16,
 "kein 3D-Druck-Bezug": 7
 },
 "leads": [
+{
+"id": "reddit:1xsyvvn",
+"source": "r/3Dprintmything",
+"kind": "reddit",
+"title": "[UK]Could somebody print a bracket for me for my steelcase chair?",
+"text": "",
+"url": "https://www.reddit.com/r/3Dprintmything/comments/1xsyvvn/ukcould_somebody_print_a_bracket_for_me_for_my/",
+"created": 1794345213000,
+"author": "Slurpant",
+"flair": "",
+"all": true,
+"dachHint": false,
+"why": "Anfrage-Community"
+},
 {
 "id": "reddit:1xskhpn",
 "source": "r/3Dprintmything",
