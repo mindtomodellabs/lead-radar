@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-10T10:47:39.452385+00:00",
+"generated": "2026-11-10T11:45:10.853746+00:00",
 "status": {
 "r/3Dprintmything": {
 "ok": true,
@@ -12,9 +12,9 @@
 "n": 0
 },
 "r/3Dprinting (Suche)": {
-"ok": false,
-"via": "failed",
-"n": 0
+"ok": true,
+"via": "rss",
+"n": 8
 },
 "Lemmy !printmything": {
 "ok": true,
@@ -75,7 +75,7 @@
 "n": 0
 }
 },
-"last24h": 7,
+"last24h": 8,
 "filtered": {
 "Urheberrecht/Marke": 2,
 "hat Drucker / sucht Drucker / Angebot": 7,
@@ -84,6 +84,20 @@
 "kein 3D-Druck-Bezug": 8
 },
 "leads": [
+{
+"id": "reddit:1xskhpn",
+"source": "r/3Dprintmything",
+"kind": "reddit",
+"title": "[London/UK] Small switches for PiBrick - FDM any filament",
+"text": "https://preview.redd.it/xpnrhcrfrr0i1.png?width=966&format=png&auto=webp&s=21459ec85459cb5eae0e1b5c633de246c04399bb\n Dimensions are 42.2mm x 10mm x 5.6mm and since these are just to switch a device on and off I think any filament will be fine. Not choosy about colour but if possible yellow/orange.",
+"url": "https://www.reddit.com/r/3Dprintmything/comments/1xskhpn/londonuk_small_switches_for_pibrick_fdm_any/",
+"created": 1794310012000,
+"author": "Calcirium",
+"flair": "",
+"all": true,
+"dachHint": false,
+"why": "Anfrage-Community"
+},
 {
 "id": "reddit:1xsf9hi",
 "source": "r/3Dprintmything",
