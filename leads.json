@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-10T01:47:44.195137+00:00",
+"generated": "2026-11-10T02:43:10.790784+00:00",
 "status": {
 "r/3Dprintmything": {
 "ok": true,
@@ -77,9 +77,9 @@
 },
 "last24h": 6,
 "filtered": {
+"Urheberrecht/Marke": 2,
 "hat Drucker / sucht Drucker / Angebot": 7,
 "Design/Modellieren gewünscht": 6,
-"Urheberrecht/Marke": 1,
 "keine ausdrückliche Druckanfrage": 16,
 "kein 3D-Druck-Bezug": 8
 },
