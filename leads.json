@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-10T00:41:43.049328+00:00",
+"generated": "2026-11-10T01:47:44.195137+00:00",
 "status": {
 "r/3Dprintmything": {
 "ok": true,
@@ -77,13 +77,27 @@
 },
 "last24h": 6,
 "filtered": {
+"hat Drucker / sucht Drucker / Angebot": 7,
 "Design/Modellieren gewünscht": 6,
-"hat Drucker / sucht Drucker / Angebot": 6,
 "Urheberrecht/Marke": 1,
 "keine ausdrückliche Druckanfrage": 16,
 "kein 3D-Druck-Bezug": 8
 },
 "leads": [
+{
+"id": "reddit:1xs9945",
+"source": "r/3Dprintmything",
+"kind": "reddit",
+"title": "[CA-ON] Toronto — 3D printing and CAD for board game prototypes and parts",
+"text": "Hi everyone! My partner and I run 3dPrints Toronto, a small independent 3D printing service in downtown Toronto.\n We've printed board game prototypes and parts for customers, including repeat orders.\n What we offer:\n - Printing from your existing 3D files.\n - Custom 3D modelling for individual components, quoted separately.\n - Small-batch prototype parts and repeat prints.\n - Free downtown Toronto pickup by appointment.\n Our current setup is a Bambu Lab P2S with PLA and PETG. Material and colour choices depend on stock.\n For a quote, send your file or sketch, approximate dimensions, quantity, and preferred completion date. We'll review suitability, design scope and timing before agreeing to the job.\n Website: https://3dprintstoronto.com/\n Contact: https://3dprintstoronto.com/contact\n Happy to answer questions about materials or printability.",
+"url": "https://www.reddit.com/r/3Dprintmything/comments/1xs9945/caon_toronto_3d_printing_and_cad_for_board_game/",
+"created": 1794271962000,
+"author": "m_still_alive",
+"flair": "",
+"all": true,
+"dachHint": false,
+"why": "Anfrage-Community"
+},
 {
 "id": "reddit:1xs730x",
 "source": "r/3Dprintmything",
