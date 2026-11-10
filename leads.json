@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-10T15:30:58.780239+00:00",
+"generated": "2026-11-10T16:26:50.362503+00:00",
 "status": {
 "r/3Dprintmything": {
 "ok": true,
@@ -75,7 +75,7 @@
 "n": 0
 }
 },
-"last24h": 8,
+"last24h": 7,
 "filtered": {
 "Urheberrecht/Marke": 2,
 "hat Drucker / sucht Drucker / Angebot": 6,
@@ -131,7 +131,7 @@
 "source": "r/3Dprintmything",
 "kind": "reddit",
 "title": "[UK] Resin printer to print a ball jointed doll",
-"text": "https://preview.redd.it/ietgi1085o0i1.png?width=877&format=png&auto=webp&s=b80f56cb95206d09644d824bf8514c908358e445\n Hi! I'm a UK-based printerless sculptor, looking to resin print a balljointed art doll comprised of ~46 parts, specifically in Resione TH-BJD Wear-resistant Tough BJD Resin - Coffee (this one). I know it's really specific, but if anyone has a setup suited to that, please let me know!\n The biggest piece's dimension is approximately 7x6x6cm, most are within the 2-4cm range. Standing assembled, the model is ~32cm tall (each square is 1cm). \n I don't have any print software but I've got all the separate pieces as .objs, can export them to .stl if it's necessary. Like everyone in the country I'm broke, so if there's any further steps I can do to keep costs down please let me know.\n I've been searching for ages but all the big/commercial services feel completely unaffordable on top of not offering the material/colour I need - please help my dream come true!",
+"text": "EDIT: I've found someone! Thank you so much! \n Hi! I'm a UK-based printerless sculptor, looking to resin print a balljointed art doll comprised of ~46 parts, specifically in Resione TH-BJD Wear-resistant Tough BJD Resin - Coffee (this one). I know it's really specific, but if anyone has a setup suited to that, please let me know!\n The biggest piece's dimension is approximately 7x6x6cm, most are within the 2-4cm range. Standing assembled, the model is ~32cm tall (each square is 1cm).\n I don't have any print software but I've got all the separate pieces as .objs, can export them to .stl if it's necessary. Like everyone in the country I'm broke, so if there's any further steps I can do to keep costs down please let me know.\n I've been searching for ages but all the big/commercial services feel completely unaffordable on top of not offering the material/colour I need - please help my dream come true!",
 "url": "https://www.reddit.com/r/3Dprintmything/comments/1xs730x/uk_resin_printer_to_print_a_ball_jointed_doll/",
 "created": 1794266249000,
 "author": "rathellhead",
