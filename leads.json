@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-11T12:24:42.625623+00:00",
+"generated": "2026-11-11T13:43:19.165550+00:00",
 "status": {
 "r/3Dprintmything": {
 "ok": true,
@@ -34,7 +34,7 @@
 },
 "Bluesky": {
 "ok": true,
-"n": 108
+"n": 109
 },
 "Mastodon-Suche": {
 "ok": true,
@@ -81,7 +81,7 @@
 "Urheberrecht/Marke": 2,
 "Design/Modellieren gewünscht": 5,
 "keine ausdrückliche Druckanfrage": 17,
-"kein 3D-Druck-Bezug": 8
+"kein 3D-Druck-Bezug": 9
 },
 "leads": [
 {
