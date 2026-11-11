@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-11T06:09:09.261845+00:00",
+"generated": "2026-11-11T07:26:07.124167+00:00",
 "status": {
 "r/3Dprintmything": {
 "ok": true,
@@ -29,12 +29,12 @@
 "n": 95
 },
 "Bambu-Lab-Forum": {
-"ok": true,
-"n": 77
+"ok": false,
+"err": "Expecting value: line 1 column 1 (char 0)"
 },
 "Bluesky": {
 "ok": true,
-"n": 107
+"n": 108
 },
 "Mastodon-Suche": {
 "ok": true,
@@ -81,7 +81,7 @@
 "Urheberrecht/Marke": 2,
 "Design/Modellieren gewünscht": 5,
 "keine ausdrückliche Druckanfrage": 17,
-"kein 3D-Druck-Bezug": 7
+"kein 3D-Druck-Bezug": 8
 },
 "leads": [
 {
