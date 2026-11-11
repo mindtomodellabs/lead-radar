@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-11T07:26:07.124167+00:00",
+"generated": "2026-11-11T08:30:49.664824+00:00",
 "status": {
 "r/3Dprintmything": {
 "ok": true,
@@ -7,9 +7,9 @@
 "n": 50
 },
 "r/PrintMyThing": {
-"ok": true,
-"via": "rss",
-"n": 1
+"ok": false,
+"via": "failed",
+"n": 0
 },
 "r/3Dprinting (Suche)": {
 "ok": false,
@@ -29,8 +29,8 @@
 "n": 95
 },
 "Bambu-Lab-Forum": {
-"ok": false,
-"err": "Expecting value: line 1 column 1 (char 0)"
+"ok": true,
+"n": 77
 },
 "Bluesky": {
 "ok": true,
