@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-11T00:03:56.979759+00:00",
+"generated": "2026-11-11T01:15:18.259439+00:00",
 "status": {
 "r/3Dprintmything": {
 "ok": true,
@@ -80,10 +80,24 @@
 "hat Drucker / sucht Drucker / Angebot": 6,
 "Urheberrecht/Marke": 2,
 "Design/Modellieren gewünscht": 5,
-"keine ausdrückliche Druckanfrage": 16,
+"keine ausdrückliche Druckanfrage": 17,
 "kein 3D-Druck-Bezug": 7
 },
 "leads": [
+{
+"id": "reddit:1xt4ema",
+"source": "r/3Dprintmything",
+"kind": "reddit",
+"title": "[USA-FL] Resin 3D print for my Mini",
+"text": "I have an stl file needed to be printed for my miniature. will pay.",
+"url": "https://www.reddit.com/r/3Dprintmything/comments/1xt4ema/usafl_resin_3d_print_for_my_mini/",
+"created": 1794359390000,
+"author": "blumpkin12234",
+"flair": "",
+"all": true,
+"dachHint": false,
+"why": "Anfrage-Community"
+},
 {
 "id": "reddit:1xsyvvn",
 "source": "r/3Dprintmything",
