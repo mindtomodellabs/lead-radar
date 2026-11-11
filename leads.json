@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-11T19:29:57.301216+00:00",
+"generated": "2026-11-11T22:00:15.938102+00:00",
 "status": {
 "r/3Dprintmything": {
 "ok": true,
@@ -7,9 +7,9 @@
 "n": 50
 },
 "r/PrintMyThing": {
-"ok": false,
-"via": "failed",
-"n": 0
+"ok": true,
+"via": "rss",
+"n": 1
 },
 "r/3Dprinting (Suche)": {
 "ok": false,
@@ -33,8 +33,8 @@
 "n": 77
 },
 "Bluesky": {
-"ok": false,
-"err": "HTTP Error 502: Bad Gateway"
+"ok": true,
+"n": 111
 },
 "Mastodon-Suche": {
 "ok": true,
@@ -75,12 +75,13 @@
 "n": 0
 }
 },
-"last24h": 6,
+"last24h": 5,
 "filtered": {
-"hat Drucker / sucht Drucker / Angebot": 5,
+"hat Drucker / sucht Drucker / Angebot": 6,
 "Urheberrecht/Marke": 2,
 "Design/Modellieren gewünscht": 5,
-"keine ausdrückliche Druckanfrage": 15
+"keine ausdrückliche Druckanfrage": 15,
+"kein 3D-Druck-Bezug": 10
 },
 "leads": [
 {
@@ -102,7 +103,7 @@
 "source": "r/3Dprintmything",
 "kind": "reddit",
 "title": "[UK] Looking to resin print 4 Bionicle masks (STL files provided)",
-"text": "I'm looking to get 4 LEGO-style Bionicle fan designed masks. the STL files from Thingiverse.\n Ideally looking for resin printing (preferably ABS-like resin) for better detail, but open to suggestions.\n  4 masks Any print colour (I'll be spray painting them myself) Supports removed and prints properly cleaned/cured. Must retain original dimensions and attachment points to fit.  Thanks!\n Helryx (scarface ver)\n great_olisi_repaired \n Garai.stl\n PirakaHeadCrestTrim.stl",
+"text": "I'm looking to get 4 LEGO Bionicle fan designed masks. the STL files are from Thingiverse.\n Ideally looking for resin printing (preferably ABS-like resin) for better detail, but open to suggestions.\n  4 masks Any print colour (I'll be spray painting them myself) Supports removed and prints properly cleaned/cured. Must retain original dimensions and attachment points to fit.  Thanks!\n Helryx (scarface ver)\n great_olisi_repaired \n Garai.stl\n PirakaHeadCrestTrim.stl",
 "url": "https://www.reddit.com/r/3Dprintmything/comments/1xtfzm7/uk_looking_to_resin_print_4_bionicle_masks_stl/",
 "created": 1794398498000,
 "author": "cossack0",
