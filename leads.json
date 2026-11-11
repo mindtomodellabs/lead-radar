@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-11T01:15:18.259439+00:00",
+"generated": "2026-11-11T02:14:46.765980+00:00",
 "status": {
 "r/3Dprintmything": {
 "ok": true,
@@ -75,15 +75,29 @@
 "n": 0
 }
 },
-"last24h": 4,
+"last24h": 5,
 "filtered": {
 "hat Drucker / sucht Drucker / Angebot": 6,
 "Urheberrecht/Marke": 2,
 "Design/Modellieren gewünscht": 5,
-"keine ausdrückliche Druckanfrage": 17,
+"keine ausdrückliche Druckanfrage": 18,
 "kein 3D-Druck-Bezug": 7
 },
 "leads": [
+{
+"id": "reddit:1xt58w2",
+"source": "r/3Dprintmything",
+"kind": "reddit",
+"title": "[USA-CO] In need of printing for school",
+"text": "Hey all I desperately need a hand in printing this for a school project, the cheaper the better!",
+"url": "https://www.reddit.com/r/3Dprintmything/comments/1xt58w2/usaco_in_need_of_printing_for_school/",
+"created": 1794361801000,
+"author": "Flat-Lengthiness4334",
+"flair": "",
+"all": true,
+"dachHint": false,
+"why": "Anfrage-Community"
+},
 {
 "id": "reddit:1xt4ema",
 "source": "r/3Dprintmything",
