@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-11T23:42:33.816888+00:00",
+"generated": "2026-11-12T00:36:14.665130+00:00",
 "status": {
 "r/3Dprintmything": {
 "ok": true,
@@ -7,9 +7,9 @@
 "n": 50
 },
 "r/PrintMyThing": {
-"ok": false,
-"via": "failed",
-"n": 0
+"ok": true,
+"via": "rss",
+"n": 1
 },
 "r/3Dprinting (Suche)": {
 "ok": false,
@@ -47,8 +47,8 @@
 },
 "E-Mail-Alarme": {
 "ok": true,
-"n": 4,
-"mails": 4
+"n": 0,
+"mails": 0
 },
 "Mastodon #3DDruck": {
 "ok": true,
@@ -80,7 +80,7 @@
 "hat Drucker / sucht Drucker / Angebot": 6,
 "Urheberrecht/Marke": 2,
 "Design/Modellieren gewünscht": 5,
-"keine ausdrückliche Druckanfrage": 14,
+"keine ausdrückliche Druckanfrage": 11,
 "kein 3D-Druck-Bezug": 10
 },
 "leads": [
