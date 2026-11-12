@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-12T02:47:21.254092+00:00",
+"generated": "2026-11-12T03:45:16.573144+00:00",
 "status": {
 "r/3Dprintmything": {
 "ok": true,
@@ -7,9 +7,9 @@
 "n": 50
 },
 "r/PrintMyThing": {
-"ok": true,
-"via": "rss",
-"n": 1
+"ok": false,
+"via": "failed",
+"n": 0
 },
 "r/3Dprinting (Suche)": {
 "ok": false,
@@ -75,15 +75,29 @@
 "n": 0
 }
 },
-"last24h": 5,
+"last24h": 6,
 "filtered": {
 "hat Drucker / sucht Drucker / Angebot": 6,
 "Urheberrecht/Marke": 2,
-"Design/Modellieren gewünscht": 5,
+"Design/Modellieren gewünscht": 4,
 "keine ausdrückliche Druckanfrage": 11,
 "kein 3D-Druck-Bezug": 10
 },
 "leads": [
+{
+"id": "reddit:1xu2htn",
+"source": "r/3Dprintmything",
+"kind": "reddit",
+"title": "[Montreal, Canada] Storage trays for board game components",
+"text": "A number of rectangular storage trays for a board game. Filament print.",
+"url": "https://www.reddit.com/r/3Dprintmything/comments/1xu2htn/montreal_canada_storage_trays_for_board_game/",
+"created": 1794454988000,
+"author": "zaneprotoss",
+"flair": "",
+"all": true,
+"dachHint": false,
+"why": "Anfrage-Community"
+},
 {
 "id": "reddit:1xu0lsx",
 "source": "r/3Dprintmything",
