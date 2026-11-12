@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-12T00:36:14.665130+00:00",
+"generated": "2026-11-12T01:59:00.686082+00:00",
 "status": {
 "r/3Dprintmything": {
 "ok": true,
@@ -7,9 +7,9 @@
 "n": 50
 },
 "r/PrintMyThing": {
-"ok": true,
-"via": "rss",
-"n": 1
+"ok": false,
+"via": "failed",
+"n": 0
 },
 "r/3Dprinting (Suche)": {
 "ok": false,
@@ -84,6 +84,34 @@
 "kein 3D-Druck-Bezug": 10
 },
 "leads": [
+{
+"id": "reddit:1xtzz14",
+"source": "r/3Dprintmything",
+"kind": "reddit",
+"title": "[UK/EU] Order Fulfillment Help [Resin]",
+"text": "Hey folks\n I am looking for 1-2 people with 2+ newer, medium format(saturn/m7 sized) resin printers (8k+) with a high degree of attention to detail to help with order fulfillment within the UK.\n Basically you work out of a spreadsheet and share drive and make a percentage of the sales, you have to use our resin mix etc etc.\n Not looking for any FDM people, not looking for anyone outside the UK or EU right now",
+"url": "https://www.reddit.com/r/3Dprintmything/comments/1xtzz14/ukeu_order_fulfillment_help_resin/",
+"created": 1794447541000,
+"author": "GodforgeMinis",
+"flair": "",
+"all": true,
+"dachHint": false,
+"why": "Anfrage-Community"
+},
+{
+"id": "reddit:1xtzi6b",
+"source": "r/3Dprintmything",
+"kind": "reddit",
+"title": "[VA USA] Help with configurable schedule for football",
+"text": "Hi y’all! I’m hoping this community can either help me or give me a reality check. \n I’m trying to get a reusable, configurable NFL schedule printed up for my husband and I’m having the hardest time finding anyone who can help. I have base files, but I have a couple of alterations - I’m really hoping to add on an extra row and ideally I’d like two (or three, for divisional rivals) of each team’s cube so he can use it year after year. That, and I’d ideally like it to be in his team’s colors - orange, white, black.\n Everyone I’ve talked to has either flat told me they can’t do it or has quoted me $600+ just for file updates, with printing costs on top. I did get one quote for like $100 but to be honest that seemed way too low, haha.\n The files are here: https://makerworld.com/en/models/1862604-configurable-nfl-schedule#profileId-1992373\n Is this reasonable/realistic for a project like this, or am I just really looking in the wrong places to hire?\n Thank you all so much for the help!",
+"url": "https://www.reddit.com/r/3Dprintmything/comments/1xtzi6b/va_usa_help_with_configurable_schedule_for/",
+"created": 1794446201000,
+"author": "CapnCrunchIsAFraud",
+"flair": "",
+"all": true,
+"dachHint": false,
+"why": "Anfrage-Community"
+},
 {
 "id": "reddit:1xto4i9",
 "source": "r/3Dprintmything",
@@ -1105,20 +1133,6 @@
 "all": true,
 "dachHint": false,
 "why": "Anfrage-Community"
-},
-{
-"id": "reddit:1xc4xdz",
-"source": "r/3Dprinting (Suche)",
-"kind": "reddit",
-"title": "Anywhere that will 3d print FOR me?",
-"text": "So I was watching this video of this guy making 3d dolls and basically he would send the files off the be printed but I can't find the video anymore :< and basically I'm asking if anyone knows any sites because I want to 3d print some things but I don't want to invest in a 3d printer at least for now\n edit: thank you everyone 🖤 I'm looking into everything as we speak and I may slowly respond",
-"url": "https://www.reddit.com/r/3Dprinting/comments/1xc4xdz/anywhere_that_will_3d_print_for_me/",
-"created": 1792631206000,
-"author": "Affectionate_Gap6550",
-"flair": "",
-"all": false,
-"dachHint": false,
-"why": "„3d print FOR me“"
 }
 ]
 }
