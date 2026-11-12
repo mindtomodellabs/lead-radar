@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-12T03:45:16.573144+00:00",
+"generated": "2026-11-12T04:42:40.911805+00:00",
 "status": {
 "r/3Dprintmything": {
 "ok": true,
@@ -75,15 +75,29 @@
 "n": 0
 }
 },
-"last24h": 6,
+"last24h": 7,
 "filtered": {
 "hat Drucker / sucht Drucker / Angebot": 6,
-"Urheberrecht/Marke": 2,
+"Urheberrecht/Marke": 1,
 "Design/Modellieren gewünscht": 4,
 "keine ausdrückliche Druckanfrage": 11,
 "kein 3D-Druck-Bezug": 10
 },
 "leads": [
+{
+"id": "reddit:1xu33cx",
+"source": "r/3Dprintmything",
+"kind": "reddit",
+"title": "[UK, Southeast] Watch strap adapter",
+"text": "Hey, I'm looking to get this printed for my watches.\n https://www.printables.com/model/30102-nato-strap-adapter\n I'd need it in black using PETG, two of each for both the 16mm and 18mm version.\n Thanks in advance",
+"url": "https://www.reddit.com/r/3Dprintmything/comments/1xu33cx/uk_southeast_watch_strap_adapter/",
+"created": 1794456820000,
+"author": "Shadowyboi09",
+"flair": "",
+"all": true,
+"dachHint": false,
+"why": "Anfrage-Community"
+},
 {
 "id": "reddit:1xu2htn",
 "source": "r/3Dprintmything",
