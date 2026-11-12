@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-12T17:15:20.371720+00:00",
+"generated": "2026-11-12T18:05:27.471227+00:00",
 "status": {
 "r/3Dprintmything": {
 "ok": true,
@@ -75,7 +75,7 @@
 "n": 0
 }
 },
-"last24h": 7,
+"last24h": 8,
 "filtered": {
 "Urheberrecht/Marke": 2,
 "hat Drucker / sucht Drucker / Angebot": 5,
@@ -84,6 +84,34 @@
 "kein 3D-Druck-Bezug": 11
 },
 "leads": [
+{
+"id": "reddit:1xujl6r",
+"source": "r/3Dprintmything",
+"kind": "reddit",
+"title": "[US-WV] can anyone print me a 2025 GSXR-600",
+"text": "Either in a silver or grey filament. Looking for like a diecast size.",
+"url": "https://www.reddit.com/r/3Dprintmything/comments/1xujl6r/uswv_can_anyone_print_me_a_2025_gsxr600/",
+"created": 1794506002000,
+"author": "grizzzee30",
+"flair": "",
+"all": true,
+"dachHint": false,
+"why": "Anfrage-Community"
+},
+{
+"id": "reddit:1xuizuu",
+"source": "r/3Dprintmything",
+"kind": "reddit",
+"title": "[US] Bunny!",
+"text": "Hello! Looking to see how much it would cost to have this rabbit printed! I would like quotes for PLA (or other filaments, im not super familiar with different types, sorry!!) as well as resin printing, thank you so much!\n https://www.thingiverse.com/thing:4050189",
+"url": "https://www.reddit.com/r/3Dprintmything/comments/1xuizuu/us_bunny/",
+"created": 1794504672000,
+"author": "mothtea",
+"flair": "",
+"all": true,
+"dachHint": false,
+"why": "Anfrage-Community"
+},
 {
 "id": "reddit:1xug2po",
 "source": "r/3Dprintmything",
