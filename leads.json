@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-12T01:59:00.686082+00:00",
+"generated": "2026-11-12T02:47:21.254092+00:00",
 "status": {
 "r/3Dprintmything": {
 "ok": true,
@@ -7,9 +7,9 @@
 "n": 50
 },
 "r/PrintMyThing": {
-"ok": false,
-"via": "failed",
-"n": 0
+"ok": true,
+"via": "rss",
+"n": 1
 },
 "r/3Dprinting (Suche)": {
 "ok": false,
@@ -84,6 +84,20 @@
 "kein 3D-Druck-Bezug": 10
 },
 "leads": [
+{
+"id": "reddit:1xu0lsx",
+"source": "r/3Dprintmything",
+"kind": "reddit",
+"title": "[United States] Recommended 3d printing services for Cults3d",
+"text": "",
+"url": "https://www.reddit.com/r/3Dprintmything/comments/1xu0lsx/united_states_recommended_3d_printing_services/",
+"created": 1794449395000,
+"author": "nObody_X3_imp0rtant",
+"flair": "",
+"all": true,
+"dachHint": false,
+"why": "Anfrage-Community"
+},
 {
 "id": "reddit:1xtzz14",
 "source": "r/3Dprintmything",
