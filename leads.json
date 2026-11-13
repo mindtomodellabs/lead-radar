@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-13T07:59:04.334550+00:00",
+"generated": "2026-11-13T08:53:38.005769+00:00",
 "status": {
 "r/3Dprintmything": {
 "ok": true,
@@ -75,15 +75,29 @@
 "n": 0
 }
 },
-"last24h": 3,
+"last24h": 4,
 "filtered": {
 "hat Drucker / sucht Drucker / Angebot": 6,
 "Urheberrecht/Marke": 3,
-"Design/Modellieren gewünscht": 4,
+"Design/Modellieren gewünscht": 3,
 "keine ausdrückliche Druckanfrage": 10,
 "kein 3D-Druck-Bezug": 11
 },
 "leads": [
+{
+"id": "reddit:1xv20j4",
+"source": "r/3Dprintmything",
+"kind": "reddit",
+"title": "[USA, CA] Barbie Shoes",
+"text": "Hello! I found the file for these shoes, but I don’t have a 3D printer. The creator said these can only be printed with resin. Looking for a quote for 2 pairs and potentially some other Barbie accessories. Thank you! :)",
+"url": "https://www.reddit.com/r/3Dprintmything/comments/1xv20j4/usa_ca_barbie_shoes/",
+"created": 1794556669000,
+"author": "sweeterbee1023",
+"flair": "",
+"all": true,
+"dachHint": false,
+"why": "Anfrage-Community"
+},
 {
 "id": "reddit:1xujl6r",
 "source": "r/3Dprintmything",
