@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-13T11:47:39.634390+00:00",
+"generated": "2026-11-13T12:53:34.972851+00:00",
 "status": {
 "r/3Dprintmything": {
 "ok": true,
@@ -25,8 +25,8 @@
 "n": 40
 },
 "Lemmy-Suche": {
-"ok": false,
-"err": "The read operation timed out"
+"ok": true,
+"n": 95
 },
 "Bambu-Lab-Forum": {
 "ok": true,
@@ -80,7 +80,7 @@
 "hat Drucker / sucht Drucker / Angebot": 6,
 "Urheberrecht/Marke": 3,
 "Design/Modellieren gewünscht": 3,
-"keine ausdrückliche Druckanfrage": 3,
+"keine ausdrückliche Druckanfrage": 10,
 "kein 3D-Druck-Bezug": 11
 },
 "leads": [
