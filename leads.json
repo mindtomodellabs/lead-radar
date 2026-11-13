@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-13T16:37:42.238500+00:00",
+"generated": "2026-11-13T17:35:09.807030+00:00",
 "status": {
 "r/3Dprintmything": {
 "ok": true,
@@ -17,16 +17,16 @@
 "n": 0
 },
 "Lemmy !printmything": {
-"ok": false,
-"err": "HTTP Error 503: Service Unavailable"
+"ok": true,
+"n": 2
 },
 "Lemmy !3DPrinting": {
-"ok": false,
-"err": "HTTP Error 503: Service Unavailable"
+"ok": true,
+"n": 40
 },
 "Lemmy-Suche": {
-"ok": false,
-"err": "HTTP Error 503: Service Unavailable"
+"ok": true,
+"n": 95
 },
 "Bambu-Lab-Forum": {
 "ok": true,
@@ -75,13 +75,13 @@
 "n": 0
 }
 },
-"last24h": 4,
+"last24h": 3,
 "filtered": {
 "hat Drucker / sucht Drucker / Angebot": 6,
 "Urheberrecht/Marke": 3,
 "Design/Modellieren gewünscht": 2,
-"kein 3D-Druck-Bezug": 11,
-"keine ausdrückliche Druckanfrage": 2
+"keine ausdrückliche Druckanfrage": 10,
+"kein 3D-Druck-Bezug": 11
 },
 "leads": [
 {
