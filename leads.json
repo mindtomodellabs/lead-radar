@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-14T15:21:41.150115+00:00",
+"generated": "2026-11-14T16:09:06.143910+00:00",
 "status": {
 "r/3Dprintmything": {
 "ok": true,
@@ -79,11 +79,25 @@
 "filtered": {
 "hat Drucker / sucht Drucker / Angebot": 6,
 "Urheberrecht/Marke": 3,
-"Design/Modellieren gewünscht": 3,
+"Design/Modellieren gewünscht": 2,
 "keine ausdrückliche Druckanfrage": 8,
-"kein 3D-Druck-Bezug": 10
+"kein 3D-Druck-Bezug": 11
 },
 "leads": [
+{
+"id": "reddit:1xw5ezx",
+"source": "r/3Dprintmything",
+"kind": "reddit",
+"title": "[USA, MD, Baltimore area] Vent adapter for my Qidi Plus 4",
+"text": "I'm setting up my printer to run ASA but the catch-22 is that I need an ASA part to set up my vent to print ASA.\n Color: irrelevant - but black, grey, etc if you have it\n Material: ASA only (or equivalent heat resistence). The Qidi can make some pretty high internal temps so the exhaust can be very hot.\n Budget: $25? Let me know if I'm way under. Budget is less of a concern than speediness and closeness to me. :)\n Glad to pick up in person and will travel, I dunno, 40+ miles or so to get it?\n This is the piece: https://www.printables.com/model/1036212-qidi-plus-4-4-inch-duct/files\n This piece is for personal use.\n Thanks!",
+"url": "https://www.reddit.com/r/3Dprintmything/comments/1xw5ezx/usa_md_baltimore_area_vent_adapter_for_my_qidi/",
+"created": 1794670879000,
+"author": "OPdoesnotrespond",
+"flair": "",
+"all": true,
+"dachHint": false,
+"why": "Anfrage-Community"
+},
 {
 "id": "reddit:1xw3uaa",
 "source": "r/3Dprintmything",
