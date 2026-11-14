@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-14T13:51:11.214170+00:00",
+"generated": "2026-11-14T14:36:38.087629+00:00",
 "status": {
 "r/3Dprintmything": {
 "ok": true,
@@ -25,8 +25,8 @@
 "n": 40
 },
 "Lemmy-Suche": {
-"ok": true,
-"n": 95
+"ok": false,
+"err": "The read operation timed out"
 },
 "Bambu-Lab-Forum": {
 "ok": true,
@@ -75,15 +75,29 @@
 "n": 0
 }
 },
-"last24h": 2,
+"last24h": 3,
 "filtered": {
 "hat Drucker / sucht Drucker / Angebot": 6,
 "Urheberrecht/Marke": 3,
 "Design/Modellieren gewünscht": 3,
-"keine ausdrückliche Druckanfrage": 8,
+"keine ausdrückliche Druckanfrage": 2,
 "kein 3D-Druck-Bezug": 10
 },
 "leads": [
+{
+"id": "reddit:1xw3uaa",
+"source": "r/3Dprintmything",
+"kind": "reddit",
+"title": "[UK/EU] Order Fulfillment Help [Resin]",
+"text": "Hey folks\n I am looking for 1-2 people with 2+ newer, medium format(saturn/m7 sized) resin printers (8k+) with a high degree of attention to detail to help with order fulfillment within the UK.\n Basically you work out of a spreadsheet and share drive and make a percentage of the sales, you have to use our resin mix etc etc.\n Not looking for any FDM people, not looking for anyone outside the UK or EU right now",
+"url": "https://www.reddit.com/r/3Dprintmything/comments/1xw3uaa/ukeu_order_fulfillment_help_resin/",
+"created": 1794666810000,
+"author": "GodforgeMinis",
+"flair": "",
+"all": true,
+"dachHint": false,
+"why": "Anfrage-Community"
+},
 {
 "id": "reddit:1xvntxd",
 "source": "r/3Dprintmything",
