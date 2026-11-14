@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-14T07:26:20.547940+00:00",
+"generated": "2026-11-14T08:21:11.597332+00:00",
 "status": {
 "r/3Dprintmything": {
 "ok": true,
@@ -7,9 +7,9 @@
 "n": 50
 },
 "r/PrintMyThing": {
-"ok": false,
-"via": "failed",
-"n": 0
+"ok": true,
+"via": "rss",
+"n": 1
 },
 "r/3Dprinting (Suche)": {
 "ok": false,
@@ -75,7 +75,7 @@
 "n": 0
 }
 },
-"last24h": 3,
+"last24h": 2,
 "filtered": {
 "hat Drucker / sucht Drucker / Angebot": 6,
 "Urheberrecht/Marke": 3,
