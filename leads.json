@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-13T23:33:57.104512+00:00",
+"generated": "2026-11-14T00:19:17.245465+00:00",
 "status": {
 "r/3Dprintmything": {
 "ok": true,
@@ -33,8 +33,8 @@
 "n": 77
 },
 "Bluesky": {
-"ok": true,
-"n": 110
+"ok": false,
+"err": "HTTP Error 502: Bad Gateway"
 },
 "Mastodon-Suche": {
 "ok": true,
@@ -75,15 +75,28 @@
 "n": 0
 }
 },
-"last24h": 2,
+"last24h": 3,
 "filtered": {
-"hat Drucker / sucht Drucker / Angebot": 6,
+"hat Drucker / sucht Drucker / Angebot": 5,
 "Urheberrecht/Marke": 3,
 "Design/Modellieren gewünscht": 2,
-"keine ausdrückliche Druckanfrage": 9,
-"kein 3D-Druck-Bezug": 10
+"keine ausdrückliche Druckanfrage": 8
 },
 "leads": [
+{
+"id": "reddit:1xvntxd",
+"source": "r/3Dprintmything",
+"kind": "reddit",
+"title": "[US-TX] RE4 Cosplay things",
+"text": "https://makerworld.com/en/models/3513408-pistol-sg-09r-residual-evil?from=search#profileId-4014932\n https://makerworld.com/en/models/1757459-resident-evil-4-remake-primal-knife?from=search#profileId-1872536\n Hi, i'm needing these printed. Fyi, the gun is a model, not an actual gun. Also, idk if this happens and idk if its insulting to ask, but id ideally like it for free. I understand, however if it can't.",
+"url": "https://www.reddit.com/r/3Dprintmything/comments/1xvntxd/ustx_re4_cosplay_things/",
+"created": 1794614376000,
+"author": "John_Ultrakilling",
+"flair": "",
+"all": true,
+"dachHint": false,
+"why": "Anfrage-Community"
+},
 {
 "id": "reddit:1xvaq5o",
 "source": "r/3Dprintmything",
