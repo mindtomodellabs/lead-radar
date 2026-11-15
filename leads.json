@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-15T14:28:08.388341+00:00",
+"generated": "2026-11-15T15:13:06.989172+00:00",
 "status": {
 "r/3Dprintmything": {
 "ok": true,
@@ -34,7 +34,7 @@
 },
 "Bluesky": {
 "ok": true,
-"n": 111
+"n": 112
 },
 "Mastodon-Suche": {
 "ok": true,
@@ -75,13 +75,13 @@
 "n": 0
 }
 },
-"last24h": 6,
+"last24h": 5,
 "filtered": {
 "Design/Modellieren gewünscht": 2,
 "hat Drucker / sucht Drucker / Angebot": 7,
 "Urheberrecht/Marke": 3,
 "keine ausdrückliche Druckanfrage": 9,
-"kein 3D-Druck-Bezug": 12
+"kein 3D-Druck-Bezug": 13
 },
 "leads": [
 {
