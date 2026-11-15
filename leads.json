@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-15T04:38:30.163672+00:00",
+"generated": "2026-11-15T05:36:12.245203+00:00",
 "status": {
 "r/3Dprintmything": {
 "ok": true,
@@ -75,7 +75,7 @@
 "n": 0
 }
 },
-"last24h": 3,
+"last24h": 4,
 "filtered": {
 "Design/Modellieren gewünscht": 2,
 "hat Drucker / sucht Drucker / Angebot": 7,
@@ -84,6 +84,20 @@
 "kein 3D-Druck-Bezug": 11
 },
 "leads": [
+{
+"id": "reddit:1xwn1vd",
+"source": "r/3Dprintmything",
+"kind": "reddit",
+"title": "[IL-USA] Seeking someone for a NSFW 3D print",
+"text": "Please contact me, I can provide the STL and not sure of material but looking for something on the softer pliable side but would need to go over options.",
+"url": "https://www.reddit.com/r/3Dprintmything/comments/1xwn1vd/ilusa_seeking_someone_for_a_nsfw_3d_print/",
+"created": 1794719338000,
+"author": "canigetamfuhhhhhhh",
+"flair": "",
+"all": true,
+"dachHint": false,
+"why": "Anfrage-Community"
+},
 {
 "id": "reddit:1xwgy38",
 "source": "r/3Dprintmything",
