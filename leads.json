@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-15T15:53:13.525657+00:00",
+"generated": "2026-11-15T16:31:22.156291+00:00",
 "status": {
 "r/3Dprintmything": {
 "ok": true,
@@ -7,9 +7,9 @@
 "n": 50
 },
 "r/PrintMyThing": {
-"ok": true,
-"via": "rss",
-"n": 1
+"ok": false,
+"via": "failed",
+"n": 0
 },
 "r/3Dprinting (Suche)": {
 "ok": false,
@@ -33,8 +33,8 @@
 "n": 77
 },
 "Bluesky": {
-"ok": true,
-"n": 112
+"ok": false,
+"err": "HTTP Error 502: Bad Gateway"
 },
 "Mastodon-Suche": {
 "ok": true,
@@ -78,10 +78,9 @@
 "last24h": 4,
 "filtered": {
 "Design/Modellieren gewünscht": 2,
-"hat Drucker / sucht Drucker / Angebot": 7,
+"hat Drucker / sucht Drucker / Angebot": 6,
 "Urheberrecht/Marke": 3,
-"keine ausdrückliche Druckanfrage": 9,
-"kein 3D-Druck-Bezug": 13
+"keine ausdrückliche Druckanfrage": 9
 },
 "leads": [
 {
@@ -89,7 +88,7 @@
 "source": "r/3Dprintmything",
 "kind": "reddit",
 "title": "[UK/NI] Modular Table Extension for Board Games",
-"text": "Hi! I’m looking for someone based in Northern Ireland (or the UK) to print this table extension I’ve found on MakerWorld. \n I’d also need the length to be scaled up by 8.25% so it comes out at 21cm, to be able to fit my player dashboards for Nemesis.\n Any help is greatly appreciated! <3",
+"text": "Hi! I’m looking for someone based in Northern Ireland (or the UK) to print this table extension I’ve found on MakerWorld.\n I’d also need the length to be scaled up by 8.25% so it comes out at 21cm, to be able to fit my player dashboards for Nemesis.\n Any help is greatly appreciated! <3\n Now resolved, thank you to u/Lito_ :)",
 "url": "https://www.reddit.com/r/3Dprintmything/comments/1xww3as/ukni_modular_table_extension_for_board_games/",
 "created": 1794750945000,
 "author": "Lidl-Is-Love",
