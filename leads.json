@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-15T05:36:12.245203+00:00",
+"generated": "2026-11-15T06:37:13.413155+00:00",
 "status": {
 "r/3Dprintmything": {
 "ok": true,
@@ -1283,20 +1283,6 @@
 "url": "https://www.reddit.com/r/3Dprintmything/comments/1xf8omk/tx_usa_ikea_billy_bookshelf_compatible_hooks/",
 "created": 1792950109000,
 "author": "Chemical-Sea-5880",
-"flair": "",
-"all": true,
-"dachHint": false,
-"why": "Anfrage-Community"
-},
-{
-"id": "reddit:1xeusqj",
-"source": "r/3Dprintmything",
-"kind": "reddit",
-"title": "[US-IL] Brackets and PC fan holders for a project",
-"text": "I'll provide the STL files, but these would be the parts and dimensions\n - (8) Corner Brackets (35 x 69.5 x 69.5 mm)\n - (4) L Brackets (180 x 37.5 x 37.5 mm)\n - (5) PC fan covers (145 x 145 x 10 mm)\n - (5) PC fan gaskets (141 x 141 x 2 mm)\n 20% infill PLA, and black or any shade of grey filament is fine, other colors potentially ok too just lmk what you have.\n Ideally looking for local pickup in northern-ish chicago region (between like the loop and evanston), but shipping is also fine, please send me a DM with an approximate time and price if you're interested, thanks!\n I slightly edited the fan gasket file but here's the project I'm making for reference on what the parts should look like overall",
-"url": "https://www.reddit.com/r/3Dprintmything/comments/1xeusqj/usil_brackets_and_pc_fan_holders_for_a_project/",
-"created": 1792909094000,
-"author": "Potential_Zone_5435",
 "flair": "",
 "all": true,
 "dachHint": false,
