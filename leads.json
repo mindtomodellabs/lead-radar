@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-15T18:44:58.775103+00:00",
+"generated": "2026-11-15T19:29:59.002447+00:00",
 "status": {
 "r/3Dprintmything": {
 "ok": true,
@@ -34,7 +34,7 @@
 },
 "Bluesky": {
 "ok": true,
-"n": 112
+"n": 111
 },
 "Mastodon-Suche": {
 "ok": true,
@@ -1269,20 +1269,6 @@
 "url": "https://www.reddit.com/r/3Dprintmything/comments/1xfi9uz/mi_usa_help_me_print_my_first_design_please/",
 "created": 1792974061000,
 "author": "DoubleYoo",
-"flair": "",
-"all": true,
-"dachHint": false,
-"why": "Anfrage-Community"
-},
-{
-"id": "reddit:1xfaglj",
-"source": "r/3Dprintmything",
-"kind": "reddit",
-"title": "[MN, USA] Gridfinity bases and boxes (files supplied)",
-"text": "I need 2 Gridfinity baseplates and 13 boxes, for which the files are here: \n https://drive.google.com/drive/folders/1WxgeavuNBheE7bxvoGvhNA7mmw4llM2g?usp=drive_link\n Would like them printed in black. I don't mind if the baseplates need to be broken up for printing, and would be fine receiving them in multiple pieces and gluing them together myself!",
-"url": "https://www.reddit.com/r/3Dprintmything/comments/1xfaglj/mn_usa_gridfinity_bases_and_boxes_files_supplied/",
-"created": 1792954330000,
-"author": "No-Cupcake4498",
 "flair": "",
 "all": true,
 "dachHint": false,
