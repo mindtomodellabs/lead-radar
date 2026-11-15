@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-14T23:44:56.107340+00:00",
+"generated": "2026-11-15T00:20:18.777222+00:00",
 "status": {
 "r/3Dprintmything": {
 "ok": true,
@@ -77,13 +77,27 @@
 },
 "last24h": 3,
 "filtered": {
+"Design/Modellieren gewünscht": 2,
 "hat Drucker / sucht Drucker / Angebot": 7,
 "Urheberrecht/Marke": 3,
-"Design/Modellieren gewünscht": 2,
 "keine ausdrückliche Druckanfrage": 9,
 "kein 3D-Druck-Bezug": 11
 },
 "leads": [
+{
+"id": "reddit:1xwgy38",
+"source": "r/3Dprintmything",
+"kind": "reddit",
+"title": "[MO-US] vintage lamp replacement parts",
+"text": "I have an old vintage lamp that I thought would be cool to print replacement parts for but am truly new to this world and its expenses. I have pictures with no scale but if it’s something that seems possible to someone I will get measurements or send the whole lamp. Again not even sure how this would go but would love a discussion on what I should practically expect or even if this is something even feasible! Any answers will be appreciated!",
+"url": "https://www.reddit.com/r/3Dprintmything/comments/1xwgy38/mous_vintage_lamp_replacement_parts/",
+"created": 1794700305000,
+"author": "No-Device-3393",
+"flair": "",
+"all": true,
+"dachHint": false,
+"why": "Anfrage-Community"
+},
 {
 "id": "reddit:1xw5ezx",
 "source": "r/3Dprintmything",
