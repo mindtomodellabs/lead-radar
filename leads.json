@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-16T20:31:19.829226+00:00",
+"generated": "2026-11-16T21:24:41.675227+00:00",
 "status": {
 "r/3Dprintmything": {
 "ok": true,
@@ -75,15 +75,57 @@
 "n": 0
 }
 },
-"last24h": 4,
+"last24h": 7,
 "filtered": {
 "Urheberrecht/Marke": 4,
 "Design/Modellieren gewünscht": 2,
 "hat Drucker / sucht Drucker / Angebot": 7,
-"keine ausdrückliche Druckanfrage": 9,
+"keine ausdrückliche Druckanfrage": 8,
 "kein 3D-Druck-Bezug": 13
 },
 "leads": [
+{
+"id": "reddit:1xy1k7u",
+"source": "r/3Dprintmything",
+"kind": "reddit",
+"title": "[IL USA] Looking for someone to print a human scaled doll head in PLA",
+"text": "As title states, I have an STL to provide. It would be a head and two hair pieces. Would like quotes with and without finishing/assembly. Painting is a plus. Need some small adjusting done to base of neck. Please DM me. Opportunity to do many more prints after this one if it goes well. Thank you.",
+"url": "https://www.reddit.com/r/3Dprintmything/comments/1xy1k7u/il_usa_looking_for_someone_to_print_a_human/",
+"created": 1794863844000,
+"author": "canigetamfuhhhhhhh",
+"flair": "",
+"all": true,
+"dachHint": false,
+"why": "Anfrage-Community"
+},
+{
+"id": "reddit:1xy0eo6",
+"source": "r/3Dprintmything",
+"kind": "reddit",
+"title": "[US-MA] servo-driven lens cap assembly",
+"text": "Looking for someone to print a couple different parts for an automated camera lens cap I've been working on. STL files attached, hoping for 2 prints of each file. Not sure which material makes the most sense here but I'm happy to take a rec - looking for something that will be able to do fine detail, be strong and high-resolution at small scale, UV resistant, and good dimensional accuracy. Printed in black. Files are in mm.\n I created these models myself and don't have much experience, so there might be some quirks or bad design decisions. Happy to take feedback and improve the design myself, or share the original OpenSCAD files and let you tweak if needed.\n https://github.com/mjball/capcom/blob/main/models/direct-drive/v41/base.stl\n https://github.com/mjball/capcom/blob/main/models/direct-drive/v41/cap_a.stl\n https://github.com/mjball/capcom/blob/main/models/direct-drive/v41/cap_b.stl",
+"url": "https://www.reddit.com/r/3Dprintmything/comments/1xy0eo6/usma_servodriven_lens_cap_assembly/",
+"created": 1794861197000,
+"author": "mjball",
+"flair": "",
+"all": true,
+"dachHint": false,
+"why": "Anfrage-Community"
+},
+{
+"id": "reddit:1xy0d1r",
+"source": "r/3Dprintmything",
+"kind": "reddit",
+"title": "[US-GA Atlanta] Seeking someone to print a 24\"x24\" x42\" vertical storage container with lid",
+"text": "Hi! I’m looking for a square upright storage bin with a lid, to store all my wrapping paper. As long as the bottom portion is at least 21” high, I don’t care about the depth of the lid or container. Most of my rolls are standard height but I have more than a few that are 40” in height. I’d prefer the lid to be clear where I can see what paper I have, the bottom color doesn’t matter. I would also like the lid to be easy to remove, but locking with handles where it’s easy to grab out of a closet or hallway.\n I’m in the NW Atlanta area Thanks!",
+"url": "https://www.reddit.com/r/3Dprintmything/comments/1xy0d1r/usga_atlanta_seeking_someone_to_print_a_24x24_x42/",
+"created": 1794861088000,
+"author": "lagg0805",
+"flair": "",
+"all": true,
+"dachHint": false,
+"why": "Anfrage-Community"
+},
 {
 "id": "reddit:1xxzu4u",
 "source": "r/3Dprintmything",
