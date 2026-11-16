@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-16T14:13:35.914092+00:00",
+"generated": "2026-11-16T16:16:19.042722+00:00",
 "status": {
 "r/3Dprintmything": {
 "ok": true,
@@ -7,9 +7,9 @@
 "n": 50
 },
 "r/PrintMyThing": {
-"ok": true,
-"via": "rss",
-"n": 1
+"ok": false,
+"via": "failed",
+"n": 0
 },
 "r/3Dprinting (Suche)": {
 "ok": false,
@@ -25,16 +25,16 @@
 "n": 40
 },
 "Lemmy-Suche": {
-"ok": false,
-"err": "The read operation timed out"
+"ok": true,
+"n": 95
 },
 "Bambu-Lab-Forum": {
 "ok": true,
 "n": 77
 },
 "Bluesky": {
-"ok": false,
-"err": "HTTP Error 502: Bad Gateway"
+"ok": true,
+"n": 111
 },
 "Mastodon-Suche": {
 "ok": true,
@@ -79,8 +79,9 @@
 "filtered": {
 "Urheberrecht/Marke": 4,
 "Design/Modellieren gewünscht": 2,
-"hat Drucker / sucht Drucker / Angebot": 6,
-"keine ausdrückliche Druckanfrage": 2
+"hat Drucker / sucht Drucker / Angebot": 7,
+"keine ausdrückliche Druckanfrage": 9,
+"kein 3D-Druck-Bezug": 13
 },
 "leads": [
 {
