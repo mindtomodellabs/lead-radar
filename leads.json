@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-16T23:14:57.581757+00:00",
+"generated": "2026-11-16T23:56:33.922486+00:00",
 "status": {
 "r/3Dprintmything": {
 "ok": true,
@@ -75,7 +75,7 @@
 "n": 0
 }
 },
-"last24h": 7,
+"last24h": 8,
 "filtered": {
 "Urheberrecht/Marke": 4,
 "Design/Modellieren gewünscht": 2,
@@ -84,6 +84,20 @@
 "kein 3D-Druck-Bezug": 13
 },
 "leads": [
+{
+"id": "reddit:1xy4pmw",
+"source": "r/3Dprintmything",
+"kind": "reddit",
+"title": "[US-NY/NJ] Looking to add a local designer to the team.",
+"text": "I print (mostly functional automotive parts), but am not so great at design. I'm looking to add a designer to create STL's of parts as needed. This is a \"on demand\" job - I'll reach out with a need, you'll quote, and I'll approve/reject as needed. There will be days I give you 5 items and times where you don't hear from me for months.\n I already have a remote designer on staff, however sometimes I need someone to look at a vehicle or a part from a vehicle. As a result, you'll need to be local / in the area. Sometimes I can mail a part, usually not.\n Parts need to be optimized for 3D printing. Sometimes that means I don't have a design idea and need your thoughts, other times I already know how we can accomplish the final design.\n This job does require that the final design ownership is transferable to me. Not going to spend hundreds for the design to end up free on printables.",
+"url": "https://www.reddit.com/r/3Dprintmything/comments/1xy4pmw/usnynj_looking_to_add_a_local_designer_to_the_team/",
+"created": 1794871603000,
+"author": "TheUsernameWasStolen",
+"flair": "",
+"all": true,
+"dachHint": false,
+"why": "Anfrage-Community"
+},
 {
 "id": "reddit:1xy1k7u",
 "source": "r/3Dprintmything",
