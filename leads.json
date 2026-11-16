@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-16T21:24:41.675227+00:00",
+"generated": "2026-11-16T22:17:59.852280+00:00",
 "status": {
 "r/3Dprintmything": {
 "ok": true,
@@ -1283,20 +1283,6 @@
 "url": "https://www.reddit.com/r/3Dprintmything/comments/1xgdt94/cala_personal_item_print_requestbusiness_inquiry/",
 "created": 1793060192000,
 "author": "basscross9",
-"flair": "",
-"all": true,
-"dachHint": false,
-"why": "Anfrage-Community"
-},
-{
-"id": "reddit:1xg9ynd",
-"source": "r/3Dprintmything",
-"kind": "reddit",
-"title": "[UK, London] Looking for someone to 3D print a fully wearable, one-piece TPU shoe",
-"text": "Hi everyone!\n I’m an independent designer based in London, developing a custom 3D-printed shoe for my footwear project.\n I’m looking for an individual or studio who can help manufacture an initial wearable prototype at a reasonable cost.\n Requirements:\n Entire shoe printed as one continuous piece\n Flexible TPU, foaming TPU or another suitable elastomer\n Properly cushioned, wearable sole — not just a visual prototype\n Durable enough for everyday walking\n Exact exterior design must be preserved\n Approximately EU 46 / UK 10\n Ideally London or UK-based, but open to international options\n I’m working on the CAD model and can provide references and dimensions.\n I’m particularly interested in hearing from anyone who has successfully printed complete, comfortable shoes, or knows a service that offers this.\n Looking to start with one shoe for testing before moving to a full pair and potentially small-batch production.\n Any recommendations, approximate costs or advice would be hugely appreciated!\n Thanks!",
-"url": "https://www.reddit.com/r/3Dprintmything/comments/1xg9ynd/uk_london_looking_for_someone_to_3d_print_a_fully/",
-"created": 1793050503000,
-"author": "Neither_Breakfast983",
 "flair": "",
 "all": true,
 "dachHint": false,
