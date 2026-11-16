@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-16T11:45:18.190825+00:00",
+"generated": "2026-11-16T14:13:35.914092+00:00",
 "status": {
 "r/3Dprintmything": {
 "ok": true,
@@ -25,16 +25,16 @@
 "n": 40
 },
 "Lemmy-Suche": {
-"ok": true,
-"n": 95
+"ok": false,
+"err": "The read operation timed out"
 },
 "Bambu-Lab-Forum": {
 "ok": true,
 "n": 77
 },
 "Bluesky": {
-"ok": true,
-"n": 111
+"ok": false,
+"err": "HTTP Error 502: Bad Gateway"
 },
 "Mastodon-Suche": {
 "ok": true,
@@ -75,13 +75,12 @@
 "n": 0
 }
 },
-"last24h": 4,
+"last24h": 3,
 "filtered": {
 "Urheberrecht/Marke": 4,
 "Design/Modellieren gewünscht": 2,
-"hat Drucker / sucht Drucker / Angebot": 7,
-"keine ausdrückliche Druckanfrage": 9,
-"kein 3D-Druck-Bezug": 13
+"hat Drucker / sucht Drucker / Angebot": 6,
+"keine ausdrückliche Druckanfrage": 2
 },
 "leads": [
 {
@@ -1255,34 +1254,6 @@
 "url": "https://www.reddit.com/r/3Dprintmything/comments/1xg6q3n/usva_3d_print_services_for_pc_fan_shroud/",
 "created": 1793043129000,
 "author": "ltsnotluck",
-"flair": "",
-"all": true,
-"dachHint": false,
-"why": "Anfrage-Community"
-},
-{
-"id": "reddit:1xfxxds",
-"source": "r/3Dprintmything",
-"kind": "reddit",
-"title": "[CT, USA] Nintendo “New” 3DS XL Grip",
-"text": "I’m looking to have a grip made for my New Nintendo 3DS XL and am hoping to find someone who can produce a high-quality print with a smooth, clean finish and consistent texture throughout with a Matte Black color.\n I’d like to minimize visible layer lines, rough edges, blobs, and other printing imperfections as much as possible. I’m willing to pay extra for a really nice result, including any additional finishing work needed to achieve a clean, professional appearance.\n Model: https://www.printables.com/model/429273-grip-stand-for-new-3ds-xl\n Please comment or DM me if you’re interested!",
-"url": "https://www.reddit.com/r/3Dprintmything/comments/1xfxxds/ct_usa_nintendo_new_3ds_xl_grip/",
-"created": 1793023873000,
-"author": "Saucey2500",
-"flair": "",
-"all": true,
-"dachHint": false,
-"why": "Anfrage-Community"
-},
-{
-"id": "reddit:1xfv6u7",
-"source": "r/3Dprintmything",
-"kind": "reddit",
-"title": "[UK London] Looking for a UK based 3D Printer to print a file for me.",
-"text": "Hi, looking for an experienced 3d printer based in the UK who can print me off something that I will supply the .stl file for.",
-"url": "https://www.reddit.com/r/3Dprintmything/comments/1xfv6u7/uk_london_looking_for_a_uk_based_3d_printer_to/",
-"created": 1793017041000,
-"author": "Accomplished-Joke913",
 "flair": "",
 "all": true,
 "dachHint": false,
