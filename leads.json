@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-15T23:38:21.595075+00:00",
+"generated": "2026-11-16T00:34:38.796858+00:00",
 "status": {
 "r/3Dprintmything": {
 "ok": true,
@@ -75,7 +75,7 @@
 "n": 0
 }
 },
-"last24h": 4,
+"last24h": 3,
 "filtered": {
 "Design/Modellieren gewünscht": 2,
 "hat Drucker / sucht Drucker / Angebot": 7,
@@ -1255,20 +1255,6 @@
 "url": "https://www.reddit.com/r/3Dprintmything/comments/1xfn4j2/usca_looking_for_someone_who_can_print_a_camera/",
 "created": 1792988457000,
 "author": "sulibO",
-"flair": "",
-"all": true,
-"dachHint": false,
-"why": "Anfrage-Community"
-},
-{
-"id": "reddit:1xfi9uz",
-"source": "r/3Dprintmything",
-"kind": "reddit",
-"title": "[MI USA] Help me print my first design please",
-"text": "I designed this help drain an inflatable bathtub, i tried to use shapeways and some other sites, but the dimensions seem to be screwed up on the schematic anytime i try to export it. Can anybody help me figure out whats wrong or possibly print this for me? It can just be the cheapest material but would need to be ok getting wet.",
-"url": "https://www.reddit.com/r/3Dprintmything/comments/1xfi9uz/mi_usa_help_me_print_my_first_design_please/",
-"created": 1792974061000,
-"author": "DoubleYoo",
 "flair": "",
 "all": true,
 "dachHint": false,
