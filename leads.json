@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-16T08:12:39.790997+00:00",
+"generated": "2026-11-16T10:19:56.662245+00:00",
 "status": {
 "r/3Dprintmything": {
 "ok": true,
@@ -75,7 +75,7 @@
 "n": 0
 }
 },
-"last24h": 3,
+"last24h": 4,
 "filtered": {
 "Urheberrecht/Marke": 4,
 "Design/Modellieren gewünscht": 2,
@@ -84,6 +84,20 @@
 "kein 3D-Druck-Bezug": 13
 },
 "leads": [
+{
+"id": "reddit:1xxkwe9",
+"source": "r/3Dprintmything",
+"kind": "reddit",
+"title": "[EU] [DE] Looking to get miniature parts printed",
+"text": "Hello, I'm Looking for someone that could help me print this: \n (I own the STL's)\n Thank you",
+"url": "https://www.reddit.com/r/3Dprintmything/comments/1xxkwe9/eu_de_looking_to_get_miniature_parts_printed/",
+"created": 1794820569000,
+"author": "Technical-Low137",
+"flair": "",
+"all": true,
+"dachHint": false,
+"why": "Anfrage-Community"
+},
 {
 "id": "reddit:1xxf02m",
 "source": "r/3Dprintmything",
