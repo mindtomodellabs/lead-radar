@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-16T03:06:54.398477+00:00",
+"generated": "2026-11-16T04:24:32.183367+00:00",
 "status": {
 "r/3Dprintmything": {
 "ok": true,
@@ -75,7 +75,7 @@
 "n": 0
 }
 },
-"last24h": 3,
+"last24h": 5,
 "filtered": {
 "Design/Modellieren gewünscht": 2,
 "hat Drucker / sucht Drucker / Angebot": 7,
@@ -84,6 +84,34 @@
 "kein 3D-Druck-Bezug": 13
 },
 "leads": [
+{
+"id": "reddit:1xxf02m",
+"source": "r/3Dprintmything",
+"kind": "reddit",
+"title": "[CA-USA] Offering 3D printing services",
+"text": "Hi all! I offer FDM and 3D printing services. I have reasonable rates and quick shipping. I use an Ankermake M5C and will offer multi color printing starting Mid-December. Comment and DM for a free quote!",
+"url": "https://www.reddit.com/r/3Dprintmything/comments/1xxf02m/causa_offering_3d_printing_services/",
+"created": 1794799666000,
+"author": "Interesting-Dog-5146",
+"flair": "",
+"all": true,
+"dachHint": false,
+"why": "Anfrage-Community"
+},
+{
+"id": "reddit:1xxep9i",
+"source": "r/3Dprintmything",
+"kind": "reddit",
+"title": "[USA-PA] Small Razer laptop charger rubber strap pin (Qty: 3–5) in PETG or ABS",
+"text": "Looking to get 5 copies of a small replacement pin for a Razer laptop power adapter rubber cable strap printed in Black PETG (or ABS/ASA—no standard PLA due to charger heat).\n STL Link: https://www.thingiverse.com/thing:5163035\n Requested Print Settings:\n • Infill: 100% solid\n • Layer Height: 0.12 mm – 0.16 mm\n • Orientation: Please lay the pin flat on its side so layer lines run lengthwise across the narrow stem for maximum strength.\n • Quantity: 5 pieces (to have spares)\n Shipping to Pennsylvania. Please comment before PMing with a shipped quote. Thanks!",
+"url": "https://www.reddit.com/r/3Dprintmything/comments/1xxep9i/usapa_small_razer_laptop_charger_rubber_strap_pin/",
+"created": 1794798744000,
+"author": "itbesandrodoe",
+"flair": "",
+"all": true,
+"dachHint": false,
+"why": "Anfrage-Community"
+},
 {
 "id": "reddit:1xww3as",
 "source": "r/3Dprintmything",
@@ -1241,20 +1269,6 @@
 "url": "https://www.reddit.com/r/3Dprintmything/comments/1xfv6u7/uk_london_looking_for_a_uk_based_3d_printer_to/",
 "created": 1793017041000,
 "author": "Accomplished-Joke913",
-"flair": "",
-"all": true,
-"dachHint": false,
-"why": "Anfrage-Community"
-},
-{
-"id": "reddit:1xfn4j2",
-"source": "r/3Dprintmything",
-"kind": "reddit",
-"title": "[US-CA] Looking for someone who can print a camera mount.",
-"text": "Hey guys! I’m looking to get someone to print 3 super small drone parts. A camera mount, arm bumpers, and another small little mount. \n Here are the files to each. \n Camera mount https://www.printables.com/model/833046-kayoumini-25-tpu-collection/files#preview.file.gOgXr\n Arm bumpers (need 4) https://www.printables.com/model/833046-kayoumini-25-tpu-collection/files#preview.file.QWQsG\n Another mount https://www.printables.com/model/833046-kayoumini-25-tpu-collection/files#preview.file.5WbUr",
-"url": "https://www.reddit.com/r/3Dprintmything/comments/1xfn4j2/usca_looking_for_someone_who_can_print_a_camera/",
-"created": 1792988457000,
-"author": "sulibO",
 "flair": "",
 "all": true,
 "dachHint": false,
