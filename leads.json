@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-16T19:41:45.202868+00:00",
+"generated": "2026-11-16T20:31:19.829226+00:00",
 "status": {
 "r/3Dprintmything": {
 "ok": true,
@@ -75,7 +75,7 @@
 "n": 0
 }
 },
-"last24h": 3,
+"last24h": 4,
 "filtered": {
 "Urheberrecht/Marke": 4,
 "Design/Modellieren gewünscht": 2,
@@ -84,6 +84,20 @@
 "kein 3D-Druck-Bezug": 13
 },
 "leads": [
+{
+"id": "reddit:1xxzu4u",
+"source": "r/3Dprintmything",
+"kind": "reddit",
+"title": "[US-CA Los Angeles] Looking for someone to print my zen garden dish and rake x 150 pcs",
+"text": "I'm looking for someone to print me 150 pcs of a round, matte black zen garden dish (21cm round x 2cm high x 2 mm thick) and a small rake (13cm long x 4 cm wide x 2cm tall x 4mm thick) to go with it. I don't have schematics/plans, unfortunately.\n Please let me know what else you need to know!",
+"url": "https://www.reddit.com/r/3Dprintmything/comments/1xxzu4u/usca_los_angeles_looking_for_someone_to_print_my/",
+"created": 1794859914000,
+"author": "knowhow_LM",
+"flair": "",
+"all": true,
+"dachHint": false,
+"why": "Anfrage-Community"
+},
 {
 "id": "reddit:1xxkwe9",
 "source": "r/3Dprintmything",
