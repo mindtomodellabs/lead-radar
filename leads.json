@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-16T23:56:33.922486+00:00",
+"generated": "2026-11-17T00:48:03.481967+00:00",
 "status": {
 "r/3Dprintmything": {
 "ok": true,
@@ -75,15 +75,29 @@
 "n": 0
 }
 },
-"last24h": 8,
+"last24h": 9,
 "filtered": {
 "Urheberrecht/Marke": 4,
 "Design/Modellieren gewünscht": 2,
-"hat Drucker / sucht Drucker / Angebot": 7,
+"hat Drucker / sucht Drucker / Angebot": 6,
 "keine ausdrückliche Druckanfrage": 7,
 "kein 3D-Druck-Bezug": 13
 },
 "leads": [
+{
+"id": "reddit:1xy5oge",
+"source": "r/3Dprintmything",
+"kind": "reddit",
+"title": "[Canada] taking custom 3d printed requests!!!",
+"text": "​\n Im taking custom requests for 3d printed objects so if someone wants custom made items hut me up. We can talk about the pricing and details in private.",
+"url": "https://www.reddit.com/r/3Dprintmything/comments/1xy5oge/canada_taking_custom_3d_printed_requests/",
+"created": 1794874065000,
+"author": "Asleep_Emotion9019",
+"flair": "",
+"all": true,
+"dachHint": false,
+"why": "Anfrage-Community"
+},
 {
 "id": "reddit:1xy4pmw",
 "source": "r/3Dprintmything",
@@ -1269,34 +1283,6 @@
 "url": "https://www.reddit.com/r/3Dprintmything/comments/1xgh396/ma_usa_i_need_a_new_3d_printer_person/",
 "created": 1793069199000,
 "author": "Cirative",
-"flair": "",
-"all": true,
-"dachHint": false,
-"why": "Anfrage-Community"
-},
-{
-"id": "reddit:1xgefx3",
-"source": "r/3Dprintmything",
-"kind": "reddit",
-"title": "[US-MI] Golf rangefinder \"holster\" mount",
-"text": "4 pieces, I have the stl files for each. \n https://makerworld.com/en/models/1996826-mileseey-genepro-g1-rangefinder-magnetic-case#profileId-2149567\n From the creator:\n This is printed in two parts. The inner sleeve from TPU and the outer case from PLA or PETG. Cap and “lanyard” are TPU as well. The bottom allows for some debris, moisture to escape.",
-"url": "https://www.reddit.com/r/3Dprintmything/comments/1xgefx3/usmi_golf_rangefinder_holster_mount/",
-"created": 1793061879000,
-"author": "threeputtsforpar",
-"flair": "",
-"all": true,
-"dachHint": false,
-"why": "Anfrage-Community"
-},
-{
-"id": "reddit:1xgdt94",
-"source": "r/3Dprintmything",
-"kind": "reddit",
-"title": "[CA-LA] Personal item print request/business inquiry",
-"text": "If anyone in LA is willing to print me a small item (CW Kid Flash emblem), please message me! I do have the STL files for this item! I am flexible on how much the cost would be. I need to have this item by the 30th of October. Any help in references of places that do hobbyist and small prints for reasonable prices would be very helpful as well. All the places near me in Burbank print mostly for studios and commercial business. They all told me they do a minimum between $200-$250.",
-"url": "https://www.reddit.com/r/3Dprintmything/comments/1xgdt94/cala_personal_item_print_requestbusiness_inquiry/",
-"created": 1793060192000,
-"author": "basscross9",
 "flair": "",
 "all": true,
 "dachHint": false,
