@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-17T02:03:28.851403+00:00",
+"generated": "2026-11-17T02:58:36.024294+00:00",
 "status": {
 "r/3Dprintmything": {
 "ok": true,
@@ -1269,20 +1269,6 @@
 "url": "https://www.reddit.com/r/3Dprintmything/comments/1xgjd90/usin_question_for_everyone/",
 "created": 1793076271000,
 "author": "harbreakfast",
-"flair": "",
-"all": true,
-"dachHint": false,
-"why": "Anfrage-Community"
-},
-{
-"id": "reddit:1xgh396",
-"source": "r/3Dprintmything",
-"kind": "reddit",
-"title": "[MA, USA] I need a new 3D printer person",
-"text": "After several years, my printer guy ended up closing shop, so now I'm looking for another longterm printer. I get 5-20 prints done every few months, so you have to be able to keep up with demand.\n Also, I use a particular scaling formula so you have to be able to resize the prints to my specifications. Honestly, most of the time I'll just say something like, \"X needs to be 35mm tall.\"\n Most STLs are 1\"-5\" tall but sometimes there are buildings and on rare occasions the models are giant (20\" or more) and need slicing up to print. The smaller figures must be done in resin without lines. I understand that FDM printers are going to have lines, which is fine since that's almost always terrain pieces anyway.\n I can pay by PayPal or Venmo.",
-"url": "https://www.reddit.com/r/3Dprintmything/comments/1xgh396/ma_usa_i_need_a_new_3d_printer_person/",
-"created": 1793069199000,
-"author": "Cirative",
 "flair": "",
 "all": true,
 "dachHint": false,
