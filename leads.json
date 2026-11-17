@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-17T11:30:36.312441+00:00",
+"generated": "2026-11-17T12:24:32.764941+00:00",
 "status": {
 "r/3Dprintmything": {
 "ok": true,
@@ -75,7 +75,7 @@
 "n": 0
 }
 },
-"last24h": 7,
+"last24h": 8,
 "filtered": {
 "Urheberrecht/Marke": 4,
 "Design/Modellieren gewünscht": 2,
@@ -84,6 +84,20 @@
 "kein 3D-Druck-Bezug": 13
 },
 "leads": [
+{
+"id": "reddit:1xyizzp",
+"source": "r/3Dprintmything",
+"kind": "reddit",
+"title": "[U.K, SW] Resin Print for DnD minis.",
+"text": "Hi everyone! Instead of taking work, this time, I'm giving it! \n Have a few Heroforge Minis (about 4) I need before December. Please drop quotes and turnaround times either here or to my inbox. PayPal only.",
+"url": "https://www.reddit.com/r/3Dprintmything/comments/1xyizzp/uk_sw_resin_print_for_dnd_minis/",
+"created": 1794917918000,
+"author": "Renew3DUK",
+"flair": "",
+"all": true,
+"dachHint": false,
+"why": "Anfrage-Community"
+},
 {
 "id": "reddit:1xyf0ob",
 "source": "r/3Dprintmything",
