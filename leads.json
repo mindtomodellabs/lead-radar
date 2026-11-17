@@ -1,10 +1,10 @@
 {
-"generated": "2026-11-17T17:44:47.323445+00:00",
+"generated": "2026-11-17T18:37:30.626807+00:00",
 "status": {
 "r/3Dprintmything": {
-"ok": true,
-"via": "rss",
-"n": 50
+"ok": false,
+"via": "failed",
+"n": 0
 },
 "r/PrintMyThing": {
 "ok": false,
@@ -77,11 +77,9 @@
 },
 "last24h": 8,
 "filtered": {
-"hat Drucker / sucht Drucker / Angebot": 7,
-"Urheberrecht/Marke": 4,
-"Design/Modellieren gewünscht": 2,
 "keine ausdrückliche Druckanfrage": 6,
-"kein 3D-Druck-Bezug": 13
+"kein 3D-Druck-Bezug": 13,
+"hat Drucker / sucht Drucker / Angebot": 1
 },
 "leads": [
 {
