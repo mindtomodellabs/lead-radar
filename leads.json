@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-17T12:24:32.764941+00:00",
+"generated": "2026-11-17T13:44:32.271864+00:00",
 "status": {
 "r/3Dprintmything": {
 "ok": true,
@@ -33,8 +33,8 @@
 "n": 77
 },
 "Bluesky": {
-"ok": true,
-"n": 111
+"ok": false,
+"err": "HTTP Error 502: Bad Gateway"
 },
 "Mastodon-Suche": {
 "ok": true,
@@ -79,9 +79,8 @@
 "filtered": {
 "Urheberrecht/Marke": 4,
 "Design/Modellieren gewünscht": 2,
-"hat Drucker / sucht Drucker / Angebot": 6,
-"keine ausdrückliche Druckanfrage": 7,
-"kein 3D-Druck-Bezug": 13
+"hat Drucker / sucht Drucker / Angebot": 5,
+"keine ausdrückliche Druckanfrage": 7
 },
 "leads": [
 {
@@ -1255,20 +1254,6 @@
 "url": "https://www.reddit.com/r/3Dprintmything/comments/1xh8rpi/ukscotland_kitchen_pot_handle_hanger/",
 "created": 1793144874000,
 "author": "GenericUser104",
-"flair": "",
-"all": true,
-"dachHint": false,
-"why": "Anfrage-Community"
-},
-{
-"id": "reddit:1xgs9rn",
-"source": "r/3Dprintmything",
-"kind": "reddit",
-"title": "[U.K] Case for my Tab 5 Screen",
-"text": "Hello.\n I am in need of this printing:\n https://www.printables.com/model/1617277-m5stack-tab5-back-cover-with-sliding-storage-compa\n Ideally not black if possible. \n Thanks.",
-"url": "https://www.reddit.com/r/3Dprintmything/comments/1xgs9rn/uk_case_for_my_tab_5_screen/",
-"created": 1793107041000,
-"author": "slinger55",
 "flair": "",
 "all": true,
 "dachHint": false,
