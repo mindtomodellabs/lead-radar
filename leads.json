@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-17T07:00:56.129927+00:00",
+"generated": "2026-11-17T08:23:38.127510+00:00",
 "status": {
 "r/3Dprintmything": {
 "ok": true,
@@ -75,15 +75,29 @@
 "n": 0
 }
 },
-"last24h": 7,
+"last24h": 8,
 "filtered": {
 "Urheberrecht/Marke": 4,
 "Design/Modellieren gewünscht": 2,
-"hat Drucker / sucht Drucker / Angebot": 7,
+"hat Drucker / sucht Drucker / Angebot": 6,
 "keine ausdrückliche Druckanfrage": 7,
 "kein 3D-Druck-Bezug": 13
 },
 "leads": [
+{
+"id": "reddit:1xyf0ob",
+"source": "r/3Dprintmything",
+"kind": "reddit",
+"title": "[South Korea] Looking for someone to help me with a 3d print",
+"text": "",
+"url": "https://www.reddit.com/r/3Dprintmything/comments/1xyf0ob/south_korea_looking_for_someone_to_help_me_with_a/",
+"created": 1794903636000,
+"author": "rtyui57",
+"flair": "",
+"all": true,
+"dachHint": false,
+"why": "Anfrage-Community"
+},
 {
 "id": "reddit:1xy5oge",
 "source": "r/3Dprintmything",
