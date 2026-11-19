@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-19T12:44:20.196712+00:00",
+"generated": "2026-11-19T14:00:56.840794+00:00",
 "status": {
 "r/3Dprintmything": {
 "ok": false,
@@ -34,7 +34,7 @@
 },
 "Bluesky": {
 "ok": true,
-"n": 109
+"n": 110
 },
 "Mastodon-Suche": {
 "ok": true,
@@ -1224,20 +1224,6 @@
 "url": "https://www.reddit.com/r/3Dprintmything/comments/1xiu1gy/uk_looking_for_affordable_resin_printing_510/",
 "created": 1793303043000,
 "author": "Brief-Explanation110",
-"flair": "",
-"all": true,
-"dachHint": false,
-"why": "Anfrage-Community"
-},
-{
-"id": "reddit:1xikh98",
-"source": "r/3Dprintmything",
-"kind": "reddit",
-"title": "[CAN, Aurora] Uconnect battery doors x2",
-"text": "Hi printer enthusiasts!\n I'm looking to get two of these doors printed for my now broken headphones.\n https://www.printables.com/model/1232125-dodge-uconnect-battery-doorcover-fix\n Please let me know if you can help...\n Cheers",
-"url": "https://www.reddit.com/r/3Dprintmything/comments/1xikh98/can_aurora_uconnect_battery_doors_x2/",
-"created": 1793281712000,
-"author": "Craven_mohrhead",
 "flair": "",
 "all": true,
 "dachHint": false,
