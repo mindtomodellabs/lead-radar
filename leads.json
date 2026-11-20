@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-20T17:08:17.082522+00:00",
+"generated": "2026-11-20T18:07:19.721337+00:00",
 "status": {
 "r/3Dprintmything": {
 "ok": false,
@@ -1182,20 +1182,6 @@
 "url": "https://www.reddit.com/r/3Dprintmything/comments/1xjyar0/usmn_wheelchair_joystick_phone_mount/",
 "created": 1793412699000,
 "author": "gloomycat09",
-"flair": "",
-"all": true,
-"dachHint": false,
-"why": "Anfrage-Community"
-},
-{
-"id": "reddit:1xjltct",
-"source": "r/3Dprintmything",
-"kind": "reddit",
-"title": "[US MD] Need to print one small part for my vacuum cleaner",
-"text": "Hey everyone. \n My vacuum recently started to lose an electrical contact and I found the part that can help me to fix that, but I do not have a 3D printer.This part is available on Amazon, but I don't feel comfortable paying $20+ just for a 3D-printed part that will be delivered in December.\n https://makerworld.com/en/models/2399167-ryobi-stick-vacuum-stabilizing-collar#profileId-2629477\n There are CAD files for 2 pieces, but actually I need only one (the bigger one).\n Please let me know if anybody can help me with this request and the shipping cost.\n Thanks!",
-"url": "https://www.reddit.com/r/3Dprintmything/comments/1xjltct/us_md_need_to_print_one_small_part_for_my_vacuum/",
-"created": 1793381544000,
-"author": "Happy_Factor",
 "flair": "",
 "all": true,
 "dachHint": false,
