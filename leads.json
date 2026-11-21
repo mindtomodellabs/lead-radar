@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-21T16:27:51.044336+00:00",
+"generated": "2026-11-21T17:15:38.108802+00:00",
 "status": {
 "r/3Dprintmything": {
 "ok": false,
@@ -1117,20 +1117,6 @@
 "all": false,
 "dachHint": false,
 "why": "„Looking for someone to print“"
-},
-{
-"id": "reddit:1xkerpg",
-"source": "r/3Dprintmything",
-"kind": "reddit",
-"title": "[CA-ON] Network Accessories print",
-"text": "I'm in Oakville, ON, Canada \n Would anyone be willing to do a 3d print for me for a couple accessories? I tried the library but unfortunately it the prints would take longer than the allowed maximum time. I looked into commercial shops for the print but they are charging an arm and a leg.\n If anyone is willing to help, I can pay for the filament usage and small amount for your time.\n Any help would be greatly appreciated.\n If yes, these are the slt files:\n https://www.printables.com/model/36325-816-port-keystone -patch-panel/files#preview.file.XwG5\n https://www.printables.com/model/561548-levitonshelf2\\_small /files#preview.file.N9byf\n https://www.printables.com/model/1027540-netgear-gs308 -mounting-bracket-for-leviton-smc/files#preview.file.ROQIZ\n https://www.printables.com/model/302365-leviton-structured -media-extended-shelf-and-bracke/files#preview.file.DEN8o\n https://www.printables.com/model/302365-leviton-structured -media-extended-shelf-and-bracke/files#preview.file.300zZ\n https://www.printables.com/model/302365-leviton-structured -media-extended-shelf-and-bracke/files#preview.file.ke54F\n https://www.printables.com/model/302930-leviton-structured -media-enclosure-accessories/files#preview.file.gqXV3",
-"url": "https://www.reddit.com/r/3Dprintmything/comments/1xkerpg/caon_network_accessories_print/",
-"created": 1793464510000,
-"author": "__PuppyMonkeyBaby__",
-"flair": "",
-"all": true,
-"dachHint": false,
-"why": "Anfrage-Community"
 }
 ]
 }
