@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-21T01:45:25.606757+00:00",
+"generated": "2026-11-21T02:36:58.354622+00:00",
 "status": {
 "r/3Dprintmything": {
 "ok": false,
@@ -1140,48 +1140,6 @@
 "url": "https://www.reddit.com/r/3Dprintmything/comments/1xjyvsg/usnv_seeking_a_magsafe_duo_apple_watch_stand/",
 "created": 1793414475000,
 "author": "x2kjok",
-"flair": "",
-"all": true,
-"dachHint": false,
-"why": "Anfrage-Community"
-},
-{
-"id": "reddit:1xjyjpq",
-"source": "r/3Dprintmything",
-"kind": "reddit",
-"title": "[AR, USA] Broke my only blower duct, need a new one",
-"text": "Well, I really put myself in a bind. I use a 5015 fan upgrade on my Ender 3 V3 SE, and I usually keep a backup handy since I lost the OEM fan/holder a while ago. Turns out, that was the backup, so I can't print a new one. \n https://www.printables.com/model/776657-ender-3-v3-se-5015-fan-upgrade\n While looking for a replacement, I stumbled upon this subreddit and figured I'd give it a shot. \n I am good with whatever color is most readily available, but white would match the rest of my upgrades. PLA is fine. Thanks!",
-"url": "https://www.reddit.com/r/3Dprintmything/comments/1xjyjpq/ar_usa_broke_my_only_blower_duct_need_a_new_one/",
-"created": 1793413439000,
-"author": "Corrific19",
-"flair": "",
-"all": true,
-"dachHint": false,
-"why": "Anfrage-Community"
-},
-{
-"id": "reddit:1xjyfx1",
-"source": "r/3Dprintmything",
-"kind": "reddit",
-"title": "[UK] Samsung SmartTag 2 Strap holder for Ridge Wallet",
-"text": "I would like to receive quotes for 3d printing the below design:\n https://www.printables.com/model/1105539-ridge-wallet-smart-tag-2-money-strap\n This is a relatively small piece that secures a Samsung Galaxy SmartTag2 tracker onto a Ridge cards holder. \n Shipping Location: Cambridge UK\n Material: tpu 95a\n Colour: Black\n Design file: https://www.printables.com/model/1105539-ridge-wallet-smart-tag-2-money-strap/files (note I prefer the V5 version)\n Feel free to ask any questions. \n https://preview.redd.it/3csj62bzppyh1.png?width=1023&format=png&auto=webp&s=4f55f95fe70ea72967ba646c0eabc7d699996102",
-"url": "https://www.reddit.com/r/3Dprintmything/comments/1xjyfx1/uk_samsung_smarttag_2_strap_holder_for_ridge/",
-"created": 1793413128000,
-"author": "debmadd",
-"flair": "",
-"all": true,
-"dachHint": false,
-"why": "Anfrage-Community"
-},
-{
-"id": "reddit:1xjyar0",
-"source": "r/3Dprintmything",
-"kind": "reddit",
-"title": "[US-MN] wheelchair joystick phone mount",
-"text": "Hi!\n I recently got a new wheelchair (yay!)\n However some of my stuff isn't quite compatible with new model 😢 \n So if possible, I'm hoping to find someone who can print me these CJSM2 mounts so I can go back to attaching my phone securely?\n https://www.thingiverse.com/thing:7383314\n In a perfect world, the low mount would be mirrored so it's on the inside of my lefty joystick, but I'll take what I can get. \n (I used to have the older, smaller PJSM joystick, if anyone was wondering. Now all I have are slightly too small mounts on an otherwise functional phone stand haha)",
-"url": "https://www.reddit.com/r/3Dprintmything/comments/1xjyar0/usmn_wheelchair_joystick_phone_mount/",
-"created": 1793412699000,
-"author": "gloomycat09",
 "flair": "",
 "all": true,
 "dachHint": false,
