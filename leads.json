@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-21T12:11:51.980694+00:00",
+"generated": "2026-11-21T13:08:51.648599+00:00",
 "status": {
 "r/3Dprintmything": {
 "ok": false,
@@ -34,7 +34,7 @@
 },
 "Bluesky": {
 "ok": true,
-"n": 109
+"n": 110
 },
 "Mastodon-Suche": {
 "ok": true,
@@ -75,12 +75,27 @@
 "n": 0
 }
 },
-"last24h": 0,
+"last24h": 1,
 "filtered": {
 "keine ausdrückliche Druckanfrage": 6,
 "kein 3D-Druck-Bezug": 11
 },
 "leads": [
+{
+"id": "bsky:at://did:plc:s3474tgw7rhckzrs5t5upd7y/app.bsky.feed.post/3n2t5k7db2s25",
+"source": "Bluesky",
+"kind": "bluesky",
+"title": "From Digital Designs to Real-World Creations! 🖨️",
+"text": "From Digital Designs to Real-World Creations! 🖨️\n\nNeed something 3D printed?\n\nPrint Perfecto brings ideas to life in Madurai with:\n\nHave a design? Let's make it real!\n\n📍 Madurai, Tamil Nadu\n📞 +91 86673 11552\n🌐 www.printperfecto3d.com",
+"url": "https://bsky.app/profile/printperfecto.bsky.social/post/3n2t5k7db2s25",
+"created": 1795265733628,
+"author": "printperfecto.bsky.social",
+"flair": "",
+"all": false,
+"dachHint": false,
+"comments": 0,
+"why": "„Need something 3D printed“"
+},
 {
 "id": "reddit:1xyizzp",
 "source": "r/3Dprintmything",
