@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-23T22:34:35.591454+00:00",
+"generated": "2026-11-23T23:34:29.748862+00:00",
 "status": {
 "r/3Dprintmything": {
 "ok": false,
@@ -34,7 +34,7 @@
 },
 "Bluesky": {
 "ok": true,
-"n": 110
+"n": 109
 },
 "Mastodon-Suche": {
 "ok": true,
@@ -1071,20 +1071,6 @@
 "url": "https://www.reddit.com/r/3Dprintmything/comments/1xme9up/usama_need_small_controller_parts_sla_printed/",
 "created": 1793665205000,
 "author": "TheLuckiestNumber13",
-"flair": "",
-"all": true,
-"dachHint": false,
-"why": "Anfrage-Community"
-},
-{
-"id": "reddit:1xmctrx",
-"source": "r/3Dprintmything",
-"kind": "reddit",
-"title": "[US-CA] Resin print, 1 flat plate ~291 x 139 mm, one piece",
-"text": "Hi there!\n Reposting since my first printer fell through.\n Looking for someone with a large format resin printer to print 1 flat plate.\n Details:\n  About 291 x 139 x 3.5 mm (11.5 x 5.5 in) Raised lettering, 1.5 mm tall with a soft rounded edge STL file ready to go, clean and watertight  What I’m after:\n  Resin, printed in one piece (no splitting) Needs a build plate around 300 x 165 mm or bigger Any color Tougher resin preferred since it’s thin and flat  Shipping to Torrance, CA (LA area). Local pickup works too.\n Please comment first and I’ll DM from there.\n DMs without a comment will be ignored.\n Happy to send the file for a look.\n Thanks!",
-"url": "https://www.reddit.com/r/3Dprintmything/comments/1xmctrx/usca_resin_print_1_flat_plate_291_x_139_mm_one/",
-"created": 1793661514000,
-"author": "mkibsbricks",
 "flair": "",
 "all": true,
 "dachHint": false,
