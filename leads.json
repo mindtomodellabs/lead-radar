@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-23T00:27:04.456424+00:00",
+"generated": "2026-11-23T01:51:18.502361+00:00",
 "status": {
 "r/3Dprintmything": {
 "ok": false,
@@ -25,8 +25,8 @@
 "n": 40
 },
 "Lemmy-Suche": {
-"ok": false,
-"err": "The read operation timed out"
+"ok": true,
+"n": 95
 },
 "Bambu-Lab-Forum": {
 "ok": true,
@@ -34,7 +34,7 @@
 },
 "Bluesky": {
 "ok": true,
-"n": 109
+"n": 110
 },
 "Mastodon-Suche": {
 "ok": true,
@@ -77,8 +77,8 @@
 },
 "last24h": 0,
 "filtered": {
-"keine ausdrückliche Druckanfrage": 4,
-"kein 3D-Druck-Bezug": 9
+"keine ausdrückliche Druckanfrage": 7,
+"kein 3D-Druck-Bezug": 10
 },
 "leads": [
 {
