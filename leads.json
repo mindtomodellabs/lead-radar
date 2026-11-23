@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-23T02:51:15.189903+00:00",
+"generated": "2026-11-23T03:55:04.634586+00:00",
 "status": {
 "r/3Dprintmything": {
 "ok": false,
@@ -1103,20 +1103,6 @@
 "all": true,
 "dachHint": false,
 "why": "Anfrage-Community"
-},
-{
-"id": "reddit:1xln17j",
-"source": "r/3Dprinting (Suche)",
-"kind": "reddit",
-"title": "Looking for someone to print something for me",
-"text": "Hello everyone! I’m looking to make a custom music box for my little brother and I’d really like it to play the lava chicken song. I’ve already figured out what to do but I just need someone to print the cylinder for the song. I’ve never 3d modeled anything before and I don’t have access to a printer but this was a lot cheaper than getting one custom made lol. Apparently resin printing will be stronger and hold up better but I’ve never done this before and know even less about resin printing than 3d printing.\n I’m basically looking for someone I can partner up with to make this happen for my brother in time for Christmas (hopefully lol). Thanks!",
-"url": "https://www.reddit.com/r/3Dprinting/comments/1xln17j/looking_for_someone_to_print_something_for_me/",
-"created": 1793591233000,
-"author": "Country_Is_Farm_Emo",
-"flair": "",
-"all": false,
-"dachHint": false,
-"why": "„Looking for someone to print“"
 }
 ]
 }
