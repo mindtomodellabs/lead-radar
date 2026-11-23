@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-23T17:53:49.661680+00:00",
+"generated": "2026-11-23T18:52:00.213443+00:00",
 "status": {
 "r/3Dprintmything": {
 "ok": false,
@@ -1085,20 +1085,6 @@
 "url": "https://www.reddit.com/r/3Dprintmything/comments/1xmctrx/usca_resin_print_1_flat_plate_291_x_139_mm_one/",
 "created": 1793661514000,
 "author": "mkibsbricks",
-"flair": "",
-"all": true,
-"dachHint": false,
-"why": "Anfrage-Community"
-},
-{
-"id": "reddit:1xm4gjo",
-"source": "r/3Dprintmything",
-"kind": "reddit",
-"title": "[GERMANY, Goslar] Rack mounts for 10 inch server-rack",
-"text": "Hey :) \n I was hoping someone could print me two rack mounts for my thinkcentre m720q and netgear gs108pe switch. They're both fairly small, im planning on building a 10 inch rack.",
-"url": "https://www.reddit.com/r/3Dprintmything/comments/1xm4gjo/germany_goslar_rack_mounts_for_10_inch_serverrack/",
-"created": 1793642524000,
-"author": "Rotten-Globe",
 "flair": "",
 "all": true,
 "dachHint": false,
