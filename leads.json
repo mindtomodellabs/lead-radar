@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-24T15:32:24.656312+00:00",
+"generated": "2026-11-24T16:45:07.772095+00:00",
 "status": {
 "r/3Dprintmything": {
 "ok": false,
@@ -1043,20 +1043,6 @@
 "url": "https://www.reddit.com/r/3Dprintmything/comments/1xn6lg4/usanorthern_co_sereed_balance_bicycle_lower_seat/",
 "created": 1793743294000,
 "author": "bhakjdlmn",
-"flair": "",
-"all": true,
-"dachHint": false,
-"why": "Anfrage-Community"
-},
-{
-"id": "reddit:1xmxl38",
-"source": "r/3Dprintmything",
-"kind": "reddit",
-"title": "[UK] Looking for someone to resin print small model railway face plates",
-"text": "Hi, I’m looking for someone in the UK who can resin print a few very small face plates for a model railway character.\n The parts are roughly 25 mm × 15 mm and have quite fine facial detail, so I’m ideally looking for resin printing.\n I already have the STL files ready to go. I’d like to start with one test print to check the size and fit, then potentially have several different expressions printed afterwards.\n I’m happy to discuss whatever works best.\n I’m based in South London, but I’m completely happy to have them posted if you’re elsewhere in the UK.\n Happy to pay for materials, printing time and postage.\n Thanks! 😁",
-"url": "https://www.reddit.com/r/3Dprintmything/comments/1xmxl38/uk_looking_for_someone_to_resin_print_small_model/",
-"created": 1793723321000,
-"author": "jan0009683",
 "flair": "",
 "all": true,
 "dachHint": false,
