@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-24T21:38:30.523921+00:00",
+"generated": "2026-11-24T22:40:51.408613+00:00",
 "status": {
 "r/3Dprintmything": {
 "ok": false,
@@ -1015,34 +1015,6 @@
 "url": "https://www.reddit.com/r/3Dprintmything/comments/1xn9mdq/us_new_york_print_me_2_ubiquiti_covers/",
 "created": 1793751001000,
 "author": "ilovenyc",
-"flair": "",
-"all": true,
-"dachHint": false,
-"why": "Anfrage-Community"
-},
-{
-"id": "reddit:1xn6ntc",
-"source": "r/3Dprintmything",
-"kind": "reddit",
-"title": "[Seattle] 3D Printing Request",
-"text": "Hoping someone might be able to help print out two small 3d printable objects for an office chair hack that I'm working on. I have the STL files and can send them over.",
-"url": "https://www.reddit.com/r/3Dprintmything/comments/1xn6ntc/seattle_3d_printing_request/",
-"created": 1793743444000,
-"author": "Sleepless-in-Sea",
-"flair": "",
-"all": true,
-"dachHint": false,
-"why": "Anfrage-Community"
-},
-{
-"id": "reddit:1xn6lg4",
-"source": "r/3Dprintmything",
-"kind": "reddit",
-"title": "[USA-Northern CO] Sereed Balance Bicycle Lower Seat",
-"text": "EDIT: Thanks for all the messages, esp about the (un)suitability of TPU and outside (UV) considerations. At this time I'm looking for a print using ASA.\n Hello hello! I had good luck before asking for a print, so I'm back! Mini-me has a new Sereed Balance Bike, but like me, Mini-me is small. So I've found this to help:\n https://makerworld.com/en/models/2072698-sereed-lower-seat#profileId-2238810\n I see that TPU printing or other flexible/soft materials are possible - would they be OK in this application? It will be held on with two machine screws through the seat body.\n Thanks!",
-"url": "https://www.reddit.com/r/3Dprintmything/comments/1xn6lg4/usanorthern_co_sereed_balance_bicycle_lower_seat/",
-"created": 1793743294000,
-"author": "bhakjdlmn",
 "flair": "",
 "all": true,
 "dachHint": false,
