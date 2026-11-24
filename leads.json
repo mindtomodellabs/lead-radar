@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-23T23:34:29.748862+00:00",
+"generated": "2026-11-24T00:33:28.449770+00:00",
 "status": {
 "r/3Dprintmything": {
 "ok": false,
@@ -1057,20 +1057,6 @@
 "url": "https://www.reddit.com/r/3Dprintmything/comments/1xmxl38/uk_looking_for_someone_to_resin_print_small_model/",
 "created": 1793723321000,
 "author": "jan0009683",
-"flair": "",
-"all": true,
-"dachHint": false,
-"why": "Anfrage-Community"
-},
-{
-"id": "reddit:1xme9up",
-"source": "r/3Dprintmything",
-"kind": "reddit",
-"title": "[USA-MA] need small controller parts sla printed, abs-like 3.0 or conjure rigid",
-"text": "Looking for someone to print me these adjustment rings from printables - I dont have an SLA printer otherwise id do it myself. Per instructions from the creator (and the fact they're a heavy wear part that snaps in/out of position regularly), will need something flexible and durable for the materials). Dont have a big budget cuz im a student looking for parts for a budget game controller lol, but thought id ask if anyone can do it for free. They're really small parts so presumably should be quick & easy. Need one right ring, one left ring, and two of the little stick pieces.",
-"url": "https://www.reddit.com/r/3Dprintmything/comments/1xme9up/usama_need_small_controller_parts_sla_printed/",
-"created": 1793665205000,
-"author": "TheLuckiestNumber13",
 "flair": "",
 "all": true,
 "dachHint": false,
