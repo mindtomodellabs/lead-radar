@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-24T23:32:48.812966+00:00",
+"generated": "2026-11-25T00:33:27.851362+00:00",
 "status": {
 "r/3Dprintmything": {
 "ok": false,
@@ -1001,20 +1001,6 @@
 "url": "https://www.reddit.com/r/3Dprintmything/comments/1xnai8s/uspa_philadelphia_umikot_54mm_wdt/",
 "created": 1793753439000,
 "author": "Roboperson",
-"flair": "",
-"all": true,
-"dachHint": false,
-"why": "Anfrage-Community"
-},
-{
-"id": "reddit:1xn9mdq",
-"source": "r/3Dprintmything",
-"kind": "reddit",
-"title": "[US, New York] - print me 2 Ubiquiti covers",
-"text": "Hello\n I am based out of New York. Can someone print me 2 of these following? I am wondering if you can print them in white? If not, black is fine.\n https://makerworld.com/en/models/3530683-usl-entry-outdoor-case-and-french-cleat-v2\n Will pay for the filament and shipping obviously.\n Thank you\n EDIT: thank you for all the messages. This is resolved now",
-"url": "https://www.reddit.com/r/3Dprintmything/comments/1xn9mdq/us_new_york_print_me_2_ubiquiti_covers/",
-"created": 1793751001000,
-"author": "ilovenyc",
 "flair": "",
 "all": true,
 "dachHint": false,
