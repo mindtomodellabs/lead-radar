@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-25T03:07:39.264174+00:00",
+"generated": "2026-11-25T04:18:28.673130+00:00",
 "status": {
 "r/3Dprintmything": {
 "ok": false,
@@ -973,20 +973,6 @@
 "url": "https://www.reddit.com/r/3Dprintmything/comments/1xo301b/usanj_nnj_i_need_a_few_parts_for_a_printer/",
 "created": 1793833946000,
 "author": "covah901",
-"flair": "",
-"all": true,
-"dachHint": false,
-"why": "Anfrage-Community"
-},
-{
-"id": "reddit:1xndm32",
-"source": "r/3Dprintmything",
-"kind": "reddit",
-"title": "[Seattle] 4 parts for larger project - ABS, ASA",
-"text": "I need to get 4 small files from this repo printed: https://github.com/Shrike-Lab/HomeLab-PDU-V1\n -10in_Single_Imp_Front.stl\n -10in_Single_Imp_Rear.stl\n -PCB_Tray.stl\n -Reinforcement_Bracket.stl\n It'd be great if you were here in Seattle but nearby is also good. \n Need it in something heat resistant (up to ~75C sustained for long periods) like ASA or ABS - Front/Rear need to be black but preferably all in black.",
-"url": "https://www.reddit.com/r/3Dprintmything/comments/1xndm32/seattle_4_parts_for_larger_project_abs_asa/",
-"created": 1793762488000,
-"author": "ComradeDre",
 "flair": "",
 "all": true,
 "dachHint": false,
