@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-25T00:33:27.851362+00:00",
+"generated": "2026-11-25T02:03:24.750391+00:00",
 "status": {
 "r/3Dprintmything": {
 "ok": false,
@@ -987,20 +987,6 @@
 "url": "https://www.reddit.com/r/3Dprintmything/comments/1xndm32/seattle_4_parts_for_larger_project_abs_asa/",
 "created": 1793762488000,
 "author": "ComradeDre",
-"flair": "",
-"all": true,
-"dachHint": false,
-"why": "Anfrage-Community"
-},
-{
-"id": "reddit:1xnai8s",
-"source": "r/3Dprintmything",
-"kind": "reddit",
-"title": "[US-PA, Philadelphia] Umikot 54mm WDT",
-"text": "Hi all,\n Looking to see if someone local can print me the parts for this tool used for making espresso:\n https://www.printables.com/model/569582-umikot-54mm-version-planetary-gear-spirograph-espr\n Just the 3D printed parts, I'll source the other components and handle assembly.\n Thanks for the quick responses everyone.",
-"url": "https://www.reddit.com/r/3Dprintmything/comments/1xnai8s/uspa_philadelphia_umikot_54mm_wdt/",
-"created": 1793753439000,
-"author": "Roboperson",
 "flair": "",
 "all": true,
 "dachHint": false,
