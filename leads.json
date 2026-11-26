@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-26T20:47:01.212546+00:00",
+"generated": "2026-11-26T21:46:28.952602+00:00",
 "status": {
 "r/3Dprintmything": {
 "ok": false,
@@ -29,8 +29,8 @@
 "n": 95
 },
 "Bambu-Lab-Forum": {
-"ok": true,
-"n": 77
+"ok": false,
+"err": "The read operation timed out"
 },
 "Bluesky": {
 "ok": true,
