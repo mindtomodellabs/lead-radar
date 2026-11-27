@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-27T19:52:51.038272+00:00",
+"generated": "2026-11-27T20:48:24.275389+00:00",
 "status": {
 "r/3Dprintmything": {
 "ok": false,
@@ -805,48 +805,6 @@
 "url": "https://www.reddit.com/r/3Dprintmything/comments/1xpptqp/us_las_vegashenderson_requesting_a_resin_or_very/",
 "created": 1794003319000,
 "author": "LordServek",
-"flair": "",
-"all": true,
-"dachHint": false,
-"why": "Anfrage-Community"
-},
-{
-"id": "reddit:1xpng6b",
-"source": "r/3Dprintmything",
-"kind": "reddit",
-"title": "[United States] Army figurines without weapons",
-"text": "Hello! My son really wants \"Army men\" for Christmas. Could anyone print us some that don't have weapons?",
-"url": "https://www.reddit.com/r/3Dprintmything/comments/1xpng6b/united_states_army_figurines_without_weapons/",
-"created": 1793997371000,
-"author": "chalmarm15",
-"flair": "",
-"all": true,
-"dachHint": false,
-"why": "Anfrage-Community"
-},
-{
-"id": "reddit:1xpn6g0",
-"source": "r/3Dprintmything",
-"kind": "reddit",
-"title": "[UK - Swindon] Need a small hinge replacement bracket printed for a Nintendo DS Lite",
-"text": "Hi everyone,\n I'm looking to get a tiny repair bracket printed to fix the broken shell hinge on my Nintendo DS Lite. I don’t own a 3D printer myself.\n  File Link: https://www.printables.com/model/1464716-ds-lite-hinge-fix/files Location: Swindon, UK (Happy to pay for local shipping or arrange a pickup if you are nearby). Material Preference: PLA or PETG is fine. Quantity: 2 pieces (just in case I lose or break one during installation).  Designer's recommended print specs:\n  Layer Height: 0.2 mm Infill: 100% (Needs to be solid to handle the hinge tension) Supports: None needed  Please comment below or send me a DM with your quote including postage/shipping cost. Thank you!",
-"url": "https://www.reddit.com/r/3Dprintmything/comments/1xpn6g0/uk_swindon_need_a_small_hinge_replacement_bracket/",
-"created": 1793996686000,
-"author": "Tractor555",
-"flair": "",
-"all": true,
-"dachHint": false,
-"why": "Anfrage-Community"
-},
-{
-"id": "reddit:1xpn1iu",
-"source": "r/3Dprintmything",
-"kind": "reddit",
-"title": "[USA NY] drift trailer",
-"text": "Can someone make this for me?\n https://cults3d.com/en/3d-model/gadget/rc-drift-camera-rig-360-follow-camera-trailer?srsltid=AYCX9vKaXjKJhPF\\_k290JweKgKZbgizrzHT\\_5YsV7Fs0X4Equ7wJedRG",
-"url": "https://www.reddit.com/r/3Dprintmything/comments/1xpn1iu/usa_ny_drift_trailer/",
-"created": 1793996338000,
-"author": "PlateNervous8440",
 "flair": "",
 "all": true,
 "dachHint": false,
