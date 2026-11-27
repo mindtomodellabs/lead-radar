@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-27T04:18:52.850043+00:00",
+"generated": "2026-11-27T05:34:52.604077+00:00",
 "status": {
 "r/3Dprintmything": {
 "ok": false,
@@ -875,20 +875,6 @@
 "url": "https://www.reddit.com/r/3Dprintmything/comments/1xpatkp/ukcornwall_ultrapod_ipod_style_case_for_iphone_17/",
 "created": 1793965621000,
 "author": "spiritual_ninjaz",
-"flair": "",
-"all": true,
-"dachHint": false,
-"why": "Anfrage-Community"
-},
-{
-"id": "reddit:1xp4af6",
-"source": "r/3Dprintmything",
-"kind": "reddit",
-"title": "[USA-CA SF Bay Area] PPA-CF or PA6-CF Print of custom GoPro Adapter",
-"text": "I need a small (overall dimensions are 47 x 22 x 22mm) GoPro adapter 3d printed in high quality, smooth UV and heat resistant black material with a 'barrel' adapter that needs to withstand some compression (around circumference / clamping quasi all around.. and everything be fine in direct CA sun for hours all year round without deforming.\n I have a .stl and ideally it would be someone local-ish in case I need to adjust / re-do a few times.\n Does anybody feel comfortable doing that?\n Thanks!",
-"url": "https://www.reddit.com/r/3Dprintmything/comments/1xp4af6/usaca_sf_bay_area_ppacf_or_pa6cf_print_of_custom/",
-"created": 1793941058000,
-"author": "AcceptablePun",
 "flair": "",
 "all": true,
 "dachHint": false,
