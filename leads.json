@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-27T15:53:08.054122+00:00",
+"generated": "2026-11-27T16:58:29.501528+00:00",
 "status": {
 "r/3Dprintmything": {
 "ok": false,
@@ -77,7 +77,7 @@
 },
 "last24h": 0,
 "filtered": {
-"keine ausdrückliche Druckanfrage": 6,
+"keine ausdrückliche Druckanfrage": 5,
 "kein 3D-Druck-Bezug": 8
 },
 "leads": [
@@ -847,20 +847,6 @@
 "url": "https://www.reddit.com/r/3Dprintmything/comments/1xpn1iu/usa_ny_drift_trailer/",
 "created": 1793996338000,
 "author": "PlateNervous8440",
-"flair": "",
-"all": true,
-"dachHint": false,
-"why": "Anfrage-Community"
-},
-{
-"id": "reddit:1xphvnx",
-"source": "r/3Dprintmything",
-"kind": "reddit",
-"title": "[Seattle] 6mm lowercase gothic font lettering/numbers for pottery!!",
-"text": "",
-"url": "https://www.reddit.com/r/3Dprintmything/comments/1xphvnx/seattle_6mm_lowercase_gothic_font/",
-"created": 1793984266000,
-"author": "Flaky-Ad-8124",
 "flair": "",
 "all": true,
 "dachHint": false,
