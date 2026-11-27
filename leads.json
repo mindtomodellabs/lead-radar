@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-27T21:48:44.984612+00:00",
+"generated": "2026-11-27T22:49:24.368771+00:00",
 "status": {
 "r/3Dprintmything": {
 "ok": false,
@@ -791,20 +791,6 @@
 "url": "https://www.reddit.com/r/3Dprintmything/comments/1xq1kpu/usca_sgv_area_help_printing_car_interior_trim/",
 "created": 1794040551000,
 "author": "christmaslu",
-"flair": "",
-"all": true,
-"dachHint": false,
-"why": "Anfrage-Community"
-},
-{
-"id": "reddit:1xpptqp",
-"source": "r/3Dprintmything",
-"kind": "reddit",
-"title": "[US Las Vegas/Henderson] Requesting a Resin or VERY Smooth Print",
-"text": "Hello folks! I am a Resin Printer myself but I have had multiple failures to get this print to work. \n Every time I try it sticks to the pool at some point during the beginning of the print and I'm at my wits end. I really need this for a friend's birthday, she loves how smooth my prints come out and I'm wanting to get it soon so I can take my time painting it before I give it to her.\n I dont care what color it is printed in, all that I care about is that as stated she loves how smooth my resin prints are, so I'm not sure if this could be done on a Filament printer or not. \n I've included a link to the STL. Hopefully I can get this done for a reasonable price. At this point I've wasted about a half a bottle of resin on failures.\n https://cults3d.com/en/3d-model/game/sukuna_trono",
-"url": "https://www.reddit.com/r/3Dprintmything/comments/1xpptqp/us_las_vegashenderson_requesting_a_resin_or_very/",
-"created": 1794003319000,
-"author": "LordServek",
 "flair": "",
 "all": true,
 "dachHint": false,
