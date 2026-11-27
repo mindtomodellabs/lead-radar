@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-26T23:39:05.846543+00:00",
+"generated": "2026-11-27T00:39:34.995414+00:00",
 "status": {
 "r/3Dprintmything": {
 "ok": false,
@@ -903,20 +903,6 @@
 "url": "https://www.reddit.com/r/3Dprintmything/comments/1xp0omp/nederland_looking_for_someone_in_amsterdam/",
 "created": 1793929806000,
 "author": "Alexander_bike",
-"flair": "",
-"all": true,
-"dachHint": false,
-"why": "Anfrage-Community"
-},
-{
-"id": "reddit:1xoyx4p",
-"source": "r/3Dprintmything",
-"kind": "reddit",
-"title": "[US-San Diego, CA] In need of a simple jig for a drill press",
-"text": "I'm looking for help printing a jig I designed to hold some parts in place on a drill press as part of a craft I'm working on.\n I've never done any 3D printing before so I'm open to recommendations on material, etc. It doesn't need to be fancy or a specific color, just hold an object fairly snugly.\n Screenshots attached and I can share a link privately to a downloadable STL file. Total dimensions are 104 mm x 104 mm x 18 mm\n Edit: have plenty of good offers; thanks, no need for more!",
-"url": "https://www.reddit.com/r/3Dprintmything/comments/1xoyx4p/ussan_diego_ca_in_need_of_a_simple_jig_for_a/",
-"created": 1793924709000,
-"author": "MasterThalpian",
 "flair": "",
 "all": true,
 "dachHint": false,
