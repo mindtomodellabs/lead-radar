@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-28T14:41:05.687009+00:00",
+"generated": "2026-11-28T15:29:08.675020+00:00",
 "status": {
 "r/3Dprintmything": {
 "ok": false,
@@ -77,7 +77,7 @@
 },
 "last24h": 0,
 "filtered": {
-"keine ausdrückliche Druckanfrage": 5,
+"keine ausdrückliche Druckanfrage": 6,
 "kein 3D-Druck-Bezug": 8
 },
 "leads": [
